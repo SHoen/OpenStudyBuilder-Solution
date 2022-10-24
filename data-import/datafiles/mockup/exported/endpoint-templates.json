@@ -1,0 +1,233 @@
+[
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 4,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Proportion of subjects with [ActivityInstance] [Operator] [NumericValue] [Unit]</p>",
+    "namePlain": "Proportion of subjects with [ActivityInstance] [Operator] [NumericValue] [Unit]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "Operator",
+        "values": null
+      },
+      {
+        "name": "NumericValue",
+        "values": null
+      },
+      {
+        "name": "Unit",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-20T12:25:32.484980",
+    "status": "Final",
+    "studyCount": 1,
+    "subCategories": null,
+    "uid": "EndpointTemplate_000005",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Mean change from baseline in [ActivityInstance]</p>",
+    "namePlain": "Mean change from baseline in [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-20T12:22:55.711905",
+    "status": "Final",
+    "studyCount": 1,
+    "subCategories": null,
+    "uid": "EndpointTemplate_000004",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "User Defined"
+    },
+    "name": "test user defined [ActivityInstance]",
+    "namePlain": "test user defined [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T13:22:07.229016",
+    "status": "Final",
+    "studyCount": 0,
+    "subCategories": null,
+    "uid": "EndpointTemplate_000003",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance] and [DiseaseDisorder]",
+    "namePlain": "test [ActivityInstance] and [DiseaseDisorder]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T13:22:06.812005",
+    "status": "Final",
+    "studyCount": 1,
+    "subCategories": null,
+    "uid": "EndpointTemplate_000002",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance]",
+    "namePlain": "test [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T13:22:06.180308",
+    "status": "Final",
+    "studyCount": 0,
+    "subCategories": null,
+    "uid": "EndpointTemplate_000001",
+    "userInitials": "MT",
+    "version": "1.0"
+  }
+]

@@ -1,0 +1,1886 @@
+[
+  {
+    "name": "Test getting empty list",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-branch-arms"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": []
+    }
+  },
+  {
+    "name": "Test adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_1",
+        "shortName": "BranchArm_Short_Name_1",
+        "code": "BranchArm_code_1",
+        "description": "desc...",
+        "colourCode": "desc...",
+        "randomizationGroup": "Randomization_Group_1",
+        "numberOfSubjects": 1,
+        "armUid": "StudyArm_000001"
+      },
+      "url": "/study/study_root/study-branch-arms/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000001",
+        "order": 1,
+        "name": "BranchArm_Name_1",
+        "shortName": "BranchArm_Short_Name_1",
+        "code": "BranchArm_code_1",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000001",
+          "order": 1,
+          "name": "StudyArm_000001",
+          "shortName": "StudyArm_000001",
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 1,
+        "randomizationGroup": "Randomization_Group_1",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "branchArmUid": "branchArmUid"
+      }
+    }
+  },
+  {
+    "name": "Test get all within a Arm list non empty",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-branch-arms/arm/StudyArm_000001"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "studyUid": "study_root",
+          "branchArmUid": "StudyBranchArm_000001",
+          "order": 1,
+          "name": "BranchArm_Name_1",
+          "shortName": "BranchArm_Short_Name_1",
+          "code": "BranchArm_code_1",
+          "startDate": "2020-06-26T00:00:00",
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armRoot": {
+            "studyUid": "study_root",
+            "armUid": "StudyArm_000001",
+            "order": 1,
+            "name": null,
+            "shortName": null,
+            "code": null,
+            "startDate": null,
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null,
+            "armType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root1",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "libraryName": "Sponsor",
+              "startDate": "2020-06-26T00:00:00",
+              "order": null,
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "description": null,
+            "armColour": null,
+            "numberOfSubjects": null,
+            "randomizationGroup": null,
+            "userInitials": null
+          },
+          "description": "desc...",
+          "colourCode": "desc...",
+          "numberOfSubjects": 1,
+          "randomizationGroup": "Randomization_Group_1",
+          "userInitials": "TODO initials"
+        }
+      ]
+    }
+  }, 
+  {
+    "name": "Test get all list non empty",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-branch-arms"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "studyUid": "study_root",
+          "branchArmUid": "StudyBranchArm_000001",
+          "order": 1,
+          "name": "BranchArm_Name_1",
+          "shortName": "BranchArm_Short_Name_1",
+          "code": "BranchArm_code_1",
+          "startDate": "2020-06-26T00:00:00",
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armRoot": {
+            "studyUid": "study_root",
+            "armUid": "StudyArm_000001",
+            "order": 1,
+            "name": null,
+            "shortName": null,
+            "code": null,
+            "startDate": null,
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null,
+            "armType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root1",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "libraryName": "Sponsor",
+              "startDate": "2020-06-26T00:00:00",
+              "order": null,
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "description": null,
+            "armColour": null,
+            "numberOfSubjects": null,
+            "randomizationGroup": null,
+            "userInitials": null
+          },
+          "description": "desc...",
+          "colourCode": "desc...",
+          "numberOfSubjects": 1,
+          "randomizationGroup": "Randomization_Group_1",
+          "userInitials": "TODO initials"
+        }
+      ]
+    }
+  }, 
+  {
+    "name": "Test get specific",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-branch-arms/{branchArmUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000001",
+        "order": 1,
+        "name": "BranchArm_Name_1",
+        "shortName": "BranchArm_Short_Name_1",
+        "code": "BranchArm_code_1",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000001",
+          "order": 1,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 1,
+        "randomizationGroup": "Randomization_Group_1",
+        "userInitials": "TODO initials"
+      }
+    }
+  }, 
+  {
+    "name": "Test patch specific - set name",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "New_BranchArm_Name_1"
+      },
+      "url": "/study/study_root/study-branch-arms/{branchArmUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000001",
+        "order": 1,
+        "name": "New_BranchArm_Name_1",
+        "shortName": "BranchArm_Short_Name_1",
+        "code": "BranchArm_code_1",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000001",
+          "order": 1,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 1,
+        "randomizationGroup": "Randomization_Group_1",
+        "userInitials": "TODO initials"
+      }
+    }
+  }, 
+  {
+    "name": "Test all history of specific selection",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-branch-arms/{branchArmUid}/audit-trail/"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": 
+      [
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000001",
+          "name": "New_BranchArm_Name_1",
+          "shortName": "BranchArm_Short_Name_1",
+          "code": "BranchArm_code_1",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_1",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:06:24.903320",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {
+            "studyUid": false,
+            "order": false,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": true,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000001",
+          "name": "BranchArm_Name_1",
+          "shortName": "BranchArm_Short_Name_1",
+          "code": "BranchArm_code_1",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_1",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:06:23.846565",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:06:24.903320",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {}
+        }
+      ]        
+    }
+  },
+  {
+    "name": "Test 2nd adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_2",
+        "shortName": "BranchArm_Short_Name_2",
+        "code": "BranchArm_code_2",
+        "description": "desc...",
+        "colourCode": "desc...",
+        "randomizationGroup": "Randomization_Group_2",
+        "numberOfSubjects": 1,
+        "armUid": "StudyArm_000001"
+      },
+      "url": "/study/study_root/study-branch-arms/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000004",
+        "order": 2,
+        "name": "BranchArm_Name_2",
+        "shortName": "BranchArm_Short_Name_2",
+        "code": "BranchArm_code_2",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000001",
+          "order": 1,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 1,
+        "randomizationGroup": "Randomization_Group_2",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "branchArmUid": "branchArmUid"
+      }
+    }
+  },
+  {
+    "name": "Test DELETE -- delete the 1st to test the reordering for the 2nd to be eq. to 1 ",
+    "request": {
+        "headers": {},
+        "method": "DELETE",
+        "url": "/study/study_root/study-branch-arms/StudyBranchArm_000001"
+    },
+    "response":{
+        "code":204,
+        "headers":{
+        },
+        "result":null
+    }
+  }, 
+  {
+    "name": "Test 3rd adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_3",
+        "shortName": "BranchArm_Short_Name_3",
+        "code": "BranchArm_code_3",
+        "description": "desc...",
+        "colourCode": "desc...",
+        "randomizationGroup": "Randomization_Group_3",
+        "numberOfSubjects": 3,
+        "armUid": "StudyArm_000001"
+      },
+      "url": "/study/study_root/study-branch-arms/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000008",
+        "order": 2,
+        "name": "BranchArm_Name_3",
+        "shortName": "BranchArm_Short_Name_3",
+        "code": "BranchArm_code_3",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000001",
+          "order": 1,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 3,
+        "randomizationGroup": "Randomization_Group_3",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "branchArmUid": "branchArmUid"
+      }
+    }
+  },
+  {
+    "name": "Test 4rd adding selection for another ARM to check the ordering will follow within a new Arm",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_4",
+        "shortName": "BranchArm_Short_Name_4",
+        "code": "BranchArm_code_4",
+        "description": "desc...",
+        "colourCode": "desc...",
+        "randomizationGroup": "Randomization_Group_4",
+        "numberOfSubjects": 4,
+        "armUid": "StudyArm_000002"
+      },
+      "url": "/study/study_root/study-branch-arms/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000010",
+        "order": 1,
+        "name": "BranchArm_Name_4",
+        "shortName": "BranchArm_Short_Name_4",
+        "code": "BranchArm_code_4",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000002",
+          "order": 2,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final_non_edit",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "non_editable_cr",
+            "sponsorPreferredName": "term_value_name3",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "CDISC",
+            "startDate": "2020-06-26T00:00:00",
+            "order": 3,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 4,
+        "randomizationGroup": "Randomization_Group_4",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "branchArmUid": "branchArmUid"
+      }
+    }
+  },
+  {
+    "name": "Test 5th adding selection for the first ARM to check the ordering will follow within an Arm",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_5",
+        "shortName": "BranchArm_Short_Name_5",
+        "code": "BranchArm_code_5",
+        "description": "desc...",
+        "colourCode": "desc...",
+        "randomizationGroup": "Randomization_Group_5",
+        "numberOfSubjects": 5,
+        "armUid": "StudyArm_000001"
+      },
+      "url": "/study/study_root/study-branch-arms/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000012",
+        "order": 3,
+        "name": "BranchArm_Name_5",
+        "shortName": "BranchArm_Short_Name_5",
+        "code": "BranchArm_code_5",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000001",
+          "order": 1,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 5,
+        "randomizationGroup": "Randomization_Group_5",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "branchArmUid": "branchArmUid"
+      }
+    }
+  },
+  {
+    "name": "Test reorder specific",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "new_order": 5
+      },
+      "url": "/study/study_root/study-branch-arms/StudyBranchArm_000008/order"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000008",
+        "order": 3,
+        "name": "BranchArm_Name_3",
+        "shortName": "BranchArm_Short_Name_3",
+        "code": "BranchArm_code_3",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000001",
+          "order": 1,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 3,
+        "randomizationGroup": "Randomization_Group_3",
+        "userInitials": "TODO initials"
+      }
+    }
+  },
+  {
+    "name": "Test get all within an Arm list non empty",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-branch-arms/arm/StudyArm_000001"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "studyUid": "study_root",
+          "branchArmUid": "StudyBranchArm_000004",
+          "order": 1,
+          "name": "BranchArm_Name_2",
+          "shortName": "BranchArm_Short_Name_2",
+          "code": "BranchArm_code_2",
+          "startDate": "2020-06-26T00:00:00",
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armRoot": {
+            "studyUid": "study_root",
+            "armUid": "StudyArm_000001",
+            "order": 1,
+            "name": null,
+            "shortName": null,
+            "code": null,
+            "startDate": null,
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null,
+            "armType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root1",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "libraryName": "Sponsor",
+              "startDate": "2020-06-26T00:00:00",
+              "order": null,
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "description": null,
+            "armColour": null,
+            "numberOfSubjects": null,
+            "randomizationGroup": null,
+            "userInitials": null
+          },
+          "description": "desc...",
+          "colourCode": "desc...",
+          "numberOfSubjects": 1,
+          "randomizationGroup": "Randomization_Group_2",
+          "userInitials": "TODO initials"
+        },
+        {
+          "studyUid": "study_root",
+          "branchArmUid": "StudyBranchArm_000012",
+          "order": 2,
+          "name": "BranchArm_Name_5",
+          "shortName": "BranchArm_Short_Name_5",
+          "code": "BranchArm_code_5",
+          "startDate": "2020-06-26T00:00:00",
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armRoot": {
+            "studyUid": "study_root",
+            "armUid": "StudyArm_000001",
+            "order": 1,
+            "name": null,
+            "shortName": null,
+            "code": null,
+            "startDate": null,
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null,
+            "armType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root1",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "libraryName": "Sponsor",
+              "startDate": "2020-06-26T00:00:00",
+              "order": null,
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "description": null,
+            "armColour": null,
+            "numberOfSubjects": null,
+            "randomizationGroup": null,
+            "userInitials": null
+          },
+          "description": "desc...",
+          "colourCode": "desc...",
+          "numberOfSubjects": 5,
+          "randomizationGroup": "Randomization_Group_5",
+          "userInitials": "TODO initials"
+        },
+        {
+          "studyUid": "study_root",
+          "branchArmUid": "StudyBranchArm_000008",
+          "order": 3,
+          "name": "BranchArm_Name_3",
+          "shortName": "BranchArm_Short_Name_3",
+          "code": "BranchArm_code_3",
+          "startDate": "2020-06-26T00:00:00",
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armRoot": {
+            "studyUid": "study_root",
+            "armUid": "StudyArm_000001",
+            "order": 1,
+            "name": null,
+            "shortName": null,
+            "code": null,
+            "startDate": null,
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null,
+            "armType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root1",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "libraryName": "Sponsor",
+              "startDate": "2020-06-26T00:00:00",
+              "order": null,
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "description": null,
+            "armColour": null,
+            "numberOfSubjects": null,
+            "randomizationGroup": null,
+            "userInitials": null
+          },
+          "description": "desc...",
+          "colourCode": "desc...",
+          "numberOfSubjects": 3,
+          "randomizationGroup": "Randomization_Group_3",
+          "userInitials": "TODO initials"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test adding selection to extract designcells from arm ",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_6",
+        "shortName": "BranchArm_Short_Name_6",
+        "code": "BranchArm_code_6",
+        "description": "desc...",
+        "colourCode": "colourCode...",
+        "randomizationGroup": "Randomization_Group_6",
+        "numberOfSubjects": 1,
+        "armUid": "StudyArm_000003"
+      },
+      "url": "/study/study_root/study-branch-arms/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000016",
+        "order": 1,
+        "name": "BranchArm_Name_6",
+        "shortName": "BranchArm_Short_Name_6",
+        "code": "BranchArm_code_6",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000003",
+          "order": 3,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "colourCode...",
+        "numberOfSubjects": 1,
+        "randomizationGroup": "Randomization_Group_6",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "branchArmUid": "branchArmUid"
+      }
+    }
+  },
+  {
+    "name": "Test DELETE -- delete so the designcells can turn back to the study arm ",
+    "request": {
+        "headers": {},
+        "method": "DELETE",
+        "url": "/study/study_root/study-branch-arms/StudyBranchArm_000016"
+    },
+    "response":{
+        "code":204,
+        "headers":{
+        },
+        "result":null
+    }
+  },
+  {
+    "name": "Test adding selection to extract designcells from arm ",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_8",
+        "shortName": "BranchArm_Short_Name_8",
+        "code": "BranchArm_code_8",
+        "description": "desc...",
+        "colourCode": "colourCode...",
+        "randomizationGroup": "Randomization_Group_8",
+        "numberOfSubjects": 1,
+        "armUid": "StudyArm_000003"
+      },
+      "url": "/study/study_root/study-branch-arms/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000019",
+        "order": 1,
+        "name": "BranchArm_Name_8",
+        "shortName": "BranchArm_Short_Name_8",
+        "code": "BranchArm_code_8",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000003",
+          "order": 3,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "colourCode...",
+        "numberOfSubjects": 1,
+        "randomizationGroup": "Randomization_Group_8",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "branchArmUid": "branchArmUid"
+      }
+    }
+  },
+  {
+    "name": "Test adding selection to prove that the cascade delete won't activate if there are 2 branches",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_7",
+        "shortName": "BranchArm_Short_Name_7",
+        "code": "BranchArm_code_7",
+        "description": "desc...",
+        "colourCode": "colourCode...",
+        "randomizationGroup": "Randomization_Group_7",
+        "numberOfSubjects": 1,
+        "armUid": "StudyArm_000003"
+      },
+      "url": "/study/study_root/study-branch-arms/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "branchArmUid": "StudyBranchArm_000021",
+        "order": 2,
+        "name": "BranchArm_Name_7",
+        "shortName": "BranchArm_Short_Name_7",
+        "code": "BranchArm_code_7",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "armRoot": {
+          "studyUid": "study_root",
+          "armUid": "StudyArm_000003",
+          "order": 3,
+          "name": null,
+          "shortName": null,
+          "code": null,
+          "startDate": null,
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "armType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+            "startDate": "2020-06-26T00:00:00",
+            "order": null,
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO initials",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "description": null,
+          "armColour": null,
+          "numberOfSubjects": null,
+          "randomizationGroup": null,
+          "userInitials": null
+        },
+        "description": "desc...",
+        "colourCode": "colourCode...",
+        "numberOfSubjects": 1,
+        "randomizationGroup": "Randomization_Group_7",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "branchArmUid": "branchArmUid"
+      }
+    }
+  },
+  {
+    "name": "Test DELETE -- to be sure that the cascade delete won't take effect ",
+    "request": {
+        "headers": {},
+        "method": "DELETE",
+        "url": "/study/study_root/study-branch-arms/StudyBranchArm_000019"
+    },
+    "response":{
+        "code":204,
+        "headers":{
+        },
+        "result":null
+    }
+  },
+  {
+    "name": "Test all history of all selection study branch arms",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-branch-arm/audit-trail"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": 
+      [
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000001",
+          "name": "New_BranchArm_Name_1",
+          "shortName": "BranchArm_Short_Name_1",
+          "code": "BranchArm_code_1",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_1",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:33.063492",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Delete",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {
+            "studyUid": false,
+            "order": false,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": false,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000001",
+          "name": "New_BranchArm_Name_1",
+          "shortName": "BranchArm_Short_Name_1",
+          "code": "BranchArm_code_1",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_1",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:32.529511",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:08:33.063492",
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {
+            "studyUid": false,
+            "order": false,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": true,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000001",
+          "name": "BranchArm_Name_1",
+          "shortName": "BranchArm_Short_Name_1",
+          "code": "BranchArm_code_1",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_1",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:31.503063",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:08:32.529511",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000004",
+          "name": "BranchArm_Name_2",
+          "shortName": "BranchArm_Short_Name_2",
+          "code": "BranchArm_code_2",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_2",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:33.035755",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {
+            "studyUid": false,
+            "order": true,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": false,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000004",
+          "name": "BranchArm_Name_2",
+          "shortName": "BranchArm_Short_Name_2",
+          "code": "BranchArm_code_2",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_2",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:32.747802",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:08:33.035755",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 3,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000008",
+          "name": "BranchArm_Name_3",
+          "shortName": "BranchArm_Short_Name_3",
+          "code": "BranchArm_code_3",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_3",
+          "numberOfSubjects": 3,
+          "startDate": "2022-08-08T06:08:33.621915",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {
+            "studyUid": false,
+            "order": true,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": false,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000008",
+          "name": "BranchArm_Name_3",
+          "shortName": "BranchArm_Short_Name_3",
+          "code": "BranchArm_code_3",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_3",
+          "numberOfSubjects": 3,
+          "startDate": "2022-08-08T06:08:33.169913",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:08:33.621915",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000010",
+          "name": "BranchArm_Name_4",
+          "shortName": "BranchArm_Short_Name_4",
+          "code": "BranchArm_code_4",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_4",
+          "numberOfSubjects": 4,
+          "startDate": "2022-08-08T06:08:33.317243",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000002",
+          "changes": {}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000012",
+          "name": "BranchArm_Name_5",
+          "shortName": "BranchArm_Short_Name_5",
+          "code": "BranchArm_code_5",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_5",
+          "numberOfSubjects": 5,
+          "startDate": "2022-08-08T06:08:33.635978",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {
+            "studyUid": false,
+            "order": true,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": false,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 3,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000012",
+          "name": "BranchArm_Name_5",
+          "shortName": "BranchArm_Short_Name_5",
+          "code": "BranchArm_code_5",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "randomizationGroup": "Randomization_Group_5",
+          "numberOfSubjects": 5,
+          "startDate": "2022-08-08T06:08:33.457712",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:08:33.635978",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000001",
+          "changes": {}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000016",
+          "name": "BranchArm_Name_6",
+          "shortName": "BranchArm_Short_Name_6",
+          "code": "BranchArm_code_6",
+          "description": "desc...",
+          "colourCode": "colourCode...",
+          "randomizationGroup": "Randomization_Group_6",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:35.060349",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Delete",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000003",
+          "changes": {
+            "studyUid": false,
+            "order": false,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": false,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000016",
+          "name": "BranchArm_Name_6",
+          "shortName": "BranchArm_Short_Name_6",
+          "code": "BranchArm_code_6",
+          "description": "desc...",
+          "colourCode": "colourCode...",
+          "randomizationGroup": "Randomization_Group_6",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:33.896462",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:08:35.060349",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000003",
+          "changes": {}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000019",
+          "name": "BranchArm_Name_8",
+          "shortName": "BranchArm_Short_Name_8",
+          "code": "BranchArm_code_8",
+          "description": "desc...",
+          "colourCode": "colourCode...",
+          "randomizationGroup": "Randomization_Group_8",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:36.358626",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Delete",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000003",
+          "changes": {
+            "studyUid": false,
+            "order": false,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": false,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000019",
+          "name": "BranchArm_Name_8",
+          "shortName": "BranchArm_Short_Name_8",
+          "code": "BranchArm_code_8",
+          "description": "desc...",
+          "colourCode": "colourCode...",
+          "randomizationGroup": "Randomization_Group_8",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:35.684292",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:08:36.358626",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000003",
+          "changes": {}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000021",
+          "name": "BranchArm_Name_7",
+          "shortName": "BranchArm_Short_Name_7",
+          "code": "BranchArm_code_7",
+          "description": "desc...",
+          "colourCode": "colourCode...",
+          "randomizationGroup": "Randomization_Group_7",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:36.343246",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000003",
+          "changes": {
+            "studyUid": false,
+            "order": true,
+            "projectNumber": false,
+            "projectName": false,
+            "branchArmUid": false,
+            "name": false,
+            "shortName": false,
+            "code": false,
+            "description": false,
+            "colourCode": false,
+            "randomizationGroup": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": false,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "armRootUid": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "branchArmUid": "StudyBranchArm_000021",
+          "name": "BranchArm_Name_7",
+          "shortName": "BranchArm_Short_Name_7",
+          "code": "BranchArm_code_7",
+          "description": "desc...",
+          "colourCode": "colourCode...",
+          "randomizationGroup": "Randomization_Group_7",
+          "numberOfSubjects": 1,
+          "startDate": "2022-08-08T06:08:36.169042",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-08T06:08:36.343246",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "armRootUid": "StudyArm_000003",
+          "changes": {}
+        }
+      ]
+    }
+  }
+
+]

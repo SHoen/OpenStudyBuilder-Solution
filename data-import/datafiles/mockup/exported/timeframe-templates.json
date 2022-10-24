@@ -1,0 +1,110 @@
+[
+  {
+    "changeDescription": "Approved version",
+    "editableInstance": false,
+    "endDate": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>after [StudyDurationWeeks]</p>",
+    "namePlain": "after [StudyDurationWeeks]",
+    "parameters": [
+      {
+        "name": "StudyDurationWeeks",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-20T12:29:20.144639",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000004",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "changeDescription": "Approved version",
+    "editableInstance": false,
+    "endDate": null,
+    "library": {
+      "isEditable": true,
+      "name": "User Defined"
+    },
+    "name": "test user defined [ActivityInstance]",
+    "namePlain": "test user defined [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T13:22:12.290756",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000003",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "changeDescription": "Approved version",
+    "editableInstance": false,
+    "endDate": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance] and [DiseaseDisorder]",
+    "namePlain": "test [ActivityInstance] and [DiseaseDisorder]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T13:22:11.957188",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000002",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "changeDescription": "Approved version",
+    "editableInstance": false,
+    "endDate": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance]",
+    "namePlain": "test [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T13:22:11.529835",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000001",
+    "userInitials": "MT",
+    "version": "1.0"
+  }
+]

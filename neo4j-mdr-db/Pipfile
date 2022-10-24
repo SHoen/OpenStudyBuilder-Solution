@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "~=2.27"
+neo4j = "~=4.4"
+
+[dev-packages]
+pylint = "*"
+black = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+init_neo4j = "python init_neo4j.py"

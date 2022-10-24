@@ -1,0 +1,78 @@
+[
+  {
+    "acceptedVersion": false,
+    "armColour": "#9FA8DAFF",
+    "armConnectedBranchArms": null,
+    "armType": {
+      "catalogueName": "SDTM CT",
+      "changeDescription": "Approved version",
+      "codelistUid": "CTCodelist_000022",
+      "endDate": null,
+      "libraryName": "Sponsor",
+      "order": 1,
+      "possibleActions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsorPreferredName": "Investigational Arm",
+      "sponsorPreferredNameSentenceCase": "investigational arm",
+      "startDate": "2022-10-18T12:53:21.759357",
+      "status": "Final",
+      "termUid": "CTTerm_000081",
+      "userInitials": "MT",
+      "version": "1.0"
+    },
+    "armUid": "StudyArm_000005",
+    "changeType": null,
+    "code": "A",
+    "description": null,
+    "endDate": null,
+    "name": "Human Insulin",
+    "numberOfSubjects": 50,
+    "order": 1,
+    "randomizationGroup": "A",
+    "shortName": "Human Insulin",
+    "startDate": "2022-10-19T07:37:36.068454",
+    "status": null,
+    "studyUid": "Study_000002",
+    "userInitials": "MT"
+  },
+  {
+    "acceptedVersion": false,
+    "armColour": "#81C784FF",
+    "armConnectedBranchArms": null,
+    "armType": {
+      "catalogueName": "SDTM CT",
+      "changeDescription": "Approved version",
+      "codelistUid": "CTCodelist_000022",
+      "endDate": null,
+      "libraryName": "Sponsor",
+      "order": 2,
+      "possibleActions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsorPreferredName": "Comparator Arm",
+      "sponsorPreferredNameSentenceCase": "comparator arm",
+      "startDate": "2022-10-18T12:53:22.154157",
+      "status": "Final",
+      "termUid": "CTTerm_000084",
+      "userInitials": "MT",
+      "version": "1.0"
+    },
+    "armUid": "StudyArm_000007",
+    "changeType": null,
+    "code": "B",
+    "description": null,
+    "endDate": null,
+    "name": "Metformin",
+    "numberOfSubjects": 50,
+    "order": 2,
+    "randomizationGroup": "B",
+    "shortName": "Metformin",
+    "startDate": "2022-10-19T07:38:19.610308",
+    "status": null,
+    "studyUid": "Study_000002",
+    "userInitials": "MT"
+  }
+]

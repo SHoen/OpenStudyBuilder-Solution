@@ -1,0 +1,190 @@
+std_assm_grp,std_assm_sub_grp,activity
+Laboratory Assessments,Antibodies,Anti-Semaglutide Antibody Confirmation
+Laboratory Assessments,Antibodies,Anti-insulin icodec binding antibodies confirmation
+Laboratory Assessments,Antibodies,Anti-insulin icodec antibodies cross-reacting
+Laboratory Assessments,Antibodies,Antibodies cross reacting native GLP-1
+Laboratory Assessments,Antibodies,Semaglutide Antibodies (Titer)
+Laboratory Assessments,Antibodies,Anti-insulin icodec antibodies titre
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Acute Urinary Tract Infection
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Aminoglycoside(s)
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Chronic Urinary Tract Infection
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Conditions
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Conditions Other
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Connective Tissue Disease or Vasculitis
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - CT Scan Performed
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Family History of Kidney Disease
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Hypertension
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Other Imaging Performed
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Imaging Performed
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Summary of Imaging Results
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Increase Serum Creat >= 0.3 mg/dL Within 48 Hours
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Increase Serum Creat >= 1.5 Times Baseline Within 7 Days
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Initiation of RAS Blockade
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - IV Contrast
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Summary of Biopsy Histology Results
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Kidney Biopsy Performed
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Nephrotoxic Treatment Received within Last 3 Months
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Nephrotoxic Treatment Other
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - NSAIDs
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Post-renal Obstructive Disease
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Present Other
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Primary Glomerulonephritis
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Progression of Chronic Kidney Disease
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Recent Decrease in Renal Perfusion
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Recent Streptococcal Infection
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Renal Angio-imaging Performed
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Renal Artery Stenosis
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Renal Vein Thrombosis
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Systemic Autoimmune Disease
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Ultrasound Performed
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Urine Volume < 0.5 mL/kg/h for 6 Hours
+AE Requiring Additional Data,Acute Kidney Injury,Acute Kidney Injury - Volume Depletion Reasons than Gastrointestinal Symptoms
+Event Adjudication,General,Adjudication Outcome
+General,Adverse Event,Adverse Event
+AE Requiring Additional Data,Laboratory Assessment,Albumin
+AE Requiring Additional Data,Laboratory Assessment,Albumin/Creatinine
+Laboratory Assessments,Urinalysis,Albumin/Creatinine
+Laboratory Assessments,Urinalysis,Albumin
+AE Requiring Additional Data,Laboratory Assessment,Alkaline Phosphatase
+AE Requiring Additional Data,Laboratory Assessment,Alanine Aminotransferase
+AE Requiring Additional Data,Laboratory Assessment,Ammonia
+AE Requiring Additional Data,Laboratory Assessment,Amylase
+AE Requiring Additional Data,Laboratory Assessment,Aspartate Aminotransferase
+Laboratory Assessments,Glucose Metabolism,Glucose
+AE Requiring Additional Data,Laboratory Assessment,Direct Bilirubin
+AE Requiring Additional Data,Laboratory Assessment,Bilirubin
+AE Requiring Additional Data,Laboratory Assessment,Indirect Bilirubin
+Laboratory Assessments,Urinalysis,Bilirubin
+General,Collection of Samples for Laboratory,Have all blood samples been taken
+AE Requiring Additional Data,Laboratory Assessment,Urea Nitrogen
+General,Vital Signs,Temperature
+General,Body Measurements,Weight
+General,Vital Signs,Diastolic Blood Pressure
+General,Vital Signs,Systolic Blood Pressure
+Event Adjudication,Death,Cause of Death
+Event Adjudication,Acute Pancreatitis,Imaging Findings Characteristic of Pancreatitis
+General,Childbearing Potential,Childbearing Potential
+Event Adjudication,Acute Coronary Syndrome,Classification of Myocardial Infarction
+AE Requiring Additional Data,Laboratory Assessment,Creatinine Clearance
+AE Requiring Additional Data,Laboratory Assessment,C Reactive Protein
+AE Requiring Additional Data,Laboratory Assessment,Cystatin C
+Laboratory Assessments,Glucose Metabolism,C-peptide
+General,Informed Consent and Demography,Date of Birth
+Event Adjudication,Death,Location of Death Occurrence
+Event Adjudication,Acute Pancreatitis,"Elevated Blood Levels of Pancreatic Enzymes (Lipase, Amylase) >=3xUNL"
+General,Eligibility Criteria,Eligibility Criteria Met
+General,End of Study,End of Study
+AE Requiring Additional Data,Laboratory Assessment,Eosinophils
+AE Requiring Additional Data,Laboratory Assessment,"Glomerular Filtration Rate, Estimated"
+General,Informed Consent and Demography,Ethnicity
+Event Adjudication,General,Evaluated Event Onset Date
+Event Adjudication,General,Event Confirmation
+General,End of Study,First Date on Trial Product
+Laboratory Assessments,Glucose Metabolism,Insulin
+AE Requiring Additional Data,Laboratory Assessment,Gamma Glutamyl Transferase
+Laboratory Assessments,Glucose Metabolism,Glucagon
+AE Requiring Additional Data,Laboratory Assessment,Glucose
+Laboratory Assessments,Urinalysis,Glucose
+Laboratory Assessments,Glucose Metabolism,HbA1c
+Event Adjudication,Heart Failure,Heart Failure Classification
+General,Body Measurements,Height
+General,Body Measurements,Hip Circumference
+General,Adverse Event,Hospitalisation
+Event Adjudication,Hypoglycaemic Episode,Did the Subject Feel Better After the Treatment
+General,Informed Consent and Demography,Informed Consent Obtained
+AE Requiring Additional Data,Laboratory Assessment,Prothrombin Intl. Normalized Ratio
+General,End of Study,Last Date on Trial Product
+AE Requiring Additional Data,Laboratory Assessment,Lipase
+AE Requiring Additional Data,Laboratory Assessment,Glomerular Filtration Rate
+General,Medical History/Concomitant Illness,Medical History/Concomitant Illness
+Event Adjudication,Coronary Revascularisation,Method of Coronary Revascularisation
+AE Requiring Additional Data,Laboratory Assessment,Nitrite
+Laboratory Assessments,Urinalysis,Nitrite
+Event Adjudication,General,Other Adjudicated Event Type
+General,Vital Signs,Oxygen Saturation
+Clinical Outcome Assessments,Pain Rating,Pain Rating - How Would You Rate the Pain at Its Worst in Your Target Knee
+AE Requiring Additional Data,Pancreatitis,Pancreatitis
+AE Requiring Additional Data,Pancreatitis,Significant Upper Abdominal Pain
+AE Requiring Additional Data,Pancreatitis,Any Acute Complications
+AE Requiring Additional Data,Pancreatitis,Other Acute Pancreatitis Symptom
+AE Requiring Additional Data,Pancreatitis,Risk Factor - Alcohol Consumption
+AE Requiring Additional Data,Pancreatitis,Atrophy of the Pancreas
+AE Requiring Additional Data,Pancreatitis,Calcification of Pancreas
+AE Requiring Additional Data,Pancreatitis,Other Chronic Pancreatitis Symptom
+AE Requiring Additional Data,Pancreatitis,Imaging Method - CT Scan
+AE Requiring Additional Data,Pancreatitis,Dilatation of Pancreatic Ducts
+AE Requiring Additional Data,Pancreatitis,Dilated Common Bile Duct
+AE Requiring Additional Data,Pancreatitis,Risk Factor -Family Hist of Pancreatitis
+AE Requiring Additional Data,Pancreatitis,Fever as Symptom
+AE Requiring Additional Data,Pancreatitis,Acute Complications - GI Haemorrhage
+AE Requiring Additional Data,Pancreatitis,Risk Factor - History of Gallstones
+AE Requiring Additional Data,Pancreatitis,Risk factor - Hyper-Calcaemia
+AE Requiring Additional Data,Pancreatitis,Risk Factor - Hyper-Triglyceridemia
+AE Requiring Additional Data,Pancreatitis,Imaging Consistent with Acute Pan
+AE Requiring Additional Data,Pancreatitis,Imaging Consistent with Chronic Pan
+AE Requiring Additional Data,Pancreatitis,Imaging Consistent with Gallstone
+AE Requiring Additional Data,Pancreatitis,Was Imaging Performed
+AE Requiring Additional Data,Pancreatitis,Imaging Method - MRI
+AE Requiring Additional Data,Pancreatitis,Nausea as Symptom
+AE Requiring Additional Data,Pancreatitis,Necrotising Pancreatitis
+AE Requiring Additional Data,Pancreatitis,Obstructive Gall-Stone
+AE Requiring Additional Data,Pancreatitis,Oedematous or Interstitial Pancreatitis
+AE Requiring Additional Data,Pancreatitis,Imaging Method - Other
+AE Requiring Additional Data,Pancreatitis,Acute Complications - Other
+AE Requiring Additional Data,Pancreatitis,Risk Factor - Other
+AE Requiring Additional Data,Pancreatitis,Other Symptom
+AE Requiring Additional Data,Pancreatitis,Peri-Pancreatic Fluid
+AE Requiring Additional Data,Pancreatitis,Pseudocysts
+AE Requiring Additional Data,Pancreatitis,Acute Complications - Renal Failure
+AE Requiring Additional Data,Pancreatitis,Acute Complications -Respiratory Failure
+AE Requiring Additional Data,Pancreatitis,Pancreatitis Risk factors
+AE Requiring Additional Data,Pancreatitis,Acute Complications - Sepsis
+AE Requiring Additional Data,Pancreatitis,Symptoms Present During Event
+AE Requiring Additional Data,Pancreatitis,Risk factor - Trauma to the Pancreas
+AE Requiring Additional Data,Pancreatitis,Treatment Type
+AE Requiring Additional Data,Pancreatitis,Imaging method - Ultrasound
+AE Requiring Additional Data,Pancreatitis,Vomiting as Symptom
+Laboratory Assessments,Urinalysis,pH
+AE Requiring Additional Data,Laboratory Assessment,Platelets
+AE Requiring Additional Data,Laboratory Assessment,Potassium
+AE Requiring Additional Data,Laboratory Assessment,Protein
+AE Requiring Additional Data,Laboratory Assessment,Prothrombin Time
+General,Vital Signs,Pulse Rate
+General,Informed Consent and Demography,Race
+General,Randomisation,Randomized
+AE Requiring Additional Data,Laboratory Assessment,Erythrocytes
+Event Adjudication,Death,Reason for Undetermined Death Cause 1
+General,Vital Signs,Respiratory Rate
+Event Adjudication,Hypoglycaemic Episode,Seizure
+AE Requiring Additional Data,Laboratory Assessment,Creatinine
+Event Adjudication,Acute Pancreatitis,Severe Acute Upper Abdominal Pain
+Event Adjudication,Acute Pancreatitis,Severity of Pancreatitis
+General,Informed Consent and Demography,Sex
+AE Requiring Additional Data,Laboratory Assessment,Sodium
+Event Adjudication,General,Source of Adjudicated Event
+General,Collection of Samples for Laboratory,Subject fasting
+Event Adjudication,Hypoglycaemic Episode,Subject Died
+Event Adjudication,Acute Pancreatitis,Symptom of Pancreatitis 1
+Event Adjudication,Acute Pancreatitis,Symptom of Pancreatitis 2
+Event Adjudication,Acute Pancreatitis,Symptom of Pancreatitis 3
+Event Adjudication,Acute Coronary Syndrome,Symptom of Unstable Angina Pectoris 1
+Event Adjudication,Acute Coronary Syndrome,Symptom of Unstable Angina Pectoris 2
+Event Adjudication,Acute Coronary Syndrome,Symptom of Unstable Angina Pectoris 3
+Event Adjudication,Acute Coronary Syndrome,Symptom of Unstable Angina Pectoris 4
+Clinical Outcome Assessments,Treadmill Test,Treadmill - Pain-Free Walking Distance on Flat Treadmill
+Clinical Outcome Assessments,Treadmill Test,Treadmill - Pain-Free Walking Distance on Inclined Treadmill
+Clinical Outcome Assessments,Treadmill Test,Treadmill - Max Walking Distance on Inclined Treadmill
+Event Adjudication,Cerebrovascular Event,TOAST Classification
+Event Adjudication,Heart Failure,Type of Heart Failure
+Event Adjudication,Acute Coronary Syndrome,Type of Myocardial Infarction
+Event Adjudication,Cerebrovascular Event,Type of Stroke
+Event Adjudication,Hypoglycaemic Episode,Unconscious/Coma
+Event Adjudication,Cerebrovascular Event,Undetermined Etiology Reason
+Event Adjudication,Death,Details in Source Data
+AE Requiring Additional Data,Laboratory Assessment,Urine Culture
+AE Requiring Additional Data,Laboratory Assessment,Microscopy
+General,Collection of Samples for Laboratory,Have all urine samples been taken
+Laboratory Assessments,Urinalysis,Urobilinogen
+General,Body Measurements,Waist Circumference
+AE Requiring Additional Data,Laboratory Assessment,Leukocytes

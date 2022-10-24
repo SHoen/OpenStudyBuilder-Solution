@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Test adding selection study compound does not exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "studyElementUid": "StudyElement_000001",
+                "studyCompoundUid": "StudyCompound_000002",
+                "doseValueUid": null,
+                "doseFrequencyUid": "CTTerm_000003"
+            },
+            "url": "/study/study_root/study-compound-dosings/select"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The study compound with uid StudyCompound_000002 was not found",
+                "method": "POST",
+                "path": "http://testserver/study/study_root/study-compound-dosings/select",
+                "time": "2020-11-03T23:42:41.518146"
+            }
+        }
+    },
+    {
+        "name": "Test adding selection study element does not exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "studyElementUid": "StudyElement_000002",
+                "studyCompoundUid": "StudyCompound_000001",
+                "doseValueUid": null,
+                "doseFrequencyUid": "CTTerm_000003"
+            },
+            "url": "/study/study_root/study-compound-dosings/select"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The study element with uid StudyElement_000002 was not found",
+                "method": "POST",
+                "path": "http://testserver/study/study_root/study-compound-dosings/select",
+                "time": "2020-11-03T23:42:41.518146"
+            }
+        }
+    }
+]

@@ -1,0 +1,572 @@
+[
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "l-Thyroxine",
+    "dictionaryId": "N0000175945",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "l-Thyroxine",
+    "nameSentenceCase": "l-thyroxine",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:04.015380",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000069",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Ziltivekimab",
+    "dictionaryId": "",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Ziltivekimab",
+    "nameSentenceCase": "ziltivekimab",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:03.716678",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000068",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Tubulin Inhibiting Agent",
+    "dictionaryId": "N0000175848",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Tubulin Inhibiting Agent",
+    "nameSentenceCase": "tubulin inhibiting agent",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:03.424424",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000067",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Thiazolidinedione",
+    "dictionaryId": "N0000180190",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Thiazolidinedione",
+    "nameSentenceCase": "thiazolidinedione",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:03.158477",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000066",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Sulfonylurea",
+    "dictionaryId": "N0000175608",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Sulfonylurea",
+    "nameSentenceCase": "sulfonylurea",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:02.733007",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000065",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Sulfonamide",
+    "dictionaryId": "N0000175880",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Sulfonamide",
+    "nameSentenceCase": "sulfonamide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:02.438771",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000064",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Sodium-Glucose Cotransporter 2 Inhibitor",
+    "dictionaryId": "N0000187059",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Sodium-Glucose Cotransporter 2 Inhibitor",
+    "nameSentenceCase": "sodium-glucose cotransporter 2 inhibitor",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:02.096891",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000063",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Recombinant Human Growth Hormone",
+    "dictionaryId": "N0000175606",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Recombinant Human Growth Hormone",
+    "nameSentenceCase": "recombinant human growth hormone",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:01.693233",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000062",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Quinolone Antimicrobial",
+    "dictionaryId": "N0000175937",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Quinolone Antimicrobial",
+    "nameSentenceCase": "quinolone antimicrobial",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:01.400902",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000061",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Proton Pump Inhibitor",
+    "dictionaryId": "N0000175525",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Proton Pump Inhibitor",
+    "nameSentenceCase": "proton pump inhibitor",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:01.141884",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000060",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "PCSK9 Inhibitors",
+    "dictionaryId": "N0000191730",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "PCSK9 Inhibitors",
+    "nameSentenceCase": "pcsk9 inhibitors",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:00.852473",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000059",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "PCSK9 Inhibitor",
+    "dictionaryId": "N0000191731",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "PCSK9 Inhibitor",
+    "nameSentenceCase": "pcsk9 inhibitor",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:00.565989",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000058",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "ORAL HYPOGLYCEMIC AGENTS",
+    "dictionaryId": "N0000029185",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "ORAL HYPOGLYCEMIC AGENTS",
+    "nameSentenceCase": "oral hypoglycemic agents",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:00.301326",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000057",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Intestinal Lipase Inhibitor",
+    "dictionaryId": "N0000175591",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Intestinal Lipase Inhibitor",
+    "nameSentenceCase": "intestinal lipase inhibitor",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:44:00.037909",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000056",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Insulin Analog",
+    "dictionaryId": "N0000175453",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Insulin Analog",
+    "nameSentenceCase": "insulin analog",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:59.511321",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000055",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Insulin",
+    "dictionaryId": "N0000175944",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Insulin",
+    "nameSentenceCase": "insulin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:59.128846",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000054",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Humanized Monoclonal Antibody Fragment",
+    "dictionaryId": "N0000191873",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Humanized Monoclonal Antibody Fragment",
+    "nameSentenceCase": "humanized monoclonal antibody fragment",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:58.863073",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000053",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Human Blood Coagulation Factor",
+    "dictionaryId": "N0000184169",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Human Blood Coagulation Factor",
+    "nameSentenceCase": "human blood coagulation factor",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:58.579731",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000052",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Human Antihemophilic Factor",
+    "dictionaryId": "N0000184167",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Human Antihemophilic Factor",
+    "nameSentenceCase": "human antihemophilic factor",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:58.095846",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000051",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Human Anticoagulant Protein",
+    "dictionaryId": "N0000188979",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Human Anticoagulant Protein",
+    "nameSentenceCase": "human anticoagulant protein",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:57.800435",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000050",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "HMG-CoA Reductase Inhibitor",
+    "dictionaryId": "N0000175589",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "HMG-CoA Reductase Inhibitor",
+    "nameSentenceCase": "hmg-coa reductase inhibitor",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:57.441311",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000049",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Glinide",
+    "dictionaryId": "N0000175428",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Glinide",
+    "nameSentenceCase": "glinide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:57.173085",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000048",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Progestin",
+    "dictionaryId": "N0000175602",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Progestin",
+    "nameSentenceCase": "progestin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:56.815604",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000047",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Estrogen",
+    "dictionaryId": "N0000175825",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Estrogen",
+    "nameSentenceCase": "estrogen",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:56.496727",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000046",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Dipeptidyl Peptidase 4 Inhibitor",
+    "dictionaryId": "N0000175913",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Dipeptidyl Peptidase 4 Inhibitor",
+    "nameSentenceCase": "dipeptidyl peptidase 4 inhibitor",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:56.209813",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000045",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Cardiac Glycoside",
+    "dictionaryId": "N0000175568",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Cardiac Glycoside",
+    "nameSentenceCase": "cardiac glycoside",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:55.915428",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000044",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Biguanide",
+    "dictionaryId": "N0000175565",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Biguanide",
+    "nameSentenceCase": "biguanide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:55.654358",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000043",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Antihypoglycemic Agent",
+    "dictionaryId": "N0000190852",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Antihypoglycemic Agent",
+    "nameSentenceCase": "antihypoglycemic agent",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:55.380860",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000042",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "GLP-1 Receptor Agonist",
+    "dictionaryId": "N0000178480",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "GLP-1 Receptor Agonist",
+    "nameSentenceCase": "glp-1 receptor agonist",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:55.127471",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000041",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Amylin Analog",
+    "dictionaryId": "N0000177910",
+    "endDate": null,
+    "libraryName": "MED-RT",
+    "name": "Amylin Analog",
+    "nameSentenceCase": "amylin analog",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:43:54.700316",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000040",
+    "userInitials": "MT",
+    "version": "1.0"
+  }
+]

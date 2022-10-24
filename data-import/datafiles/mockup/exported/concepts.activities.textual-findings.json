@@ -1,0 +1,3526 @@
+[
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Acute Kidney Injury - Summary of Imaging Results",
+        "uid": "Activity_000142"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Acute Kidney Injury",
+        "uid": "ActivitySubGroup_000007"
+      }
+    ],
+    "adamParamCode": "AKIHISTO",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Acute Kidney Injury: Was imaging performed in relation to the event. Summary of imaging results",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Acute Kidney Injury - Summary of Imaging Results",
+    "nameSentenceCase": "acute kidney injury - summary of imaging results",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:05:57.238277",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "ACUTE_KIDNEY_INJURY_IMAGING_RESULTS",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000001",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Acute Kidney Injury - Summary of Biopsy Histology Results",
+        "uid": "Activity_000147"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Acute Kidney Injury",
+        "uid": "ActivitySubGroup_000007"
+      }
+    ],
+    "adamParamCode": "AKIBIHIS",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Acute Kidney Injury: Summery of histology results from kidney biopsy",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Acute Kidney Injury - Summary of Biopsy Histology Results",
+    "nameSentenceCase": "acute kidney injury - summary of biopsy histology results",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:05:58.669614",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "ACUTE_KIDNEY_INJURY_KIDNEY_BIOPSY_HISTOLOGY_RESULTS",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000002",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Albumin",
+        "uid": "Activity_000274"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Laboratory Assessments",
+        "uid": "ActivityGroup_000004"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Biochemistry",
+        "uid": "ActivitySubGroup_000016"
+      }
+    ],
+    "adamParamCode": "ALBU2",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Urine albumin excretion._x000D_\nCode: C64431_x000D_\nCDISC: A measurement of the albumin protein in a biological specimen._x000D_\nCDISC Synonym(s): Albumin_x000D_\nCDISC Submission Value: ALB_x000D_\nNCI Preferred Term: ALB_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Urinary albumin excretion",
+    "nameSentenceCase": "urinary albumin excretion",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "LB",
+      "termUid": "C48531_LB"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": {
+      "name": "Urine",
+      "termUid": "C13283_URINE"
+    },
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:06:36.909528",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "ALBUMIN IN URINE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000003",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "ATVISFSF",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Attend visit fasting (for reminder in flowchart)_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Attend Visit Fasting",
+    "nameSentenceCase": "attend visit fasting",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:06:45.906695",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "ATTEND_VISIT_FASTING",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000004",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "BGHANDOU",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined:Hand out and instruct in BG-meter (for reminder in flowchart)_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Hand out and instruct in BG-meter",
+    "nameSentenceCase": "hand out and instruct in bg-meter",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:06:49.835145",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "BG_METER_HAND_OUT",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000005",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "COLRTDIA",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined: Collect, review and transcribe diaries (for reminder in flowchart)",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Collect, review and transcribe diaries",
+    "nameSentenceCase": "collect, review and transcribe diaries",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:10.344578",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "COLL_RE_TR_DIARIES",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000006",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Description of Actual Suicide Attempts",
+        "uid": "Activity_000383"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0113A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of actual attempt._x000D_\nCDISC code:C100993_x000D_\nCDISC submission value: CSS0113A",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Description of Actual Suicide Attempts",
+    "nameSentenceCase": "c-ssrs baseline - description of actual suicide attempts",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:15.811049",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-ACTUAL ATTEMPT, DESCRIBE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000007",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - First Suicide Attempt Date",
+        "uid": "Activity_000386"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0123A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Initial/first attempt date._x000D_\nCDISC code: C101010_x000D_\n[skip:(qstestcd eq 'CSS0112' and qsorres ne 'Y')]",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - First Suicide Attempt Date",
+    "nameSentenceCase": "c-ssrs baseline - first suicide attempt date",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:16.384093",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-FIRST ATTEMPT DATE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000008",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Description of Ideation With Intent, No Plan",
+        "uid": "Activity_000389"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0104A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of active suicidal ideation with some intent to act, without specific plan._x000D_\nCDISC code:C101015_x000D_\nCDISC submission value: CSS0104A",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Description of Ideation With Intent, No Plan",
+    "nameSentenceCase": "c-ssrs baseline - description of ideation with intent, no plan",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:17.046824",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-IDEATION WITH INTENT NO PLAN DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000009",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Description of Ideation With Plan and Intent",
+        "uid": "Activity_000391"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0105A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of active suicidal ideation with specific plan and intent._x000D_\nCDISC code:C100983",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Description of Ideation With Plan and Intent",
+    "nameSentenceCase": "c-ssrs baseline - description of ideation with plan and intent",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:17.562154",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-IDEATION WITH PLAN/INTENT, DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000010",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Description of Interrupted Suicide Attempt",
+        "uid": "Activity_000392"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0116A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of interrupted attempt._x000D_\nCDISC code:C100997_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Description of Interrupted Suicide Attempt",
+    "nameSentenceCase": "c-ssrs baseline - description of interrupted suicide attempt",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:18.307420",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-INTERRUPTED ATTEMPT, DESCRIBE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000011",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Most Lethal Suicide Attempt Date",
+        "uid": "Activity_000395"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0122A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Most lethal attempt date._x000D_\nCDISC code: C101007_x000D_\nCDISC submission value: CSS0122A_x000D_\n[skip:(qstestcd eq 'CSS0112' and qsorres ne 'Y')]",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Most Lethal Suicide Attempt Date",
+    "nameSentenceCase": "c-ssrs baseline - most lethal suicide attempt date",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:18.738838",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-MOST LETHAL ATTEMPT DATE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000012",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Most Recent Suicide Attempt Date",
+        "uid": "Activity_000397"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0121A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Most recent attempt date._x000D_\nCDISC code: C101004_x000D_\n[skip:(qstestcd eq 'CSS0112' and qsorres ne 'Y')]",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Most Recent Suicide Attempt Date",
+    "nameSentenceCase": "c-ssrs baseline - most recent suicide attempt date",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:19.792021",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-MOST RECENT ATTEMPT DATE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000013",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Describe Most Severe Ideation",
+        "uid": "Activity_000402"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0106A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of most severe ideation._x000D_\nCDISC code:C100985_x000D_\nCDISC submission value: CSS0106A",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Describe Most Severe Ideation",
+    "nameSentenceCase": "c-ssrs baseline - describe most severe ideation",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:21.087286",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-MOST SEVERE IDEATION, DESCRIPTION",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000014",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Description of Non-Specific Suicide Thought",
+        "uid": "Activity_000407"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0102A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of non-specific active suicidal thoughts._x000D_\nCDISC code:C100979",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Description of Non-Specific Suicide Thought",
+    "nameSentenceCase": "c-ssrs baseline - description of non-specific suicide thought",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:22.519055",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-NON-SPECIFIC SUICID THOUGHT, DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000015",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Description of Preparatory Acts or Behaviors Toward Suicide Attempt",
+        "uid": "Activity_000414"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0119A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of preparatory acts or behavior._x000D_\nCDISC code:C101002",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Description of Preparatory Acts or Behaviors Toward Suicide Attempt",
+    "nameSentenceCase": "c-ssrs baseline - description of preparatory acts or behaviors toward suicide attempt",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:24.757609",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-PREPARATORY ACTS/BEHAVIOR, DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000016",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Description of Suicidal Ideation-No Intent",
+        "uid": "Activity_000417"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0103A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of active suicidal ideation with any methods (not plan) without intent to act._x000D_\nCDISC code:C100981",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Description of Suicidal Ideation-No Intent",
+    "nameSentenceCase": "c-ssrs baseline - description of suicidal ideation-no intent",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:25.474428",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-SUICIDAL IDEATION-NO INTENT, DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000017",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Baseline - Description of Wish to be Dead",
+        "uid": "Activity_000420"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Baseline",
+        "uid": "ActivitySubGroup_000038"
+      }
+    ],
+    "adamParamCode": "CSS0101A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Baseline - Description of wishing to be dead._x000D_\nCDISC code:C100977_x000D_\nCDISC submission value: CSS0101A",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Baseline - Description of Wish to be Dead",
+    "nameSentenceCase": "c-ssrs baseline - description of wish to be dead",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:26.111172",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS01-WISH TO BE DEAD, DESCRIBE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000018",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Aborted Suicide Attempt",
+        "uid": "Activity_000421"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0218A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of aborted attempt._x000D_\nCDISC code:C103795_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Aborted Suicide Attempt",
+    "nameSentenceCase": "c-ssrs since last visit - description of aborted suicide attempt",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:26.654302",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-ABORTED ATTEMPT, DESCRIBE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000019",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Actual Suicide Attempts",
+        "uid": "Activity_000423"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0213A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of actual attempt._x000D_\nCDISC code:C103788",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Actual Suicide Attempts",
+    "nameSentenceCase": "c-ssrs since last visit - description of actual suicide attempts",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:27.281380",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-ACTUAL ATTEMPT, DESCRIBE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000020",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Ideation With Intent, No Plan",
+        "uid": "Activity_000424"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0204A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of active suicidal ideation with some intent to act, without specific plan._x000D_\nCDISC code:C103800_x000D_\nCDISC submission value: CSS0204A",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Ideation With Intent, No Plan",
+    "nameSentenceCase": "c-ssrs since last visit - description of ideation with intent, no plan",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:27.891453",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-IDEATION WITH INTENT NO PLAN DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000021",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Ideation With Plan and Intent",
+        "uid": "Activity_000427"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0205A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of active suicidal ideation with specific plan and intent._x000D_\nCDISC code:C103778",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Ideation With Plan and Intent",
+    "nameSentenceCase": "c-ssrs since last visit - description of ideation with plan and intent",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:29.029108",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-IDEATION WITH PLAN/INTENT, DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000022",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Interrupted Suicide Attempt",
+        "uid": "Activity_000428"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0216A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of interrupted attempt._x000D_\nCDISC code:C103792",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Interrupted Suicide Attempt",
+    "nameSentenceCase": "c-ssrs since last visit - description of interrupted suicide attempt",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:29.483348",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-INTERRUPTED ATTEMPT, DESCRIBE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000023",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Most Lethal Attempt Date",
+        "uid": "Activity_000432"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0222A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Most lethal attempt date._x000D_\nCDISC code:  C103533_x000D_\n[skip:(qstestcd eq 'CSS0212' and qsorres ne 'Y')]",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Most Lethal Attempt Date",
+    "nameSentenceCase": "c-ssrs since last visit - most lethal attempt date",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:30.060078",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-MOST LETHAL ATTEMPT DATE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000024",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Describe Most Severe Ideation",
+        "uid": "Activity_000435"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0206A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of most severe ideation._x000D_\nCDISC code:C103780_x000D_\nCDISC submission value: CSS0206A",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Describe Most Severe Ideation",
+    "nameSentenceCase": "c-ssrs since last visit - describe most severe ideation",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:31.900135",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-MOST SEVERE IDEATION, DESCRIPTION",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000025",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Non-Specific Suicide Thought",
+        "uid": "Activity_000440"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0202A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of non-specific active suicidal thoughts._x000D_\nCDISC code:C103775",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Non-Specific Suicide Thought",
+    "nameSentenceCase": "c-ssrs since last visit - description of non-specific suicide thought",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:33.292749",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-NON-SPECIFIC SUICID THOUGHT, DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000026",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Preparatory Acts or Behaviors Toward Suicide Attempt",
+        "uid": "Activity_000447"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0219A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of preparatory acts or behavior._x000D_\nCDISC code:C103797",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Preparatory Acts or Behaviors Toward Suicide Attempt",
+    "nameSentenceCase": "c-ssrs since last visit - description of preparatory acts or behaviors toward suicide attempt",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:35.389467",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-PREPARATORY ACTS/BEHAVIOR, DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000027",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Suicidal Ideation-No Intent",
+        "uid": "Activity_000450"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0203A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of active suicidal ideation with any methods (not plan) without intent to act._x000D_\nCDISC code:C103777",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Suicidal Ideation-No Intent",
+    "nameSentenceCase": "c-ssrs since last visit - description of suicidal ideation-no intent",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:36.252659",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-SUICIDAL IDEATION-NO INTENT, DESCR",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000028",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "C-SSRS Since Last Visit - Description of Wish to be Dead",
+        "uid": "Activity_000454"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "C-SSRS Since Last Visit",
+        "uid": "ActivitySubGroup_000039"
+      }
+    ],
+    "adamParamCode": "CSS0201A",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Columbia-Suicide Severity Rating Scale Since Last Visit - Description of wishing to be dead._x000D_\nCDISC code:C103773",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "C-SSRS Since Last Visit - Description of Wish to be Dead",
+    "nameSentenceCase": "c-ssrs since last visit - description of wish to be dead",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:37.186466",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "CSS02-WISH TO BE DEAD, DESCRIBE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000029",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "DIARYHOU",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined: Hand out and instruct in Diary (for reminder in flowchart)_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Hand out and instruct in Diary",
+    "nameSentenceCase": "hand out and instruct in diary",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:07:43.467218",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "DIARY_HAND_OUT",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000030",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Evaluated Event Onset Date",
+        "uid": "Activity_000592"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Event Adjudication",
+        "uid": "ActivityGroup_000005"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "General",
+        "uid": "ActivitySubGroup_000010"
+      }
+    ],
+    "adamParamCode": "EVALDATE",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined: Used for Event Adjudication",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Evaluated Event Onset Date",
+    "nameSentenceCase": "evaluated event onset date",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:08:24.610445",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "EVALUATED EVENT ONSET DATE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000031",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "EYEEXAPT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined:Make appointment for eye examination (for reminder in flowchart)_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Make appointment for eye examination",
+    "nameSentenceCase": "make appointment for eye examination",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:08:25.345966",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "EYE_EXAMINATION_APPOINTMENT",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000032",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Hepatic Event - Liver Biopsy Diagnosis",
+        "uid": "Activity_000780"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Hepatic Event",
+        "uid": "ActivitySubGroup_000070"
+      }
+    ],
+    "adamParamCode": "HEPBIDIA",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Hepatic Event - histological diagnosis by liver biopsy_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Hepatic Event - Liver Biopsy Diagnosis",
+    "nameSentenceCase": "hepatic event - liver biopsy diagnosis",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:09:28.599425",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "HEPATIC_EVENT_LIVER_BIOPSY_DIAGNOSIS",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000033",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "HJHS01-Comments",
+        "uid": "Activity_000856"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Haemophilia Joint Health Score (HJHS)",
+        "uid": "ActivitySubGroup_000071"
+      }
+    ],
+    "adamParamCode": "HJHS0158",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Haemophilia Joint Health Score (HJHS). Version 2.1. Clinician reported outcome (ClinRo). World Federation of Hemophilia. _x000D_\n_x000D_\nComments",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "HJHS01-Comments",
+    "nameSentenceCase": "hjhs01-comments",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:09:52.589953",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "HJHS_01_58_COMMENTS",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000034",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "IDCARDHO",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined:Hand out ID card (for reminder in flowchart)_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Hand Out ID Card",
+    "nameSentenceCase": "hand out id card",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:02.581570",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "ID_CARD_HAND_OUT",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000035",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Vigorous Work Hr and Min per Day",
+        "uid": "Activity_001125"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0303",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days doing vigorous physical activities as part of your work?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:(qstestcd eq 'IPA0301' and qsorres eq 'N')|(qstestcd eq 'IPA0302' and qsorres eq '0')]",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Vigorous Work Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - vigorous work hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:22.938751",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_03_VIGOROUS_WORK_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000036",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Moderate Work Hr and Min per Day",
+        "uid": "Activity_001122"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0305",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days doing moderate physical activities as part of your work?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:(qstestcd eq 'IPA0301' and qsorres eq 'N')|(qstestcd eq 'IPA0304' and qsorres eq '0')]",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Moderate Work Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - moderate work hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:23.499424",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_05_MODERATE_WORK_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000037",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Walking Work Hr and Min per Day",
+        "uid": "Activity_001124"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0307",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days walking as part of your work?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:(qstestcd eq 'IPA0301' and qsorres eq 'N')|(qstestcd eq 'IPA0306' and qsorres eq '0')]",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Walking Work Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - walking work hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:24.069735",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_07_WALKING_WORK_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000038",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Traveling Hr and Min per Day",
+        "uid": "Activity_001126"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0309",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days traveling in a train, bus, car, tram, or other kind of motor vehicle?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0308' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Traveling Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - traveling hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:24.649504",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_09_TRAVELING_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000039",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Bicycle Hr and Min per Day",
+        "uid": "Activity_001130"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0311",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days to bicycle from place to place?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0310' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Bicycle Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - bicycle hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:25.115721",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_11_BICYCLE_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000040",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Walking Place Hr and Min per Day",
+        "uid": "Activity_001131"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0313",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days walking from place to place?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0312' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Walking Place Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - walking place hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:25.756959",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_13_WALKING_PLACE_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000041",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Vigorous Garden Hr and Min per Day",
+        "uid": "Activity_001133"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0315",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days doing vigorous physical activities in the garden or yard?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0314' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Vigorous Garden Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - vigorous garden hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:26.253330",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_15_VIGOROUS_GARDEN_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000042",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Moderate Garden Hr and Min per Day",
+        "uid": "Activity_001135"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0317",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days doing moderate physical activities in the garden or yard?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0316' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Moderate Garden Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - moderate garden hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:26.770673",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_17_MODERATE_GARDEN_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000043",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Moderate Home Hr and Min per Day",
+        "uid": "Activity_001137"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0319",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days doing moderate physical activities inside your home?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0318' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Moderate Home Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - moderate home hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:27.352913",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_19_MODERATE_HOME_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000044",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Walking Leisure Hr and Min per Day",
+        "uid": "Activity_001139"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0321",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days walking in your leisure time?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0320' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Walking Leisure Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - walking leisure hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:28.624641",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_21_WALKING_LEISURE_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000045",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Vigorous Leisure Hr and Min per Day",
+        "uid": "Activity_001141"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0323",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days doing vigorous physical activities in your leisure time?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0322' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Vigorous Leisure Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - vigorous leisure hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:29.184469",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_23_VIGOROUS_LEISURE_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000046",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Moderate Leisure Hr and Min per Day",
+        "uid": "Activity_001144"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0325",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - How much time did you usually spend on one of those days doing moderate physical activities in your leisure time?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)_x000D_\n[skip:qstestcd eq 'IPA0324' and qsorres eq '0']",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Moderate Leisure Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - moderate leisure hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:29.785012",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_25_MODERATE_LEISURE_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000047",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Sitting Weekday Hr and Min per Day",
+        "uid": "Activity_001143"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0326",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - During the last 7 days, how much time did you usually spend sitting on a weekday?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Sitting Weekday Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - sitting weekday hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:30.076595",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_26_SITTING_WEEKDAY_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000048",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Sitting Weekend Hr and Min per Day",
+        "uid": "Activity_001145"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "Clinical Outcome Assessments",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "IPAQ-LF Self-Administered Version",
+        "uid": "ActivitySubGroup_000087"
+      }
+    ],
+    "adamParamCode": "IPA0327",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "International Physical Activity Questionnaire (October 2002) - Long Last 7 Days Self-Administered Format - During the last 7 days, how much time did you usually spend sitting on a weekend day?: hours and minutes per day._x000D_\n_x000D_\nValue represented as an ISO 8601 duration format (e.g., PT1H15M)",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IPAQ Long Last 7 Days Self-Administered Format Version - Sitting Weekend Hr and Min per Day",
+    "nameSentenceCase": "ipaq long last 7 days self-administered format version - sitting weekend hr and min per day",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Questionnaire Domain",
+      "termUid": "C49609_QS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:30.647825",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IPA03_27_SITTING_WEEKEND_HR_MIN_PER_DAY",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000049",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "IWRSSES",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined: IWRS or RTSM session (for reminder in flowchart)_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "IWRS/RTSM Session",
+    "nameSentenceCase": "iwrs/rtsm session",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:41.515556",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "IWRS_SESSION",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000050",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "METRDCO",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Trial product involved in medication error",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Medication Error Trial Product",
+    "nameSentenceCase": "medication error trial product",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:59.235039",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "MEDICATION_ERROR_TRIAL_PRODUCT1",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000051",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "METRD2C",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Trial product involved in medication error 2",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Medication Error Trial Product 2",
+    "nameSentenceCase": "medication error trial product 2",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:59.228013",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "MEDICATION_ERROR_TRIAL_PRODUCT2",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000052",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Misadministration - Comment",
+        "uid": "Activity_001242"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Medication Error, Misuse and Abuse",
+        "uid": "ActivitySubGroup_000008"
+      }
+    ],
+    "adamParamCode": "MISCOMM",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Misadministration_x000D_\nOther relevant information",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Misadministration - Comment",
+    "nameSentenceCase": "misadministration - comment",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Comment Domain",
+      "termUid": "C49569_CO"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:11:59.913367",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "MISADMINISTRATION_COMMENT",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000053",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Misadministration - Invest Med Prod 1",
+        "uid": "Activity_001243"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Medication Error, Misuse and Abuse",
+        "uid": "ActivitySubGroup_000008"
+      }
+    ],
+    "adamParamCode": "MISADM1",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Misadministration_x000D_\nInvestigational medicinal product 1 involved in the misadministration",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Misadministration - Invest Med Prod 1",
+    "nameSentenceCase": "misadministration - invest med prod 1",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:12:00.547766",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "MISADM_IMP_1",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000054",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Misadministration - Invest Med Prod 2",
+        "uid": "Activity_001245"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Medication Error, Misuse and Abuse",
+        "uid": "ActivitySubGroup_000008"
+      }
+    ],
+    "adamParamCode": "MISADM2",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Misadministration_x000D_\nInvestigational medicinal product 2 involved in the misadministration",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Misadministration - Invest Med Prod 2",
+    "nameSentenceCase": "misadministration - invest med prod 2",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:12:00.801257",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "MISADM_IMP_2",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000055",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Misadministration - Invest Med Prod 3",
+        "uid": "Activity_001249"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Medication Error, Misuse and Abuse",
+        "uid": "ActivitySubGroup_000008"
+      }
+    ],
+    "adamParamCode": "MISADM3",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Misadministration_x000D_\nInvestigational medicinal product 3 involved in the misadministration",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Misadministration - Invest Med Prod 3",
+    "nameSentenceCase": "misadministration - invest med prod 3",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:12:01.143466",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "MISADM_IMP_3",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000056",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Conclusion of Genetic Testing for MEN",
+        "uid": "Activity_001303"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Malignant Neoplasm/Neoplasm",
+        "uid": "ActivitySubGroup_000102"
+      }
+    ],
+    "adamParamCode": "NEOGENCO",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Conclusion for performed genetic testing for multiple endocrine neoplasia (MEN)",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Conclusion of Genetic Testing for MEN",
+    "nameSentenceCase": "conclusion of genetic testing for men",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:12:19.838798",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "NEOPLASM GENETIC MEN TEST CONCLUSION",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000057",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Specify result part 1",
+        "uid": "Activity_001314"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Malignant Neoplasm/Neoplasm",
+        "uid": "ActivitySubGroup_000102"
+      }
+    ],
+    "adamParamCode": "NEOPATH1",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsordefined: Specify result of pathologic examination part 1",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Specify result part 1",
+    "nameSentenceCase": "specify result part 1",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:12:23.167315",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "NEOPLASM PATHOLOGIC RESULT TEXT1",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000058",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Nitrite",
+        "uid": "Activity_001406"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Urine Dipstick",
+        "uid": "ActivitySubGroup_000025"
+      }
+    ],
+    "adamParamCode": "NITRITE",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "CDISC: C64810_x000D_\nA measurement of the nitrite in a urine specimen._x000D_\n_x000D_\nFor Lab codes in AE Requiring Additional Data, there should be no SCATS",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Nitrite",
+    "nameSentenceCase": "nitrite",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "LB",
+      "termUid": "C48531_LB"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:12:51.674327",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "NITRITE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000059",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Pen Use Error - Use Error Description",
+        "uid": "Activity_001586"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Pen-Injector Use Error",
+        "uid": "ActivitySubGroup_000114"
+      }
+    ],
+    "adamParamCode": "PUERDESC",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Pen Injector Use Error - Use error description",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Pen Use Error - Use Error Description",
+    "nameSentenceCase": "pen use error - use error description",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:13:49.635078",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "PEN_INJECTOR_USE_ERROR_DESCRIPTION",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000060",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Pen Use Error - Error Occurred in Another Step Than Described",
+        "uid": "Activity_001599"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Pen-Injector Use Error",
+        "uid": "ActivitySubGroup_000114"
+      }
+    ],
+    "adamParamCode": "PUEOIAST",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Pen Injector Use Error - Use error occurred in another step than described above",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Pen Use Error - Error Occurred in Another Step Than Described",
+    "nameSentenceCase": "pen use error - error occurred in another step than described",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:13:53.525387",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "PEN_INJECTOR_USE_ERROR_OCCURED_IN_ANOTHER_STEP_THAN_DESCRIBED",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000061",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Pen Use Error - Trial Product Involved",
+        "uid": "Activity_001610"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Pen-Injector Use Error",
+        "uid": "ActivitySubGroup_000114"
+      }
+    ],
+    "adamParamCode": "PUETRLPR",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Pen Injector Use Error - Trial product(s) involved",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Pen Use Error - Trial Product Involved",
+    "nameSentenceCase": "pen use error - trial product involved",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:13:56.602035",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "PEN_INJECTOR_USE_ERROR_TRIAL_PRODUCT_INVOLVED",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000062",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Primary Site of Tumor Origin",
+        "uid": "Activity_001872"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Malignant Neoplasm/Neoplasm",
+        "uid": "ActivitySubGroup_000102"
+      }
+    ],
+    "adamParamCode": "PRYSTUOG",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "The anatomical location of the primary tumor site of disease.",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Primary Site of Tumor Origin",
+    "nameSentenceCase": "primary site of tumor origin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:15:25.732503",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "PRIMARY_TUMOR_SITE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000063",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Erythrocytes",
+        "uid": "Activity_000590"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Urine Dipstick",
+        "uid": "ActivitySubGroup_000025"
+      }
+    ],
+    "adamParamCode": "RBCU5",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "CDISC Code: C51946_x000D_\n_x000D_\nA measurement of the total erythrocytes in a biological specimen._x000D_\n_x000D_\nFor Lab codes in AE Requiring Additional Data, there should be no SCATS",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Erythrocytes in Urine",
+    "nameSentenceCase": "erythrocytes in urine",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "LB",
+      "termUid": "C48531_LB"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:15:36.947658",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "RBC",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000064",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Batch ID",
+        "uid": "Activity_002084"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Technical Complaints",
+        "uid": "ActivitySubGroup_000165"
+      }
+    ],
+    "adamParamCode": "BATCHXID",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Technical Complaints form:_x000D_\nBatch No. / Code No. / Lot No._x000D_\nBATCH_ID/NA",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Batch ID",
+    "nameSentenceCase": "batch id",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:16:33.813545",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "TECHNICAL_COMPLAINT_BATCH_ID",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000065",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Description of the Technical Complaint",
+        "uid": "Activity_002086"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Technical Complaints",
+        "uid": "ActivitySubGroup_000165"
+      }
+    ],
+    "adamParamCode": "EVTDESC1",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Technical Complaints form:_x000D_\nDescription of the technical complaint",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Description of the Technical Complaint",
+    "nameSentenceCase": "description of the technical complaint",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:16:34.422574",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "TECHNICAL_COMPLAINT_DESCRIPTION",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000066",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "DUN ID",
+        "uid": "Activity_002087"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Technical Complaints",
+        "uid": "ActivitySubGroup_000165"
+      }
+    ],
+    "adamParamCode": "DUNXID",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Technical Complaints form:_x000D_\n(Dispensing Unit Number) DUN_x000D_\nDUN ID",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "DUN ID",
+    "nameSentenceCase": "dun id",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:16:34.746467",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "TECHNICAL_COMPLAINT_DUN_ID",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000067",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Complaint Sample",
+        "uid": "Activity_002089"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Technical Complaints",
+        "uid": "ActivitySubGroup_000165"
+      }
+    ],
+    "adamParamCode": "COMPSAMP",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Technical Complaints form:_x000D_\nProduct_x000D_\n[Trial Product/Auxiliary supplies]_x000D_\nProduct 1-6",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Complaint Sample",
+    "nameSentenceCase": "complaint sample",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Findings About Events or Interventions Domain",
+      "termUid": "C85442_FA"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:16:35.363011",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "TECHNICAL_COMPLAINT_SAMPLE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000068",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "TRAINTRM",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined:Training in trial product, pen-handling (for reminder in flowchart)_x000D_",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Training in Trial Product, Pen-handling",
+    "nameSentenceCase": "training in trial product, pen-handling",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": null,
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:16:44.307599",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "TRAINING_IN_TRIAL_PRODUCT_PEN_HANDLING",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000069",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Urine Culture",
+        "uid": "Activity_002215"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Laboratory Assessment",
+        "uid": "ActivitySubGroup_000014"
+      }
+    ],
+    "adamParamCode": "URNCULRU",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "A urine culture is used to diagnose a urinary tract infection (UTI) and to identify the bacteria or yeast._x000D_\n_x000D_\nFor Lab codes in AE Requiring Additional Data, there should be no SCATS",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Urine Culture",
+    "nameSentenceCase": "urine culture",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "LB",
+      "termUid": "C48531_LB"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": {
+      "name": "Urine",
+      "termUid": "C13283_URINE"
+    },
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:17:13.200469",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "URINE_CULTURE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000070",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Leukocytes",
+        "uid": "Activity_002137"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Urine Dipstick",
+        "uid": "ActivitySubGroup_000025"
+      }
+    ],
+    "adamParamCode": "WBCU4",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "CDISC Code: C65047_x000D_\n_x000D_\nA measurement of the leukocytes in a biological specimen._x000D_\n_x000D_\nFor Lab codes in AE Requiring Additional Data, there should be no SCATS",
+    "libraryName": "Sponsor",
+    "maxTextLength": null,
+    "name": "Leukocytes in Urine",
+    "nameSentenceCase": "leukocytes in urine",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "LB",
+      "termUid": "C48531_LB"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": {
+      "name": "Urine",
+      "termUid": "C13283_URINE"
+    },
+    "splitTextInSuppQual": null,
+    "startDate": "2022-10-18T13:17:17.666342",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "WBC URINE",
+    "type": "textual-findings",
+    "uid": "TextualFinding_000071",
+    "userInitials": "MT",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  }
+]

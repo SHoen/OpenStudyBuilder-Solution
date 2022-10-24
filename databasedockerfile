@@ -1,0 +1,56 @@
+FROM python:3.7.12-alpine3.14 as build-stage
+
+# Install packages
+RUN apk update && apk add curl wget netcat-openbsd \
+&&  apk --no-cache add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+&& pip install pipenv
+
+# Install neo4j from tarball
+RUN curl -C - http://dist.neo4j.org/neo4j-enterprise-4.4.8-unix.tar.gz -o neo4j.tar.gz \
+ && echo '63300951e07d5dc90b01c456bdd029956e27b663ba2374b76e8097597325d2a3  neo4j.tar.gz' | sha256sum -c - \
+ && tar --extract --file neo4j.tar.gz --directory /var/lib \
+ && mv /var/lib/neo4j-enterprise-4.4.8 /var/lib/neo4j\
+ && mv /var/lib/neo4j/labs/apoc*core.jar /var/lib/neo4j/plugins/apoc_core.jar \
+ && /var/lib/neo4j/bin/neo4j-admin set-initial-password changeme1234 
+
+# Install python dependencies for init db script
+RUN mkdir -p /tmp/build/init
+COPY ./neo4j-mdr-db/Pipfile /tmp/build/init/Pipfile
+RUN cd /tmp/build/init && pipenv --python 3.7 && pipenv install
+
+# Install python depencises for mdr-standards-import
+COPY ./mdr-standards-import /tmp/build/mdr-standards-import
+RUN cd /tmp/build/mdr-standards-import && pipenv install 
+
+
+# Run neo4j and init
+COPY ./neo4j-mdr-db/init_neo4j.py /tmp/build/init
+COPY ./env /tmp/build/init/.env
+COPY ./env /tmp/build/mdr-standards-import/.env
+RUN echo dbms.memory.heap.initial_size=2g >> /var/lib/neo4j/conf/neo4j.conf \
+ && echo dbms.memory.heap.max_size=2g >> /var/lib/neo4j/conf/neo4j.conf \
+ && echo dbms.memory.pagecache.size=2g >> /var/lib/neo4j/conf/neo4j.conf \
+ && /var/lib/neo4j/bin/neo4j start && while ! nc -z localhost 7687; do sleep 0.10; done \
+ && cd /tmp/build/init && pipenv run init_neo4j \
+ && cd /tmp/build/mdr-standards-import && pipenv run pipeline_bulk_import TESTUSER "packages" true \
+ && /var/lib/neo4j/bin/neo4j stop && sleep 0.10
+
+# --- Prod stage ----
+# Copy database directory from build-stage to the official neo4j docker image
+FROM neo4j:4.4.8-enterprise as production-stage
+COPY --from=build-stage /var/lib/neo4j/data /var/lib/neo4j/data 
+
+## Install packages
+RUN apt-get update && apt-get upgrade -y && apt-get install curl -y
+
+## add non root user permissions.
+RUN chown -R neo4j:neo4j /data/databases
+RUN chown -R neo4j:neo4j /data/dbms
+RUN chown -R neo4j:neo4j /data/transactions
+RUN chown -R neo4j:neo4j /var/lib/neo4j/data
+
+## run as non root user
+USER neo4j
+
+## run healthcheck on the neo4j web client endpoint
+HEALTHCHECK CMD curl --fail http://${NEO4J_dbms_connector_http_advertised__address} || exit 1

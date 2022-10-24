@@ -1,0 +1,594 @@
+TOPIC_CD,adam_param_code,SDTM_DOMAIN,activity,activity_instance,specimen,legacy_description,sub_domain_class,GENERAL_DOMAIN_CLASS
+AB_CON_0113_0217_SE,ABC217,LB,Anti-Semaglutide Antibody Confirmation,Anti-Semaglutide Antibody Confirmation,SERUM,Anti NNC 0113-0217 antibodies (confirmation)_x000D_,CATEGORIC FINDING,FINDINGS
+AB_CON_0148_0287_SE,ABC287,LB,Anti-insulin icodec binding antibodies confirmation,Anti-insulin icodec Binding Antibodies Confirmation Serum,SERUM,Confirmation of the anti-insulin icodec binding antibody response (negative or positive) in serum.,CATEGORIC FINDING,FINDINGS
+AB_CR_0148_0287_SE,ABR287,LB,Anti-insulin icodec antibodies cross-reacting,Anti-insulin icodec Antibodies Cross-Reacting Serum,SERUM,A measurement of the antibodies cross-reacting with insulin icodec in serum.,CATEGORIC FINDING,FINDINGS
+AB_CR_GLP1_SE,ABRGLP1,LB,Antibodies cross reacting native GLP-1,Antibodies cross reacting native GLP-1,SERUM,Antibodies cross reacting with native GLP-1_x000D_,CATEGORIC FINDING,FINDINGS
+AB_TIT_0113_0217_SE,ABT217,LB,Semaglutide Antibodies (Titer),Semaglutide Antibodies (Titer),SERUM,Anti-NNC 0113-0217 antibodies (titer)_x000D_,NUMERIC FINDING,FINDINGS
+AB_TIT_0148_0287_SE,ABT287,LB,Anti-insulin icodec antibodies titre,Anti-insulin icodec Antibodies Titre Serum,SERUM,A measurement of the strength of the anti-insulin icodec binding antibody response (titre) in serum.,NUMERIC FINDING,FINDINGS
+ACUTE KIDNEY INJURY,AKI,CE,Acute Kidney Injury,Acute Kidney Injury,,Acute Kidney Injury_x000D_,PERIODIC,EVENTS
+ACUTE_KIDNEY_INJURY_ACUTE_URINARY_TRACT_INFECTION,AKIAURIN,FA,Acute Kidney Injury - Acute Urinary Tract Infection,Acute Kidney Injury - Acute Urinary Tract Infection,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Acute urinary tract infection",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_AMINOGLYCOSIDE,AKIAMINO,FA,Acute Kidney Injury - Aminoglycoside(s),Acute Kidney Injury -  Aminoglycoside(s),,"Acute Kidney Injury: Has the subject received any nephrotoxic drug(s)/agent(s) within the last 3 months._x000D_
+Aminoglycoside(s)",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_CHRONIC_URINARY_TRACT_INFECTION,AKICURIN,FA,Acute Kidney Injury - Chronic Urinary Tract Infection,Acute Kidney Injury - Chronic Urinary Tract Infection,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Chronic urinary tract infection",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_CONDITIONS,AKICONDI,FA,Acute Kidney Injury - Conditions,Acute Kidney Injury - Conditions,,Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event,CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_CONDITIONS_OTHER,AKICONOT,FA,Acute Kidney Injury - Conditions Other,Acute Kidney Injury - Conditions Other,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Other, specify",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_CONNECTIVE_TISSUE_DISEASE_OR_VASCULITIS,AKICTDIV,FA,Acute Kidney Injury - Connective Tissue Disease or Vasculitis,Acute Kidney Injury - Connective Tissue Disease or Vasculitis,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Connective tissue disease or vasculitis",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_CT_SCAN,AKICTSCA,FA,Acute Kidney Injury - CT Scan Performed,Acute Kidney Injury - CT Scan Performed,,"Acute Kidney Injury: Was imaging performed in relation to the event: _x000D_
+CT Scan",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_FAMILY_HISTORY,AKIFAMHI,FA,Acute Kidney Injury - Family History of Kidney Disease,Acute Kidney Injury - Family History of Kidney Disease,,Acute Kidney Injury: Is there any family history of kidney disease,CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_HYPERTENSION,AKIHYPER,FA,Acute Kidney Injury - Hypertension,Acute Kidney Injury - Hypertension,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Hypertension",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_IMAGING_OTHER,AKIIMOTH,FA,Acute Kidney Injury - Other Imaging Performed,Acute Kidney Injury - Other Imaging Performed,,"Acute Kidney Injury: Was imaging performed in relation to the event: Other, specify",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_IMAGING_PERFORMED,AKIIMAGE,FA,Acute Kidney Injury - Imaging Performed,Acute Kidney Injury - Imaging Performed,,Acute Kidney Injury: Was imaging performed in relation to the event,CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_IMAGING_RESULTS,AKIHISTO,FA,Acute Kidney Injury - Summary of Imaging Results,Acute Kidney Injury - Summary of Imaging Results,,Acute Kidney Injury: Was imaging performed in relation to the event. Summary of imaging results,TEXTUAL FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_INCREASE_SERUM_CREATININE_WITHIN_48_HOURS,AKISC48S,FA,Acute Kidney Injury - Increase Serum Creat >= 0.3 mg/dL Within 48 Hours,Acute Kidney Injury - Increase Serum Creat >= 0.3 mg/dL Within 48 Hours,SERUM,"Acute Kidney Injury: How did the event present itself. _x000D_
+Increase in serum creatinine >= 0.3 mg/dL within 48 hours",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_INCREASE_SERUM_CREATININE_WITHIN_7_DAYS,AKISCIDS,FA,Acute Kidney Injury - Increase Serum Creat >= 1.5 Times Baseline Within 7 Days,Acute Kidney Injury - Increase Serum Creat >= 1.5 Times Baseline Within 7 Days,SERUM,"Acute Kidney Injury: How did the event present itself. _x000D_
+Increase in serum creatinine to >= 1.5 times baseline within 7 days",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_INITIATION_OF_RAS_BLOCKADE,AKIRASBL,FA,Acute Kidney Injury - Initiation of RAS Blockade,Acute Kidney Injury - Initiation of RAS Blockade,,"Acute Kidney Injury: Has the subject received any nephrotoxic drug(s)/agent(s) within the last 3 months:_x000D_
+Initiation of RAS Blockade",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_IV_CONTRAST,AKIIVCON,FA,Acute Kidney Injury - IV Contrast,Acute Kidney Injury - IV Contrast,,"Acute Kidney Injury: Has the subject received any nephrotoxic drug(s)/agent(s) within the last 3 months:_x000D_
+IV Contrast",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_KIDNEY_BIOPSY_HISTOLOGY_RESULTS,AKIBIHIS,FA,Acute Kidney Injury - Summary of Biopsy Histology Results,Acute Kidney Injury - Summary of Biopsy Histology Results,,Acute Kidney Injury: Summery of histology results from kidney biopsy,TEXTUAL FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_KIDNEY_BIOPSY_PERFORMED,AKIBIOPS,FA,Acute Kidney Injury - Kidney Biopsy Performed,Acute Kidney Injury - Kidney Biopsy Performed,,Acute Kidney Injury: Was kidney biopsy performed in relation to the event,CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_NEPHROTOXIC_TREATMENT_LAST_3_MONTHS,AKINDA3M,FA,Acute Kidney Injury - Nephrotoxic Treatment Received within Last 3 Months,Acute Kidney Injury - Nephrotoxic Treatment Received within Last 3 Months,,Acute Kidney Injury: Has the subject received any nephrotoxic drug(s)/agent(s) within the last 3 months,CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_NEPHROTOXIC_TREATMENT_OTHER,AKINDAOT,FA,Acute Kidney Injury - Nephrotoxic Treatment Other,Acute Kidney Injury - Nephrotoxic Treatment Other,,"Acute Kidney Injury: Has the subject received any nephrotoxic drug(s)/agent(s) within the last 3 months:_x000D_
+Nephrotoxic treatment other",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_NSAID,AKINSAID,FA,Acute Kidney Injury - NSAIDs,Acute Kidney Injury - NSAIDs,,"Acute Kidney Injury: Has the subject received any nephrotoxic drug(s)/agent(s) within the last 3 months:_x000D_
+Nonsteroidal anti-inflammatory drugs (NSAIDs)",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_POST-RENAL_OBSTRUCTIVE_DISEASE,AKIPROBS,FA,Acute Kidney Injury - Post-renal Obstructive Disease,Acute Kidney Injury - Post-renal Obstructive Disease,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Post-renal obstructive disease",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_PRESENT_OTHER,AKIPROTH,FA,Acute Kidney Injury - Present Other,Acute Kidney Injury - Present Other,,"Acute Kidney Injury: How did the event present itself. _x000D_
+Other, specify",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_PRIMARY_GLOMERULONEPHRITIS,AKIPRGLO,FA,Acute Kidney Injury - Primary Glomerulonephritis,Acute Kidney Injury - Primary Glomerulonephritis,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Primary glomerulonephritis",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_PROGRESSION_OF_CHRONIC_KIDNEY_DISEASE,AKIPRCKD,FA,Acute Kidney Injury - Progression of Chronic Kidney Disease,Acute Kidney Injury - Progression of Chronic Kidney Disease,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Progression of chronic kidney disease",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_RECENT_DCR_IN_RENAL_PERFUSION_D/T_VOL_DEPLETION_DCRD_CARD_OU,AKIDRP,FA,Acute Kidney Injury - Recent Decrease in Renal Perfusion,Acute Kidney Injury - Recent Decrease in Renal Perfusion,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event:_x000D_
+Recent decrease in renal perfusion due to volume depletion, decreased cardiac putput or hypotension",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_RECENT_STREPTOCOCCAL_INFECTION,AKISTREP,FA,Acute Kidney Injury - Recent Streptococcal Infection,Acute Kidney Injury - Recent Streptococcal Infection,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Recent streptococcal infection",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_RENAL_ANGIO-IMAGING,AKIRANIM,FA,Acute Kidney Injury - Renal Angio-imaging Performed,Acute Kidney Injury - Renal Angio-imaging Performed,,"Acute Kidney Injury: Was imaging performed in relation to the event: _x000D_
+Renal angio-imaging",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_RENAL_ARTERY_STENOSIS,AKIREAST,FA,Acute Kidney Injury - Renal Artery Stenosis,Acute Kidney Injury - Renal Artery Stenosis,,Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: Renal artery stenosis,CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_RENAL_VEIN_THROMBOSIS,AKIREVET,FA,Acute Kidney Injury - Renal Vein Thrombosis,Acute Kidney Injury - Renal Vein Thrombosis,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Renal vein thrombosis",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_SYSTEMIC_AUTOIMMUNE DISEASE,AKISYAUD,FA,Acute Kidney Injury - Systemic Autoimmune Disease,Acute Kidney Injury - Systemic Autoimmune Disease,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Systemic autoimmune disease",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_ULTRASOUND,AKIULTRA,FA,Acute Kidney Injury - Ultrasound Performed,Acute Kidney Injury - Ultrasound Performed,,"Acute Kidney Injury: Was imaging performed in relation to the event: _x000D_
+Ultrasound",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_URINE_VOLUME_FOR_6_HOURS,AKIUV6HU,FA,Acute Kidney Injury - Urine Volume < 0.5 mL/kg/h for 6 Hours,Acute Kidney Injury - Urine Volume < 0.5 mL/kg/h for 6 Hours,URINE,"Acute Kidney Injury: How did the event present itself. _x000D_
+Urine volume < 0.5 mL/kg/h for 6 hours",CATEGORIC FINDING,FINDINGS
+ACUTE_KIDNEY_INJURY_VOLUME_DEPLETION_OTHER_THAN_GASTROINTESTINAL_SYMPTOMS,AKIVDOTG,FA,Acute Kidney Injury - Volume Depletion Reasons than Gastrointestinal Symptoms,Acute Kidney Injury - Volume Depletion Reasons than Gastrointestinal Symptoms,,"Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event: _x000D_
+Volume depletion for other reasons than gastrointestinal symptoms",CATEGORIC FINDING,FINDINGS
+ADJUDICATION OUTCOME,ADJOUT,ZA,Adjudication Outcome,Adjudication Outcome,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+ADVERSE EVENT,AE,AE,Adverse Event,Adverse Event,,"Any untoward medical occurrence in a patient or clinical investigation subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with this treatment._x000D_
+An AE can therefore be any unfavourable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a medicinal product, whether or not considered related to the medicinal product._x000D_
+Note: This includes events from the first trial related activity after the subject has signed the informed consent and_x000D_
+until post treatment follow-up period as defined in the protocol. (SOP 110072 List of Roles/Groups and Definitions within Clinical Research and Observational Studies)",ADVERSE EVENT,EVENTS
+ALBUMIN,ALB,LB,Albumin,Albumin,,"Albumin_x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATs",NUMERIC FINDING,FINDINGS
+ALBUMIN IN URINE,ALBU2,LB,Albumin,Urinary albumin excretion,URINE,"Urine albumin excretion._x000D_
+Code: C64431_x000D_
+CDISC: A measurement of the albumin protein in a biological specimen._x000D_
+CDISC Synonym(s): Albumin_x000D_
+CDISC Submission Value: ALB_x000D_
+NCI Preferred Term: ALB_x000D_",TEXTUAL FINDING,FINDINGS
+ALBUMIN_CREATINE_RATIO,ALBCRAT,LB,Albumin/Creatinine,Albumin/Creatinine,,"CDISC: C74761_x000D_
+A relative measurement (ratio) of the albumin to the creatinine in a biological specimen.",NUMERIC FINDING,FINDINGS
+ALBUMIN_CREAT_URINE,ALBCRTU,LB,Albumin/Creatinine,Albumin/Creatinine Ratio,URINE,"Albumin/creatinine ratio in urine_x000D_
+CDISC code: C74761_x000D_
+CDISC submission value: ALBCREAT_x000D_
+CDISC synonym(s): Albumin/Creatinine; Microalbumin/Creatinine Ratio_x000D_
+CDISC Description: A relative measurement (ratio or percentage) of the albumin to the creatinine in a biological specimen._x000D_
+NCI preferred term: Albumin To Creatinine Protein Ratio Measurement_x000D_
+_x000D_
+Convert values collected  in mg/g to values in mg/mmol by dividing with 8,84 _x000D_",NUMERIC FINDING,FINDINGS
+ALBUMIN_N_URINE,ALBU,LB,Albumin,Albumin Urine,URINE,"Molecular Weight (MW): Confirmed by CHHE, Maaloev, 06-06-2013_x000D_
+Albumin in urine_x000D_
+Code: C64431_x000D_
+CDISC: A measurement of the albumin protein in a biological specimen._x000D_
+CDISC Synonym(s): Albumin_x000D_
+CDISC Submission Value: ALB_x000D_
+NCI Preferred Term: ALB_x000D_",NUMERIC FINDING,FINDINGS
+ALBUMIN_SERUM,ALBS,LB,Albumin,Albumin,SERUM,"Albumin in serum_x000D_
+CDISC code: C64431_x000D_
+CDISC submission value: ALB_x000D_
+CDISC synonym(s): Albumin; Microalbumin_x000D_
+CDISC Description: A measurement of the albumin protein in a biological specimen._x000D_
+NCI preferred term: Albumin Measurement",NUMERIC FINDING,FINDINGS
+ALP,ALP,LB,Alkaline Phosphatase,Alkaline Phosphatase,,"A measurement of the alkaline phosphatase in a biological specimen._x000D_
+NCI preferred term: Alkaline Phosphatase Measurement_x000D_",NUMERIC FINDING,FINDINGS
+ALT,ALT,LB,Alanine Aminotransferase,Alanine Aminotransferase,,"A measurement of the alanine aminotransferase in a biological specimen._x000D_
+NCI preferred term: Alanine Aminotransferase Measurement",NUMERIC FINDING,FINDINGS
+ALT_SERUM,ALTS,LB,Alanine Aminotransferase,Alanine Aminotransferase,SERUM,"Alanine Aminotransferase in Serum_x000D_
+CDISC code: C64433_x000D_
+CDISC submission value: ALT_x000D_
+CDISC synonym(s): Alanine Aminotransferase; SGPT_x000D_
+CDISC Description: A measurement of the alanine aminotransferase in a biological specimen._x000D_
+NCI preferred term: Alanine Aminotransferase Measurement",NUMERIC FINDING,FINDINGS
+AMMONIA,AMMONIA,LB,Ammonia,Ammonia,,A measurement of the ammonia; NH3_x000D_,NUMERIC FINDING,FINDINGS
+AMYLASE,AMYLASE,LB,Amylase,Amylase,,"CDISC code: C64434_x000D_
+CDISC submission value: AMYLASE_x000D_
+CDISC synonym(s): Amylase_x000D_
+CDISC definition: A measurement of the total enzyme amylase in a biological specimen._x000D_
+NCI preferred term: Amylase Measurement",NUMERIC FINDING,FINDINGS
+AMYLASE_SERUM,AMYLAES,LB,Amylase,Amylase,SERUM,"Amylase in serum_x000D_
+CDISC code: C64434_x000D_
+CDISC submission value: AMYLASE_x000D_
+CDISC synonym(s): Amylase_x000D_
+CDISC Description: A measurement of the total enzyme amylase in a biological specimen._x000D_
+NCI preferred term: Amylase Measurement",NUMERIC FINDING,FINDINGS
+AP_SERUM,ALPS,LB,Alkaline Phosphatase,Alkaline Phosphatase,SERUM,"Alkaline phosphatase in serum_x000D_
+CDISC code: C64432_x000D_
+CDISC submission value: ALP_x000D_
+CDISC synonym(s): Alkaline Phosphatase_x000D_
+CDISC Description: A measurement of the alkaline phosphatase in a biological specimen._x000D_
+NCI preferred term: Alkaline Phosphatase Measurement",NUMERIC FINDING,FINDINGS
+AST,AST,LB,Aspartate Aminotransferase,Aspartate Aminotransferase,,"A measurement of the aspartate aminotransferase in a biological specimen._x000D_
+NCI preferred term: Aspartate Aminotransferase Measurement",NUMERIC FINDING,FINDINGS
+AST_SERUM,ASTS,LB,Aspartate Aminotransferase,Aspartate Aminotransferase,SERUM,"CDISC code: C64467_x000D_
+CDISC submission value: AST/Aspartate Aminotransferase_x000D_
+CDISC synonym(s): Aspartate Aminotransferase; SGOT_x000D_
+CDISC definition: A measurement of the aspartate aminotransferase in a biological specimen._x000D_
+NCI preferred term: Aspartate Aminotransferase Measurement",NUMERIC FINDING,FINDINGS
+BG_SUPER_GL_ANALYZER,BGSUPGLA,LB,Glucose,BG Super GL analyzer,,A measurement of the glucose in blood.,NUMERIC FINDING,FINDINGS
+BILDIR,BILDIR,LB,Direct Bilirubin,Direct Bilirubin,,"CDISC code: C64481_x000D_
+CDISC submission value: BILDIR _x000D_
+CDISC synonym(s): Direct Bilirubin _x000D_
+CDISC definition: A measurement of the conjugated or water-soluble bilirubin in a biological specimen._x000D_
+NCI preferred term: Direct Bilirubin Measurement",NUMERIC FINDING,FINDINGS
+BILI,BILI,LB,Bilirubin,Bilirubin,,"A measurement of the total bilirubin in a biological specimen._x000D_
+NCI preferred term: Total Bilirubin Measurement_x000D_",NUMERIC FINDING,FINDINGS
+BILIND,BILIND,LB,Indirect Bilirubin,Indirect Bilirubin,,"CDISC code: C64483_x000D_
+CDISC submission value: BILIND_x000D_
+CDISC synonym(s): Indirect Bilirubin _x000D_
+CDISC definition: A measurement of the unconjugated or non-water-soluble bilirubin in a biological specimen._x000D_
+NCI preferred term: Indirect Bilirubin Measurement",NUMERIC FINDING,FINDINGS
+BILIRUBIN_SERUM,BILIS3,LB,Bilirubin,Bilirubin,SERUM,"CDISC code: C38037_x000D_
+CDISC submission value: BILI_x000D_
+CDISC synonym(s): Bilirubin; Total Bilirubin_x000D_
+CDISC Description: A measurement of the total bilirubin in a biological specimen._x000D_
+NCI preferred term: Total Bilirubin Measurement",NUMERIC FINDING,FINDINGS
+BILIRUBIN_URINE,BILIU2,LB,Bilirubin,Bilirubin urine,URINE,"CDISC:A measurement of the total bilirubin in a biological specimen._x000D_
+CDISC synonym: Bilirubin_x000D_
+CDISC preferred term: BILI_x000D_
+CDISC code: C38037",CATEGORIC FINDING,FINDINGS
+BILI_UR,BILIU,LB,Bilirubin,Bilirubin dipstick,URINE,Sponsordefined: The investigators evaluation of a measurement of the total bilirubin in urine_x000D_,CATEGORIC FINDING,FINDINGS
+BLOOD_SAMPLES_COLLECTED,BLOODCLB,LB,Have all blood samples been taken,Have all blood samples been taken,BLOOD,"<CodeLists>_x000D_
+<CodeList Value=""LBTEST"" CodeSubmValue=""Have all samples been taken"" SpecimenType=""BLOOD""></CodeList>_x000D_
+<CodeList Value=""LBTESTCD"" CodeSubmValue=""LBALL""></CodeList>_x000D_
+</CodeLists>_x000D_
+Have all blood samples been taken?",CATEGORIC FINDING,FINDINGS
+BLOOD_UREA_NITROGEN,UREANB,LB,Urea Nitrogen,Urea Nitrogen,BLOOD,"CDISC: C125949_x000D_
+A measurement of the urea nitrogen in a biological specimen._x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",NUMERIC FINDING,FINDINGS
+BODY_TEMPERATURE,TEMP,VS,Temperature,Body Temperature,,"CDISC code: C25206_x000D_
+CDISC Submission Value: TEMP_x000D_
+CDISC: The property of a body or region of space that determines whether or not there will be a net flow of heat into it or out of it from a neighboring body or region and in which direction (if any) the heat will flow, perceptible by living organism as a somatic sensation of cold or heat. It is a measure of the average translational kinetic energy associated with the disordered microscopic motion of atoms and molecules. Temperature is measured in one of the three standard temperature scales: Celsius, Kelvin, and Fahrenheit. (NCI)_x000D_",NUMERIC FINDING,FINDINGS
+BODY_WEIGHT,WEIGHT,VS,Weight,Body Weight,,"CDISC code: C25208_x000D_
+CDISC submission value: WEIGHT_x000D_
+CDISC synonym(s): Weight_x000D_
+CDISC Description: The vertical force exerted by a mass as a result of gravity. (NCI)_x000D_
+NCI preferred term: Weight",NUMERIC FINDING,FINDINGS
+BP_DIASTOLIC,DIABP,VS,Diastolic Blood Pressure,Diastolic Blood Pressure,,"CDISC code: C25299_x000D_
+CDISC submission value: DIABP_x000D_
+CDISC synonym(s): Diastolic Blood Pressure_x000D_
+CDISC Description: The blood pressure after the contraction of the heart while the chambers of the heart refill with blood. (NCI)_x000D_
+NCI preferred term: Diastolic Blood Pressure",NUMERIC FINDING,FINDINGS
+BP_SYSTOLIC,SYSBP,VS,Systolic Blood Pressure,Systolic Blood Pressure,,"CDISC code: C25298_x000D_
+CDISC submission value: SYSBP_x000D_
+CDISC synonym(s): Systolic Blood Pressure_x000D_
+CDISC Description: The blood pressure during the contraction of the left ventricle of the heart._x000D_
+NCI preferred term: Systolic Blood Pressure",NUMERIC FINDING,FINDINGS
+CAUSE OF DEATH,CAUSEDEA,ZA,Cause of Death,Cause of Death,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+CGM_SENSOR_VALUE,GLUC02,LB,Glucose,CGM - Sensor value,,"Continous Glucose Monitoring - Sensor value_x000D_
+CDISC Submission value: GLUC_x000D_
+CDISC synonym: Glucose_x000D_
+CDISC code: C105585_x000D_
+CDISC definition: A measurement of the glucose in a biological specimen._x000D_",NUMERIC FINDING,FINDINGS
+CHARACTERISTIC_IMAGING_FINDINGS,IMAGFIND,ZA,Imaging Findings Characteristic of Pancreatitis,Imaging Findings Characteristic of Pancreatitis,,Imaging findings characteristic of pancreatitis,CATEGORIC FINDING,FINDINGS
+CHILDBEARING_POTENTIAL,CHILDPOT,RP,Childbearing Potential,Is the Subject of Childbearing Potential,,"SDTM Terminology 2017-06-30_x000D_
+Code:C106508_x000D_
+CDISC Code Value: CHILDPOT_x000D_
+CDISC Value Label: Childbearing Potential_x000D_
+CDISC synonym(s): Childbearing Potential_x000D_
+CDISC definition: An indicator as to whether the female subject has the potential to become pregnant. (NCI)_x000D_
+NCI preferred term: Childbearing Potential_x000D_",CATEGORIC FINDING,FINDINGS
+CLASSIFICATION OF MYOCARDIAL INFARCTION,CLASSMYF,ZA,Classification of Myocardial Infarction,Classification of Myocardial Infarction,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+CREATININE_CLEARANCE,CREATCLR,LB,Creatinine Clearance,Creatinine Clearance,,"CDISC: C25747_x000D_
+A measurement of the volume of serum or plasma that would be cleared of creatinine by excretion of urine for a specified unit of time (e.g. one minute).",NUMERIC FINDING,FINDINGS
+CREATININE_SERUM,CREATS,LB,Creatinine,Creatinine,SERUM,"Creatinine in serum_x000D_
+CDISC code: C64547_x000D_
+CDISC submission value: CREAT_x000D_
+CDISC synonym(s): Creatinine_x000D_
+CDISC Description: A measurement of the creatinine in a biological specimen._x000D_
+NCI preferred term: Creatinine Measurement",NUMERIC FINDING,FINDINGS
+CRP,CRP,LB,C Reactive Protein,C-Reactive Protein,,"A measurement of the C reactive protein in a biological specimen._x000D_
+NCI preferred term: C-Reactive Protein Measurement",NUMERIC FINDING,FINDINGS
+CRP_HS_SERUM,CRPS,LB,C Reactive Protein,High Sensitive C-Reactive Protein,SERUM,"CDISC code: C64548_x000D_
+CDISC submission value: CRP_x000D_
+CDISC synonym(s): C Reactive Protein_x000D_
+CDISC Description: A measurement of the C reactive protein in a biological specimen._x000D_
+NCI preferred term: C-Reactive Protein Measurement",NUMERIC FINDING,FINDINGS
+CYSTATIN_C,CYSTATC,LB,Cystatin C,Cystatin C,,A measurement of the cystatin C in a biological specimen.,NUMERIC FINDING,FINDINGS
+C_PEPTIDE_SERUM,CPEPTES,LB,C-peptide,C-peptide,SERUM,"CDISC code: C74736_x000D_
+CDISC submission value: CPEPTIDE_x000D_
+CDISC synonym(s): C-peptide_x000D_
+CDISC Description: A measurement of the C (connecting) peptide of insulin in a biological specimen._x000D_
+NCI preferred term: C-peptide Measurement_x000D_
+<molecularweight checked_with_Maaloev=""Y"" molecular_formula=C129H211N35O48></molecularweight>",NUMERIC FINDING,FINDINGS
+C_REACT_PROT_PLASMA,CRPP,LB,C Reactive Protein,C-Reactive Protein Plasma,PLASMA,"CDISC: A measurement of the C reactive protein in a biological specimen._x000D_
+CDIS synonym: C Reactive Protein_x000D_
+CDISC submission value: CRP_x000D_
+CDISC: preferred term: CRP _x000D_
+Code: C64548",NUMERIC FINDING,FINDINGS
+DATE_OF_BIRTH,BRTHDTC,,Date of Birth,Date of Birth,,"Date of birth of the subject._x000D_
+variable name: BRTHDTC in subj. demographics domain",DISPOSITION,EVENTS
+DEATH_LOCATION,DEATHLOC,ZA,Location of Death Occurrence,Location of Death Occurrence,,"Location of death occurrence:_x000D_
+Home_x000D_
+Hospital_x000D_
+Other_x000D_
+Unknown",CATEGORIC FINDING,FINDINGS
+EGFR_CKD_EPI_SERUM,GFRES2,LB,"Glomerular Filtration Rate, Estimated",eGFR Using CKD-EPI Formula,SERUM,"This code can both be used as derived and as non-derived. Please, see definition for both below:_x000D_
+The CKD-EPI equation, is (x indicates multiplication):_x000D_
+GFR = 141 x min(Scr/kappa,1)alpha x max(Scr/kappa, 1) -1.209 x 0.993 Age x 1.018 [if female] X 1.159 [if Black or Afro-American], where Scr is serum creatinine (mg/dL), kappa is 0.7 for females and 0.9 for males, alpha is 0.329 for females and 0.411 for males, min indicates the minimum of Scr/kappa or 1, and max indicates the maximum of Scr/kappa or 1._x000D_
+_x000D_
+Code:C110935_x000D_
+CDISC Code Value: GFRE_x000D_
+CDISC Value Label: Glomerular Filtration Rate, Estimated_x000D_
+CDISC synonym(s): Glomerular Filtration Rate, Estimated_x000D_
+CDISC definition:  A kidney function test that estimates the fluid volume that is filtered from the kidney glomeruli to the Bowman's capsule per unit of time._x000D_
+NCI preferred term: Estimated Glomerular Filtration Rate",NUMERIC FINDING,FINDINGS
+ELEVATED_BLOOD_LEVELS_OF_PANCREATIC_ENZYMES,LEVELENZ,ZA,"Elevated Blood Levels of Pancreatic Enzymes (Lipase, Amylase) >=3xUNL","Elevated Blood Levels of Pancreatic Enzymes (Lipase, Amylase) >=3xUNL",,"Elevated blood levels of pancreatic enzymes (lipase, amylase) >/= 3xUNL",CATEGORIC FINDING,FINDINGS
+ELIGIBILITY CRITERIA MET,ELICRIMT,DS,Eligibility Criteria Met,Subject Eligible to Continue the Trial,,"Having evaluated all the criteria, the subject is eligible to continue the trial",DISPOSITION,EVENTS
+END_OF_TRIAL,EOT,DS,End of Study,End of Study,,End of Study,DISPOSITION,EVENTS
+EOSINOPHIL_ABS_BLOOD,EOSB,LB,Eosinophils,Eosinophils Blood,BLOOD,"Eosinophils count in blood_x000D_
+CDISC code: C64550_x000D_
+CDISC submission value: EOS_x000D_
+CDISC synonym(s): Eosinophils_x000D_
+CDISC Description: A measurement of the eosinophils in a biological specimen._x000D_
+NCI preferred term: Eosinophil Count",NUMERIC FINDING,FINDINGS
+EOS_CELL_COUNT,EOS2,LB,Eosinophils,Eosinophils cell count (AE),,Eosinophils cell count,NUMERIC FINDING,FINDINGS
+ERCS_BLOOD,RBCB,LB,Erythrocytes,Erythrocytes,BLOOD,"CDISC code: C51946_x000D_
+CDISC submission value: RBC_x000D_
+CDISC synonym(s): Erythrocytes; Red Blood Cells_x000D_
+CDISC Description: A measurement of the total erythrocytes in a biological specimen._x000D_
+NCI preferred term: Erythrocyte Count",NUMERIC FINDING,FINDINGS
+ESTIMATED_GFR_EGFR,GFRE2,LB,"Glomerular Filtration Rate, Estimated","Glomerular Filtration Rate, Estimated",,"CDISC: C110935_x000D_
+A kidney function test that estimates the fluid volume that is filtered from the kidney glomeruli to the Bowman's capsule per unit of time._x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",NUMERIC FINDING,FINDINGS
+ETHNIC,ETHNIC,,Ethnicity,Ethnicity,,CDISC: Ethnicity of subject.,CATEGORIC FINDING,FINDINGS
+EVALUATED EVENT ONSET DATE,EVALDATE,ZA,Evaluated Event Onset Date,Evaluated Event Onset Date,,Sponsor defined: Used for Event Adjudication,TEXTUAL FINDING,FINDINGS
+EVENT_CONFIRMATION,EVENCONF,ZA,Event Confirmation,Event Confirmation,,"Confirmation of event: _x000D_
+Full documentation for meeting criteria available in source documents_x000D_
+or_x000D_
+Full documentation for meeting criteria NOT available in source documents, medical judgment applied",CATEGORIC FINDING,FINDINGS
+FIRST_TRIAL_PROD_DATE,FSTTRPDT,DS,First Date on Trial Product,First Date on Trial Product,,First date on trial product,DISPOSITION,EVENTS
+FPG_PLASMA,FPG,LB,Glucose,Fasting Plasma Glucose,PLASMA,"CDISC code: C105585_x000D_
+CDISC submission value: GLUC_x000D_
+CDISC synonym(s): Glucose_x000D_
+CDISC Description: A measurement of the glucose in a biological specimen._x000D_
+NCI preferred term: Glucose Measurement",NUMERIC FINDING,FINDINGS
+FSG_SERUM,FSG,LB,Glucose,Fasting Serum Glucose,SERUM,"Molecular Weight (MW): Copied from GLUCOSE_SERUM_x000D_
+Fasting Serum Glucose._x000D_
+CDISC code: GLUC (for generic code glucose)._x000D_",NUMERIC FINDING,FINDINGS
+FSI_SERUM,FSI,LB,Insulin,Insulin Serum-Fasting,SERUM,Fasting insulin in serum.,NUMERIC FINDING,FINDINGS
+GFRCKDEPI_SERUM,GFRES,LB,"Glomerular Filtration Rate, Estimated",Est. GFR Using CKD-EPI Formula in Serum,SERUM,"DO NOT USE_x000D_
+_x000D_
+Estimated GFR using CKD-EPI formula based on serum creatinine._x000D_
+The CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) formula was published in May 2009. _x000D_
+The CKD-EPI equation, expressed as a single equation, is:_x000D_
+\mbox{eGFR} = \mbox{141}\ \times \ \mbox{min(SCr/k,1)}^{a} \ \times \ \mbox{max(SCr/k,1)}^{-1.209} \ \times \ \mbox{0.993}^{Age} \ \times \ {[1.018\ if\ Female]} \ \times \ {[1.159\ if\ Black]} \",NUMERIC FINDING,FINDINGS
+GGT,GGT,LB,Gamma Glutamyl Transferase,Gamma Glutamyl Transferase,,"CDISC code:C64847_x000D_
+CDISC submission value: GGT_x000D_
+CDISC synonym(s): Gamma Glutamyl Transferase_x000D_
+CDISC definition: A measurement of the gamma glutamyl transferase in a biological specimen._x000D_
+NCI preferred term: Gamma Glutamyl Transpeptidase Measurement",NUMERIC FINDING,FINDINGS
+GGT_SERUM,GGTS,LB,Gamma Glutamyl Transferase,GGT,SERUM,"CDISC code:C64847_x000D_
+CDISC submission value: GGT_x000D_
+CDISC synonym(s): Gamma Glutamyl Transferase_x000D_
+CDISC definition: A measurement of the gamma glutamyl transferase in a biological specimen._x000D_
+NCI preferred term: Gamma Glutamyl Transpeptidase Measurement",NUMERIC FINDING,FINDINGS
+GLUCAGON_PLASMA,GLUCANP,LB,Glucagon,Glucagon,PLASMA,"CDISC code: C74859_x000D_
+CDISC submission value: GLUCAGON_x000D_
+CDISC synonym(s): Glucagon_x000D_
+CDISC Description: A measurement of the glucagon hormone in a biological specimen._x000D_
+NCI preferred term: Glucagon Measurement",NUMERIC FINDING,FINDINGS
+GLUCAGON_SERUM,GLUCAGNS,LB,Glucagon,Serum Glucagon,SERUM,"CDISC code: C74859_x000D_
+CDISC submission value: GLUCAGON_x000D_
+CDISC synonym(s): Glucagon_x000D_
+CDISC Description: A measurement of the glucagon hormone in a biological specimen._x000D_
+NCI preferred term: Glucagon Measurement",NUMERIC FINDING,FINDINGS
+GLUCOSE,GLUC05,LB,Glucose,Glucose,,A measurement of the glucose in a biological specimen._x000D_,NUMERIC FINDING,FINDINGS
+GLUCOSE_BLOOD,GLUCB,LB,Glucose,Blood Glucose,BLOOD,"CDISC Submission value: GLUC_x000D_
+CDISC synonym: Glucose_x000D_
+CDISC code: C41376_x000D_
+CDISC definition: A measurement of the glucose in a biological specimen._x000D_",NUMERIC FINDING,FINDINGS
+GLUCOSE_C_URINE,GLUCU,LB,Glucose,Glucose Urine,URINE,"CDISC code: C105585_x000D_
+CDISC submission value: GLUC_x000D_
+CDISC synonym(s): Glucose_x000D_
+CDISC Description: A measurement of the glucose in a biological specimen._x000D_
+NCI preferred term: Glucose Measurement",CATEGORIC FINDING,FINDINGS
+GLUCOSE_PLASMA,GLUCP,LB,Glucose,"Glucose, Plasma",PLASMA,"CDISC code: C105585_x000D_
+CDISC submission value: GLUC_x000D_
+CDISC synonym(s): Glucose_x000D_
+CDISC Description: A measurement of the glucose in a biological specimen._x000D_
+NCI preferred term: Glucose Measurement",NUMERIC FINDING,FINDINGS
+GLUCOSE_SERUM,GLUCS,LB,Glucose,"Glucose, Serum",SERUM,"CDISC submission value: GLUC_x000D_
+CDISC synonym: Glucose_x000D_
+CDISC Code: C65047_x000D_
+CDISC: A measurement of the glucose in a biological specimen._x000D_",NUMERIC FINDING,FINDINGS
+GLUC_UR,GLUCU2,LB,Glucose,Glucose dipstick,URINE,Sponsordefined: The investigators evaluation of a measurement of the glucose in urine_x000D_,CATEGORIC FINDING,FINDINGS
+HBA1C_BLOOD,HBA1CB,LB,HbA1c,HbA1c,BLOOD,"HbA1c in blood_x000D_
+CDISC code: C64849_x000D_
+CDISC submission value: HBA1C_x000D_
+CDISC synonym(s): Hemoglobin A1C_x000D_
+CDISC Description: A measurement of the glycosylated hemoglobin in a biological specimen._x000D_
+NCI preferred term: Glycosylated Hemoglobin Measurement",NUMERIC FINDING,FINDINGS
+HEART_FAILURE_CLASSIFICATION,HTFAILCL,ZA,Heart Failure Classification,Heart Failure Classification,,"Heart failure (HF) is routinely classified according to left ventricular ejection fraction (LVEF) as HF with reduced LVEF (HFrEF) or HF with preserved LVEF (HFpEF)._x000D_
+Ponikowski P et al. Eur Heart J 2016; 37:2129-2200 is the one which defines HFrEF, HFmrEF and HFpEF. https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.592_x000D_
+CDISC Definition: The percent or fraction of the left ventricular end diastolic volume ejected during systole that can be measured by visual estimation or calculation. _x000D_",CATEGORIC FINDING,FINDINGS
+HEIGHT,HEIGHT,VS,Height,Height,,"CDISC code: C25347_x000D_
+CDISC submission value: HEIGHT_x000D_
+CDISC synonym(s): Height_x000D_
+CDISC Description: The vertical measurement or distance from the base to the top of an object; the vertical dimension of extension. (NCI)_x000D_
+NCI preferred term: Height",NUMERIC FINDING,FINDINGS
+HIP_CIRCUMFERENCE,HIPCIR,VS,Hip Circumference,Hip Circumference,,"CDISC code: C100947_x000D_
+CDISC submission value: HIPCIR_x000D_
+CDISC synonym(s): Hip Circumference_x000D_
+CDISC definition:The distance around an individual's pelvic area or hips._x000D_
+NCI preferred term: Hip Circumference",NUMERIC FINDING,FINDINGS
+HOSPITALIZATION DATE,HOSPDT,HO,Hospitalisation,Hospitalisation,,Date of admission to hospital.,PERIODIC,EVENTS
+HYPO_FEEL_BETTER,FEELBETT,ZA,Did the Subject Feel Better After the Treatment,Did the Subject Feel Better After the Treatment,,Event adjudication: Subject feel better after treatment,CATEGORIC FINDING,FINDINGS
+INFORMED_CONSENT_DATE,INFCONDT,DS,Informed Consent Obtained,Informed Consent Obtained Date,,Date of informed consent obtained,DISPOSITION,EVENTS
+INR,INR,LB,Prothrombin Intl. Normalized Ratio,International Normalized Ratio,,"Sponsor defined:_x000D_
+International Normalized Ratio",NUMERIC FINDING,FINDINGS
+INR_PLASMA,INRP,LB,Prothrombin Intl. Normalized Ratio,INR,PLASMA,"CDISC code:C64805_x000D_
+CDISC Submission value: INR _x000D_
+CDISC synonum(s): Prothrombin Intl. Normalized Ratio_x000D_
+CDISC Description: A ratio that represents the prothrombin time for a plasma specimen, divided by the result for a control plasma specimen, further standardized for the International Sensitivity Index of the tissue factor(thromboplastin) used in the test._x000D_
+CDISC Synonym(s): Prothrombin Intl. Normalized Ratio_x000D_
+NCI preferred term: International Normalized Ratio of Prothrombin Time_x000D_",NUMERIC FINDING,FINDINGS
+INSULIN_H_SERUM,INSULNS,LB,Insulin,Human Insulin,SERUM,"CDISC code: C74788_x000D_
+CDISC submission value: INSULIN_x000D_
+CDISC synonym(s): Insulin_x000D_
+CDISC Description: A measurement of the insulin in a biological specimen._x000D_
+NCI preferred term: Insulin Measurement",NUMERIC FINDING,FINDINGS
+INSULIN_SERUM,INSULNS2,LB,Insulin,Insulin Serum,SERUM,"Molecular Weight (MW): Confirmed by CHHE, Maaloev, 06-06-2013_x000D_
+CDISC code: C74788_x000D_
+CDISC submission value: INSULIN_x000D_
+CDISC synonym(s): Insulin_x000D_
+CDISC Description: A measurement of the insulin in a biological specimen._x000D_
+NCI preferred term: Insulin Measurement",NUMERIC FINDING,FINDINGS
+LAST_TRIAL_PROD_DATE,LDRGDT,DS,Last Date on Trial Product,Last Date on Trial Product,,Last date on trial product,DISPOSITION,EVENTS
+LEGAL OR AUTHORISED REPRESENTATIVE,LEGALCON,DS,Informed Consent Obtained,Legal or Authorised Representative,,Informed Consent obtained by legal or authorised representative_x000D_,DISPOSITION,EVENTS
+LIPASET,LIPASET,LB,Lipase,Lipase,,A measurement of the total lipase in a biological specimen._x000D_,NUMERIC FINDING,FINDINGS
+LIPASE_SERUM,LIPASETS,LB,Lipase,Lipase,SERUM,"New version:C117748_x000D_
+OLD version_x000D_
+CDISC code: C64807_x000D_
+CDISC submission value: LIPASE_x000D_
+CDISC synonym(s): Triacylglycerol Lipase_x000D_
+CDISC Description: A measurement of the pancreatic lipase in a biological specimen._x000D_
+NCI preferred term: Triacylglycerol Lipase Measurement",NUMERIC FINDING,FINDINGS
+MEASURED_GFR_MGFR,GFR,LB,Glomerular Filtration Rate,Glomerular Filtration Rate,,"CDISC: C90505_x000D_
+A kidney function test that measures the fluid volume that is filtered from the kidney glomeruli to the Bowman's capsule per unit of time._x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",NUMERIC FINDING,FINDINGS
+MEDICAL_HISTORY,MEDHIST,MH,Medical History/Concomitant Illness,Medical History/Concomitant Illness,,Medical history/Concomitant illness,MEDICAL HISTORY,EVENTS
+METHOD OF CORONARY REVASCULARISATION,METHOCRV,ZA,Method of Coronary Revascularisation,Method of Coronary Revascularisation,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+NITRITE,NITRITE,LB,Nitrite,Nitrite,,"CDISC: C64810_x000D_
+A measurement of the nitrite in a urine specimen._x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",TEXTUAL FINDING,FINDINGS
+NITRITE_C_URINE,NITRIEU,LB,Nitrite,Urine Nitrite,URINE,"NITRITE/ Urinalysis C_x000D_
+CDISC Not Exact Match_x000D_
+CDISC Submission Value: NITRITE_x000D_
+CDISC Code: C65047 _x000D_
+CDISC Synonyms: Nitrite_x000D_
+CDISC - A measurement of the nitrite in a urine specimen._x000D_",CATEGORIC FINDING,FINDINGS
+NITRITE_UR,NITRIEU2,LB,Nitrite,Nitrite,URINE,"Sponsordefined: The investigators evaluation of a measurement of the nitrite in a urine specimen._x000D_
+_x000D_
+CDISC Code: C64810_x000D_
+CDISC Submission Value: NITRITE_x000D_
+CDISC Synonym(s): Nitrite_x000D_
+CDISC Definition: A measurement of the nitrite in a urine specimen._x000D_
+NCI Preferred Term: Nitrite Measurement",CATEGORIC FINDING,FINDINGS
+OTHER ADJUDICATED EVENT TYPE,OTADEVTY,ZA,Other Adjudicated Event Type,Other Adjudicated Event Type,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+OXYGEN_SATURATION,OXYSAT,VS,Oxygen Saturation,Oxygen Saturation,,"Oxygen saturation_x000D_
+_x000D_
+To be used for assessments by pulse oximetry (small clip on e.g. finger), not assessment based on blood sample.",NUMERIC FINDING,FINDINGS
+PAIN01_02_HOW_WOULD_YOU_RATE_THE_PAIN_AT_ITS_WORST_IN_YOUR_TARGET_KNEE,PAIN0102,QS,Pain Rating - How Would You Rate the Pain at Its Worst in Your Target Knee,Pain Rating - How Would You Rate the Pain at Its Worst in Your Target Knee,,Pain Rating - How would you rate the pain at its worst in your target knee in the past 24 hours,CATEGORIC FINDING,FINDINGS
+PANCREATITIS,PAN,CE,Pancreatitis,Pancreatitis,,AE Requiring Additional Data for Pancreatitis,PERIODIC,EVENTS
+PANCREATITIS ABDOMINAL PAIN,PANABPN,FA,Significant Upper Abdominal Pain,Significant Upper Abdominal Pain,,Did the subject have significant upper abdominal pain ?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS ACUTE COMPLICATION,PANACOMP,FA,Any Acute Complications,Any Acute Complications,,Were any acute complications present during the course of the event?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS ACUTE OTHER IMAGING FINDING,PANCONOT,FA,Other Acute Pancreatitis Symptom,Other Acute Pancreatitis Symptom,,Other acute pancreatitis symptom,CATEGORIC FINDING,FINDINGS
+PANCREATITIS ALCOHOL CONSUMPTION,PANALCON,FA,Risk Factor - Alcohol Consumption,Risk Factor - Alcohol Consumption,,Alcohol consumption,CATEGORIC FINDING,FINDINGS
+PANCREATITIS ATROPHY OF THE PANCREAS,PANATROP,FA,Atrophy of the Pancreas,Atrophy of the Pancreas,,"CDISC Not Found: _x000D_
+Sponsor defined: Atrophy of the pancreas",CATEGORIC FINDING,FINDINGS
+PANCREATITIS CALCIFICATION OF PANCREAS,PANCALCI,FA,Calcification of Pancreas,Calcification of Pancreas,,Calcification of pancreas,CATEGORIC FINDING,FINDINGS
+PANCREATITIS CHRONIC OTHER IMAGING FINDING,PANCHROT,FA,Other Chronic Pancreatitis Symptom,Other Chronic Pancreatitis Symptom,,Other chronic pancreatitis symptom,CATEGORIC FINDING,FINDINGS
+PANCREATITIS CT SCAN,PANCT,FA,Imaging Method - CT Scan,Imaging Method - CT Scan,,Imaging method -  CT scan,CATEGORIC FINDING,FINDINGS
+PANCREATITIS DILATATION OF PANCREATIC DUCTS,PANDILPD,FA,Dilatation of Pancreatic Ducts,Dilatation of Pancreatic Ducts,,Dilatation of pancreatic ducts,CATEGORIC FINDING,FINDINGS
+PANCREATITIS DILATED COMMON BILE DUCT,PANDILDU,FA,Dilated Common Bile Duct,Dilated Common Bile Duct,,Dilated common bile duct,CATEGORIC FINDING,FINDINGS
+PANCREATITIS FAMILY HISTORY OF PANCREATITIS,PANFHISP,FA,Risk Factor -Family Hist of Pancreatitis,Risk Factor -Family Hist of Pancreatitis,,Family history of pancreatitis,CATEGORIC FINDING,FINDINGS
+PANCREATITIS FEVER,PANFEVER,FA,Fever as Symptom,Fever as Symptom,,Pancreatitis Signs/symptoms  - Fever,CATEGORIC FINDING,FINDINGS
+PANCREATITIS GASTROINTESTINAL HAEMORRHAGE,PANGIHEM,FA,Acute Complications - GI Haemorrhage,Acute Complications - GI Haemorrhage,,"CDISC Not Found: _x000D_
+Sponsor defined: Gastrointestinal haemorrhage",CATEGORIC FINDING,FINDINGS
+PANCREATITIS HISTORY OF GALLSTONES,PANHGALS,FA,Risk Factor - History of Gallstones,Risk Factor - History of Gallstones,,History of gallstones,CATEGORIC FINDING,FINDINGS
+PANCREATITIS HYPER-CALCAEMIA,PANHYCAL,FA,Risk factor - Hyper-Calcaemia,Risk factor - Hyper-Calcaemia,,Hyper-calcaemia,CATEGORIC FINDING,FINDINGS
+PANCREATITIS HYPER-TRIGLYCERIDEMIA,PANHTGLY,FA,Risk Factor - Hyper-Triglyceridemia,Risk Factor - Hyper-Triglyceridemia,,Hyper-triglyceridemia,CATEGORIC FINDING,FINDINGS
+PANCREATITIS IMAGE CONSISTENT WITH ACUTE PANCREATITIS,PANIACON,FA,Imaging Consistent with Acute Pan,Imaging Consistent with Acute Pan,,Was imaging consistent with acute pancreatitis?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS IMAGE CONSISTENT WITH CHRONIC PANCREATITIS,PANICCON,FA,Imaging Consistent with Chronic Pan,Imaging Consistent with Chronic Pan,,Was imaging consistent with chronic pancreatitis?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS IMAGE CONSISTENT WITH GALLSTONE,PANIGON2,FA,Imaging Consistent with Gallstone,Imaging Consistent with Gallstone,,Was imaging consistent with presence of gallstones?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS IMAGING PERFORMED,PANIMAPE,FA,Was Imaging Performed,Was Imaging Performed,,Was imaging performed in relation to pancreatitis?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS MRI,PANMRI,FA,Imaging Method - MRI,Imaging Method - MRI,,Imaging method - MRI,CATEGORIC FINDING,FINDINGS
+PANCREATITIS NAUSEA,PANNASEA,FA,Nausea as Symptom,Nausea as Symptom,,Pancreatitis signs/symptoms  - Nausea,CATEGORIC FINDING,FINDINGS
+PANCREATITIS NECROTISING,PANNECRP,FA,Necrotising Pancreatitis,Necrotising Pancreatitis,,Necrotising pancreatitis,CATEGORIC FINDING,FINDINGS
+PANCREATITIS OBSTRUCTIVE GALL-STONE,PANOBSTR,FA,Obstructive Gall-Stone,Obstructive Gall-Stone,,Obstructive gall-stone,CATEGORIC FINDING,FINDINGS
+PANCREATITIS OEDEMATOUS OR INTERSTITIAL PANCREATITIS,PANOEDIP,FA,Oedematous or Interstitial Pancreatitis,Oedematous or Interstitial Pancreatitis,,Oedematous or interstitial pancreatitis,CATEGORIC FINDING,FINDINGS
+PANCREATITIS OTHER,PANIMAOT,FA,Imaging Method - Other,Imaging Method - Other,,Other imaging method,CATEGORIC FINDING,FINDINGS
+PANCREATITIS OTHER COMPLIATION,PANACOOT,FA,Acute Complications - Other,Acute Complications - Other,,Other acute complication,CATEGORIC FINDING,FINDINGS
+PANCREATITIS OTHER RISK,PANRISOT,FA,Risk Factor - Other,Risk Factor - Other,,Other risk/confounding factor,CATEGORIC FINDING,FINDINGS
+PANCREATITIS OTHER SYMPTOM,PANSYOT,FA,Other Symptom,Other Symptom,,Pancreatitis signs/symptoms  - Other,CATEGORIC FINDING,FINDINGS
+PANCREATITIS PERI-PANCREATIC FLUID,PANPERPF,FA,Peri-Pancreatic Fluid,Peri-Pancreatic Fluid,,Peri-pancreatic fluid,CATEGORIC FINDING,FINDINGS
+PANCREATITIS PSEUDOCYSTS,PANPSEUD,FA,Pseudocysts,Pseudocysts,,Pseudocysts,CATEGORIC FINDING,FINDINGS
+PANCREATITIS RENAL FAILURE REQUIRING DIALYSIS,PANRENFD,FA,Acute Complications - Renal Failure,Acute Complications - Renal Failure,,Renal failure requiring dialysis,CATEGORIC FINDING,FINDINGS
+PANCREATITIS RESPIRATORY FAILURE REQUIRING VENTILATION,PANRESFV,FA,Acute Complications -Respiratory Failure,Acute Complications -Respiratory Failure,,Respiratory failure requiring ventilation,CATEGORIC FINDING,FINDINGS
+PANCREATITIS RISK FACTORS,PANRRFAC,FA,Pancreatitis Risk factors,Pancreatitis Risk factors,,Were there any relevant risk/confounding factors identified?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS SEPSIS,PANSEPSI,FA,Acute Complications - Sepsis,Acute Complications - Sepsis,,Sepsis,CATEGORIC FINDING,FINDINGS
+PANCREATITIS SYMPTOMS,PANSYMP,FA,Symptoms Present During Event,Symptoms Present During Event,,Were other signs/symptoms present during the course of the event?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS TRAUMA TO THE PANCREAS,PANTRUMA,FA,Risk factor - Trauma to the Pancreas,Risk factor - Trauma to the Pancreas,,Trauma to the pancreas (incl. endoscopic retrograde cholangiopancreatography (ERCP)),CATEGORIC FINDING,FINDINGS
+PANCREATITIS TREATMENT,PANTRT,FA,Treatment Type,Treatment Type,,What treatment(s) did the subject receive for this condition?,CATEGORIC FINDING,FINDINGS
+PANCREATITIS ULTRASOUND,PANULTRA,FA,Imaging method - Ultrasound,Imaging method - Ultrasound,,Imaging method - ultrasound.,CATEGORIC FINDING,FINDINGS
+PANCREATITIS VOMITING,PANVOMIT,FA,Vomiting as Symptom,Vomiting as Symptom,,Pancreatitis signs/symptoms  - Vomiting,CATEGORIC FINDING,FINDINGS
+PH_UR,PHU2,LB,pH,PH Dipstick,URINE,"Sponsor defined: The investigators evaluation of the negative logarithm (base 10) of the concentration of hydronium ions, which is used as a measure of the acidity or alkalinity of a fluid._x000D_",CATEGORIC FINDING,FINDINGS
+PH_URINE,PHU,LB,pH,Urine pH,URINE,"CDISC code: C45997_x000D_
+CDISC submission value: PH_x000D_
+CDISC synonym(s): pH_x000D_
+CDISC Description: A measure of the acidity or alkalinity of a fluid on a scale of 0 to 14.(NCI)_x000D_
+NCI preferred term: pH",NUMERIC FINDING,FINDINGS
+PLATELETS,PLAT,LB,Platelets,Platelets,,A measurement of the platelets (non-nucleated thrombocytes)_x000D_,NUMERIC FINDING,FINDINGS
+POTASSIUM,K,LB,Potassium,Potassium,,A measurement of the potassium_x000D_,NUMERIC FINDING,FINDINGS
+POTASSIUM_SERUM,KS,LB,Potassium,Potassium,SERUM,"CDISC code: C64853_x000D_
+CDISC submission value: K_x000D_
+CDISC synonym(s): Potassium_x000D_
+CDISC Description: A measurement of the potassium in a biological specimen._x000D_
+NCI preferred term: Potassium Measurement",NUMERIC FINDING,FINDINGS
+PROTEIN_URINE,PROTU4,LB,Protein,Protein,URINE,"CDISC: C64858_x000D_
+A measurement of the total protein in a biological specimen._x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",NUMERIC FINDING,FINDINGS
+PROTHROMBIN_TIME,PT,LB,Prothrombin Time,Prothrombin Time,,A blood clotting measurement that evaluates the extrinsic pathway of coagulation_x000D_,NUMERIC FINDING,FINDINGS
+PROT_UR,PROTU2,LB,Protein,Protein urine,URINE,"The investigators evaluation of a measurement of a group of complex organic macromolecules composed of one or more alpha-L-amino acid chains in urine._x000D_
+Code:C64858_x000D_
+CDISC Code Value: PROT_x000D_
+CDISC Value Label: Protein_x000D_
+CDISC synonym(s): Protein_x000D_
+CDISC definition: A measurement of the total protein in a biological specimen._x000D_
+NCI preferred term: Total Protein Measurement_x000D_",CATEGORIC FINDING,FINDINGS
+PT_PLASMA,PTP,LB,Prothrombin Time,Prothrombin Time,PLASMA,"CDISC submission value: PT_x000D_
+CDISC synonym: Prothrombin Time_x000D_
+CDISC code: C62656_x000D_
+CDISC definition: A blood clotting measurement that evaluates the extrinsic pathway of coagulation and is expressed in units of time or percent activity.",NUMERIC FINDING,FINDINGS
+PULSE,PULSE,VS,Pulse Rate,Pulse,,"CDISC code: C49676_x000D_
+CDISC submission value: PULSE_x000D_
+CDISC synonym(s): Pulse Rate_x000D_
+CDISC Description: The rate of the pulse as observed in an artery, expressed as beats per minute. It can be measured at several anatomical sites, including the wrist, neck, temple, groin, behind the knees, or on top of the foot. (NCI)_x000D_
+NCI preferred term: Pulse Rate",NUMERIC FINDING,FINDINGS
+RACE,RACE,,Race,Race,,"CDISC: Race of the subject. In cases of mixed race, primary race should be listed. If additional race values are collected, they should be represented as separate records in the Subject Characteristics domain with TESTCD of ""RACEOTH"". The variable itself is required by FDA, but with ongoing discussions in Europe about the permissibility of collecting this data, the variable may be optional in future.",CATEGORIC FINDING,FINDINGS
+RANDOMISATION_DATE,RANDDT,DS,Randomized,Randomisation Date,,Date of randomisation_x000D_,DISPOSITION,EVENTS
+RBC,RBCU5,LB,Erythrocytes,Erythrocytes in Urine,,"CDISC Code: C51946_x000D_
+_x000D_
+A measurement of the total erythrocytes in a biological specimen._x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",TEXTUAL FINDING,FINDINGS
+RBC_UR,RBCU2,LB,Erythrocytes,Erythrocytes in urine,URINE,"Sponsordefined: The investigators evaluation of the concentration of cells in urine specialized for oxygen transport, having a high concentration of hemoglobin in the cytoplasm and little else; biconcave, anucleate discs, 7nm diameter in mammals._x000D_
+_x000D_
+CDISC Code: C51946_x000D_
+CDISC Submission Value: RBC_x000D_
+CDISC Synonym(s): Erythrocytes; Red Blood Cells_x000D_
+CDISC Definition: A measurement of the total erythrocytes in a biological specimen._x000D_
+NCI Preferred Term: Erythrocyte Count",CATEGORIC FINDING,FINDINGS
+REASON FOR UNDETERMINED DEATH CAUSE 1,REASDEA1,ZA,Reason for Undetermined Death Cause 1,Reason for Undetermined Death Cause 1,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+RESPIRATORY_RATE,RESP,VS,Respiratory Rate,Respiratory Rate,,"CDISC code:C49678_x000D_
+CDISC Submission Value: RESP_x000D_
+CDISC synonym(s): Respiratory Rate_x000D_
+CDISC: The rate of breathing (inhalation and exhalation) measured within in a unit time, usually expressed as breaths per minute. (NCI) _x000D_
+NCI preferred term: Respiratory Rate_x000D_
+_x000D_",NUMERIC FINDING,FINDINGS
+SEIZURE,HYSEIZUR,ZA,Seizure,Seizure,,Did the subject have a seizure,CATEGORIC FINDING,FINDINGS
+SERUM_CREATININE,CREATS3,LB,Creatinine,Creatinine,SERUM,"CDISC: C64547_x000D_
+_x000D_
+The clear portion of the blood that remains after the removal of the blood cells and the clotting proteins. (NCI)_x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",NUMERIC FINDING,FINDINGS
+SEVERE_ACUTE_UPPER_ABDOMINAL_PAIN,ACUTPAIN,ZA,Severe Acute Upper Abdominal Pain,Severe Acute Upper Abdominal Pain,,Severe Acute Upper Abdominal Pain,CATEGORIC FINDING,FINDINGS
+SEVERITY OF PANCREATITIS,SEVPANCR,ZA,Severity of Pancreatitis,Severity of Pancreatitis,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+SEX,SEX,,Sex,Sex,,"CDISC: M, F, U for Male, Female, Unknown",CATEGORIC FINDING,FINDINGS
+SODIUM,SODIUM,LB,Sodium,Sodium,,Sodium CDISC: C64809,NUMERIC FINDING,FINDINGS
+SODIUM_SERUM,SODIUMS,LB,Sodium,Sodium,SERUM,"CDISC code: C64809_x000D_
+CDISC submission value: SODIUM_x000D_
+CDISC synonym(s): Sodium_x000D_
+CDISC Description: A measurement of the sodium in a biological specimen._x000D_
+NCI preferred term: Sodium Measurement",NUMERIC FINDING,FINDINGS
+SOURCE OF ADJUDICATED EVENT,SOURADEV,ZA,Source of Adjudicated Event,Source of Adjudicated Event,,Sponsor defined: Used for Event Adjudication_x000D_,CATEGORIC FINDING,FINDINGS
+SUBJECT FASTING,YNF,LB,Subject fasting,Subject fasting,,Subject fasting,CATEGORIC FINDING,FINDINGS
+SUBJECT_DIED,SUBJDIED,ZA,Subject Died,Subject Died,,Did the subject die from this severe hypoglycemic episode,CATEGORIC FINDING,FINDINGS
+SYMPTOM OF PANCREATITIS 1,SYMPANC1,ZA,Symptom of Pancreatitis 1,Symptom of Pancreatitis 1,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+SYMPTOM OF PANCREATITIS 2,SYMPANC2,ZA,Symptom of Pancreatitis 2,Symptom of Pancreatitis 2,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+SYMPTOM OF PANCREATITIS 3,SYMPANC3,ZA,Symptom of Pancreatitis 3,Symptom of Pancreatitis 3,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+SYMPTOM OF UNSTABLE ANGINA PECTORIS 1,SYMUNMI1,ZA,Symptom of Unstable Angina Pectoris 1,Symptom of Unstable Angina Pectoris 1,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+SYMPTOM OF UNSTABLE ANGINA PECTORIS 2,SYMUNMI2,ZA,Symptom of Unstable Angina Pectoris 2,Symptom of Unstable Angina Pectoris 2,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+SYMPTOM OF UNSTABLE ANGINA PECTORIS 3,SYMUNMI3,ZA,Symptom of Unstable Angina Pectoris 3,Symptom of Unstable Angina Pectoris 3,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+SYMPTOM OF UNSTABLE ANGINA PECTORIS 4,SYMUNMI4,ZA,Symptom of Unstable Angina Pectoris 4,Symptom of Unstable Angina Pectoris 4,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+THROMBOCYTES_BLOOD,PLATB,LB,Platelets,Thrombocytes,BLOOD,"CDISC code: C51951_x000D_
+CDISC submission value: PLAT_x000D_
+CDISC synonym(s): Platelets_x000D_
+CDISC Description: A measurement of the platelets in a biological specimen._x000D_
+NCI preferred term: Platelet Count",NUMERIC FINDING,FINDINGS
+TM01_01_PAIN_FREE_WALKING_DISTANCE_ON_FLAT_TREADMILL,TM0101,FT,Treadmill - Pain-Free Walking Distance on Flat Treadmill,Treadmill - Pain-Free Walking Distance on Flat Treadmill,,Treadmill assessments - Pain-free walking distance on flat treadmill,NUMERIC FINDING,FINDINGS
+TM01_02_PAIN_FREE_WALKING_DISTANCE_ON_INCLINED_TREADMILL,TM0102,FT,Treadmill - Pain-Free Walking Distance on Inclined Treadmill,Treadmill - Pain-Free Walking Distance on Inclined Treadmill,,Treadmill assessments - Pain-free walking distance on inclined treadmill,NUMERIC FINDING,FINDINGS
+TM01_03_MAX_WALKING_DISTANCE_ON_INCLINED_TREADMILL,TM0103,FT,Treadmill - Max Walking Distance on Inclined Treadmill,Treadmill - Max Walking Distance on Inclined Treadmill,,Treadmill assessments - Max. walking distance on inclined treadmill,NUMERIC FINDING,FINDINGS
+TOAST_CLASSIFICATION,TOASTCL,ZA,TOAST Classification,TOAST Classification,,"Ischemic stroke classification according to the Trial of Org 10172 in Acute Stroke Treatment (TOAST) classification (Table 1) The classification is based on clinical features and on data collected by test results such as brain imaging (CT/CTA/MRI/MRA), cardiac imaging (transthoracal echocardiography, transoesophageal echocardiography, 24-hour Holter monitoring, cardiac CT), duplex ultrasound scanning of extracranial arteries, arteriography, and laboratory assessments for a prothrombotic state.",CATEGORIC FINDING,FINDINGS
+TOTAL_PROTEIN_SERUM,PROTS,LB,Protein,Total Protein,SERUM,"CDISC submission value: PROT_x000D_
+CDISC code: C64858_x000D_
+CDISC synonym: Protein_x000D_
+CDISC: A measurement of a group of complex organic macromolecules composed of one or more alpha-L-amino acid chains in a biological specimen.",NUMERIC FINDING,FINDINGS
+TYPE OF HEART FAILURE,TYHHEAFA,ZA,Type of Heart Failure,Type of Heart Failure,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+TYPE OF MYOCARDIAL INFARCTION,TYMYOINF,ZA,Type of Myocardial Infarction,Type of Myocardial Infarction,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+TYPE OF STROKE,TYSTROKE,ZA,Type of Stroke,Type of Stroke,,Sponsor defined: Used for Event Adjudication,CATEGORIC FINDING,FINDINGS
+T_LEUCOCYTES_C_BLOOD,WBCB,LB,Leukocytes,Leukocytes,BLOOD,"CDISC code: C51948_x000D_
+CDISC submission value: WBC_x000D_
+CDISC synonym(s): Leukocytes; White Blood Cells_x000D_
+CDISC Description: A measurement of the leukocytes in a biological specimen._x000D_
+NCI preferred term: Leukocyte Count",NUMERIC FINDING,FINDINGS
+UNCONSCIOUS_COMA,UNCOCOMA,ZA,Unconscious/Coma,Unconscious/Coma,,Was the subject unconscious/in coma,CATEGORIC FINDING,FINDINGS
+UNDETERMINED_ETIOLOGY_REASON,UNDETIRE,ZA,Undetermined Etiology Reason,Undetermined Etiology Reason,,"If TOAST classification is undetermined cause, Reason for undetermined etiology_x000D_",CATEGORIC FINDING,FINDINGS
+UNDETERM_DEATH_SOURCE_INFO,UNDESOUR,ZA,Details in Source Data,Details in Source Data,,Details in source data when outcome is undetermined cause of death,CATEGORIC FINDING,FINDINGS
+URINE_CULTURE,URNCULRU,LB,Urine Culture,Urine Culture,URINE,"A urine culture is used to diagnose a urinary tract infection (UTI) and to identify the bacteria or yeast._x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",TEXTUAL FINDING,FINDINGS
+URINE_MICROSCOPY,URNMICOU,LB,Microscopy,Urine Microscopy,URINE,This test looks at a sample of  urine under a microscope.,TEXTUAL FINDING,FINDINGS
+URINE_SAMPLES_COLLECTED,URINECLU,LB,Have all urine samples been taken,Have all urine samples been taken,URINE,"<CodeLists>_x000D_
+<CodeList Value=""LBTEST"" CodeSubmValue=""Have all samples been taken"" SpecimenType=""URINE""></CodeList>_x000D_
+<CodeList Value=""LBTESTCD"" CodeSubmValue=""LBALL""></CodeList>_x000D_
+</CodeLists>_x000D_
+Have all urine samples been taken?",CATEGORIC FINDING,FINDINGS
+UROBILINOGEN_URINE,UROBILU2,LB,Urobilinogen,Urobilinogen,URINE,"CDISC:A measurement of the urobilinogen in a biological specimen._x000D_
+CDISC synonym: Urobilinogen_x000D_
+CDISC preferred term: UROBIL_x000D_
+CDISC code: C64816",CATEGORIC FINDING,FINDINGS
+UROBIL_UR,UROBILU,LB,Urobilinogen,Urobilinogen urine,URINE,"Sponsordefined: The investigators evaluation of a  measurement of the urobilinogen in urine._x000D_
+_x000D_
+CDISC Code: C64816_x000D_
+CDISC Submission Value: UROBIL_x000D_
+CDISC Synonym(s): Urobilinogen_x000D_
+CDISC Definition: A measurement of the urobilinogen in a biological specimen._x000D_
+NCI Preferred Term: Urobilinogen Measurement",CATEGORIC FINDING,FINDINGS
+WAIST_CIRCUMFERENCE,WSTCIR,VS,Waist Circumference,Waist Circumference,,"CDISC code: C100948_x000D_
+CDISC submission value: WSTCIR_x000D_
+CDISC synonym(s): Waist Circumference_x000D_
+CDISC Description: The distance around an individual's midsection or waist._x000D_
+NCI preferred term: Waist Circumference",NUMERIC FINDING,FINDINGS
+WBC,WBC,LB,Leukocytes,White Blood Cells,,"A measurement of the leukocytes in a biological specimen._x000D_
+NCI preferred term: Leukocyte Count",NUMERIC FINDING,FINDINGS
+WBC URINE,WBCU4,LB,Leukocytes,Leukocytes in Urine,URINE,"CDISC Code: C65047_x000D_
+_x000D_
+A measurement of the leukocytes in a biological specimen._x000D_
+_x000D_
+For Lab codes in AE Requiring Additional Data, there should be no SCATS",TEXTUAL FINDING,FINDINGS
+WBC_UR,WBCU2,LB,Leukocytes,Leukocytes in urine,URINE,"Sponsordefined: The investigators evaluation of A measurement of the leukocytes in urine_x000D_
+_x000D_
+CDISC Code: C51948_x000D_
+CDISC Submission Value: WBC_x000D_
+CDISC Synonym(s): Leukocytes; White Blood Cells_x000D_
+CDISC Definition: A measurement of the leukocytes in a biological specimen._x000D_
+NCI Preferred Term: Leukocyte Count",CATEGORIC FINDING,FINDINGS

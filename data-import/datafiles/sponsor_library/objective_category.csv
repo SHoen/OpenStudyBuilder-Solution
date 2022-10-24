@@ -1,0 +1,6 @@
+CT_CD_LIST_SUBMVAL,CT_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,ORDER,DEFINITION
+OBJTCAT,Efficacy,Efficacy,efficacy,1,Efficacy
+OBJTCAT,Safety,Safety,safety,2,Safety
+OBJTCAT,Pharmacokinetics,Pharmacokinetics,pharmacokinetics,3,Pharmacokinetics
+OBJTCAT,Pharmacodynamics,Pharmacodynamics,pharmacodynamics,4,Pharmacodynamics
+OBJTCAT,Bioequivalence ,Bioequivalence ,bioequivalence ,5,Bioequivalence 

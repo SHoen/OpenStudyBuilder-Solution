@@ -1,0 +1,425 @@
+[
+    {
+        "name": "Test importing an ODM XML",
+        "request": {
+            "headers": {
+                "content-type": "application/xml"
+            },
+            "method": "POST",
+            "request": "<?xml version='1.0' encoding='utf-8'?> <ODM xmlns:odm='http://www.cdisc.org/ns/odm/v1.3' ODMVersion='1.3.2' FileType='Snapshot' FileOID='OID.1653379214077' xmlns:osb='http://www.openstudybuilder.com/xmlns/odm/osb-2-6' CreationDateTime='2022-05-24 10:00:14.077989'> <Study OID='ODM version 1.3.2 with DoB-T.ODM-1-3-2-V1'> <GlobalVariables> <StudyName>ODM version 1.3.2 with DoB</StudyName> <StudyDescription>ODM version 1.3.2 with DoB</StudyDescription> </GlobalVariables> <BasicDefinitions> <MeasurementUnit OID='MU.29' Name='name1'> <Symbol> <TranslatedText xml:lang='en'>name1</TranslatedText> </Symbol> </MeasurementUnit> </BasicDefinitions> <MetaDataVersion OID='MDV.0.1' Name='MDV.0.1' Description='Draft version'> <FormDef OID='F.DM' Name='Informed Consent and Demography' Repeating='No'> <ItemGroupRef CollectionExceptionConditionOID='C.OID1' ItemGroupOID='G.DM.DM' Mandatory='Yes' OrderNumber='1' /> <ItemGroupRef CollectionExceptionConditionOID='C.OID2' ItemGroupOID='G.DM.FM' Mandatory='Yes' OrderNumber='2' /> <Description> <TranslatedText xml:lang='en'>Form Description</TranslatedText> </Description> <Question> <TranslatedText xml:lang='en'>Form Description Name</TranslatedText> </Question> </FormDef> <ItemGroupDef OID='G.DM.DM' Name='General Demography ' Repeating='No' Purpose='Tabulation' SASDatasetName='DEMOG'> <ItemRef CollectionExceptionConditionOID='C.OID1' ItemOID='I.RACE' Mandatory='Yes' OrderNumber='11' /> <Description> <TranslatedText xml:lang='en'>Item Group 1 Description</TranslatedText> </Description> <Question> <TranslatedText xml:lang='en'>Item Group 1 Description Name</TranslatedText> </Question> </ItemGroupDef> <ItemGroupDef OID='G.DM.FM' Name='New IG' Repeating='No' Purpose='Tabulation' SASDatasetName='DEMOG'> <ItemRef CollectionExceptionConditionOID='C.OID2' ItemOID='I.SYSBP' Mandatory='Yes' OrderNumber='10' /> <Description> <TranslatedText xml:lang='en'>Item Group 2 Description</TranslatedText> </Description> <Question> <TranslatedText xml:lang='en'>Item Group 2 Description Name</TranslatedText> </Question> </ItemGroupDef> <ItemDef OID='I.SYSBP' Name='Systolic blosadod pressure' DataType='string' Length='15' SASFieldName='SYBP' SDSVarName='SYBP'> <Description> <TranslatedText xml:lang='en'>Item 1 Description</TranslatedText> </Description> <Question> <TranslatedText xml:lang='en'>Item 1 Description Name</TranslatedText> </Question> <CodeListRef CodeListOID='MA.01' /> <MeasurementUnitRef MeasurementUnitOID='MU.29' /> </ItemDef> <ItemDef OID='I.RACE' Name='Race [read-only]' DataType='string' Length='15' SASFieldName='RACE' SDSVarName='RACE'> <Description> <TranslatedText xml:lang='en'>Item 2 Description</TranslatedText> </Description> <Question> <TranslatedText xml:lang='en'>Item 2 Description Name</TranslatedText> </Question> <CodeListRef CodeListOID='MA.02' /> <MeasurementUnitRef MeasurementUnitOID='MU.29' /> </ItemDef> <ConditionDef OID='C.OID1' Name='Condition1'> <Description> <TranslatedText xml:lang='en'>Condition 1 Description</TranslatedText> </Description> <Question> <TranslatedText xml:lang='en'>Condition 1 Description Name</TranslatedText> </Question> <FormalExpression Context='XPath'>Formal Expression 1</FormalExpression> </ConditionDef> <ConditionDef OID='C.OID2' Name='Condition2'> <Description> <TranslatedText xml:lang='en'>Condition 2 Description</TranslatedText> <TranslatedText xml:lang='da'>Condition 3 Description</TranslatedText> </Description> <Question> <TranslatedText xml:lang='da'>Condition 3 Description Name</TranslatedText> <TranslatedText xml:lang='en'>Condition 2 Description Name</TranslatedText> <TranslatedText xml:lang='ar'>Condition 4 Description Name</TranslatedText> </Question> <FormalExpression Context='XPath'>Formal Expression 2</FormalExpression> </ConditionDef> <CodeList OID='MA.01' Name='codelist attributes value1' DataType='string' /> <CodeList OID='MA.02' Name='codelist attributes value2' DataType='string' /> </MetaDataVersion> </Study> </ODM>",
+            "url": "concepts/odms/metadata/xmls"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "2944",
+                "content-type": "application/json"
+            },
+            "result": {
+                "forms": [
+                    {
+                        "startDate": "2022-05-31T16:26:45.471728",
+                        "endDate": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "userInitials": "TODO user initials",
+                        "changeDescription": "Approved version",
+                        "uid": "OdmForm_000001",
+                        "name": "Informed Consent and Demography",
+                        "libraryName": "Sponsor",
+                        "oid": "F.DM",
+                        "sdtmVersion": "",
+                        "repeating": "No",
+                        "scope": null,
+                        "descriptions": [
+                            {
+                                "uid": "OdmDescription_000009",
+                                "name": "Form Description Name",
+                                "language": "ENG",
+                                "description": "Form Description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [],
+                        "activityGroups": [],
+                        "itemGroups": [
+                            {
+                                "uid": "OdmItemGroup_000001",
+                                "oid": "G.DM.DM",
+                                "name": "General Demography ",
+                                "orderNumber": 1,
+                                "mandatory": "Yes",
+                                "locked": "No",
+                                "collectionExceptionConditionOid": "C.OID1"
+                            },
+                            {
+                                "uid": "OdmItemGroup_000002",
+                                "oid": "G.DM.FM",
+                                "name": "New IG",
+                                "orderNumber": 2,
+                                "mandatory": "Yes",
+                                "locked": "No",
+                                "collectionExceptionConditionOid": "C.OID2"
+                            }
+                        ],
+                        "xmlExtensionTags": [],
+                        "xmlExtensionAttributes": [],
+                        "xmlExtensionTagAttributes": [],
+                        "possibleActions": [
+                            "inactivate",
+                            "newVersion"
+                        ]
+                    }
+                ],
+                "itemGroups": [
+                    {
+                        "startDate": "2022-05-31T16:26:44.781479",
+                        "endDate": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "userInitials": "TODO user initials",
+                        "changeDescription": "Approved version",
+                        "uid": "OdmItemGroup_000001",
+                        "name": "General Demography ",
+                        "libraryName": "Sponsor",
+                        "oid": "G.DM.DM",
+                        "repeating": "No",
+                        "isReferenceData": "No",
+                        "sasDatasetName": "DEMOG",
+                        "origin": "",
+                        "purpose": "Tabulation",
+                        "comment": null,
+                        "descriptions": [
+                            {
+                                "uid": "OdmDescription_000007",
+                                "name": "Item Group 1 Description Name",
+                                "language": "ENG",
+                                "description": "Item Group 1 Description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [],
+                        "sdtmDomains": [],
+                        "activitySubGroups": [],
+                        "items": [
+                            {
+                                "uid": "OdmItem_000002",
+                                "oid": "I.RACE",
+                                "name": "Race [read-only]",
+                                "orderNumber": 11,
+                                "mandatory": "Yes",
+                                "dataEntryRequired": "No",
+                                "sdv": "No",
+                                "locked": "No",
+                                "keySequence": "None",
+                                "methodOid": "None",
+                                "imputationMethodOid": "None",
+                                "role": "None",
+                                "roleCodelistOid": "None",
+                                "collectionExceptionConditionOid": "C.OID1"
+                            }
+                        ],
+                        "xmlExtensionTags": [],
+                        "xmlExtensionAttributes": [],
+                        "xmlExtensionTagAttributes": [],
+                        "possibleActions": [
+                            "inactivate",
+                            "newVersion"
+                        ]
+                    },
+                    {
+                        "startDate": "2022-05-31T16:26:45.136137",
+                        "endDate": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "userInitials": "TODO user initials",
+                        "changeDescription": "Approved version",
+                        "uid": "OdmItemGroup_000002",
+                        "name": "New IG",
+                        "libraryName": "Sponsor",
+                        "oid": "G.DM.FM",
+                        "repeating": "No",
+                        "isReferenceData": "No",
+                        "sasDatasetName": "DEMOG",
+                        "origin": "",
+                        "purpose": "Tabulation",
+                        "comment": null,
+                        "descriptions": [
+                            {
+                                "uid": "OdmDescription_000008",
+                                "name": "Item Group 2 Description Name",
+                                "language": "ENG",
+                                "description": "Item Group 2 Description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [],
+                        "sdtmDomains": [],
+                        "activitySubGroups": [],
+                        "items": [
+                            {
+                                "uid": "OdmItem_000001",
+                                "oid": "I.SYSBP",
+                                "name": "Systolic blosadod pressure",
+                                "orderNumber": 10,
+                                "mandatory": "Yes",
+                                "dataEntryRequired": "No",
+                                "sdv": "No",
+                                "locked": "No",
+                                "keySequence": "None",
+                                "methodOid": "None",
+                                "imputationMethodOid": "None",
+                                "role": "None",
+                                "roleCodelistOid": "None",
+                                "collectionExceptionConditionOid": "C.OID2"
+                            }
+                        ],
+                        "xmlExtensionTags": [],
+                        "xmlExtensionAttributes": [],
+                        "xmlExtensionTagAttributes": [],
+                        "possibleActions": [
+                            "inactivate",
+                            "newVersion"
+                        ]
+                    }
+                ],
+                "items": [
+                    {
+                        "startDate": "2022-05-23T16:42:30.426461",
+                        "endDate": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "userInitials": "TODO user initials",
+                        "changeDescription": "Initial version",
+                        "uid": "OdmItem_000001",
+                        "name": "Systolic blosadod pressure",
+                        "libraryName": "Sponsor",
+                        "oid": "I.SYSBP",
+                        "prompt": "",
+                        "datatype": "string",
+                        "length": 15,
+                        "significantDigits": null,
+                        "sasFieldName": "SYBP",
+                        "sdsVarName": "SYBP",
+                        "origin": null,
+                        "comment": null,
+                        "descriptions": [
+                            {
+                                "uid": "OdmDescription_000005",
+                                "name": "Item 1 Description Name",
+                                "language": "ENG",
+                                "description": "Item 1 Description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [],
+                        "unitDefinitions": [
+                            {
+                                "uid": "unit_definition_root1",
+                                "name": "name1",
+                                "mandatory": true,
+                                "order": 999999,
+                                "ucum": {
+                                    "termUid": "term_root1_uid",
+                                    "name": "name1",
+                                    "dictionaryId": "dictionary_id1"
+                                },
+                                "ctUnits": [
+                                    {
+                                        "termUid": "C25532_name1",
+                                        "name": "name1"
+                                    }
+                                ]
+                            }
+                        ],
+                        "codelist": {
+                            "uid": "ct_codelist_root1",
+                            "name": "codelist attributes value1",
+                            "submissionValue": "codelist submission value1",
+                            "preferredTerm": "codelist preferred term"
+                        },
+                        "activities": [],
+                        "terms": [],
+                        "xmlExtensionTags": [],
+                        "xmlExtensionAttributes": [],
+                        "xmlExtensionTagAttributes": [],
+                        "possibleActions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    },
+                    {
+                        "startDate": "2022-05-23T16:42:30.553168",
+                        "endDate": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "userInitials": "TODO user initials",
+                        "changeDescription": "Initial version",
+                        "uid": "OdmItem_000002",
+                        "name": "Race [read-only]",
+                        "libraryName": "Sponsor",
+                        "oid": "I.RACE",
+                        "prompt": "",
+                        "datatype": "string",
+                        "length": 15,
+                        "significantDigits": null,
+                        "sasFieldName": "RACE",
+                        "sdsVarName": "RACE",
+                        "origin": null,
+                        "comment": null,
+                        "descriptions": [
+                            {
+                                "uid": "OdmDescription_000006",
+                                "name": "Item 2 Description Name",
+                                "language": "ENG",
+                                "description": "Item 2 Description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [],
+                        "unitDefinitions": [
+                            {
+                                "uid": "unit_definition_root1",
+                                "name": "name1",
+                                "mandatory": true,
+                                "order": 999999,
+                                "ucum": {
+                                    "termUid": "term_root1_uid",
+                                    "name": "name1",
+                                    "dictionaryId": "dictionary_id1"
+                                },
+                                "ctUnits": [
+                                    {
+                                        "termUid": "C25532_name1",
+                                        "name": "name1"
+                                    }
+                                ]
+                            }
+                        ],
+                        "codelist": {
+                            "uid": "ct_codelist_root2",
+                            "name": "codelist attributes value2",
+                            "submissionValue": "codelist submission value2",
+                            "preferredTerm": "codelist preferred term"
+                        },
+                        "activities": [],
+                        "terms": [],
+                        "xmlExtensionTags": [],
+                        "xmlExtensionAttributes": [],
+                        "xmlExtensionTagAttributes": [],
+                        "possibleActions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                ],
+                "conditions": [
+                    {
+                        "startDate": "2022-06-23T15: 20: 18.509726",
+                        "endDate": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "userInitials": "TODO user initials",
+                        "changeDescription": "Initial version",
+                        "uid": "OdmCondition_000001",
+                        "name": "Condition1",
+                        "libraryName": "Sponsor",
+                        "oid": "C.OID1",
+                        "formalExpressions": [
+                            {
+                                "uid": "OdmFormalExpression_000001",
+                                "context": "XPath",
+                                "expression": "Formal Expression 1",
+                                "version": "0.1"
+                            }
+                        ],
+                        "descriptions": [
+                            {
+                                "uid": "OdmDescription_000001",
+                                "name": "Condition 1 Description Name",
+                                "language": "ENG",
+                                "description": "Condition 1 Description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [],
+                        "possibleActions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    },
+                    {
+                        "startDate": "2022-06-23T15: 20: 18.509726",
+                        "endDate": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "userInitials": "TODO user initials",
+                        "changeDescription": "Initial version",
+                        "uid": "OdmCondition_000002",
+                        "name": "Condition2",
+                        "libraryName": "Sponsor",
+                        "oid": "C.OID2",
+                        "formalExpressions": [
+                            {
+                                "uid": "OdmFormalExpression_000002",
+                                "context": "XPath",
+                                "expression": "Formal Expression 2",
+                                "version": "0.1"
+                            }
+                        ],
+                        "descriptions": [
+                            {
+                                "uid": "OdmDescription_000002",
+                                "name": "Condition 2 Description Name",
+                                "language": "ENG",
+                                "description": "Condition 2 Description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            },
+                            {
+                                "uid": "OdmDescription_000003",
+                                "name": "Condition 3 Description Name",
+                                "language": "DAN",
+                                "description": "Condition 3 Description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            },
+                            {
+                                "uid": "OdmDescription_000004",
+                                "name": "Condition 4 Description Name",
+                                "language": "ARA",
+                                "description": "Please update this description",
+                                "instruction": "Please update this instruction",
+                                "sponsorInstruction": null,
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [],
+                        "possibleActions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]

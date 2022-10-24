@@ -1,0 +1,2412 @@
+[
+  {
+    "name": "Test empty list (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test adding",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "unit1",
+        "libraryName": "Test library",
+        "ctUnits": [
+          "unit1-ct-uid"
+        ],
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "unitDimension": "unit1-dimension",
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1
+      },
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "save": {
+        "uid": "uid"
+      },
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1",
+        "libraryName": "Test library",
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension",
+          "name": "CT Unit Dim term 1"
+        },
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test adding non-unique name",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "unit1",
+        "libraryName": "Test library",
+        "ctUnits": [
+          "unit1-ct-uid-2"
+        ],
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "unitDimension": "unit1-dimension-2",
+        "legacyCode": "unit1-legacy-code-2",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 2
+      },
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test get all (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "items": [
+          {
+            "ctUnits": [
+              {
+                "termUid": "unit1-ct-uid",
+                "name": "CT Unit term 1"
+              }
+            ],
+            "unitSubsets": [],
+            "unitDimension": {
+              "termUid": "unit1-dimension",
+              "name": "CT Unit Dim term 1"
+            },
+            "startDate": "2021-04-03T17:39:29.387415",
+            "endDate": null,
+            "status": "Draft",
+            "version": "0.1",
+            "userInitials": "TODO: Initials",
+            "changeDescription": "Initial version",
+            "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+            "name": "unit1",
+            "libraryName": "Test library",
+            "convertibleUnit": true,
+            "displayUnit": true,
+            "masterUnit": true,
+            "siUnit": true,
+            "usConventionalUnit": true,
+            "legacyCode": "unit1-legacy-code",
+            "molecularWeightConvExpon": 0,
+            "conversionFactorToMaster": 1.0,
+            "order": 1,
+            "ucum": null,
+            "comment": null,
+            "definition": null,
+            "templateParameter": false
+          }
+        ],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test delete success",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test empty list",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test adding",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "unit1",
+        "libraryName": "Test library",
+        "ctUnits": [
+          "unit1-ct-uid"
+        ],
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "unitDimension": "unit1-dimension",
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1
+      },
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "save": {
+        "uid": "uid",
+        "startDateOfV0_1": "startDate"
+      },
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension",
+          "name": "CT Unit Dim term 1"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test retire draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/inactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/reactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test new-version draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/new-version"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test get all",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "items": [
+          {
+            "ctUnits": [
+              {
+                "termUid": "unit1-ct-uid",
+                "name": "CT Unit term 1"
+              }
+            ],
+            "unitSubsets": [],
+            "unitDimension": {
+              "termUid": "unit1-dimension",
+              "name": "CT Unit Dim term 1"
+            },
+            "startDate": "2021-04-03T17:39:29.387415",
+            "endDate": null,
+            "status": "Draft",
+            "version": "0.1",
+            "userInitials": "TODO: Initials",
+            "changeDescription": "Initial version",
+            "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+            "name": "unit1",
+            "libraryName": "Test library",
+            "convertibleUnit": true,
+            "displayUnit": true,
+            "masterUnit": true,
+            "siUnit": true,
+            "usConventionalUnit": true,
+            "legacyCode": "unit1-legacy-code",
+            "molecularWeightConvExpon": 0,
+            "conversionFactorToMaster": 1.0,
+            "order": 1,
+            "ucum": null,
+            "comment": null,
+            "definition": null,
+            "templateParameter": false
+          }
+        ],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension",
+          "name": "CT Unit Dim term 1"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Draft)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?status=Draft"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension",
+          "name": "CT Unit Dim term 1"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?version=0.1"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension",
+          "name": "CT Unit Dim term 1"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (atSpecifiedDate=startDateOfV0_1) (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?atSpecifiedDate={startDateOfV0_1}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension",
+          "name": "CT Unit Dim term 1"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?status=Final"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.2) (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?version=0.2"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Retired)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?status=Retired"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test patch",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version",
+        "name": "unit1-patched",
+        "unitDimension": "unit1-dimension-patched",
+        "legacyCode": "unit1-legacy-code-patched"
+      },
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "save": {
+        "startDateOfV0_2": "startDate"
+      },
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get all",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "items": [
+          {
+            "ctUnits": [
+              {
+                "termUid": "unit1-ct-uid",
+                "name": "CT Unit term 1"
+              }
+            ],
+            "unitSubsets": [],
+            "unitDimension": {
+              "termUid": "unit1-dimension-patched",
+              "name": "CT Unit Dim term 3"
+            },
+            "startDate": "2021-04-03T17:39:29.387415",
+            "endDate": null,
+            "status": "Draft",
+            "version": "0.2",
+            "userInitials": "TODO: Initials",
+            "changeDescription": "Patched version",
+            "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+            "name": "unit1-patched",
+            "libraryName": "Test library",
+            "convertibleUnit": true,
+            "displayUnit": true,
+            "masterUnit": true,
+            "siUnit": true,
+            "usConventionalUnit": true,
+            "legacyCode": "unit1-legacy-code-patched",
+            "molecularWeightConvExpon": 0,
+            "conversionFactorToMaster": 1.0,
+            "order": 1,
+            "ucum": null,
+            "comment": null,
+            "definition": null,
+            "templateParameter": false
+          }
+        ],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Draft)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?status=Draft"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.2) (2)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?version=0.2"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (atSpecifiedDate=startDateOfV0_2)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?atSpecifiedDate={startDateOfV0_2}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?version=0.1"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension",
+          "name": "CT Unit Dim term 1"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?status=Final"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Retired)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?status=Retired"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test approve",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/approve"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get all (after approval)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "items": [
+          {
+            "ctUnits": [
+              {
+                "termUid": "unit1-ct-uid",
+                "name": "CT Unit term 1"
+              }
+            ],
+            "unitSubsets": [],
+            "unitDimension": {
+              "termUid": "unit1-dimension-patched",
+              "name": "CT Unit Dim term 3"
+            },
+            "startDate": "2021-04-03T17:39:29.387415",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "userInitials": "TODO: Initials",
+            "changeDescription": "Approved version",
+            "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+            "name": "unit1-patched",
+            "libraryName": "Test library",
+            "convertibleUnit": true,
+            "displayUnit": true,
+            "masterUnit": true,
+            "siUnit": true,
+            "usConventionalUnit": true,
+            "legacyCode": "unit1-legacy-code-patched",
+            "molecularWeightConvExpon": 0,
+            "conversionFactorToMaster": 1.0,
+            "order": 1,
+            "ucum": null,
+            "comment": null,
+            "definition": null,
+            "templateParameter": false
+          }
+        ],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test get by uid (after approval)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get by uid (after approval, status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?status=Final"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get by uid (after approval, version=1.0)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?version=1.0"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test approve final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/approve"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/reactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch final fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version 2 (failed)",
+        "name": "unit1-patched-fail",
+        "unitDimension": "unit1-dimension-patched-fail",
+        "legacyCode": "unit1-legacy-code-patched-fail"
+      },
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test delete final fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test inactivate",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/inactivate"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Retired",
+        "version": "1.0",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Deactivated version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test retire retired fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/inactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test new-version on retired fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/new-version"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test approve retired fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/approve"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch retired fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version 2 (failed)",
+        "name": "unit1-patched-fail",
+        "unitDimension": "unit1-dimension-patched-fail",
+        "legacyCode": "unit1-legacy-code-patched-fail"
+      },
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test delete retired fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/reactivate"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Reactivated version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test approve final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/approve"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/reactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch final fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version 2 (failed)",
+        "name": "unit1-patched-fail",
+        "unitDimension": "unit1-dimension-patched-fail",
+        "legacyCode": "unit1-legacy-code-patched-fail"
+      },
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test delete final fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test new-version",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/new-version"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "1.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "New draft created",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test retire draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/inactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/reactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test new-version draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/new-version"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete draft that had been accepted fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch next major version",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version 2",
+        "name": "unit1-patched-2",
+        "unitDimension": "unit1-dimension-patched-2",
+        "legacyCode": "unit1-legacy-code-patched-2"
+      },
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched-2",
+          "name": "CT Unit Dim term 4"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "1.2",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Patched version 2",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched-2",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched-2",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched-2",
+          "name": "CT Unit Dim term 4"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "1.2",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Patched version 2",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched-2",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched-2",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}?status=Final"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Reactivated version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit1-patched",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test get versions",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/concepts/unit-definitions/{uid}/versions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "ctUnits": [
+            {
+              "termUid": "unit1-ct-uid",
+              "name": "CT Unit term 1"
+            }
+          ],
+          "unitSubsets": [],
+          "unitDimension": {
+            "termUid": "unit1-dimension-patched-2",
+            "name": "CT Unit Dim term 4"
+          },
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "1.2",
+          "userInitials": "TODO: Initials",
+          "changeDescription": "Patched version 2",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "name": "unit1-patched-2",
+          "libraryName": "Test library",
+          "convertibleUnit": true,
+          "displayUnit": true,
+          "masterUnit": true,
+          "siUnit": true,
+          "usConventionalUnit": true,
+          "legacyCode": "unit1-legacy-code-patched-2",
+          "molecularWeightConvExpon": 0,
+          "conversionFactorToMaster": 1.0,
+          "order": 1,
+          "ucum": null,
+          "comment": null,
+          "definition": null,
+          "templateParameter": false
+        },
+        {
+          "ctUnits": [
+            {
+              "termUid": "unit1-ct-uid",
+              "name": "CT Unit term 1"
+            }
+          ],
+          "unitSubsets": [],
+          "unitDimension": {
+            "termUid": "unit1-dimension-patched",
+            "name": "CT Unit Dim term 3"
+          },
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "1.1",
+          "userInitials": "TODO: Initials",
+          "changeDescription": "New draft created",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "name": "unit1-patched",
+          "libraryName": "Test library",
+          "convertibleUnit": true,
+          "displayUnit": true,
+          "masterUnit": true,
+          "siUnit": true,
+          "usConventionalUnit": true,
+          "legacyCode": "unit1-legacy-code-patched",
+          "molecularWeightConvExpon": 0,
+          "conversionFactorToMaster": 1.0,
+          "order": 1,
+          "ucum": null,
+          "comment": null,
+          "definition": null,
+          "templateParameter": false
+        },
+        {
+          "ctUnits": [
+            {
+              "termUid": "unit1-ct-uid",
+              "name": "CT Unit term 1"
+            }
+          ],
+          "unitSubsets": [],
+          "unitDimension": {
+            "termUid": "unit1-dimension-patched",
+            "name": "CT Unit Dim term 3"
+          },
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "userInitials": "TODO: Initials",
+          "changeDescription": "Reactivated version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "name": "unit1-patched",
+          "libraryName": "Test library",
+          "convertibleUnit": true,
+          "displayUnit": true,
+          "masterUnit": true,
+          "siUnit": true,
+          "usConventionalUnit": true,
+          "legacyCode": "unit1-legacy-code-patched",
+          "molecularWeightConvExpon": 0,
+          "conversionFactorToMaster": 1.0,
+          "order": 1,
+          "ucum": null,
+          "comment": null,
+          "definition": null,
+          "templateParameter": false
+        },
+        {
+          "ctUnits": [
+            {
+              "termUid": "unit1-ct-uid",
+              "name": "CT Unit term 1"
+            }
+          ],
+          "unitSubsets": [],
+          "unitDimension": {
+            "termUid": "unit1-dimension-patched",
+            "name": "CT Unit Dim term 3"
+          },
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Retired",
+          "version": "1.0",
+          "userInitials": "TODO: Initials",
+          "changeDescription": "Deactivated version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "name": "unit1-patched",
+          "libraryName": "Test library",
+          "convertibleUnit": true,
+          "displayUnit": true,
+          "masterUnit": true,
+          "siUnit": true,
+          "usConventionalUnit": true,
+          "legacyCode": "unit1-legacy-code-patched",
+          "molecularWeightConvExpon": 0,
+          "conversionFactorToMaster": 1.0,
+          "order": 1,
+          "ucum": null,
+          "comment": null,
+          "definition": null,
+          "templateParameter": false
+        },
+        {
+          "ctUnits": [
+            {
+              "termUid": "unit1-ct-uid",
+              "name": "CT Unit term 1"
+            }
+          ],
+          "unitSubsets": [],
+          "unitDimension": {
+            "termUid": "unit1-dimension-patched",
+            "name": "CT Unit Dim term 3"
+          },
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "userInitials": "TODO: Initials",
+          "changeDescription": "Approved version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "name": "unit1-patched",
+          "libraryName": "Test library",
+          "convertibleUnit": true,
+          "displayUnit": true,
+          "masterUnit": true,
+          "siUnit": true,
+          "usConventionalUnit": true,
+          "legacyCode": "unit1-legacy-code-patched",
+          "molecularWeightConvExpon": 0,
+          "conversionFactorToMaster": 1.0,
+          "order": 1,
+          "ucum": null,
+          "comment": null,
+          "definition": null,
+          "templateParameter": false
+        },
+        {
+          "ctUnits": [
+            {
+              "termUid": "unit1-ct-uid",
+              "name": "CT Unit term 1"
+            }
+          ],
+          "unitSubsets": [],
+          "unitDimension": {
+            "termUid": "unit1-dimension-patched",
+            "name": "CT Unit Dim term 3"
+          },
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "0.2",
+          "userInitials": "TODO: Initials",
+          "changeDescription": "Patched version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "name": "unit1-patched",
+          "libraryName": "Test library",
+          "convertibleUnit": true,
+          "displayUnit": true,
+          "masterUnit": true,
+          "siUnit": true,
+          "usConventionalUnit": true,
+          "legacyCode": "unit1-legacy-code-patched",
+          "molecularWeightConvExpon": 0,
+          "conversionFactorToMaster": 1.0,
+          "order": 1,
+          "ucum": null,
+          "comment": null,
+          "definition": null,
+          "templateParameter": false
+        },
+        {
+          "ctUnits": [
+            {
+              "termUid": "unit1-ct-uid",
+              "name": "CT Unit term 1"
+            }
+          ],
+          "unitSubsets": [],
+          "unitDimension": {
+            "termUid": "unit1-dimension",
+            "name": "CT Unit Dim term 1"
+          },
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "0.1",
+          "userInitials": "TODO: Initials",
+          "changeDescription": "Initial version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "name": "unit1",
+          "libraryName": "Test library",
+          "convertibleUnit": true,
+          "displayUnit": true,
+          "masterUnit": true,
+          "siUnit": true,
+          "usConventionalUnit": true,
+          "legacyCode": "unit1-legacy-code",
+          "molecularWeightConvExpon": 0,
+          "conversionFactorToMaster": 1.0,
+          "order": 1,
+          "ucum": null,
+          "comment": null,
+          "definition": null,
+          "templateParameter": false
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test adding another master unit in the same dimension",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "unit2",
+        "libraryName": "Test library",
+        "ctUnits": [
+          "unit1-ct-uid-2"
+        ],
+        "unitSubsets": [],
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "unitDimension": "unit1-dimension-patched-2",
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1
+      },
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test adding another master unit in different dimension",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "unit3",
+        "libraryName": "Test library",
+        "ctUnits": [
+          "unit1-ct-uid-3"
+        ],
+        "unitSubsets": [],
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "unitDimension": "other-dimension",
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1
+      },
+      "url": "/concepts/unit-definitions"
+    },
+    "response": {
+      "code": 201,
+      "save": {
+        "uid": "uid"
+      },
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit3",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid-3",
+            "name": "CT Unit term 4"
+          }
+        ],
+        "unitSubsets": [],
+        "unitDimension": {
+          "termUid": "other-dimension",
+          "name": "CT Unit Dim term 5"
+        },
+        "legacyCode": "unit1-legacy-code",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  },
+  {
+    "name": "Test patch into another master unit in the same dimension",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version",
+        "unitDimension": "unit1-dimension-patched-2"
+      },
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test patch",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version",
+        "ctUnits": [
+          "unit1-ct-uid",
+          "unit1-ct-uid-2"
+        ],
+        "unitSubsets": [
+          "unit-subset-uid-1",
+          "unit-subset-uid-2"
+        ],
+        "unitDimension": "unit1-dimension-patched",
+        "legacyCode": "unit1-legacy-code-patched"
+      },
+      "url": "/concepts/unit-definitions/{uid}"
+    },
+    "response": {
+      "save": {
+        "startDateOfV0_2": "startDate"
+      },
+      "code": 200,
+      "headers": {},
+      "result": {
+        "ctUnits": [
+          {
+            "termUid": "unit1-ct-uid",
+            "name": "CT Unit term 1"
+          },
+          {
+            "termUid": "unit1-ct-uid-2",
+            "name": "CT Unit term 3"
+          }
+        ],
+        "unitSubsets": [
+          {
+            "termUid": "unit-subset-uid-1",
+            "name": "CT Unit Subset term 1"
+          },
+          {
+            "termUid": "unit-subset-uid-2",
+            "name": "CT Unit Subset term 2"
+          }
+        ],
+        "unitDimension": {
+          "termUid": "unit1-dimension-patched",
+          "name": "CT Unit Dim term 3"
+        },
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "userInitials": "TODO: Initials",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "name": "unit3",
+        "libraryName": "Test library",
+        "convertibleUnit": true,
+        "displayUnit": true,
+        "masterUnit": true,
+        "siUnit": true,
+        "usConventionalUnit": true,
+        "legacyCode": "unit1-legacy-code-patched",
+        "molecularWeightConvExpon": 0,
+        "conversionFactorToMaster": 1.0,
+        "order": 1,
+        "ucum": null,
+        "comment": null,
+        "definition": null,
+        "templateParameter": false
+      }
+    }
+  }
+]

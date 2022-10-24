@@ -1,0 +1,128 @@
+[
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "User Defined"
+    },
+    "name": "test user defined [ActivityInstance]",
+    "namePlain": "test user defined [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:07.464898",
+    "status": "Final",
+    "studyCount": 0,
+    "subCategories": null,
+    "uid": "EndpointTemplate_000003",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance] and [DiseaseDisorder]",
+    "namePlain": "test [ActivityInstance] and [DiseaseDisorder]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:07.285346",
+    "status": "Final",
+    "studyCount": 0,
+    "subCategories": null,
+    "uid": "EndpointTemplate_000002",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance]",
+    "namePlain": "test [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:06.861423",
+    "status": "Final",
+    "studyCount": 1,
+    "subCategories": null,
+    "uid": "EndpointTemplate_000001",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  }
+]

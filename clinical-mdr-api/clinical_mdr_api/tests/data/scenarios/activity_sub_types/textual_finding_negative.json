@@ -1,0 +1,213 @@
+[
+   {
+      "name": "Test POST create textual finding",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "textual_finding_name1",
+            "dictionaryId": null,
+            "nameSentenceCase": "textual_finding_name_sentence_case1",
+            "definition": "textual_finding_definition1",
+            "abbreviation": "abbv",
+            "topicCode": "textual_finding_topic_code1",
+            "adamParamCode": "textual_finding_adam_param_code1",
+            "legacyDescription": "textual_finding_legacy_description",
+            "sdtmVariable": "sdtm_variable_uid1",
+            "sdtmSubcat": "sdtm_subcat_uid1",
+            "sdtmCat": "sdtm_cat_uid1",
+            "sdtmDomain": "sdtm_domain_uid1",
+            "activities": [
+               "activity_root1"
+            ],
+            "valueSasDisplayFormat": "textual_finding_value_sas_display_format",
+            "specimen": "specimen_uid1",
+            "testCode": "test_code_uid1",
+            "maxTextLength": 7,
+            "splitTextInSuppQual": true,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/activities/textual-findings"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "TextualFinding_000001",
+            "name": "textual_finding_name1",
+            "nameSentenceCase": "textual_finding_name_sentence_case1",
+            "definition": "textual_finding_definition1",
+            "abbreviation": "abbv",
+            "topicCode": "textual_finding_topic_code1",
+            "adamParamCode": "textual_finding_adam_param_code1",
+            "legacyDescription": "textual_finding_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid1",
+               "name": null
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid1",
+               "name": null
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid1",
+               "name": null
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid1",
+               "name": null
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "valueSasDisplayFormat": "textual_finding_value_sas_display_format",
+            "specimen": {
+               "termUid": "specimen_uid1",
+               "name": null
+            },
+            "testCode": {
+               "termUid": "test_code_uid1",
+               "name": "test_code_name1"
+            },
+            "maxTextLength": 7,
+            "splitTextInSuppQual": true,
+            "libraryName": "Sponsor",
+            "type": "textual-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Draft",
+            "version": "0.1",
+            "changeDescription": "Initial version",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "approve",
+               "delete",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non existing sdtm variable",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "sdtmVariable": "sdtm_variables_non_existing",
+            "changeDescription": "Changing textual finding"
+         },
+         "url": "/concepts/activities/textual-findings/TextualFinding_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "TextualFindingVO tried to connect to non existing sdtm variable identified by uid (sdtm_variables_non_existing)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/activities/textual-findings/TextualFinding_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non existing activity",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "activities": [
+               "activity_non_existing_uid"
+            ],
+            "changeDescription": "Changing textual finding"
+         },
+         "url": "/concepts/activities/textual-findings/TextualFinding_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "TextualFindingVO tried to connect to non existing Activity identified by uid (activity_non_existing_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/activities/textual-findings/TextualFinding_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non existing test code",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "testCode": "test_code_non_existing_uid",
+            "changeDescription": "Changing textual finding"
+         },
+         "url": "/concepts/activities/textual-findings/TextualFinding_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "TextualFindingVO tried to connect to non existing test code identified by uid (test_code_non_existing_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/activities/textual-findings/TextualFinding_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST textual finding name already exists",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "textual_finding_name1",
+            "dictionaryId": null,
+            "nameSentenceCase": "textual_finding_name_sentence_case1",
+            "definition": "textual_finding_definition1",
+            "topicCode": "textual_finding_topic_code1",
+            "adamParamCode": "textual_finding_adam_param_code1",
+            "legacyDescription": "textual_finding_legacy_description",
+            "sdtmVariable": "sdtm_variable_uid1",
+            "sdtmSubcat": "sdtm_subcat_uid1",
+            "sdtmCat": "sdtm_cat_uid1",
+            "sdtmDomain": "sdtm_domain_uid1",
+            "activities": [
+               "activity_root1"
+            ],
+            "valueSasDisplayFormat": "textual_finding_value_sas_display_format",
+            "specimen": "specimen_uid1",
+            "testCode": "test_code_uid1",
+            "maxTextLength": 7,
+            "splitTextInSuppQual": true,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/activities/textual-findings"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "TextualFindingVO with name (textual_finding_name1) already exists",
+            "method": "POST",
+            "path": "http://testserver/concepts/activities/textual-findings",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   }
+]

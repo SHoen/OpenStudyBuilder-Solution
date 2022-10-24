@@ -1,0 +1,1349 @@
+[
+  {
+    "name": "Test getting empty study list",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test adding study",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "studyNumber": "007",
+        "studyAcronym": "Study-007",
+        "projectNumber": "123"
+      },
+      "url": "/studies"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "{studyUid}",
+        "studyNumber": "007",
+        "studyId": "123-007",
+        "studyAcronym": "Study-007",
+        "projectNumber": "123",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "007",
+            "studyAcronym": "Study-007",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "clinicalProgrammeName": "CP",
+            "studyId": "123-007",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          }
+        }
+      },
+      "save": {
+        "studyUid": "uid"
+      }
+    }
+  },
+  {
+    "name": "Test patch study (add study title)",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "currentMetadata": {
+          "studyDescription": {
+            "studyTitle": "123"
+          }
+        }
+      },
+      "url": "/studies/{studyUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "{studyUid}",
+        "studyNumber": "007",
+        "studyId": "123-007",
+        "studyAcronym": "Study-007",
+        "projectNumber": "123",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "007",
+            "studyAcronym": "Study-007",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "clinicalProgrammeName": "CP",
+            "studyId": "123-007",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Test patch study (change study title)",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "currentMetadata": {
+          "studyDescription": {
+            "studyTitle": "456"
+          }
+        }
+      },
+      "url": "/studies/{studyUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "{studyUid}",
+        "studyNumber": "007",
+        "studyId": "123-007",
+        "studyAcronym": "Study-007",
+        "projectNumber": "123",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "007",
+            "studyAcronym": "Study-007",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "clinicalProgrammeName": "CP",
+            "studyId": "123-007",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Test patch study (remove study title)",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "currentMetadata": {
+          "studyDescription": {
+            "studyTitle": null
+          }
+        }
+      },
+      "url": "/studies/{studyUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "{studyUid}",
+        "studyNumber": "007",
+        "studyId": "123-007",
+        "studyAcronym": "Study-007",
+        "projectNumber": "123",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "007",
+            "studyAcronym": "Study-007",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "clinicalProgrammeName": "CP",
+            "studyId": "123-007",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Test patch study (add multiple boolean, text, and numeric fields)",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "currentMetadata": {
+          "identificationMetadata": {
+            "projectNumber": "456"
+          },
+          "highLevelStudyDesign": {
+            "studyTypeNullValueCode": {
+              "termUid": "A bad reason"
+            },
+            "trialPhaseNullValueCode": {
+              "termUid": "A good reason"
+            },
+            "isExtensionTrial": false,
+            "isAdaptiveDesign": true,
+            "studyStopRules": "studyStopRules 710"
+          },
+          "studyIntervention": {
+            "interventionTypeCode": {
+              "termUid": "C127574"
+            },
+            "trialIntentTypesNullValueCode": {
+              "termUid": "A good reason"
+            },
+            "plannedStudyLength": {
+              "durationValue": 50,
+              "durationUnitCode": {
+                "uid": "UnitDefinition_000001"
+              }
+            }
+          }
+        }
+      },
+      "url": "/studies/{studyUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "{studyUid}",
+        "studyNumber": "007",
+        "studyId": "456-007",
+        "studyAcronym": "Study-007",
+        "projectNumber": "456",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "007",
+            "studyAcronym": "Study-007",
+            "projectNumber": "456",
+            "projectName": "Project DEF",
+            "clinicalProgrammeName": "CP",
+            "studyId": "456-007",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Test patch study (update and remove multiple fields)",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "currentMetadata": {
+          "highLevelStudyDesign": {
+            "studyTypeNullValueCode": {
+              "termUid": "A good reason"
+            },
+            "trialPhaseNullValueCode": {
+              "termUid": "A bad reason"
+            },
+            "isExtensionTrial": true,
+            "isAdaptiveDesign": false,
+            "studyStopRules": null
+          },
+          "studyIntervention": {
+            "trialIntentTypesCodes": [
+              {
+                "termUid": "C49654"
+              },
+              {
+                "termUid": "C49655"
+              },
+              {
+                "termUid": "C49657"
+              }
+            ],
+            "trialIntentTypesNullValueCode": null,
+            "interventionTypeCode": {
+              "termUid": "C127589"
+            },
+            "plannedStudyLength": {
+              "durationValue": 10,
+              "durationUnitCode": {
+                "uid": "UnitDefinition_000001"
+              }
+            }
+          }
+        }
+      },
+      "url": "/studies/{studyUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "{studyUid}",
+        "studyNumber": "007",
+        "studyId": "456-007",
+        "studyAcronym": "Study-007",
+        "projectNumber": "456",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "007",
+            "studyAcronym": "Study-007",
+            "projectNumber": "456",
+            "projectName": "Project DEF",
+            "clinicalProgrammeName": "CP",
+            "studyId": "456-007",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Test patch study (change study identifiers)",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyAcronym": "new acronym"
+          }
+        }
+      },
+      "url": "/studies/{studyUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "{studyUid}",
+        "studyNumber": "007",
+        "studyId": "456-007",
+        "projectNumber": "456",
+        "studyAcronym": "new acronym",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "007",
+            "studyAcronym": "new acronym",
+            "projectNumber": "456",
+            "projectName": "Project DEF",
+            "clinicalProgrammeName": "CP",
+            "studyId": "456-007",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Test get complete audit trail for study fields",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/{studyUid}/fields-audit-trail"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:10.066049+02:00",
+          "actions": [
+            {
+              "section": "IdentificationMetadata",
+              "field": "StudyAcronym",
+              "beforeValue": {
+                "termUid": "Study-007",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "new acronym",
+                "name": null
+              },
+              "action": "Edit"
+            }
+          ]
+        },
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:09.921878+02:00",
+          "actions": [
+            {
+              "section": "StudyIntervention",
+              "field": "InterventionType",
+              "beforeValue": {
+                "termUid": "C127574",
+                "name": "MJDIAEVS"
+              },
+              "afterValue": {
+                "termUid": "C127589",
+                "name": "Pulmonic Valve Regurgitant Jet Width"
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "IsAdaptiveDesign",
+              "beforeValue": {
+                "termUid": "true",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "false",
+                "name": null
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "IsExtensionTrial",
+              "beforeValue": {
+                "termUid": "false",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "true",
+                "name": null
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "StudyIntervention",
+              "field": "PlannedStudyLength",
+              "beforeValue": {
+                "termUid": "P50H",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "P10H",
+                "name": null
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "StudyStopRules",
+              "beforeValue": {
+                "termUid": "studyStopRules 710",
+                "name": null
+              },
+              "afterValue": null,
+              "action": "Delete"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "StudyTypeNullValueCode",
+              "beforeValue": {
+                "termUid": "A bad reason",
+                "name": "NullValue2"
+              },
+              "afterValue": {
+                "termUid": "A good reason",
+                "name": "NullValue1"
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "Unknown",
+              "field": "TrialIntentTypeNullValueCode",
+              "beforeValue": {
+                "termUid": "A good reason",
+                "name": "NullValue1"
+              },
+              "afterValue": null,
+              "action": "Delete"
+            },
+            {
+              "section": "StudyIntervention",
+              "field": "TrialIntentTypes",
+              "beforeValue": {
+                "termUid": "",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "C49654, C49655, C49657",
+                "name": null
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "TrialPhaseNullValueCode",
+              "beforeValue": {
+                "termUid": "A good reason",
+                "name": "NullValue1"
+              },
+              "afterValue": {
+                "termUid": "A bad reason",
+                "name": "NullValue2"
+              },
+              "action": "Edit"
+            }
+          ]
+        },
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:09.780186+02:00",
+          "actions": [
+            {
+              "section": "StudyIntervention",
+              "field": "InterventionType",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "C127574",
+                "name": "MJDIAEVS"
+              },
+              "action": "Create"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "IsAdaptiveDesign",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "true",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "IsExtensionTrial",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "false",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "StudyIntervention",
+              "field": "PlannedStudyLength",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "P50H",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "IdentificationMetadata",
+              "field": "ProjectNumber",
+              "beforeValue": {
+                "termUid": "123",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "456",
+                "name": null
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "IdentificationMetadata",
+              "field": "StudyId",
+              "beforeValue": {
+                "termUid": "123",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "456",
+                "name": null
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "StudyStopRules",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "studyStopRules 710",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "StudyTypeNullValueCode",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "A bad reason",
+                "name": "NullValue2"
+              },
+              "action": "Create"
+            },
+            {
+              "section": "Unknown",
+              "field": "TrialIntentTypeNullValueCode",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "A good reason",
+                "name": "NullValue1"
+              },
+              "action": "Create"
+            },
+            {
+              "section": "StudyIntervention",
+              "field": "TrialIntentTypes",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "TrialPhaseNullValueCode",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "A good reason",
+                "name": "NullValue1"
+              },
+              "action": "Create"
+            }
+          ]
+        },
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:09.674255+02:00",
+          "actions": [
+            {
+              "section": "StudyDescription",
+              "field": "StudyTitle",
+              "beforeValue": {
+                "termUid": "456",
+                "name": null
+              },
+              "afterValue": null,
+              "action": "Delete"
+            }
+          ]
+        },
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:09.567687+02:00",
+          "actions": [
+            {
+              "section": "StudyDescription",
+              "field": "StudyTitle",
+              "beforeValue": {
+                "termUid": "123",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "456",
+                "name": null
+              },
+              "action": "Edit"
+            }
+          ]
+        },
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:09.285447+02:00",
+          "actions": [
+            {
+              "section": "IdentificationMetadata",
+              "field": "StudyNumber",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "007",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "StudyDescription",
+              "field": "StudyTitle",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "123",
+                "name": null
+              },
+              "action": "Create"
+            }
+          ]
+        },
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:09.049697+02:00",
+          "actions": [
+            {
+              "section": "IdentificationMetadata",
+              "field": "ProjectNumber",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "123",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "IdentificationMetadata",
+              "field": "StudyAcronym",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "Study-007",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "IdentificationMetadata",
+              "field": "StudyId",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "123",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "IdentificationMetadata",
+              "field": "StudyNumber",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "007",
+                "name": null
+              },
+              "action": "Create"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test get filtered audit trail for study fields",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/{studyUid}/fields-audit-trail?sections=-IdentificationMetadata%2C%2BHighLevelStudyDesign"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:09.921878+02:00",
+          "actions": [
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "IsAdaptiveDesign",
+              "beforeValue": {
+                "termUid": "true",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "false",
+                "name": null
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "IsExtensionTrial",
+              "beforeValue": {
+                "termUid": "false",
+                "name": null
+              },
+              "afterValue": {
+                "termUid": "true",
+                "name": null
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "StudyStopRules",
+              "beforeValue": {
+                "termUid": "studyStopRules 710",
+                "name": null
+              },
+              "afterValue": null,
+              "action": "Delete"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "StudyTypeNullValueCode",
+              "beforeValue": {
+                "termUid": "A bad reason",
+                "name": "NullValue2"
+              },
+              "afterValue": {
+                "termUid": "A good reason",
+                "name": "NullValue1"
+              },
+              "action": "Edit"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "TrialPhaseNullValueCode",
+              "beforeValue": {
+                "termUid": "A good reason",
+                "name": "NullValue1"
+              },
+              "afterValue": {
+                "termUid": "A bad reason",
+                "name": "NullValue2"
+              },
+              "action": "Edit"
+            }
+          ]
+        },
+        {
+          "studyUid": "{studyUid}",
+          "userInitials": "unknown-user",
+          "date": "2021-04-12T12:03:09.780186+02:00",
+          "actions": [
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "IsAdaptiveDesign",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "true",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "IsExtensionTrial",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "false",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "StudyStopRules",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "studyStopRules 710",
+                "name": null
+              },
+              "action": "Create"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "StudyTypeNullValueCode",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "A bad reason",
+                "name": "NullValue2"
+              },
+              "action": "Create"
+            },
+            {
+              "section": "HighLevelStudyDesign",
+              "field": "TrialPhaseNullValueCode",
+              "beforeValue": null,
+              "afterValue": {
+                "termUid": "A good reason",
+                "name": "NullValue1"
+              },
+              "action": "Create"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test adding second study",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "studyNumber": "1910",
+        "projectNumber": "123"
+      },
+      "url": "/studies"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "Study_000002",
+        "studyNumber": "1910",
+        "studyId": "123-1910",
+        "studyAcronym": null,
+        "projectNumber": "123",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "1910",
+            "studyAcronym": null,
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "clinicalProgrammeName": "CP",
+            "studyId": "123-1910",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Test copy study high level design",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "url": "/studies/Study_000002/copy-component?referenceStudyUid=Study_000001&componentToCopy=highLevelStudyDesign&overwrite=true"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "Study_000002",
+        "studyNumber": "1910",
+        "studyId": "123-1910",
+        "studyAcronym": null,
+        "projectNumber": "123",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "1910",
+            "studyAcronym": null,
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "clinicalProgrammeName": "CP",
+            "studyId": "123-1910",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          },
+          "highLevelStudyDesign": {
+            "studyTypeCode": null,
+            "studyTypeNullValueCode": {
+              "termUid": "A good reason",
+              "name": null
+            },
+            "trialTypesCodes": [],
+            "trialTypesNullValueCode": null,
+            "trialPhaseCode": null,
+            "trialPhaseNullValueCode": {
+              "termUid": "A bad reason",
+              "name": null
+            },
+            "isExtensionTrial": true,
+            "isExtensionTrialNullValueCode": null,
+            "isAdaptiveDesign": false,
+            "isAdaptiveDesignNullValueCode": null,
+            "studyStopRules": null,
+            "studyStopRulesNullValueCode": null,
+            "confirmedResponseMinimumDuration": null,
+            "confirmedResponseMinimumDurationNullValueCode": null,
+            "postAuthIndicator": null,
+            "postAuthIndicatorNullValueCode": null
+          },
+          "studyPopulation": null,
+          "studyIntervention": null,
+          "studyDescription": null
+        }
+      }
+    }
+  },
+  {
+    "name": "Test copy study intervention",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "url": "/studies/Study_000002/copy-component?referenceStudyUid=Study_000001&componentToCopy=studyIntervention&overwrite=true"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "Study_000002",
+        "studyNumber": "1910",
+        "studyId": "123-1910",
+        "studyAcronym": null,
+        "projectNumber": "123",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "1910",
+            "studyAcronym": null,
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "clinicalProgrammeName": "CP",
+            "studyId": "123-1910",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          },
+          "highLevelStudyDesign": null,
+          "studyPopulation": null,
+          "studyIntervention": {
+            "interventionTypeCode": {
+              "termUid": "C127589",
+              "name": null
+            },
+            "interventionTypeNullValueCode": null,
+            "addOnToExistingTreatments": null,
+            "addOnToExistingTreatmentsNullValueCode": null,
+            "controlTypeCode": null,
+            "controlTypeNullValueCode": null,
+            "interventionModelCode": null,
+            "interventionModelNullValueCode": null,
+            "isTrialRandomised": null,
+            "isTrialRandomisedNullValueCode": null,
+            "stratificationFactor": null,
+            "stratificationFactorNullValueCode": null,
+            "trialBlindingSchemaCode": null,
+            "trialBlindingSchemaNullValueCode": null,
+            "plannedStudyLength": {
+              "durationValue": 10,
+              "durationUnitCode": {
+                "uid": "UnitDefinition_000001",
+                "name": "hours"
+              }
+            },
+            "plannedStudyLengthNullValueCode": null,
+            "drugStudyIndication": null,
+            "drugStudyIndicationNullValueCode": null,
+            "deviceStudyIndication": null,
+            "deviceStudyIndicationNullValueCode": null,
+            "trialIntentTypesCodes": [
+              {
+                "termUid": "C49654",
+                "name": null
+              },
+              {
+                "termUid": "C49655",
+                "name": null
+              },
+              {
+                "termUid": "C49657",
+                "name": null
+              }
+            ],
+            "trialIntentTypesNullValueCode": null
+          },
+          "studyDescription": null
+        }
+      }
+    }
+  },
+  {
+    "name": "Test copy study population",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "url": "/studies/Study_000002/copy-component?referenceStudyUid=Study_000001&componentToCopy=studyPopulation&overwrite=true"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "Study_000002",
+        "studyNumber": "1910",
+        "studyId": "123-1910",
+        "studyAcronym": null,
+        "projectNumber": "123",
+        "studyStatus": "DRAFT",
+        "currentMetadata": {
+          "identificationMetadata": {
+            "studyNumber": "1910",
+            "studyAcronym": null,
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "clinicalProgrammeName": "CP",
+            "studyId": "123-1910",
+            "registryIdentifiers": {
+              "ctGovId": null,
+              "eudractId": null,
+              "universalTrialNumberUTN": null,
+              "japaneseTrialRegistryIdJAPIC": null,
+              "investigationalNewDrugApplicationNumberIND": null,
+              "ctGovIdNullValueCode": null,
+              "eudractIdNullValueCode": null,
+              "universalTrialNumberUTNNullValueCode": null,
+              "japaneseTrialRegistryIdJAPICNullValueCode": null,
+              "investigationalNewDrugApplicationNumberINDNullValueCode": null
+            }
+          },
+          "versionMetadata": {
+            "studyStatus": "DRAFT",
+            "lockedVersionNumber": null,
+            "versionTimestamp": "2021-04-06T13:51:58.468263",
+            "lockedVersionAuthor": null,
+            "lockedVersionInfo": null
+          },
+          "highLevelStudyDesign": null,
+          "studyPopulation": {
+            "therapeuticAreasCodes": [],
+            "therapeuticAreasNullValueCode": null,
+            "diseaseConditionsOrIndicationsCodes": [],
+            "diseaseConditionsOrIndicationsNullValueCode": null,
+            "diagnosisGroupsCodes": [],
+            "diagnosisGroupsNullValueCode": null,
+            "sexOfParticipantsCode": null,
+            "sexOfParticipantsNullValueCode": null,
+            "rareDiseaseIndicator": null,
+            "rareDiseaseIndicatorNullValueCode": null,
+            "healthySubjectIndicator": null,
+            "healthySubjectIndicatorNullValueCode": null,
+            "plannedMinimumAgeOfSubjects": null,
+            "plannedMinimumAgeOfSubjectsNullValueCode": null,
+            "plannedMaximumAgeOfSubjects": null,
+            "plannedMaximumAgeOfSubjectsNullValueCode": null,
+            "stableDiseaseMinimumDuration": null,
+            "stableDiseaseMinimumDurationNullValueCode": null,
+            "pediatricStudyIndicator": null,
+            "pediatricStudyIndicatorNullValueCode": null,
+            "pediatricPostmarketStudyIndicator": null,
+            "pediatricPostmarketStudyIndicatorNullValueCode": null,
+            "pediatricInvestigationPlanIndicator": null,
+            "pediatricInvestigationPlanIndicatorNullValueCode": null,
+            "relapseCriteria": null,
+            "relapseCriteriaNullValueCode": null,
+            "numberOfExpectedSubjects": null,
+            "numberOfExpectedSubjectsNullValueCode": null
+          },
+          "studyIntervention": null,
+          "studyDescription": null
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Test GET all activity sub group not existing Library passed",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/concepts/activities/activity-sub-groups?library=not_existing"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "There is no library identified by provided library name (not_existing)",
+                "method": "GET",
+                "path": "http://testserver/concepts/activities/activity-sub-groups?library=not_existing",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST new activity sub group non existing group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "name": "name3",
+                "nameSentenceCase": "nameSentenceCase3",
+                "definition": "definition3",
+                "libraryName": "Sponsor",
+                "activityGroup": "activity_group_root_non_existing"
+            },
+            "url": "/concepts/activities/activity-sub-groups"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "ActivitySubGroup tried to connect to non existing ActivityGroup identified by uid (activity_group_root_non_existing).",
+                "method": "POST",
+                "path": "http://testserver/concepts/activities/activity-sub-groups",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test POST new activity sub group name already exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "name": "name1",
+                "nameSentenceCase": "nameSentenceCase3",
+                "definition": "definition3",
+                "libraryName": "Sponsor",
+                "activityGroup": "activity_group_root1"
+            },
+            "url": "/concepts/activities/activity-sub-groups"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "ActivitySubGroup with name (name1) already exists.",
+                "method": "POST",
+                "path": "http://testserver/concepts/activities/activity-sub-groups",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH activity non existing sub group",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "changeDescription": "Test change",
+                "activityGroup": "activity_group_root_non_existing"
+            },
+            "url": "/concepts/activities/activity-sub-groups/activity_sub_group_root1"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "ActivitySubGroup tried to connect to non existing ActivityGroup identified by uid (activity_group_root_non_existing).",
+                "method": "PATCH",
+                "path": "http://testserver/concepts/activities/activity-sub-groups/activity_sub_group_root1",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH activity name already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "name1",
+                "changeDescription": "Test change"
+            },
+            "url": "/concepts/activities/activity-sub-groups/activity_sub_group_root2"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "ActivitySubGroup with name (name1) already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/concepts/activities/activity-sub-groups/activity_sub_group_root2",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test POST approve non DRAFT activity sub group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/concepts/activities/activity-sub-groups/activity_sub_group_root1/approve"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "POST",
+                "path": "http://testserver/concepts/activities/activity-sub-groups/activity_sub_group_root1/approve",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST inactivate non FINAL activity sub group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/concepts/activities/activity-sub-groups/activity_sub_group_root2/inactivate"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Cannot retire draft version.",
+                "method": "POST",
+                "path": "http://testserver/concepts/activities/activity-sub-groups/activity_sub_group_root2/inactivate",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST reactivate non retired activity sub group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/concepts/activities/activity-sub-groups/activity_sub_group_root2/reactivate"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "method": "POST",
+                "path": "http://testserver/concepts/activities/activity-sub-groups/activity_sub_group_root2/reactivate",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test DELETE accepted object",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/concepts/activities/activity-sub-groups/activity_sub_group_root1"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Object has been accepted",
+                "method": "DELETE",
+                "path": "http://testserver/concepts/activities/activity-sub-groups/activity_sub_group_root1",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

@@ -1,0 +1,725 @@
+[
+   {
+      "name": "Test empty list",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/activity-description-templates"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+         },
+         "result": {
+            "items": [],
+            "total": 0,
+            "page": 1,
+            "size": 0
+         }
+      }
+   },
+   {
+      "name": "Test adding",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "libraryName": "Test library",
+            "name": "test",
+            "activitySubGroupUids": [
+               "activity_sub_group_root1"
+            ],
+            "activityGroupUids": [
+               "activity_group_root1"
+            ]
+         },
+         "url": "/activity-description-templates"
+      },
+      "response": {
+         "code": 201,
+         "headers": {
+            "content-length": "336",
+            "content-type": "application/json"
+         },
+         "result": {
+            "changeDescription": "Initial version",
+            "endDate": null,
+            "library": {
+               "isEditable": true,
+               "name": "Test library"
+            },
+            "studyCount": null,
+            "indications": null,
+            "activities": null,
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1",
+                  "nameSentenceCase": "name_sentence_case1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "libraryName": "Sponsor",
+                  "startDate": "2022-08-10T09:39:01.256000",
+                  "endDate": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "changeDescription": "Approved version",
+                  "userInitials": "TODO initials",
+                  "possibleActions": [
+                     "inactivate",
+                     "newVersion"
+                  ]
+               }
+            ],
+            "activitySubGroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1",
+                  "nameSentenceCase": "name_sentence_case1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "libraryName": "Sponsor",
+                  "startDate": "2022-08-10T09:39:01.372000",
+                  "endDate": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "changeDescription": "Approved version",
+                  "userInitials": "TODO initials",
+                  "possibleActions": [
+                     "inactivate",
+                     "newVersion"
+                  ],
+                  "activityGroup":
+                     {
+                        "uid": "activity_group_root1",
+                        "name": "name1"
+                     }
+
+               }
+            ],
+            "name": "test",
+            "namePlain": "test",
+            "editableInstance": false,
+            "parameters": [],
+            "defaultParameterValues": [],
+            "possibleActions": [
+               "approve",
+               "delete",
+               "edit"
+            ],
+            "startDate": "2020-11-03T22:19:07+00:00",
+            "status": "Draft",
+            "uid": "55236767-3834-42d8-923d-ba8aba8eed18",
+            "userInitials": "TEST_USER",
+            "version": "0.1"
+         },
+         "save": {
+            "uid": "uid"
+         }
+      }
+   },
+   {
+      "name": "Test approve",
+      "request": {
+         "sleep": 1,
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/activity-description-templates/{uid}/approve"
+      },
+      "response": {
+         "code": 201,
+         "headers": {
+            "content-length": "332",
+            "content-type": "application/json"
+         },
+         "result": {
+            "changeDescription": "Approved version",
+            "endDate": null,
+            "library": {
+               "isEditable": true,
+               "name": "Test library"
+            },
+            "studyCount": null,
+            "indications": null,
+            "activities": null,
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1",
+                  "nameSentenceCase": "name_sentence_case1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "libraryName": "Sponsor",
+                  "startDate": "2022-08-10T09:39:01.256000",
+                  "endDate": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "changeDescription": "Approved version",
+                  "userInitials": "TODO initials",
+                  "possibleActions": [
+                     "inactivate",
+                     "newVersion"
+                  ]
+               }
+            ],
+            "activitySubGroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1",
+                  "nameSentenceCase": "name_sentence_case1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "libraryName": "Sponsor",
+                  "startDate": "2022-08-10T09:39:01.372000",
+                  "endDate": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "changeDescription": "Approved version",
+                  "userInitials": "TODO initials",
+                  "possibleActions": [
+                     "inactivate",
+                     "newVersion"
+                  ],
+                  "activityGroup":
+                     {
+                        "uid": "activity_group_root1",
+                        "name": "name1"
+                     }
+
+               }
+            ],
+            "name": "test",
+            "namePlain": "test",
+            "editableInstance": false,
+            "parameters": [],
+            "defaultParameterValues": [],
+            "possibleActions": [
+               "inactivate",
+               "newVersion"
+            ],
+            "startDate": "2020-11-03T22:19:07+00:00",
+            "status": "Final",
+            "uid": "55236767-3834-42d8-923d-ba8aba8eed18",
+            "userInitials": "TEST_USER",
+            "version": "1.0"
+         }
+      }
+   },
+   {
+      "name": "Test second approve with PATCH",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {},
+         "url": "/activity-description-templates/{uid}/approve"
+      },
+      "response": {
+         "code": 405,
+         "headers": {
+            "content-length": "31",
+            "content-type": "application/json"
+         },
+         "result": {
+            "detail": "Method Not Allowed"
+         }
+      }
+   },
+   {
+      "name": "Test second approve with POST",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/activity-description-templates/{uid}/approve"
+      },
+      "response": {
+         "code": 400,
+         "headers": {
+            "content-length": "202",
+            "content-type": "application/json"
+         },
+         "result": {
+            "message": "The object is not in draft status.",
+            "method": "POST",
+            "path": "http://testserver/activity-description-templates/a831a596-5e40-42a5-a2de-f9c0028e32e8/approve",
+            "time": "2020-11-04T02:35:13.181265",
+            "type": "BusinessLogicException"
+         }
+      }
+   },
+   {
+      "name": "Test versions",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/activity-description-templates/{uid}/versions"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "909",
+            "content-type": "application/json"
+         },
+         "result": [
+            {
+               "name": "test",
+               "namePlain": "test",
+               "editableInstance": false,
+               "uid": "c205c6f4-181d-4f1d-9d78-29b5367603b6",
+               "startDate": "2020-11-11T01:26:58+00:00",
+               "endDate": null,
+               "status": "Final",
+               "version": "1.0",
+               "changeDescription": "Approved version",
+               "userInitials": "TEST_USER",
+               "possibleActions": [
+                  "inactivate",
+                  "newVersion"
+               ],
+               "parameters": [],
+               "defaultParameterValues": [],
+               "library": {
+                  "name": "Test library",
+                  "isEditable": true
+               },
+               "studyCount": null,
+               "indications": null,
+               "activities": null,
+               "activityGroups": [
+                  {
+                     "uid": "activity_group_root1",
+                     "name": "name1",
+                     "nameSentenceCase": "name_sentence_case1",
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "libraryName": "Sponsor",
+                     "startDate": "2022-08-10T09:39:01.256000",
+                     "endDate": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "changeDescription": "Approved version",
+                     "userInitials": "TODO initials",
+                     "possibleActions": [
+                        "inactivate",
+                        "newVersion"
+                     ]
+                  }
+               ],
+               "activitySubGroups": [
+                  {
+                     "uid": "activity_sub_group_root1",
+                     "name": "name1",
+                     "nameSentenceCase": "name_sentence_case1",
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "libraryName": "Sponsor",
+                     "startDate": "2022-08-10T09:39:01.372000",
+                     "endDate": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "changeDescription": "Approved version",
+                     "userInitials": "TODO initials",
+                     "possibleActions": [
+                        "inactivate",
+                        "newVersion"
+                     ],
+                     "activityGroup":
+                        {
+                           "uid": "activity_group_root1",
+                           "name": "name1"
+                        }
+
+                  }
+               ],
+               "changes": {
+                  "uid": false,
+                  "name": false,
+                  "namePlain": false,
+                  "editableInstance": false,
+                  "startDate": true,
+                  "endDate": true,
+                  "status": true,
+                  "version": true,
+                  "changeDescription": true,
+                  "userInitials": false,
+                  "possibleActions": true,
+                  "parameters": false,
+                  "defaultParameterValues": false,
+                  "library": false,
+                  "studyCount": false,
+                  "indications": false,
+                  "activities": false,
+                  "activityGroups": false,
+                  "activitySubGroups": false
+               }
+            },
+            {
+               "name": "test",
+               "namePlain": "test",
+               "editableInstance": false,
+               "uid": "c205c6f4-181d-4f1d-9d78-29b5367603b6",
+               "startDate": "2020-11-11T01:26:58+00:00",
+               "endDate": "2020-11-11T01:26:58+00:00",
+               "status": "Draft",
+               "version": "0.1",
+               "changeDescription": "Initial version",
+               "userInitials": "TEST_USER",
+               "possibleActions": [
+                  "approve",
+                  "delete",
+                  "edit"
+               ],
+               "parameters": [],
+               "defaultParameterValues": [],
+               "library": {
+                  "name": "Test library",
+                  "isEditable": true
+               },
+               "studyCount": null,
+               "indications": null,
+               "activities": null,
+               "activityGroups": [
+                  {
+                     "uid": "activity_group_root1",
+                     "name": "name1",
+                     "nameSentenceCase": "name_sentence_case1",
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "libraryName": "Sponsor",
+                     "startDate": "2022-08-10T09:39:01.256000",
+                     "endDate": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "changeDescription": "Approved version",
+                     "userInitials": "TODO initials",
+                     "possibleActions": [
+                        "inactivate",
+                        "newVersion"
+                     ]
+                  }
+               ],
+               "activitySubGroups": [
+                  {
+                     "uid": "activity_sub_group_root1",
+                     "name": "name1",
+                     "nameSentenceCase": "name_sentence_case1",
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "libraryName": "Sponsor",
+                     "startDate": "2022-08-10T09:39:01.372000",
+                     "endDate": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "changeDescription": "Approved version",
+                     "userInitials": "TODO initials",
+                     "possibleActions": [
+                        "inactivate",
+                        "newVersion"
+                     ],
+                     "activityGroup":
+                        {
+                           "uid": "activity_group_root1",
+                           "name": "name1"
+                        }
+
+                  }
+               ],
+               "changes": {}
+            }
+         ]
+      }
+   },
+   {
+      "name": "Test update with PATCH without changeDescription",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "name": "test{test-uid}"
+         },
+         "url": "/activity-description-templates/{uid}"
+      },
+      "response": {
+         "code": 422,
+         "headers": {
+            "content-length": "101",
+            "content-type": "application/json"
+         },
+         "result": {
+            "detail": [
+               {
+                  "loc": [
+                     "body",
+                     "changeDescription"
+                  ],
+                  "msg": "field required",
+                  "type": "value_error.missing"
+               }
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test update for library non Editable",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "changeDescription": "Change test",
+            "name": "test{test-uid}"
+         },
+         "url": "/activity-description-templates/{uid}"
+      },
+      "response": {
+         "code": 400,
+         "headers": {
+            "content-length": "195",
+            "content-type": "application/json"
+         },
+         "result": {
+            "message": "The object is not in draft status.",
+            "method": "PATCH",
+            "path": "http://testserver/activity-description-templates/44a8b0f7-f263-48b0-bbfb-62b5a246c0bc",
+            "time": "2020-11-04T03:17:09.838980",
+            "type": "BusinessLogicException"
+         }
+      }
+   },
+   {
+      "name": "Test new version",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "changeDescription": "Test new version creation",
+            "name": "test1"
+         },
+         "url": "/activity-description-templates/{uid}/new-version"
+      },
+      "response": {
+         "code": 201,
+         "headers": {
+            "content-length": "333",
+            "content-type": "application/json"
+         },
+         "result": {
+            "changeDescription": "Test new version creation",
+            "endDate": null,
+            "library": {
+               "isEditable": true,
+               "name": "Test library"
+            },
+            "studyCount": null,
+            "indications": null,
+            "activities": null,
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1",
+                  "nameSentenceCase": "name_sentence_case1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "libraryName": "Sponsor",
+                  "startDate": "2022-08-10T09:39:01.256000",
+                  "endDate": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "changeDescription": "Approved version",
+                  "userInitials": "TODO initials",
+                  "possibleActions": [
+                     "inactivate",
+                     "newVersion"
+                  ]
+               }
+            ],
+            "activitySubGroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1",
+                  "nameSentenceCase": "name_sentence_case1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "libraryName": "Sponsor",
+                  "startDate": "2022-08-10T09:39:01.372000",
+                  "endDate": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "changeDescription": "Approved version",
+                  "userInitials": "TODO initials",
+                  "possibleActions": [
+                     "inactivate",
+                     "newVersion"
+                  ],
+                  "activityGroup":
+                     {
+                        "uid": "activity_group_root1",
+                        "name": "name1"
+                     }
+
+               }
+            ],
+            "name": "test1",
+            "namePlain": "test1",
+            "editableInstance": false,
+            "parameters": [],
+            "defaultParameterValues": [],
+            "possibleActions": [
+               "approve",
+               "edit"
+            ],
+            "startDate": "2020-11-03T22:19:07+00:00",
+            "status": "Draft",
+            "uid": "55236767-3834-42d8-923d-ba8aba8eed18",
+            "userInitials": "TEST_USER",
+            "version": "1.1"
+         }
+      }
+   },
+   {
+      "name": "Test change new version",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "changeDescription": "Change test",
+            "name": "test{test-uid}"
+         },
+         "url": "/activity-description-templates/{uid}"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "328",
+            "content-type": "application/json"
+         },
+         "result": {
+            "changeDescription": "Change test",
+            "endDate": null,
+            "library": {
+               "isEditable": true,
+               "name": "Test library"
+            },
+            "studyCount": null,
+            "indications": null,
+            "activities": null,
+            "activityGroups": [],
+            "activitySubGroups": [],
+            "name": "test{test-uid}",
+            "namePlain": "test{test-uid}",
+            "editableInstance": false,
+            "parameters": [],
+            "defaultParameterValues": [],
+            "possibleActions": [
+               "approve",
+               "edit"
+            ],
+            "startDate": "2020-11-04T02:23:58+00:00",
+            "status": "Draft",
+            "uid": "2550998f-c234-43dd-b99f-a3636660953e",
+            "userInitials": "TEST_USER",
+            "version": "1.2"
+         }
+      }
+   },
+   {
+      "name": "Test get with counts",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {
+            "changeDescription": "Change test",
+            "name": "test{test-uid}"
+         },
+         "url": "/activity-description-templates/{uid}?return_instantiation_counts=1"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "328",
+            "content-type": "application/json"
+         },
+         "result": {
+            "changeDescription": "Change test",
+            "counts": {
+               "draft": 0,
+               "final": 0,
+               "retired": 0,
+               "total": 0
+            },
+            "endDate": null,
+            "library": {
+               "isEditable": true,
+               "name": "Test library"
+            },
+            "studyCount": null,
+            "indications": null,
+            "activities": null,
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1",
+                  "nameSentenceCase": "name_sentence_case1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "libraryName": "Sponsor",
+                  "startDate": "2022-08-10T09:39:01.256000",
+                  "endDate": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "changeDescription": "Approved version",
+                  "userInitials": "TODO initials",
+                  "possibleActions": [
+                     "inactivate",
+                     "newVersion"
+                  ]
+               }
+            ],
+            "activitySubGroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1",
+                  "nameSentenceCase": "name_sentence_case1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "libraryName": "Sponsor",
+                  "startDate": "2022-08-10T09:39:01.372000",
+                  "endDate": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "changeDescription": "Approved version",
+                  "userInitials": "TODO initials",
+                  "possibleActions": [
+                     "inactivate",
+                     "newVersion"
+                  ],
+                  "activityGroup":
+                     {
+                        "uid": "activity_group_root1",
+                        "name": "name1"
+                     }
+
+               }
+            ],
+            "name": "test{test-uid}",
+            "namePlain": "test{test-uid}",
+            "editableInstance": false,
+            "parameters": [],
+            "defaultParameterValues": [],
+            "possibleActions": [
+               "approve",
+               "edit"
+            ],
+            "startDate": "2020-11-04T02:23:58+00:00",
+            "status": "Draft",
+            "uid": "2550998f-c234-43dd-b99f-a3636660953e",
+            "userInitials": "TEST_USER",
+            "version": "1.2"
+         }
+      }
+   }
+]

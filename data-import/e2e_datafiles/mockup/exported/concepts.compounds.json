@@ -1,0 +1,236 @@
+[
+  {
+    "abbreviation": "abbv",
+    "analyteNumber": null,
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": "compound_definition",
+    "deliveryDevices": [
+      {
+        "name": "Insulin pump",
+        "termUid": "CTTerm_000128"
+      },
+      {
+        "name": "Pre-filled pen",
+        "termUid": "CTTerm_000127"
+      },
+      {
+        "name": "Syringe",
+        "termUid": "CTTerm_000129"
+      }
+    ],
+    "dispensers": [
+      {
+        "name": "Blister",
+        "termUid": "CTTerm_000125"
+      },
+      {
+        "name": "Cartridge",
+        "termUid": "CTTerm_000126"
+      }
+    ],
+    "dosageForms": [],
+    "doseFrequencies": [],
+    "doseValues": [
+      {
+        "uid": "NumericValueWithUnit_000001",
+        "unitDefinitionUid": "UnitDefinition_000226",
+        "unitLabel": "mg",
+        "value": 0.25
+      },
+      {
+        "uid": "NumericValueWithUnit_000002",
+        "unitDefinitionUid": "UnitDefinition_000226",
+        "unitLabel": "mg",
+        "value": 0.5
+      },
+      {
+        "uid": "NumericValueWithUnit_000003",
+        "unitDefinitionUid": "UnitDefinition_000226",
+        "unitLabel": "mg",
+        "value": 0.75
+      }
+    ],
+    "endDate": null,
+    "halfLife": {
+      "uid": "NumericValueWithUnit_000007",
+      "unitDefinitionUid": "UnitDefinition_000153",
+      "unitLabel": "hours",
+      "value": 12.0
+    },
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000154",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "Metformin",
+    "nameSentenceCase": "Metformin",
+    "nncLongNumber": null,
+    "nncShortNumber": null,
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [],
+    "startDate": "2022-06-15T15:18:12.599216",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000004",
+        "unitDefinitionUid": "UnitDefinition_000135",
+        "unitLabel": "U/Kg",
+        "value": 10.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000005",
+        "unitDefinitionUid": "UnitDefinition_000135",
+        "unitLabel": "U/Kg",
+        "value": 20.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000006",
+        "unitDefinitionUid": "UnitDefinition_000135",
+        "unitLabel": "U/Kg",
+        "value": 50.0
+      }
+    ],
+    "substances": [
+      {
+        "pclassId": "N0000029185",
+        "pclassName": "ORAL HYPOGLYCEMIC AGENTS",
+        "pclassTermUid": "DictionaryTerm_000057",
+        "substanceName": "METFORMIN",
+        "substanceTermUid": "DictionaryTerm_000918",
+        "substanceUnii": "9100L32L2N"
+      }
+    ],
+    "uid": "Compound_000001",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "abbv",
+    "analyteNumber": null,
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": "compound_definition",
+    "deliveryDevices": [
+      {
+        "name": "Insulin pump",
+        "termUid": "CTTerm_000128"
+      },
+      {
+        "name": "Pre-filled pen",
+        "termUid": "CTTerm_000127"
+      },
+      {
+        "name": "Syringe",
+        "termUid": "CTTerm_000129"
+      }
+    ],
+    "dispensers": [
+      {
+        "name": "Blister",
+        "termUid": "CTTerm_000125"
+      },
+      {
+        "name": "Cartridge",
+        "termUid": "CTTerm_000126"
+      }
+    ],
+    "dosageForms": [],
+    "doseFrequencies": [],
+    "doseValues": [
+      {
+        "uid": "NumericValueWithUnit_000001",
+        "unitDefinitionUid": "UnitDefinition_000226",
+        "unitLabel": "mg",
+        "value": 0.25
+      },
+      {
+        "uid": "NumericValueWithUnit_000002",
+        "unitDefinitionUid": "UnitDefinition_000226",
+        "unitLabel": "mg",
+        "value": 0.5
+      },
+      {
+        "uid": "NumericValueWithUnit_000003",
+        "unitDefinitionUid": "UnitDefinition_000226",
+        "unitLabel": "mg",
+        "value": 0.75
+      }
+    ],
+    "endDate": null,
+    "halfLife": {
+      "uid": "NumericValueWithUnit_000007",
+      "unitDefinitionUid": "UnitDefinition_000153",
+      "unitLabel": "hours",
+      "value": 12.0
+    },
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000154",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "NPH Insulin",
+    "nameSentenceCase": "NPH Insulin",
+    "nncLongNumber": null,
+    "nncShortNumber": null,
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [],
+    "startDate": "2022-06-15T15:18:13.476500",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000004",
+        "unitDefinitionUid": "UnitDefinition_000135",
+        "unitLabel": "U/Kg",
+        "value": 10.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000005",
+        "unitDefinitionUid": "UnitDefinition_000135",
+        "unitLabel": "U/Kg",
+        "value": 20.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000006",
+        "unitDefinitionUid": "UnitDefinition_000135",
+        "unitLabel": "U/Kg",
+        "value": 50.0
+      }
+    ],
+    "substances": [
+      {
+        "pclassId": "N0000175944",
+        "pclassName": "Insulin",
+        "pclassTermUid": "DictionaryTerm_000054",
+        "substanceName": "INSULIN HUMAN",
+        "substanceTermUid": "DictionaryTerm_000916",
+        "substanceUnii": "1Y17CTI5SR"
+      }
+    ],
+    "uid": "Compound_000002",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  }
+]

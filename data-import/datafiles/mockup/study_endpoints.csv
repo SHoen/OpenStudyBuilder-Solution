@@ -1,0 +1,3 @@
+"study_id","endpoint","endpoint_level","timeframe","units","unit_seperator","study_objective"
+"CDISC DEV-0","test [Body Weight]","C98781","test [Body Temperature] and [Growth Hormone Deficiency Children]","KG+Gram","And","test [Body Weight]"
+"Study XD","test [Body Temperature] and [Growth Hormone Deficiency Children]","C98781","","","",""

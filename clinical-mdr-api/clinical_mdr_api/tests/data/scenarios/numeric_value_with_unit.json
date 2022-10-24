@@ -1,0 +1,194 @@
+[
+   {
+      "name": "Test POST numeric value with unit",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 7.5,
+            "unitDefinitionUid": "unit_definition_root1",
+            "definition": "numeric_value_definition1",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/numeric-values-with-unit"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericValueWithUnit_000001",
+            "name": "7.5 [unit_definition_root1]",
+            "value": 7.5,
+            "unitDefinitionUid": "unit_definition_root1",
+            "nameSentenceCase": "7.5",
+            "definition": "numeric_value_definition1",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor",
+            "status": null,
+            "version": null,
+            "changeDescription": null,
+            "userInitials": null,
+            "startDate": null,
+            "endDate": null
+         }
+      }
+   },
+   {
+      "name": "Test POST numeric value with unit - existing numeric value with unit is returned",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 7.5,
+            "unitDefinitionUid": "unit_definition_root1",
+            "definition": "numeric_value_definition1",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/numeric-values-with-unit"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericValueWithUnit_000001",
+            "name": "7.5 [unit_definition_root1]",
+            "value": 7.5,
+            "unitDefinitionUid": "unit_definition_root1",
+            "nameSentenceCase": "7.5",
+            "definition": "numeric_value_definition1",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor",
+            "status": null,
+            "version": null,
+            "changeDescription": null,
+            "userInitials": null,
+            "startDate": null,
+            "endDate": null
+         }
+      }
+   },
+   {
+      "name": "Test POST numeric value with unit",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 9.12,
+            "unitDefinitionUid": "unit_definition_root1",
+            "definition": "numeric_value_definition2",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/numeric-values-with-unit"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericValueWithUnit_000002",
+            "name": "9.12 [unit_definition_root1]",
+            "value": 9.12,
+            "unitDefinitionUid": "unit_definition_root1",
+            "nameSentenceCase": "9.12",
+            "definition": "numeric_value_definition2",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor",
+            "status": null,
+            "version": null,
+            "changeDescription": null,
+            "userInitials": null,
+            "startDate": null,
+            "endDate": null
+         }
+      }
+   },
+   {
+      "name": "Test GET all numeric value with units",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/numeric-values-with-unit?totalCount=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "NumericValueWithUnit_000001",
+                  "name": "7.5",
+                  "value": 7.5,
+                  "unitDefinitionUid": "unit_definition_root1",
+                  "nameSentenceCase": "7.5",
+                  "definition": "numeric_value_definition1",
+                  "abbreviation": "abbv",
+                  "templateParameter": true,
+                  "libraryName": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "changeDescription": null,
+                  "userInitials": null,
+                  "startDate": null,
+                  "endDate": null
+               },
+               {
+                  "uid": "NumericValueWithUnit_000002",
+                  "name": "9.12",
+                  "value": 9.12,
+                  "unitDefinitionUid": "unit_definition_root1",
+                  "nameSentenceCase": "9.12",
+                  "definition": "numeric_value_definition2",
+                  "abbreviation": "abbv",
+                  "templateParameter": true,
+                  "libraryName": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "changeDescription": null,
+                  "userInitials": null,
+                  "startDate": null,
+                  "endDate": null
+               }
+            ],
+            "total": 2,
+            "page": 1,
+            "size": 0
+         }
+      }
+   },
+   {
+      "name": "Test POST numeric value with unit - specifying a non-existing unit",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 8.43,
+            "unitDefinitionUid": "non-existing-uid",
+            "definition": "numeric_value_definition2",
+            "abbreviation": "abbv",
+            "templateParameter": false,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/numeric-values-with-unit"
+      },
+      "response": {
+         "code": 400,
+         "headers": {},
+         "result": {
+            "message": "NumericValueWithUnitVO tried to connect to non existing unit definition identified by uid (non-existing-uid)",
+            "time": "2022-04-19T15:11:40.945991",
+            "path": "http://testserver/concepts/numeric-values-with-unit",
+            "method": "POST",
+            "type": "ValidationException"
+         }
+      }
+   }
+]

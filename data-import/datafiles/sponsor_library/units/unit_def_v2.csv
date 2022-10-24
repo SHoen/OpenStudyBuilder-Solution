@@ -1,0 +1,1450 @@
+UNIT,UNIT_DIMENSION,CONVERTIBLE_UNIT,DISPLAY_UNIT,MASTER_UNIT,SI_UNIT,US_CONVENTIONAL_UNIT,SPDEF_SUBMVAL,MOLECULAR_WEIGHT_CONV_EXPON,CONVERTION_FACTOR_TO_MASTER,CT_SUBMVAL,CT_SUBMVAL_2,CT_CD,description,CD_VAL_SORT_SEQ,UCUM name,AGE_UNIT_SUBSET,STUDY_TIME_UNIT_SUBSET,DOSE_UNIT_SUBSET,TIME_UNIT_SUBSET,STRENGTH_UNIT_SUBSET,Migrate Y/N,Comment
+%-point,PERCENTAGE,N,Y,N,N,N,%-point,0.0,1.0,0,,,A percentage point or percent point is the unit for the arithmetic difference of two percentages.,1,0,N,N,N,N,N,Y,
+score,SCORE,N,Y,Y,N,Y,Score,,1.0,0,,,"score_x000D_
+",1830,0,N,N,N,N,N,Y,
+um2/sec,AREA PER TIME,Y,Y,Y,Y,N,um2/sec,0.0,1.0,0,,,Micrometer squared divided by second,1,,N,N,N,N,N,Y,
+mL/dL/min,BLOOD FLOW,Y,Y,Y,Y,N,,,1.0,0,,,"milli-liter per deci-liter per minute_x000D_
+",21,mL/dL/min,N,N,N,N,N,Y,
+h*nmol/L,TIME TIMES CONCENTRATION,Y,Y,Y,Y,N,,1.0,1.0,0,,,Hours times nanomoles per liter (area under the curve).,100,h.nmol/L,N,N,N,N,N,Y,
+h*IU/mL,TIME TIMES CONCENTRATION,N,Y,N,N,N,,,1.0,0,,,A dose calculation unit equal to one international unit (an arbitrary unit of biological activity) of a product multiplied with hour per unit of time equal to one mL,100,h.u[IU]/mL,N,N,N,N,N,Y,
+v/v,PERCENTAGE,Y,Y,N,N,N,,0.0,100.0,v/v,,C67469,Quotient of the volume of a substance and the total volume of the sample containing the substance.,1,,N,N,N,N,N,Y,
+MJ,ENERGY,Y,Y,N,Y,N,,,1000000.0,0,,,"CDISC not found_x000D_
+MJ_x000D_
+J=Joule, where Joule is defined as m2&#8729;kg&#8729;s^(&#8722;2)_x000D_
+M=10^6",52,MJ,N,N,N,N,N,Y,
+mg/dL/U,CONCENTRATION PER UNIT,Y,Y,N,N,Y,,0.0,10.0,0,,,CDISC: Sponsor defined value,37,mg/dL/U,N,N,N,N,N,Y,
+mg/dL^2,CONCENTRATION,N,Y,N,N,Y,,0.0,1.0,0,,,"CDISC not found: Sponser defined._x000D_
+Unit mg/dL have CDISC code: C67015",35,mg/dL2,N,N,N,N,N,Y,
+U/h,DOSE UNIT PER TIME,Y,Y,N,N,N,,,168.0,0,,,"U/h - Insulin pump delivery rate_x000D_
+CDISC not found_x000D_
+_x000D_
+[dose subset]",40,U/h,N,N,Y,N,N,Y,
+h*kg/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,0.0,1000000000000.0,0,,,Hours times kilograms per liter (area under the curve),100,h.kg/L,N,N,N,N,N,Y,
+mU/KG,RELATIVE DOSE UNIT,Y,Y,N,N,N,,,0.001,0,,,"mU/kg, milli Units per Kilogram to be used for derived topic codes on dosing",1720,,N,N,N,N,N,Y,
+% B/T,PERCENTAGE,Y,Y,N,N,N,% B/T,,1.0,0,,,Bound radioactive tracer (percent of total amount of added tracer),1520,%,N,N,N,N,N,Y,
+(pmol*h/L)/(U/kg),CONCENTRATION PER TIME PER DOSE,N,Y,N,N,N,(pmol*h/L)/(U/kg),,1.0,0,,,Concentration in pmol per hour per liter divided by dose in U per kg,1,(pmol.h/L)/(U/kg),N,N,N,N,N,Y,
+COUNT,COUNT,N,Y,Y,N,N,Count,,1.0,0,,,"Unit for a counting variable, e.g. number of Aes or Hypos of a special kind_x000D_
+",39,0,N,N,N,N,N,Y,
+kJ,ENERGY,Y,Y,N,Y,N,kJ,,1000.0,0,,,"CDISC not found_x000D_
+A SI unit of energy equal to 10E3 joules. (NCI)_x000D_
+A derived unit defined as the work done or energy required to exert a force of one newton for a distance of one meter. 1 KJ = 2.390 X 10-4 Kilocalorie. (CRCH)",52,kJ,N,N,N,N,N,Y,
+mmHg*BPM,PRESSURE,N,Y,N,N,N,,,1.0,0,,,"Unit for measuring Rate Pressure Product. Blood pressure in mmHg, heart rate or pulse in Beat per Minute.",1550,mm[Hg].{beats}/min,N,N,N,N,N,Y,
+pmol*min/kg,CONCENTRATION PER TIME,N,Y,N,Y,N,,1.0,1.0,0,,,"Picomoles per kilogram (area under the curve)._x000D_
+",36,pmol.min/kg,N,N,N,N,N,Y,
+h*pg/mL,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,0.0,1.0,0,,,h*pg/mL,100,h.pg/mL,N,N,N,N,N,Y,
+pmol/min,MASS FLOW RATE,Y,Y,N,Y,N,,1.0,1e-09,0,,,"pmol/min_x000D_
+_x000D_
+This Unit should have is own Unit Dimension: substance flow rate, with Master: mol/day_x000D_
+_x000D_
+[dose subset]",120,pmol/min,N,N,Y,N,N,Y,
+pmol/kg/min,DOSE RATE,N,Y,N,Y,N,,,1.0,0,,,"CDISC not found: sponsor defined._x000D_
+picomole/kilogram/minute_x000D_
+_x000D_
+[dose subset]",40,pmol/kg/min,N,N,Y,N,N,Y,
+h*pmol/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,1.0,0.001,0,,,h*pmol/L,100,h.pmol/L,N,N,N,N,N,Y,
+DOSE STEP,DOSE UNIT,N,Y,N,N,N,DOSE STEP,,1.0,0,,,"A one step increase in dose based on steps, clicks or increments of a combination product with two different units in a fixed ratio._x000D_
+ _x000D_
+[dose subset]",1,,N,N,Y,N,N,Y,
+kUA/L,CONCENTRATION PER UNIT,N,Y,N,N,N,kUA/L,0.0,1.0,0,,,"CDISC not found: Sponser defined. _x000D_
+kilounits of allergen-specific antibodies per liter_x000D_
+",37,0,N,N,N,N,N,Y,
+mU/(kg*min),DOSE RATE,Y,Y,Y,N,N,mU/kg/min,,1.0,0,,,-,40,mU/(kg.min),N,N,N,N,N,Y,
+h*mg/dL,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,0.0,10000000.0,0,,,Hours times miligrams pr deciliter (area under the curve),100,h.mg/dL,N,N,N,N,N,Y,
+g/h,MASS FLOW RATE,Y,Y,N,Y,N,,0.0,16.6666666667,0,,,"gram per hour_x000D_
+_x000D_
+[dose subset]",120,g/h,N,N,Y,N,N,Y,
+HPF,MICROSCOPY,Y,Y,Y,N,N,,,1.0,HPF,,C67274,"CDISC code: C67274_x000D_
+CDISC submission value: HPF_x000D_
+CDISC synonym: High Power Field_x000D_
+CDISC Description: The area visible under the maximum magnification power of the objective being used in microscopy.(NCI)_x000D_
+NCI preferred term: High Power Field",135,[HPF],N,N,N,N,N,Y,
+L/(h*100kg),FLOW,N,Y,N,Y,N,,,1.0,0,,,"CDISC not found: Sponser defined. _x000D_
+(L/h)/(kg/m2) have CDISC code: C120739",60,L/(h.100.kg),N,N,N,N,N,Y,
+mmol/L/U,CONCENTRATION PER UNIT,Y,Y,Y,N,N,,1.0,1.0,0,,,mmol/L/U,37,mmol/L/U,N,N,N,N,N,Y,
+kJ/min,ENERGY EXPENDITURE,Y,Y,N,Y,N,,,16.666666667,0,,,"CDISC not found, kJ/min where _x000D_
+K=1000, J=Joule, where Joule is defined as m2 x kg x s^(- 2) and min=minutes",55,kJ/min,N,N,N,N,N,Y,
+1/m,ELIMINATION,Y,Y,N,N,N,,0.0,60.0,0,,,"No CDISC. Used for Pharmacokinetics measurement Lambda z_x000D_
+",50,1/m,N,N,N,N,N,Y,
+(L/h)/kg,FLOW,N,Y,N,Y,N,,0.0,1.0,0,,,"CDISC code: C73756_x000D_
+CDISC submission value: (L/h)/kg_x000D_
+CDISC synonym(s):  (L/h)/kg; (mL/h)/g; mL/g/h_x000D_
+CDISC definition: Milliliters per gram per hour or liters per hour (flow rate), divided by kilograms (weight) or milliliters per hour (flow rate), divided by grams (weight)._x000D_
+NCI preferred term: Milliliter per Gram per Hour_x000D_
+",75,L/h/kg,N,N,N,N,N,Y,
+h*ng Eq/mL,TIME TIMES CONCENTRATION,N,Y,N,N,N,,,1.0,0,,,Hours times equivalent nanograms per milliliter (area under the curve).,100,0,N,N,N,N,N,Y,
+mL/(h*kg),RELATIVE FLOW RATE,Y,Y,N,Y,N,,,1.0,0,,,"mL/(h*kg) _x000D_
+",113,mL/(h.kg),N,N,N,N,N,Y,
+mmol/L/h,CONCENTRATION PER TIME,Y,Y,N,Y,N,,1.0,0.1,0,,,"Unit for measurement of endpoint calculated as rate. The unit consists of the main unit per the time unit._x000D_
+_x000D_
+Conversion Factor to Master: 100 mg / dL =100 mg / 100 mL = 1000 mg / L. Divide by molar mass glucose:   1000  mg / L / molecular weigth  = xxx mmol/L. Both master and standard unit has a division with hour, so that does not have impact on the conversion factor._x000D_
+",36,mmol/L/h,N,N,N,N,N,Y,
+min*IU/L,TIME TIMES CONCENTRATION,N,Y,N,N,N,,,1.0,0,,,Sponsor defined: Concentration of one international unit multiplied with min per liter of system volume.,100,min.[IU]/L,N,N,N,N,N,Y,
+(pmol/L)/(U/kg),CONCENTRATION PER UNIT,N,Y,N,N,N,(pmol/L)/(U/kg),,1.0,0,,,Concentration in picomol(s) per liter divided by dose in U per kg,1,(pmol/L)/(U/kg),N,N,N,N,N,Y,
+IU/mL/IU/kg,U_IU Concentration,N,Y,N,N,N,IU/mL/IU/kg,,1.0,0,,,"IU/mL/IU/kg_x000D_
+_x000D_
+The unit is used to calculate IR (incremental recovery) used in haemophilia. It is a PK variable and expresses how much factor activity (that be VIII or IX) increases per infused IU. For recombinant FVIII IR is usually 2%, meaning that FVIII activity in the patient will increase with 2% for every 1 IU infused per kg  meaning a HA patient receiving 50 IU/kg can expect FVIII activity of 100%_x000D_
+_x000D_
+The unit for IR in medical papers is usually (IU/ml)/(IU/kg)_x000D_
+IU/ml  referring to the measured increase in activity_x000D_
+IU/kg  referring to the dose      _x000D_
+",2000,[IU]/mL/[IU]/kg,N,N,N,N,N,Y,
+U/week,DOSE UNIT PER TIME,Y,Y,Y,N,N,U/week,,1.0,0,,,"Units per week, e.g. units of alcohol/week_x000D_
+_x000D_
+[dose subset]",40,U/wk,N,N,Y,N,N,Y,
+mU/kg/min,DOSE RATE,Y,Y,N,N,N,mU/kg/min,,1.0,0,,,"CDISC : NOT FOUND_x000D_
+_x000D_
+[dose subset]",40,mU/kg/min,N,N,Y,N,N,Y,
+no unit,NO UNIT,N,N,N,N,N,NO UNIT,,1.0,0,,,no unit,140,0,N,N,N,N,N,Y,
+h*ng/mL,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,0.0,1000.0,0,,,PK Parameter Units of Measure. Hours times nanograms per milliliter.,100,h.ng/mL,N,N,N,N,N,Y,
+min*ug/mL,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,,16666.67,0,,,"CDISC code: C85727_x000D_
+CDISC submission value: min*ug/mL_x000D_
+CDISC synonym(s): ug*min/mL; min*mg/L; mg*min/L; min*mcg/mL; mcg*min/mL_x000D_
+CDISC definition: Minutes times micrograms per milliliter_x000D_
+NCI preferred term:Minute Times Microgram per Milliliter_x000D_
+",36,min.ug/mL,N,N,N,N,N,Y,
+1/field,MICROSCOPE DEPENDENT COUNTS,N,Y,N,N,N,,,1.0,0,,,"1/field - use it only with caution, this is a microscope dependant unit. It is not available in CDISC. For trial NN9928-4048 it was confirmed by the laboratory that conversion between 1/field and /HPF is 1:1. This relation cannot be re-applied for other trial/laboratoires/microscopes without further information and confirmation from the lab used in the given trial.",999,0,N,N,N,N,N,Y,
+min*pmol/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,1.0,1.67e-05,0,,,"Minutes times picomoles per liter (area under the curve). _x000D_
+",100,min.pmol/L,N,N,N,N,N,Y,
+/L,CELL COUNT,Y,Y,N,Y,N,,,1000000000.0,/L,,C105515,"CDISC Code: C105515_x000D_
+CDISC Submission value: /L_x000D_
+CDISC Synonyms: Per Liter_x000D_
+CDISC Definition: A volume unit equal to one liter used as a denominator to build a derived unit expressed as a ratio. (NCI)_x000D_
+NCI Preferred Term: Per Liter",30,/L,N,N,N,N,N,Y,
+Steps/h,COUNT PER TIME,Y,Y,N,N,N,,0.0,1.0,0,,,Steps per hour,39,/h,N,N,N,N,N,Y,
+mm*h,LENGTH PER TIME,N,Y,N,Y,N,,0.0,1.0,0,,,"Sponsor defined: Millimeters multiplied with Hours_x000D_
+",120,mm/h,N,N,N,N,N,Y,
+h*mmol/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,1.0,1000000.0,0,,,h*mmol/L,100,h.mmol/L,N,N,N,N,N,Y,
+E%,PERCENTAGE,N,Y,N,N,N,,,1.0,0,,,"E%_x000D_
+Is used for energy content in food",1520,0,N,N,N,N,N,Y,
+pmol*l/(min*mmol*kg),CONCENTRATION PER TIME,N,Y,N,Y,N,,1.0,1.0,0,,,"Picomoles pr minutes millimoles per kilogram (area under the curve)_x000D_
+",36,pmol.l/(min.mmol.kg),N,N,N,N,N,Y,
+/regimen period,COUNT,N,Y,N,N,N,/regimen period,,1.0,0,,,Sponsor Defined: /regimen period,39,0,N,N,N,N,N,Y,
+min*nmol/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,min*nmol/L,1.0,0.01667,0,,,Minutes times nanomoles per liter (area under the curve).,100,min.nmol/L,N,N,N,N,N,Y,
+mg/dL/h,CONCENTRATION PER TIME,Y,Y,Y,Y,N,,0.0,1.0,0,,,mg/dL/h,37,mg/dL/h,N,N,N,N,N,Y,
+nmol/h,MASS FLOW RATE,Y,Y,N,N,N,,,60000000.0,0,,,"A unit of substance flow rate equal to one nanomole per hour.(NCI)_x000D_
+_x000D_
+[dose subset]",1,,N,N,Y,N,N,Y,
+mL/h/kg,RELATIVE FLOW RATE,Y,Y,Y,Y,N,,,1.0,0,,,mL/h/kg,1730,mL/h/kg,N,N,N,N,N,Y,
+min*mmol/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,1.0,16666.67,0,,,Minutes times millimoles per liter (area under the curve).,100,min.mmol/L,N,N,N,N,N,Y,
+pH,ACIDITY ,N,N,Y,N,N,,,1.0,pH,,C45997,"CDISC code: C45997_x000D_
+CDISC submission value: pH_x000D_
+CDISC synonym: pH_x000D_
+CDISC Description: A measure of the acidity or alkalinity of a fluid on a scale of 0 to 14.(NCI)_x000D_
+NCI preferred term: pH",1,[pH],N,N,N,N,N,Y,
+h*ug/mL,TIME TIMES CONCENTRATION,Y,N,N,Y,N,,0.0,1000000.0,0,,,"Hours times micrograms (area under the curve), divided by mililiter",100,h.ug/mL,N,N,N,N,N,Y,
+dB/m,DECIBEL PER LENGTH,N,Y,Y,Y,N,dB/m,,1.0,0,,,Sponsor Defined: dB/m - decilbel per meter,40,0,N,N,N,N,N,Y,
+g/week,DOSE UNIT PER TIME,N,Y,N,N,N,g/week,,1.0,0,,,"Gram per week, e.g. gram of alcohol/week. This is more precise than Units of alcohol per week_x000D_
+_x000D_
+[dose subset]",1,g/wk,N,N,Y,N,N,Y,
+nM*min,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,min*nmol/L,1.0,0.01667,0,,,"NOTE: PLEASE AVOID ATTACHING THIS UNIT TO ANY TOPIC CODE_x000D_
+_x000D_
+CDISC code: C85735_x000D_
+CDISC submission value: min*nmol/L",35,min.nmol/L,N,N,N,N,N,Y,
+kJ/kg,ENERGY,N,Y,N,Y,N,,,1.0,0,,,Kilo Joule pr kg,50,kJ/kg,N,N,N,N,N,Y,
+day*ug/mL,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,,24000000.0,0,,,"Days times micrograms per milliliter (area under the curve)._x000D_
+CDISC code: C85586_x000D_
+CDISC submission value: day*ug/mL_x000D_
+CDISC synonym(s):_x000D_
+CDISC definition: Days times micrograms per milliliter (area under the curve)._x000D_
+NCI preferred term: Day Times Microgram per Milliliter_x000D_
+_x000D_
+",2001,d.ug/mL,N,N,N,N,N,Y,
+mmol/L^2,CONCENTRATION,N,Y,N,N,N,,1.0,1.0,0,,,"CDISC not found: Sponser defined. _x000D_
+Unit mmol/L have CDISC code: C64387_x000D_
+",35,mmol/L2,N,N,N,N,N,Y,
+pmol/kg,MASS FRACTION,Y,Y,N,Y,N,,1.0,1e-09,0,,,"Picomoles pr kilogram_x000D_
+",35,pmol/kg,N,N,N,N,N,Y,
+U/hr,DOSE UNIT PER TIME,Y,Y,N,N,N,,,168.0,0,,,"U/hr - Insulin pump delivery rate (do not use)_x000D_
+CDISC not found _x000D_
+_x000D_
+",40,U/h,N,N,N,N,N,Y,
+Osm/kg,OSMOLALITY,Y,Y,Y,N,N,,,1.0,0,,,"osmoles per kilogram_x000D_
+",115,osm/kg,N,N,N,N,N,Y,
+dpm/umol,VOLUMETRIC RADIOACTIVITY,N,Y,N,N,N,,,1.0,0,,,"CDISC not found: _x000D_
+Sponser defined. _x000D_
+Disintegration per Minute per Milliliter",2150,0,N,N,N,N,N,Y,
+ugEq/mL,CONCENTRATION,Y,Y,N,N,N,,1.0,0.001,0,,,"Sponsor defined: ugEq/mL, Microgram Equivalent per Milliliter_x000D_
+",35,0,N,N,N,N,N,Y,
+min*ng/mL,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,,16.67,0,,,"CDISC code: C85732_x000D_
+CDISC submission value: min*ng/mL_x000D_
+CDISC synonym(s): ng*min/mL; min*ug/L; ug*min/L; min*ng/mL_x000D_
+CDISC definition: Minutes times nanograms per milliliter._x000D_
+NCI preferred term: Minute Times Nanogram per Milliliter""",36,min.ng/mL,N,N,N,N,N,Y,
+0/00,PERCENTAGE,Y,Y,N,N,N,0/00,,0.1,0,,,CDISC not found. Equal to pro mille = per 1000 red blood cells,1520,0/00,N,N,N,N,N,Y,
+mL/week,FLOW,Y,Y,N,N,N,mL/Week,0.0,0.006,0,,,"Sponsor defined: mL/week_x000D_
+",60,mL/wk,N,N,N,N,N,Y,
+mm2/usec,AREA PER TIME,Y,Y,N,Y,N,mm2/usec,0.0,1000000000000.0,0,,,Millimeter squared divided by microsecond,1,,N,N,N,N,N,Y,
+h*nmol Eq/L,TIME TIMES CONCENTRATION,N,Y,N,N,N,,,,0,,,Hours times equivalent nanomol per liter (area under the curve). ,100,0,N,N,N,N,N,Y,
+nmolEq/L,VOLUMETRIC RADIOACTIVITY,N,Y,N,N,N,,,1.0,0,,,"Sponsor defined. nmol equivalent per liter blood. CDISC not found_x000D_
+",2150,0,N,N,N,N,N,Y,
+nmol*h/L/mg,CONCENTRATION PER TIME PER DOSE,N,Y,Y,Y,N,,1.0,1.0,0,,,"Sponsor defined: A unit of concentration (molarity unit) equal to one billionth of a mole (10E-9 mole) of solute multiplied with Hours per Liter per miligram._x000D_
+",38,nmol.h/L/mg,N,N,N,N,N,Y,
+mmol/L/min,CONCENTRATION PER TIME,Y,Y,N,Y,N,,1.0,6.0,0,,,"Unit for measurement of endpoint calculated as rate. The unit consists of the main unit per the time unit. _x000D_
+Conversion Factor to Master: _x000D_
+   Main unit: 100 mg / dL =100 mg / 100 mL = 1000 mg / L. Divide by molar mass glucose:   1000  mg / L / molecular weigth  = xxx mmol/L. That gives a factor of 0.001 when converting mmol/l to mg/dl._x000D_
+   Time unit: 60 minutes = 1 hours . That gives a factor of 1/60 when converting from minutes to hours._x000D_
+_x000D_
+Main unit together with time unit will have a factor of 0.001/(1/60)=0.001*60=0.06. _x000D_
+",36,mmol/L/min,N,N,N,N,N,Y,
+h*mIU/L,TIME TIMES CONCENTRATION,N,N,N,N,N,,,,0,,,"Sponsor defined: Concentration of one international unit multiplied with Hour per liter of system volume._x000D_
+CONVERSION FACTOR HAVE NOT BEEN QC",100,h.m[IU]/L,N,N,N,N,N,Y,
+h*g/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,,1000000000.0,0,,,Hours times grams pr liter (area under the curve),100,h.ng/L,N,N,N,N,N,Y,
+kJ/d,ENERGY EXPENDITURE,Y,Y,N,Y,N,,,0.01157407407,0,,,A unit expressing the number of kiloJoules per day.,55,kJ/d,N,N,N,N,N,Y,
+mL/100mL/min,BLOOD FLOW,Y,Y,N,Y,N,,,1.0,0,,,"Sponsor defined._x000D_
+mL/100mL/min_x000D_
+_x000D_
+",21,mL/100.mL/min,N,N,N,N,N,Y,
+%*min,PERCENTAGE,N,Y,N,N,N,,,0.0,0,,,"Sponsor defined: Percent multiplied with min_x000D_
+",1520,%.min,N,N,N,N,N,Y,
+BOOLEAN,DICHOTOMY,N,N,Y,N,N,,,1.0,0,,,Boolean to hold numeric values 0 and 1,40,0,N,N,N,N,N,Y,
+min*umol/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,1.0,16.6666667,0,,,Unit for AUC umol*min/L,100,min.umol/L,N,N,N,N,N,Y,
+cm/year,LENGTH PER TIME,Y,Y,Y,N,N,,0.0,1.0,0,,,"Centimetres Per Year._x000D_
+Centimetre is a basic unit of length equal to one hundredth of a meter or approximately 0.393700787 inch(CDISC:C49668, Units for Vital Signs Results). Per Year is a frequency rate of occurrences of something within a period of time equal to three hundred sixty-five days. (CDISC: C74924)_x000D_
+",120,cm/a,N,N,N,N,N,Y,
+kJ/h,ENERGY EXPENDITURE,Y,Y,N,Y,N,,,0.277777778,0,,,kiloJoule per hour expenditure,56,kJ/h,N,N,N,N,N,Y,
+h*ng/L,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,0.0,1.0,0,,,Hours times nanograms per liter (area under the curve).,100,h.ng/L,N,N,N,N,N,Y,
+min*pg/mL,TIME TIMES CONCENTRATION,Y,Y,N,Y,N,,0.0,0.0166667,0,,,"Minutes times picograms per milliliter (area under the curve)._x000D_
+",100,min.pg/mL,N,N,N,N,N,Y,
+h*uIU/mL,TIME TIMES CONCENTRATION,N,Y,N,N,N,,,1.0,0,,,Hours times one millionth of an International unit per milliliter,100,h.u[IU]/mL,N,N,N,N,N,Y,
+ug/g creatinine,MASS FRACTION,Y,Y,N,Y,N,,,1.0,mg/kg,ug/g Creatinine,C67401,"CDISC controlled terminology version 2013-04-12_x000D_
+CDISC code: C85744_x000D_
+CDISC submission value: ug/g Creatinine_x000D_
+CDISC synonym(s)_x000D_
+CDISC definition: Nanograms per milligram of creatinine._x000D_
+NCI preferred term: Microgram Per Gram of Creatinine_x000D_
+_x000D_
+CDISC controlled terminology version 2015-12-18 _x000D_
+CDISC code: C85780_x000D_
+CDISC submission value: pg/mg Creatinine_x000D_
+CDISC synonym(s): ng/g of Creatinine; pg/mg of Creatinine_x000D_
+CDISC definition: Picograms per milligram creatinine._x000D_
+NCI preferred term: Picogram per Milligram of Creatinine",130,mg/kg,N,N,N,N,N,Y,
+/uL,CELL COUNT,Y,Y,N,Y,Y,,,0.001,10^6/L,/uL,C67452,"CDISC code: C67254_x000D_
+CDISC submission value: /uL_x000D_
+CDISC synonym: Per Microliter_x000D_
+CDISC definition: A volume unit equal to one microliter used as a denominator to build a derived unit expressed as a ratio. (NCI)_x000D_
+NCI Preferred Term: Per Microliter",30,10*6/L,N,N,N,N,N,Y,
+um^3,VOLUME,Y,Y,N,Y,N,,,1e-15,fL,um3,C64780,"CDISC code: C64780_x000D_
+CDISC Synonym(s): Cubic Micrometer; Cubic Micron; Femtoliter; um3_x000D_
+CDISC Definition: The unit of volume equal 1E-15 liter.",2130,fL,N,N,N,N,N,Y,
+Proportion of 1,PERCENTAGE,Y,Y,N,N,N,Fraction of 1,,100.0,fraction of 1,,C105484,"CDISC code: C105484_x000D_
+CDISC submission value: fraction of 1_x000D_
+CDISC synonym: Proportion of 1 (SDTM CT 2017-12-22) _x000D_
+CDISC Description: A unit for expressing a percentage as a decimal whereby the total value is measured as a fraction of the numeric 1._x000D_
+",1520,{fraction of 1},N,N,N,N,N,Y,
+cm^2,AREA,Y,Y,Y,Y,N,cm2,,1.0,cm2,,C48460,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU"" CodeSubmValue=""cm2""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C48460_x000D_
+CDISC submission value: cm2_x000D_
+CDISC synonym: Square Centimeter_x000D_
+CDISC Description: A unit of area measurement equal to a square measuring one centimeter on each side. One square centimeter is equal to 10E-4 square meter.(NCI)_x000D_
+NCI preferred term: Square Centimeter_x000D_
+",1,cm2,N,N,N,N,N,Y,
+g/cm^2,BMI,Y,Y,N,Y,N,g/cm2,,10.0,g/cm2,,C71201,"CDISC code: C71201_x000D_
+CDISC submission value: g/cm2_x000D_
+CDISC synonym: Gram per Square Centimeter_x000D_
+CDISC Description: A unit of area density defined as a spread rate at which one gram of a substance is spread over the area of one square centimeter. The unit is also used as a dose calculation unit.(NCI)_x000D_
+NCI preferred term: Gram per Square Centimeter",25,g/cm2,N,N,N,N,N,Y,
+month,TIME,N,Y,N,N,N,MONTHS,0.0,2629743.83,MONTHS,,C29846,"CDISC code: C29846_x000D_
+CDISC submission value: MONTHS_x000D_
+CDISC synonym(s): Month_x000D_
+CDISC definition: One of the 12 divisions of a year as determined by a calendar. It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks. (NCI)_x000D_
+NCI preferred term:Month_x000D_
+_x000D_
+[age subset]",1950,mo,Y,N,N,N,N,Y,
+year,TIME,Y,Y,N,N,N,YEARS,,31557600.0,YEARS,,C29848,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""AGEU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C29848_x000D_
+CDISC submission value: YEARS_x000D_
+CDISC synonym: Year_x000D_
+CDISC Description: The period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period. (NCI)_x000D_
+NCI preferred term: Year_x000D_
+_x000D_
+[age subset]_x000D_
+[study time subset]_x000D_
+[time subset]",1950,a,Y,Y,N,Y,N,Y,
+10^8/L,CELL COUNT,Y,Y,N,Y,N,,,0.1,10^8/L,,C105489,A unit of measurement equal to 10 to the eighth power of entities per unit of volume equal to one liter.,1,10^8/l,N,N,N,N,N,Y,
+/month,COUNT PER TIME,N,Y,N,N,N,,,0.00136892539,/month,,C64498,"CDISC code:C64498_x000D_
+CDISC submission value:/month_x000D_
+CDISC Synonym(s): Every Month; Per Month_x000D_
+CDISC definition: Every month. (NCI)_x000D_
+NCI Preferred Term : Monthly",39,/mo,N,N,N,N,N,Y,
+pg,WEIGHT,Y,Y,N,Y,N,,0.0,1e-15,pg,,C64551,"CDISC code: C64551_x000D_
+CDISC submission value: pg_x000D_
+CDISC synonym: Picogram_x000D_
+CDISC Description: A unit of mass equal to one trillionth of a gram (10E-12 gram).(NCI)_x000D_
+NCI preferred term: Picogram_x000D_
+_x000D_
+[dose subset]_x000D_
+[strength subset]_x000D_
+",2200,pg,N,N,Y,N,Y,Y,
+ug/L,CONCENTRATION,Y,Y,N,Y,N,,0.0,1e-06,ug/L,,C67306,"CDISC code: C67306_x000D_
+CDISC submission value: ug/L_x000D_
+CDISC synonym: mg/m3; Microgram per Liter; Milligram per Cubic Meter; Nanogram per Milliliter; ug/L; ng/mL; mcg/L_x000D_
+CDISC Description: A unit of mass concentration defined as the concentration of one microgram of a substance per unit volume of the mixture equal to one liter. The concept also refers to the unit of mass density (volumic mass) defined as the density of substance which mass equal to one microgram occupies the volume one liter.(NCI)_x000D_
+NCI preferred term: Microgram per Liter_x000D_
+_x000D_
+[strength subset]_x000D_
+",35,ng/mL,N,N,N,N,Y,Y,
+Arbitrary U,ARBITRARINESS,N,Y,N,N,N,,,1.0,Arbitrary U,,C75765,"A unit based on or subject to individual judgment, preference, or predetermined reference. (NCI)",1,[arb'U],N,N,N,N,N,Y,
+CARTRIDGE,DOSE UNIT,N,Y,N,N,N,,,1.0,CARTRIDGE,,C48481,"A dosing measurement based on the cartridge unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{CARTRIDGE},N,N,Y,N,N,Y,
+ug/kg,MASS FRACTION,Y,Y,N,Y,N,,,0.001,ug/kg,,C67396,A unit of a mass fraction expressed as a number of micrograms of substance per kilogram of mixture. The unit is also used as a dose calculation unit.(NCI),1,ug/kg,N,N,N,N,N,Y,
+J,ENERGY,Y,Y,Y,Y,N,,,1.0,Joule,,C42548,"CDISC code: C42548_x000D_
+CDISC submission value: Joule_x000D_
+CDISC synonym: Joule_x000D_
+CDISC Description: A unit of electrical, mechanical, and thermal energy (as well as work and quantity of heat), equal to the work done when the point of application of a force of one Newton is displaced through a distance of one meter in the direction of the force or the work done when a current of one Ampere passes through a resistance of one ohm for one second. One joule is equal to 0.23889 gram-calorie (mean).(NCI)_x000D_
+NCI preferred term: Joule",52,J,N,N,N,N,N,Y,
+cm/s,VELOCITY,Y,Y,N,Y,N,,,0.01,cm/s,,C102406,"A unit of both speed (scalar) and velocity (vector), defined as the distance of one centimeter travelled per unit time equal to one second.",2110,cm/s,N,N,N,N,N,Y,
+Bq/mL,VOLUMETRIC RADIOACTIVITY,Y,Y,Y,Y,N,,,1.0,Bq/mL,,C71167,"CDISC code: C71167_x000D_
+CDISC submission value: Bq/mL_x000D_
+CDISC synonym: Becquerel per Milliliter; kBq/L; Kilobecquerel per Liter_x000D_
+CDISC Description: A unit of volumetric radioactivity concentration defined as a concentration of a radionuclide with an activity equal to one Becquerel per unit volume equal to one milliliter or one kilobecquerel per liter.(NCI)_x000D_
+NCI preferred term: Becquerel per Milliliter",2150,Bq/mL,N,N,N,N,N,Y,
+mcg/L,CONCENTRATION,Y,Y,N,Y,N,,0.0,1e-06,ug/L,,C67306,"Micrograms per liter._x000D_
+_x000D_
+In its current use NN defines mcg=ug as confirmed by CHHE. But UCUM defines it as mcg/L= millicentigram/Liters. There is a factor 10 difference. This means that mcg/L is defined as and linked to ng/mL (ug/L). ",1,ng/mL,N,N,N,N,N,Y,
+10^4/mm^3,CELL COUNT,Y,Y,N,Y,N,,,10.0,10^10/L,,C105517,"Equal to 10^10/L_x000D_
+CDISC:Not Found",30,10^10/L,N,N,N,N,N,Y,
+mmol/L,CONCENTRATION,Y,Y,N,Y,N,,1.0,0.001,mmol/L,,C64387,"CDISC code: C64387_x000D_
+CDISC submission value: mmol/L_x000D_
+CDISC synonym: Millimole per Liter; umol/mL; Micromole per Milliliter; mol/m3; Mole per Cubic Meter; mcmol/mL; mmol/L; nmol/uL_x000D_
+CDISC Description: A unit of concentration (molarity unit) equal to one thousandth of a mole (10E-3 mole) of solute per one liter of solution.(NCI)_x000D_
+NCI preferred term: Millimole per Liter_x000D_
+_x000D_
+[strength subset]_x000D_
+",35,mmol/L,N,N,N,N,Y,Y,
+10^6/dL,CELL COUNT,Y,Y,N,Y,N,,,0.01,10^7/L,,C98786,"A unit of measurement equal to 10 to the seventh power of the number of entities per unit of volume equal to one liter._x000D_
+_x000D_
+CDISC code: 10^7/L_x000D_
+CDISC synonym: 10^6/dL",30,10*7/l,N,N,N,N,N,Y,
+mg/d,MASS FLOW RATE,Y,Y,N,Y,N,,,0.0006944,mg/day,,C67399,"unit for measurement of 24-hour quantitatively collected urine._x000D_
+CDISC code: C67399_x000D_
+CDISC submission value: mg/day_x000D_
+CDISC synonym(s):  Milligram per Day_x000D_
+CDISC definition: A unit of measure referring to the ratio between mass expressed in milligrams per day.(NCI)_x000D_
+NCI preferred term: Milligram per 24 Hours_x000D_
+_x000D_
+",120,mg/d,N,N,N,N,N,Y,
+mg/min,MASS FLOW RATE,Y,Y,Y,Y,N,,0.0,1.0,mg/min,,C73742,"CDISC code: C73742_x000D_
+CDISC submission value: mg/min_x000D_
+CDISC synonym: Milligram per Minute_x000D_
+CDISC Description: Milligrams per minute._x000D_
+NCI preferred term: mg/min_x000D_
+_x000D_
+[dose subset]",120,mg/min,N,N,Y,N,N,Y,
+mL/m2,VOLUME PER AREA,Y,Y,N,Y,N,,,1.0,mL/m2,,C73761,Milliliters (volume) divided by meters squared (surface area).,1,mL/m2,N,N,N,N,N,Y,
+um2,AREA,Y,Y,N,Y,N,,0.0,1e-08,um2,,C73770,Micrometer squared,1,um2,N,N,N,N,N,Y,
+10^7/L,CELL COUNT,Y,Y,N,Y,N,,0.0,0.01,10^7/L,,C98786,A unit of measurement equal to 10 to the seventh power of the number of entities per unit of volume equal to one liter.,1,10*7/l,N,N,N,N,N,Y,
+10^10/L,CELL COUNT,Y,Y,N,Y,N,,,10.0,10^10/L,,C105517,"A unit of measurement equal to 10 to the tenth power of entities per unit of volume equal to one liter. (NCI)_x000D_
+Ten Billion Per Liter_x000D_
+Synonym(s): 10^4/mm3; 10^4/uL; 10^7/mL",30,10^10/L,N,N,N,N,N,Y,
+mL/kg/min,ENERGY EXPENDITURE,N,Y,N,Y,N,,,1.0,mL/kg/min,,C73760,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C73760_x000D_
+CDISC submission value: mL/kg/min_x000D_
+CDISC synonym: Milliliter per Kilogram per Minute; uL/g/min; mL/min/kg; uL/min/g; mL/kg/min_x000D_
+CDISC Description: Milliliters per kilogram per minute._x000D_
+NCI preferred term: mL/kg/min_x000D_
+",55,mL/kg/min,N,N,N,N,N,Y,
+CUP,DOSE UNIT,N,Y,N,N,N,,,1.0,CUP,,C54703,"A dosing measurement based on the cup unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{cup},N,N,Y,N,N,Y,
+mIU/L,U_IU Concentration,Y,Y,N,N,N,,0.0,0.001,mIU/L,,C67405,"mIU/L_x000D_
+_x000D_
+_x000D_
+[strength subset]_x000D_
+",2000,u[IU]/mL,N,N,N,N,Y,Y,
+h,TIME,Y,Y,N,Y,N,,,3600.0,HOURS,,C25529,"CDISC code: C25529_x000D_
+CDISC submission value: HOURS_x000D_
+CDISC synonym: Hour; hr_x000D_
+CDISC Description: A unit measure of time equal to 3,600 seconds or 60 minutes. It is approximately 1/24 of a median day. (NCI)_x000D_
+NCI preferred term: Hour_x000D_
+_x000D_
+",1950,h,N,N,N,N,N,Y,
+nM/min,CONCENTRATION PER TIME,Y,Y,N,Y,N,,1.0,6e-06,nmol/L/min,,C122219,"CDISC Submission value: nmol/L/min_x000D_
+CDISC Synonym: nmol*min/L; pmol/mL/min_x000D_
+CDISC code:C122219_x000D_
+CDISC definition:A rate unit equal to the number of nanomoles per unit of volume equal to one liter per unit of time equal to one minute._x000D_
+NCI preferred term:Nanomole per Liter per Minute_x000D_
+",36,nmol/l/min,N,N,N,N,N,Y,
+10^6/uL,CELL COUNT,Y,Y,N,Y,Y,,,1000.0,10^12/L,,C67308,"Equal to 10^12/L_x000D_
+CDISC:Not Found",30,10*12/L,N,N,N,N,N,Y,
+DAYS,TIME,Y,Y,N,Y,N,,,86400.0,DAYS,,C25301,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""AGEU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C25301_x000D_
+CDISC submission value: DAYS_x000D_
+CDISC synonym: Day_x000D_
+CDISC Description: The time for Earth to make a complete rotation on its axis; ordinarily divided into twenty-four hours. This also refers to a specific day. (_x000D_
+NCI preferred term: Day_x000D_
+",1950,d,N,N,N,N,N,Y,
+cm2,AREA,Y,Y,N,Y,N,,,1.0,cm2,,C48460,A unit of area measurement equal to a square measuring one centimeter on each side. One square centimeter is equal to 1E-4 square meter. (NCI),1,cm2,N,N,N,N,N,Y,
+mL,VOLUME,Y,Y,N,Y,N,,,0.001,mL,,C28254,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C28254_x000D_
+CDISC submission value: mL_x000D_
+CDISC synonym: Milliliter; cm3_x000D_
+CDISC Description: The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)_x000D_
+NCI preferred term: Milliliter_x000D_
+_x000D_
+[strength subset]_x000D_
+_x000D_
+",2130,mL,N,N,N,N,Y,Y,
+ng/g,MASS FRACTION,Y,Y,N,Y,N,,0.0,0.001,ug/kg,,C67396,Sponsor defined: nanogram/gram.,129,ug/kg,N,N,N,N,N,Y,
+mCi/L,VOLUMETRIC RADIOACTIVITY,Y,Y,N,Y,N,,,37000.0,mCi/L,,C71174,A unit of volumetric radioactivity concentration defined as a concentration of a radionuclide with an activity equal to one thousandth of a Curie per unit volume equal to one liter.(NCI),1,mCi/l,N,N,N,N,N,Y,
+mmol/mol,MASS FRACTION,Y,Y,N,Y,Y,,1.0,1000.0,mmol/mol,,C111253,"mmol/mol. New unit to report HBA1c in._x000D_
+",1520,mmol/mol,N,N,N,N,N,Y,
+s,TIME,Y,Y,Y,Y,N,,,1.0,sec,,C42535,"CDISC code: C42535_x000D_
+CDISC submission value: sec_x000D_
+CDISC synonym: Second_x000D_
+CDISC Description: The second is a unit of time with a duration of 919 263 177 0 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the cesium 133 atom in its ground state at 0 K. According to the convention, 60 seconds constitute one minute; 3,600 seconds constitute one hour. Abbreviation Sec. is acceptable in non-scientific usage only.(NCI)_x000D_
+NCI preferred term: Second_x000D_
+_x000D_
+[time subset]",1950,s,N,N,N,Y,N,Y,
+AMPULE,DOSE UNIT,N,Y,N,N,N,,,1.0,AMPULE,,C48473,"A dosing measurement based on the ampule unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{Ampule},N,N,Y,N,N,Y,
+mm/h,VELOCITY,Y,Y,N,Y,N,,,2.78e-07,mm/h,,C67419,"CDISC code: C67419_x000D_
+CDISC submission value: mm/h_x000D_
+CDISC synonym: Millimeter per Hour_x000D_
+CDISC Description: A unit of both speed (scalar) and velocity (vector), defined as the distance of one millimeter travels per unit time equal to one hour.(NCI)_x000D_
+NCI preferred term: Millimeter per Hour",2110,mm/h,N,N,N,N,N,Y,
+ng/L,CONCENTRATION,Y,Y,N,Y,N,,0.0,1e-09,ng/L,,C67327,"CDISC code: C67327_x000D_
+CDISC submission value: ng/L_x000D_
+CDISC synonym: ug/m3; Microgram per Cubic Meter; ng/L; pg/mL_x000D_
+CDISC Description: A unit of mass concentration defined as the concentration of one nanogram of a substance per one liter of the mixture, or one picogram of a substance in unit volume of the mixture equal to one milliliter, or one microgram of a substance per one cubic meter of the mixture. The concept also refers to the metric unit of mass density (volumic mass) defined as the density of substance which mass equal to one nanogram occupies the volume one liter.(NCI)_x000D_
+NCI preferred term: Nanogram per Liter_x000D_
+_x000D_
+[strength subset]_x000D_
+",35,pg/mL,N,N,N,N,Y,Y,
+1/day,ELIMINATION,Y,Y,N,Y,N,,,0.04166,/day,,C25473,"CDISC code: C25473_x000D_
+CDISC submission value: /day_x000D_
+CDISC synonym: Daily; Per Day_x000D_
+CDISC Description: Occurring or done each day. (NCI)_x000D_
+NCI preferred term: Daily",50,/d,N,N,N,N,N,Y,
+Hz,BEAT RATE,Y,Y,N,Y,N,,0.0,60.0,Hz,,C42545,"CDISC submission value: Hz_x000D_
+A unit of frequency equal to one cycle per second.(NCI)",100,Hz,N,N,N,N,N,Y,
+HOURS,TIME,Y,Y,N,Y,N,,,3600.0,HOURS,,C25529,"A unit of measurement of time equal to 60 minutes._x000D_
+",1950,h,N,N,N,N,N,Y,
+kg/m^2,BMI,Y,Y,Y,Y,N,,,1.0,kg/m2,,C49671,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C49671_x000D_
+CDISC submission value: kg/m2_x000D_
+CDISC synonym: Kilogram per Square Meter_x000D_
+CDISC Description: A unit expressed as kilogram of mass per square meter of area.(NCI)_x000D_
+NCI preferred term: Kilogram Per Square Meter",25,kg/m2,N,N,N,N,N,Y,
+mg/kg/min,RELATIVE MASS FLOW RATE,Y,Y,N,Y,N,,,1.0,mg/kg/min,,C71207,"CDISC code: C71207_x000D_
+CDISC submission value: mg/kg/min_x000D_
+CDISC synonym: Milligram per Kilogram per Minute_x000D_
+CDISC Description: A dose calculation unit equal to one thousandth of a gram of a preparation per one kilogram of body mass administered per unit of time equal to one minute.(NCI)_x000D_
+NCI preferred term: Milligram per Kilogram per Minute",1735,mg/kg/min,N,N,N,N,N,Y,
+TABLET,DOSE UNIT,N,Y,N,N,N,,,1.0,TABLET,,C48542,"A dosing measurement based on the tablet unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{Tablet},N,N,Y,N,N,Y,
+10^3/mm^3,CELL COUNT,Y,Y,N,Y,N,,,1.0,10^9/L,,C67255,"CDISC Submission Value: 10^9/L_x000D_
+Synonyms: 1/nL; 10^3/mm3; 10^3/uL; 10^6/mL; G/L; GI/L; Giga per Liter_x000D_
+A unit of measurement equal to 10 to the ninth power of the number of entities per unit of volume equal to one liter.",30,10*9/L,N,N,N,N,N,Y,
+copies/uL,CONCENTRATION,N,Y,N,N,N,,0.0,,copies/uL,,C116237,"CDISC Submission Value: copies/uL_x000D_
+Code: C116237_x000D_
+CDISC Definition: A unit of concentration expressed as a number of copies per unit volume equal to one microliter._x000D_
+NCI Preferred Term: Copies per Microliter",1,{copies}/ul,N,N,N,N,N,Y,
+1/pL,CELL COUNT,Y,Y,N,Y,N,,,1000.0,10^12/L,,C67308,"equal to 10^12/L_x000D_
+_x000D_
+CDISC code: C67308_x000D_
+CDISC submission value: 10^12/L_x000D_
+CDISC synonym:1/pL",30,10*12/L,N,N,N,N,N,Y,
+mm^3,VOLUME,Y,Y,N,Y,N,,,1e-06,uL,,C48153,"mm^3 is equivalent to_x000D_
+CDISC code: C48153_x000D_
+CDISC submission value: uL_x000D_
+CDISC synonym(s): Microliter; mcL; mm3_x000D_
+CDISC definition: A unit of volume accepted for use with the SI and equal to one millionth of a liter (10E-6 liter)(NCI)_x000D_
+NCI preferred term: Microliter",2130,uL,N,N,N,N,N,Y,
+WEEKS,TIME,Y,Y,N,N,N,,,604800.0,WEEKS,,C29844,"Any period of seven consecutive days. (NCI)_x000D_
+",1,wk,N,N,N,N,N,Y,
+1/nL,CELL COUNT,Y,Y,N,Y,N,,,1.0,10^9/L,,C67255,"equal to 10^9/L_x000D_
+No CDISC standard for submission value or definition exist_x000D_
+",30,10*9/L,N,N,N,N,N,Y,
+mg%,CONCENTRATION,Y,Y,N,N,N,,0.0,0.01,mg/dL,,C67015,Found this explanation using this link:https://fscimage.fishersci.com/webimages_FSC/downloads/winek.pdf,35,mg/dL,N,N,N,N,N,Y,
+mL/h,FLOW,Y,Y,Y,Y,N,,,1.0,mL/h,,C66962,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C66962_x000D_
+CDISC submission value: mL/h_x000D_
+CDISC synonym: Milliliters per Hour_x000D_
+CDISC Description: A unit of volumetric flow rate defined as the rate at which one milliliter of matter travels during the period of time equal to one hour.(NCI)_x000D_
+NCI preferred term: Milliliter per Hour_x000D_
+",60,mL/h,N,N,N,N,N,Y,
+Kcal/24h,ENERGY EXPENDITURE,Y,Y,N,N,N,,,0.0484,kcal/day,,C139135,Kcal/24h,55,kcal/d,N,N,N,N,N,Y,
+umol/L,CONCENTRATION,Y,Y,N,Y,N,,1.0,1e-06,umol/L,,C48508,"CDISC code: C48508_x000D_
+CDISC submission value: umol/L_x000D_
+CDISC synonym: Micromole per Liter_x000D_
+CDISC Description: A unit of concentration (molarity unit) equal to one one-millionth of a mole (10E-6 mole) of solute per one liter of solution. (NCI)_x000D_
+NCI preferred term: umol/L_x000D_
+_x000D_
+[strength subset]_x000D_
+",35,umol/L,N,N,N,N,Y,Y,
+U/KG,RELATIVE DOSE UNIT,Y,Y,Y,N,N,,,1.0,U/kg,,C67465,"U/kg, Units per Kilogram to be used for derived topic codes on dosing _x000D_
+",1720,{Unit}/kg,N,N,N,N,N,Y,
+ug,WEIGHT,Y,Y,N,Y,N,,,1e-09,ug,,C48152,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C48152_x000D_
+CDISC submission value: ug_x000D_
+CDISC synonym: Microgram; mcg_x000D_
+CDISC Description: The unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)_x000D_
+NCI preferred term: Microgram_x000D_
+_x000D_
+[dose subset]_x000D_
+[strength subset]_x000D_
+",2200,ug,N,N,Y,N,Y,Y,
+mU/L,U_IU Concentration,Y,Y,N,N,Y,,0.0,0.001,mU/L,,C67408,"CDISC code: C67408_x000D_
+CDISC submission value: mU/L_x000D_
+CDISC synonym: _x000D_
+CDISC Description: An arbitrary unit of substance concentration equal to the concentration at which one liter of mixture contains one thousandth of a unit of a substance._x000D_
+NCI preferred term: Microunit per Milliliter_x000D_
+_x000D_
+[strength subset]_x000D_
+",2000,uU/mL,N,N,N,N,Y,Y,
+/sec,COUNT PER TIME,Y,Y,N,Y,N,,0.0,3600.0,/sec,,C66965,Per second,1,/s,N,N,N,N,N,Y,
+/h,COUNT PER TIME,Y,Y,N,Y,N,,,1.0,/h,,C66966,"CDISC code: C66966_x000D_
+CDISC submission value: /h_x000D_
+CDISC synonym(s): Per Hour_x000D_
+CDISC definition: A rate of occurrences of something within a period of time equal to sixty minutes._x000D_
+NCI preferred term: /h",39,/h,N,N,N,N,N,Y,
+copies/mL,CONCENTRATION,N,Y,N,N,N,,0.0,,copies/mL,,C100900,"CDISC code: C100900_x000D_
+CDISC submission value: copies/mL_x000D_
+CDISC synonym(s): _x000D_
+CDISC definition: A unit of concentration expressed as a number of copies per unit volume equal to one milliliter._x000D_
+NCI preferred term: Copies per Milliliter_x000D_
+",37,{copies}/mL,N,N,N,N,N,Y,
+L,VOLUME,Y,Y,Y,Y,N,,,1.0,L,,C48505,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C48505_x000D_
+CDISC submission value: L_x000D_
+CDISC synonym: Liter_x000D_
+CDISC Description: A unit of volume equal to a cubic decimeter, or one thousandth of cubic meter, or 1000 cubic centimeters, or approximately 61.023 744 cubic inches.(NCI)_x000D_
+NCI preferred term: Liter_x000D_
+",2130,L,N,N,N,N,N,Y,
+DU/mL,U_IU Concentration,N,Y,N,N,N,,,1.0,IU/mL,,C67377,"Dose Units/mililiter_x000D_
+",2000,[IU]/mL,N,N,N,N,N,Y,
+ug/dL,CONCENTRATION,Y,Y,N,Y,N,,0.0,1e-05,ug/dL,,C67305,"CDISC code: C67305_x000D_
+CDISC submission value: ug/dL_x000D_
+CDISC synonym: Microgram per Deciliter_x000D_
+CDISC Description: A unit of mass concentration defined as the concentration of one microgram of a substance per unit volume of the mixture equal to one deciliter. The concept also refers to the unit of mass density (volumic mass) defined as the density of substance which mass equal to one microgram occupies the volume one deciliter. (NCI)_x000D_
+NCI preferred term: ug/dL",35,ug/dL,N,N,N,N,N,Y,
+PACK,DOSE UNIT,N,Y,N,N,N,,,1.0,PACK,,C62653,"A number of individual items packaged as a unit._x000D_
+_x000D_
+[dose subset]",1,{Pack},N,N,Y,N,N,Y,
+umol/mL,CONCENTRATION,Y,Y,N,Y,N,,1.0,0.001,mmol/L,,C64387,"CDISC Value found_x000D_
+CDISC Code: C64387_x000D_
+CDISC Submission Value: mmol/L_x000D_
+CDISC Synonym(s): umol/mL_x000D_
+CDISC Definition: A unit of concentration (molarity unit) equal to one millimole of solute per liter of solution._x000D_
+NCI Preferred Term: Millimole per Liter _x000D_
+Sponser defined. _x000D_
+micromol / milliliter",35,mmol/L,N,N,N,N,N,Y,
+GPL U/mL,U_IU Concentration,N,Y,N,N,N,,,1.0,GPL U/mL,,C117971,"A unit for semiquantitative measurement of IgG autoantibodies to proteins associated with negatively charged phospholipids evaluated against an established reference standard, per unit of volume equal to one milliliter.",1,[GPL'U]/mL,N,N,N,N,N,Y,
+kg/L,CONCENTRATION,Y,Y,N,Y,N,,0.0,1000.0,kg/L,,C64566,"SDTM Terminology 2017-06-30_x000D_
+Code:C64566_x000D_
+CDISC Code Value:  _x000D_
+CDISC Value Label: kg/L       _x000D_
+CDISC synonym(s): Gram per Milliliter; Kilogram per Liter; g/mL; gram/mL; kg/L; mg/uL_x000D_
+CDISC definition: _x000D_
+A unit of concentration or mass density equal to one gram of substance per milliliter of solution or one kilogram of substance per l_x000D_
+iter of solution._x000D_
+NCI preferred term: Kilogram per Liter_x000D_
+",35,kg/L,N,N,N,N,N,Y,
+nmol,WEIGHT,Y,Y,N,Y,N,,1.0,1e-12,nmol,,C48517,"CDISC code: C48517_x000D_
+CDISC submission value: nmol_x000D_
+CDISC synonym(s): Nanomole _x000D_
+CDISC definition: A unit of amount of substance equal to one billionth (10E-9) of a mole._x000D_
+NCI preferred term: Nanomole_x000D_
+_x000D_
+[dose subset]_x000D_
+[strength subset]_x000D_
+",2200,nmol,N,N,Y,N,Y,Y,
+mg/(kg*min),RELATIVE MASS FLOW RATE,Y,Y,Y,Y,N,,,1.0,mg/kg/min,,C71207,"CDISC code: C71207_x000D_
+CDISC submission value: mg/kg/min_x000D_
+CDISC synonym: Milligram per Kilogram per Minute_x000D_
+CDISC Description: A dose calculation unit equal to one thousandth of a gram of a preparation per one kilogram of body mass administered per unit of time equal to one minute.(NCI)_x000D_
+NCI preferred term: Milligram per Kilogram per Minute",1735,mg/kg/min,N,N,N,N,N,Y,
+mmHg,PRESSURE,Y,Y,N,Y,N,,,133.3222,mmHg,,C49670,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>",1550,mm[Hg],N,N,N,N,N,Y,
+ng Eq/mL,CONCENTRATION,Y,Y,N,N,N,,1.0,1e-06,ugEq/L,,C122230,"Nanogram equivalent per millilitre._x000D_
+_x000D_
+CDISC code: ugEq/L_x000D_
+CDISC synonym: ngEq/mL",35,ug.eq/l,N,N,N,N,N,Y,
+IU,U_IU Concentration,N,Y,N,N,N,,,1.0,IU,,C48579,"CDISC code: C48579_x000D_
+CDISC submission value: IU_x000D_
+CDISC synonym: IE; International Unit_x000D_
+CDISC Description: The unitage assigned by the WHO (World Health Organization) to International Biological Standards - substances, classed as biological according to the criteria provided by WHO Expert Committee on Biological Standardization, to enable the results of biological and immunological assay procedures to be expressed in the same way throughout the world. The definition of an international unit is generally arbitrary and technical, and has to be officially approved by the International Conference for Unification of Formulae.(NCI)_x000D_
+NCI preferred term: International Unit_x000D_
+",2000,[IU],N,N,N,N,N,Y,
+fmol,WEIGHT,Y,Y,N,Y,N,,1.0,1e-18,fmol,,C68854,"CDISC code: C68854_x000D_
+CDISC submission value: fmol_x000D_
+CDISC synonym: Femtomole_x000D_
+CDISC Description: A unit of amount of substance equal to one quadrillionth of a mole (10E-15 mole).(NCI)_x000D_
+NCI preferred term: Femtomole_x000D_
+_x000D_
+[strength subset]_x000D_
+",2200,fmol,N,N,N,N,Y,Y,
+MONTHS,TIME,N,Y,N,N,N,,,1.0,MONTHS,,C29846,"One of the 12 divisions of a year as determined by a calendar. It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks. (NCI)_x000D_
+",1,mo,N,N,N,N,N,Y,
+10^9/mL,CELL COUNT,Y,Y,N,Y,N,,,1000.0,10^12/L,,C67308,"Sponsor defined._x000D_
+10^9/mL",30,10*12/L,N,N,N,N,N,Y,
+ppm,MASS FRACTION,N,Y,N,Y,N,,,1.0,ppm,,C48523,"CDISC code: C48523_x000D_
+CDISC submission value: ppm_x000D_
+CDISC synonym: Part per Million_x000D_
+CDISC Description: A unit of measurement referring to one entity counted per one million entities.(NCI)_x000D_
+NCI preferred term: Part Per Million",114,[ppm],N,N,N,N,N,Y,
+deg,DEGREES,Y,Y,Y,Y,N,,,1.0,deg,,C68667,"CDISC Submission value: deg_x000D_
+CDISC Synonym: Degree Unit of Plane Angle_x000D_
+CDISC code:C68667_x000D_
+CDISC definition: A unit of plane angle measurement equal to the length of the arc cut out by the angle, divided by the circumference of the circle, and multiplied by 360. The symbol for degrees is a small superscript circle. One radian is about 57 degrees and one degree is pi/180 radians.(NCI",40,deg,N,N,N,N,N,Y,
+umol/kgFFM/min,DOSE RATE,N,Y,N,Y,N,,,1.0,umol/kg/min,,C126082,"CDISC not found: _x000D_
+Sponser defined. _x000D_
+Micromole per kilogram fat free mass (FFM) per minute_x000D_
+_x000D_
+",40,umol/kg/min,N,N,N,N,N,Y,
+MBq,RADIOACTIVITY,Y,Y,N,Y,N,,0.0,1000000.0,MBq,,C70512,"CDISC code: C70512_x000D_
+CDISC submission value: MBq_x000D_
+CDISC synonym(s):  Megabecquerel_x000D_
+CDISC definition: A unit of radioactivity equal to one million nuclear disintegrations or other nuclear transformations per second, or to 10E6 Becquerels.(NCI)_x000D_
+NCI preferred term: Megabecquerel_x000D_
+",1720,MBq,N,N,N,N,N,Y,
+BU/mL,INHIBITOR ACTIVITY,N,Y,N,N,N,,,1.0,BU/mL,,C117967,"CDISC code: C117967_x000D_
+CDISC submission value: BU/mL_x000D_
+CDISC synonym(s): Bethesda unit per Milliliter_x000D_
+CDISC definition: A unit of measurement for blood coagulation inhibitor activity,expressed as a Bethesda Unit per unit of volume equal to one milliliter._x000D_
+NCI preferred term: Bethesda unit per Milliliter",90,[beth'U]/mL,N,N,N,N,N,Y,
+IU/L,U_IU Concentration,Y,Y,N,N,N,,0.0,1.0,IU/L,,C67376,"CDISC code: C67376_x000D_
+CDISC submission value: IU/L_x000D_
+CDISC synonym: International Unit per Liter; IU/L; mIU/mL_x000D_
+CDISC Description: Unit of arbitrary substance concentration (biologic activity concentration) defined as the concentration of one international unit per one liter of system volume.(NCI)_x000D_
+NCI preferred term: International Unit per Liter_x000D_
+_x000D_
+[strength subset]_x000D_
+",2000,m[IU]/mL,N,N,N,N,Y,Y,
+ugEq/L,CONCENTRATION,N,Y,N,N,N,,1.0,1e-06,ugEq/L,,C122230,"A concentration unit measured as the number of microgram equivalents of solute per liter of solution, or as the number of nanogram equivalents of solute per milliliter of solution.",1,ug.eq/l,N,N,N,N,N,Y,
+CAN,DOSE UNIT,N,Y,N,N,N,,,1.0,CAN,,C48479,"A dosing measurement based on the can unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{CAN},N,N,Y,N,N,Y,
+nmol/L,CONCENTRATION,Y,Y,N,Y,Y,,1.0,1e-09,nmol/L,,C67432,"CDISC code: C67432_x000D_
+CDISC submission value: nmol/L_x000D_
+CDISC synonym: Nanomole per Liter_x000D_
+CDISC Description: A unit of concentration (molarity unit) equal to one billionth of a mole (10E-9 mole) of solute in one liter of solution.(NCI)_x000D_
+NCI preferred term: Nanomole per Liter_x000D_
+_x000D_
+[strength subset]_x000D_
+",35,nmol/L,N,N,N,N,Y,Y,
+L/min,FLOW,Y,Y,N,Y,N,,,60000.0,L/min,,C67388,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C67388_x000D_
+CDISC submission value: L/min_x000D_
+CDISC synonym: Liters per Minute_x000D_
+CDISC Description: A unit of volumetric flow rate defined as the rate at which one liter of matter travels during the period of time equal to one minute.(NCI)_x000D_
+NCI preferred term: Liter per Minute_x000D_
+",60,L/min,N,N,N,N,N,Y,
+MET*min,ENERGY EXPENDITURE,N,Y,N,N,N,,,1.0,MET*min,,C127807,A unit of energy expenditure equal to the number of metabolic equivalent of task units times the number of minutes of performed activity.,1,[MET].min,N,N,N,N,N,Y,
+mL/min/SSA,VOLUMETRIC FLOW RATE,Y,Y,Y,N,N,,,1.0,mL/min/1.73m2,,C67412,"CDISC code: C67412_x000D_
+CDISC submission value: mL/min/1.73m2_x000D_
+CDISC synonym: _x000D_
+CDISC Description: A metric unit of volumetric flow rate defined as the rate at which one milliliter of matter travels during the period of time equal to one minute per 1.73 meters squared of body surface area._x000D_
+NCI preferred term: Milliliter per Minute per 1.73 m2 of Body Surface Area",2140,mL/min/(173/100).m2,N,N,N,N,N,Y,
+uCi/mL,VOLUMETRIC RADIOACTIVITY,Y,Y,N,Y,N,,,37000.0,mCi/L,,C71174,"CDISC code: Sponsor defined. uCi/mL, Microcurie per milliLiter_x000D_
+Closest CDISC term is C71173 (uCi/L) with definition:_x000D_
+A unit of volumetric radioactivity concentration defined as a concentration of a radionuclide with an activity equal to one millionth of a Curie per unit volume equal to one milliliter._x000D_
+_x000D_
+According to Wikipedia 1uCi = 37000 Bq",2150,mCi/l,N,N,N,N,N,Y,
+mm3,VOLUME,Y,Y,N,Y,N,,0.0,1e-06,uL,,C48153,Cubic millimeters. Synonym is uL.,1,uL,N,N,N,N,N,Y,
+mmol/24h,MASS FLOW RATE,Y,Y,N,Y,N,,1.0,0.00069444,mmol/day,,C67420,"A unit of substance flow rate equal to one millimole per day._x000D_
+_x000D_
+",1,mmol/d,N,N,N,N,N,Y,
+mL/m^2,VOLUME PER AREA,Y,Y,Y,Y,N,,,1.0,mL/m2,,C73761,Milliliters (volume) divided by meters squared (surface area),2250,mL/m2,N,N,N,N,N,Y,
+g/mmol,CONCENTRATION,N,Y,N,Y,N,,1.0,1.0,kg/mol,,C122210,A unit of mass commonly used to express the molar mass of a substance in gram(s) per millimole.,1,kg/mol,N,N,N,N,N,Y,
+ng/mL/h,CONCENTRATION PER TIME,Y,Y,N,Y,N,,0.0,0.0001,ug/L/h,,C122229,"CDISC code: C67430_x000D_
+CDISC submission value: ng/mL/h_x000D_
+CDISC synonym(s): ng/h/mL; ng/mL/h; ug/L/h_x000D_
+CDISC definition: Nanograms per milliliter per hour._x000D_
+NCI preferred term: Nanogram per Milliliter per Hour""_x000D_
+",36,ug/l/h,N,N,N,N,N,Y,
+mL/g/min,RELATIVE FLOW RATE,Y,Y,N,Y,N,,,60000.0,mL/g/min,,C73757,"Milliliters per gram per minute or liters per minute (flow rate), divided by kilograms (weight) or milliliters per minute (flow rate), divided by grams (weight).",1,ml/g/min,N,N,N,N,N,Y,
+nmol/mol,MASS FRACTION,Y,Y,N,Y,N,,,0.001,nmol/mol,,C122220,"A unit of fraction expressed as the ratio of the amount of a substance in solution, in nanomoles, to the amount of a different substance in the mixture, in moles.",1,nmol/mol,N,N,N,N,N,Y,
+/LPF,MICROSCOPE DEPENDENT COUNTS,N,Y,N,N,N,,,1.0,/LPF,,C96620,"CDISC code: C96620_x000D_
+CDISC submission value: /LPF_x000D_
+CDISC synonym(s): per Low Powered Field_x000D_
+CDISC definition: A unit of measure equal to the instances of an entity per visual field of a microscope set to its minimum magnification power._x000D_
+NCI preferred term: Per Low Powered Field",136,/[LPF],N,N,N,N,N,Y,
+cal,ENERGY,Y,Y,N,N,N,,,4.186,cal,,C67193,"CDISC code: C67193_x000D_
+CDISC submission value: cal_x000D_
+CDISC synonym: Calorie_x000D_
+CDISC Description: A measurement of nutritional energy. The quantity of thermal energy required to raise one gram of water one degree Centigrade under standard conditions. 1 calorie equals 4.186 joules. (NCI)_x000D_
+NCI preferred term: calorie",50,cal,N,N,N,N,N,Y,
+mcg/g,MASS FRACTION,Y,Y,N,Y,N,,0.0,1.0,mg/kg,,C67401,"Micrograms per gram._x000D_
+_x000D_
+In its current use NN defines mcg=ug as confirmed by CHHE. But UCUM defines it as mcg/g=millicentigram/gram. There is a factor 10 difference. This means that mcg/g is defined as and linked to mg/kg (ug/g). ",1,mg/kg,N,N,N,N,N,Y,
+CAPSULE,DOSE UNIT,N,Y,N,N,N,,,1.0,CAPSULE,,C48480,"A dosing measurement based on the capsule unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{Capsule},N,N,Y,N,N,Y,
+J/s,ENERGY EXPENDITURE,Y,Y,Y,Y,N,,,1.0,Watt,,C42549,"CDISC not found, J/sec where _x000D_
+J=Joule, where Joule is defined as m2 x kg x s^(-2) and sec=seconds_x000D_
+_x000D_
+",55,W,N,N,N,N,N,Y,
+kPa,PRESSURE,Y,Y,N,Y,N,,,1000.0,kPa,,C67284,"CDISC code: C67284_x000D_
+CDISC submission value: kPa_x000D_
+CDISC synonym(s): Kilopascal_x000D_
+CDISC definition: A SI derived unit of pressure equivalent to 1000 newtons per square meter or 10000 bars or to 0.145 pound per square inch. (NCI)_x000D_
+NCI preferred term: Kilopascal",1550,kPa,N,N,N,N,N,Y,
+mL/kg/day,RELATIVE FLOW RATE,Y,Y,N,Y,N,,,0.0416,mL/kg/day,,C73758,"Milliliters per kilogram per day or milliliters per day (flow rate), divided by kilograms (weight).",1,mL/kg/d,N,N,N,N,N,Y,
+day,TIME,Y,Y,N,Y,N,,,86400.0,DAYS,,C25301,"CDISC code: C25301_x000D_
+CDISC submission value: DAYS_x000D_
+CDISC synonym: Day_x000D_
+CDISC Description: The time for Earth to make a complete rotation on its axis; ordinarily divided into twenty-four hours. This also refers to a specific day. _x000D_
+NCI preferred term: Day_x000D_
+_x000D_
+[age subset]_x000D_
+[study time subset]_x000D_
+[time subset]",1950,d,Y,Y,N,Y,N,Y,
+STEPS,COUNT,N,Y,N,N,N,,,1.0,STEPS,,C111318,A unit of measure to quantify the number of strides taken during a normal walking gait.,39,{STEP},N,N,N,N,N,Y,
+mg/kg,MASS FRACTION,Y,Y,Y,Y,N,,,1.0,mg/kg,,C67401,"CDISC code: C67401_x000D_
+CDISC submission value: mg/kg_x000D_
+CDISC synonym: Milligram per Kilogram_x000D_
+CDISC Description: A unit of a mass fraction expressed as a number of milligrams of substance per kilogram of mixture. The unit is also used as a dose calculation unit.(NCI)_x000D_
+NCI preferred term: Milligram per Kilogram_x000D_
+_x000D_
+[strength subset]_x000D_
+",130,mg/kg,N,N,N,N,Y,Y,
+SPRAY,DOSE UNIT,N,Y,N,N,N,,,1.0,SPRAY,,C48537,"A dosing measurement based on the spray unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{SPRAY},N,N,Y,N,N,Y,
+g/kg,MASS FRACTION,Y,Y,N,Y,N,,,1000.0,g/kg,,C69104,"CDISC code: C69104_x000D_
+CDISC submission value: g/kg_x000D_
+CDISC synonym(s): Gram per Kilogram; Milligram per Gram; mg/g_x000D_
+CDISC definition: A unit of a mass fraction expressed as a number of grams of substance per kilogram of mixture. The unit is also used as a dose calculation unit.(NCI)_x000D_
+NCI preferred term: Gram per Kilogram",120,ug/mg,N,N,N,N,N,Y,
+umol/L/min,CONCENTRATION PER TIME,Y,Y,N,Y,N,,1.0,0.006,umol/L/min,,C120852,A concentration unit equal to one micromole of solute in one liter of solution per unit of time equal to one minute.,37,umol/L/min,N,N,N,N,N,Y,
+uIU/L,U_IU Concentration,Y,Y,N,N,N,,,1e-06,uIU/L,,C124464,"CDISC code: C124464_x000D_
+CDISC submission value: uIU/L_x000D_
+CDISC synonym(s): _x000D_
+CDISC definition:A unit of concentration (biologic activity) equal to one micro-international unit of substance per liter of solution._x000D_
+NCI preferred term: Micro-International Unit per Liter_x000D_
+_x000D_
+[strength subset]_x000D_
+_x000D_
+_x000D_
+",2000,u[IU]/L,N,N,N,N,Y,Y,
+mg/g,MASS FRACTION,Y,Y,N,Y,Y,,,1000.0,g/kg,,C69104,"CDISC not found_x000D_
+",131,ug/mg,N,N,N,N,N,Y,
+IU/Kg,RELATIVE DOSE UNIT,Y,Y,N,N,N,,,1.0,IU/kg,,C67379,"IU/kg, international Units per Kilogram to be used for derived topic codes on dosing _x000D_
+",1720,[IU]/kg,N,N,N,N,N,Y,
+mol/g,RELATIVE WEIGHT,Y,Y,Y,Y,N,,1.0,1.0,mol/g,,C68893,"CDISC code: C68893_x000D_
+CDISC submission value: mol/g_x000D_
+CDISC synonym(s): Mole per Gram_x000D_
+CDISC definition: A unit of amount of substance content (molality unit) defined as one mole of solute per one gram of solvent.(NCI) _x000D_
+NCI preferred term: Mole per Gram",1750,mol/g,N,N,N,N,N,Y,
+mcU/mL,U_IU Concentration,Y,Y,N,N,N,,,0.001,mU/L,,C67408,"mcU/mL : microunits / mililiter_x000D_
+CDISC not found_x000D_
+",2000,uU/mL,N,N,N,N,N,Y,
+10^3/uL,CELL COUNT,Y,Y,N,Y,Y,,,1.0,10^9/L,,C67255,"Equal to 10^9/L_x000D_
+CDISC:Not Found",30,10*9/L,N,N,N,N,N,Y,
+beats/min,BEAT RATE,Y,Y,Y,N,N,,,1.0,beats/min,BEATS/MIN,C49673,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C49673_x000D_
+CDISC submission value: BEATS/MIN_x000D_
+CDISC synonym: Beats per Minute_x000D_
+CDISC Description: The number of heartbeats measured per minute time. (NCI)_x000D_
+NCI preferred term: Beats per Minute_x000D_
+",20,{beats}/min,N,N,N,N,N,Y,
+kU/L,U_IU Concentration,Y,Y,N,N,N,,,1000.0,IU/mL,,C67377,"KU/L is equivalent to_x000D_
+CDISC code: C67377_x000D_
+CDISC submission value: IU/mL_x000D_
+CDISC synonym(s): IE/mL; International Unit per Milliliter; Kilo International Unit per Liter; kIU/L_x000D_
+CDISC definition: A unit of concentration (biologic activity) equal to one international unit of substance per milliliter of solution._x000D_
+NCI preferred term: International Unit per Milliliter""_x000D_
+",2000,[IU]/mL,N,N,N,N,N,Y,
+10^6/mm^3,CELL COUNT,Y,Y,N,Y,N,,,1000.0,10^12/L,,C67308,"Submission Value: 10^12/L	_x000D_
+Synonyms: 1/pL; 10^6/mm3; 10^6/uL; T/L; TI/L; Tera/L_x000D_
+A unit of measurement equal to 10 to the twelfth power of the number of entities per unit of volume equal to one liter._x000D_
+",30,10*12/L,N,N,N,N,N,Y,
+m/sec,VELOCITY,Y,Y,N,Y,N,,,1.0,m/sec,,C42571,"A unit of both speed (scalar) and velocity (vector), defined as the distance of one meter travelled per unit time equal to one second.(NCI)",1,m/s,N,N,N,N,N,Y,
+ng/mL,CONCENTRATION,Y,Y,N,Y,Y,,0.0,1e-06,ug/L,,C67306,"ng/mL : nanogram / milliliter is a CDISC synonym for ug/L_x000D_
+A unit of mass concentration defined as the concentration of one microgram of a substance per unit volume of the mixture equal to one liter. The concept also refers to the unit of mass density (volumic mass) defined as the density of substance which mass equal to one microgram occupies the volume one liter.(NCI)",35,ng/mL,N,N,N,N,N,Y,
+10^12/L,CELL COUNT,Y,Y,N,Y,N,,,1000.0,10^12/L,,C67308,"CDISC code: C67308_x000D_
+CDISC submission value: 10^12/L_x000D_
+CDISC synonym: 10^6/uL_x000D_
+CDISC Description: A unit of measurement equal to 10 to the twelfth power of the number of entities per unit of volume equal to one liter._x000D_
+NCI preferred term: Million per Microliter",30,10*12/L,N,N,N,N,N,Y,
+1/mm^3,CELL COUNT,Y,Y,N,Y,Y,,,0.001,10^6/L,,C67452,"1/mm^3. mm^3 = 10^-6L_x000D_
+CDISC:Not Found",30,10*6/L,N,N,N,N,N,Y,
+IU/dL,U_IU Concentration,Y,Y,N,N,N,,,10.0,IU/dL,,C120848,"CDISC code: C120848_x000D_
+Codelist Code: C71620_x000D_
+Codelist Name: Unit_x000D_
+CDISC Submission Value: IU/dL_x000D_
+CDISC Definition: Unit of arbitrary substance concentration (biologic activity concentration) defined as the concentration of one international unit per one deciliter of system volume._x000D_
+NCI Preferred Term: International Unit per Deciliter",1,[IU]/dL,N,N,N,N,N,Y,
+pg/mL,CONCENTRATION,Y,Y,N,Y,Y,,0.0,1e-09,ng/L,,C67327,"pg/mL : picogram / milliliter_x000D_
+CDISC not found",35,pg/mL,N,N,N,N,N,Y,
+Pa,PRESSURE,Y,Y,Y,Y,N,,,1.0,Pa,,C42547,"CDISC code: C42547_x000D_
+CDISC submission value: Pa_x000D_
+CDISC synonym: Pascal_x000D_
+CDISC Description: A unit of pressure equivalent to one Newton per square meter or 10 bars or to 1.45x10(E-4) pounds per square inch.(NCI)_x000D_
+NCI preferred term: Pascal",1550,Pa,N,N,N,N,N,Y,
+Counts/min,COUNT PER TIME,Y,Y,N,N,N,,0.0,60.0,cpm,,C73688,Counts per minute,39,{counts}/min,N,N,N,N,N,Y,
+nmol/L/min,CONCENTRATION PER TIME,Y,Y,N,Y,N,,,6e-06,nmol/L/min,,C122219,A rate unit equal to the number of nanomoles per unit of volume equal to one liter per unit of time equal to one minute.,1,nmol/l/min,N,N,N,N,N,Y,
+ratio,PERCENTAGE,Y,Y,N,N,Y,,,100.0,RATIO,,C44256,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU"" CodeSubmValue=""RATIO""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C44256_x000D_
+CDISC submission value: RATIO_x000D_
+CDISC synonym: _x000D_
+CDISC Description: A unit of measurement for the quotient of the amount of one entity to another._x000D_
+NCI preferred term: ratio_x000D_
+",1520,{Ratio},N,N,N,N,N,Y,
+Week,TIME,Y,Y,N,N,N,,,604800.0,WEEKS,,C29844,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""AGEU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C29844_x000D_
+CDISC submission value: WEEKS_x000D_
+CDISC synonym: Week_x000D_
+CDISC Description: Any period of seven consecutive days. (NCI)_x000D_
+NCI preferred term: Week",1950,wk,N,N,N,N,N,Y,
+mol/L,CONCENTRATION,Y,Y,Y,Y,N,,1.0,1.0,mol/L,,C48555,"CDISC code: C48555_x000D_
+CDISC submission value: mol/L_x000D_
+CDISC synonym: Mole per Liter; mol/L; mmol/mL_x000D_
+CDISC Description: A unit of concentration (molarity unit) equal to one mole of solute in one liter of solution.(NCI)_x000D_
+NCI preferred term: Mole per Liter",35,mol/L,N,N,N,N,N,Y,
+Joule,ENERGY,Y,Y,N,Y,N,,,1.0,Joule,,C42548,"A unit of electrical, mechanical, and thermal energy (as well as work and quantity of heat), equal to the work done when the point of application of a force of one Newton is displaced through a distance of one meter in the direction of the force or the work done when a current of one Ampere passes through a resistance of one ohm for one second. One joule is equal to 0.23889 gram-calorie (mean).(NCI)",1,J,N,N,N,N,N,Y,
+mL/kg,RELATIVE VOLUME,Y,Y,Y,Y,N,,,1.0,mL/kg,,C67411,"CDISC code: C67411_x000D_
+CDISC submission value: mL/kg_x000D_
+CDISC synonym: Milliliter per Kilogram_x000D_
+CDISC Description: A dose calculation unit equal to one milliliter of preparation per one kilogram of body mass. (NCI)_x000D_
+NCI preferred term: mL/kg",1740,mL/kg,N,N,N,N,N,Y,
+DROP,DOSE UNIT,N,Y,N,N,N,,,1.0,DROP,,C69441,"A unit of measure of volume defined as the amount of liquid dispensed as one drop from a dropper dispenser. The volume of a drop depends on the physical properties of the liquid dispensed, the dispenser device, and the technique used to produce the drop.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{DROP},N,N,Y,N,N,Y,
+kBq/uL,VOLUMETRIC RADIOACTIVITY,Y,Y,N,N,N,,,1000000.0,kBq/uL,,C71168,"A unit of volumetric radioactivity concentration defined as a concentration of a radionuclide with an activity equal to one thousand Becquerels per unit volume equal to one millionth of a liter.(NCI)_x000D_
+_x000D_
+[dose subset]",1,kBq/uL,N,N,Y,N,N,Y,
+g,WEIGHT,Y,Y,N,Y,N,,,0.001,g,,C48155,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C48155_x000D_
+CDISC submission value: g_x000D_
+CDISC synonym: Gram_x000D_
+CDISC Description: A metric unit of mass equal to one one thousandth of a kilogram. (NCI)_x000D_
+NCI preferred term: Gram_x000D_
+_x000D_
+[dose subset]_x000D_
+[strength subset]_x000D_
+",2200,g,N,N,Y,N,Y,Y,
+%,PERCENTAGE,Y,Y,Y,Y,Y,,,1.0,%,,C25613,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C25613_x000D_
+CDISC submission value: %_x000D_
+CDISC synonym: Percentage_x000D_
+CDISC Description: A fraction or ratio with 100 understood as the denominator. (NCI)_x000D_
+NCI preferred term: Percentage_x000D_
+",1520,%,N,N,N,N,N,Y,
+mg/day,MASS FLOW RATE,Y,Y,N,Y,N,,,0.0006944,mg/day,,C67399,"unit for measurement of 24-hour quantitatively collected urine._x000D_
+CDISC code: C67399_x000D_
+CDISC submission value: mg/day_x000D_
+CDISC synonym(s):  Milligram per Day_x000D_
+CDISC definition: A unit of measure referring to the ratio between mass expressed in milligrams per day.(NCI)_x000D_
+NCI preferred term: Milligram per 24 Hours_x000D_
+_x000D_
+[dose subset]",120,mg/d,N,N,Y,N,N,Y,
+L/L,PERCENTAGE,Y,Y,N,N,N,,,100.0,L/L,,C105495,"CDISC code: C105495_x000D_
+CDISC submission value: L/L_x000D_
+CDISC synonym: Liter per Liter; mL/mL; uL/uL; dL/dL_x000D_
+CDISC Description: A unit of volume concentration equal to the number of liters per unit of volume equal to one liter._x000D_
+NCI preferred term: Liter Per Liter",1520,L/L,N,N,N,N,N,Y,
+mm,LENGTH,Y,Y,N,Y,N,,,0.001,mm,,C28251,"CDISC code: C28251_x000D_
+CDISC submission value: mm_x000D_
+CDISC synonym: Millimeter_x000D_
+CDISC Description: A unit of measure equal to one thousandth of a meter. (NCI)_x000D_
+NCI preferred term: Millimeter",120,mm,N,N,N,N,N,Y,
+pmol/g,RELATIVE WEIGHT,Y,Y,N,Y,N,,,1e-12,pmol/g,,C85754,"Nanomoles (amount), divided by kilograms (weight) or picomoles per gram.",1,pmol/g,N,N,N,N,N,Y,
+mg,WEIGHT,Y,Y,N,Y,N,,,1e-06,mg,,C28253,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C28253_x000D_
+CDISC submission value: mg_x000D_
+CDISC synonym: Milligram_x000D_
+CDISC Description: The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)_x000D_
+NCI preferred term: Milligram_x000D_
+_x000D_
+[dose subset]_x000D_
+[strength subset]_x000D_
+",2200,mg,N,N,Y,N,Y,Y,
+pg/ug,MASS FRACTION,Y,Y,N,Y,N,,,1.0,mg/kg,,C67401,-,129,mg/kg,N,N,N,N,N,Y,
+10^2/uL,CELL COUNT,Y,Y,N,Y,N,,,0.1,10^8/L,,C105489,"A unit of measurement equal to 10 to the eighth power of entities per unit of volume equal to one liter._x000D_
+_x000D_
+CDISC code: 10^8/L_x000D_
+CDISC synonym: 10^2/uL",30,10^8/l,N,N,N,N,N,Y,
+breaths/min,RESPIRATORY RATE,Y,Y,Y,N,N,,,1.0,breaths/min,BREATHS/MIN,C49674,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C49674_x000D_
+CDISC submission value: BREATHS/MIN_x000D_
+CDISC synonym: Breaths per Minute_x000D_
+CDISC Description: The number of breaths (inhalation and exhalation) taken per minute time. (NCI)_x000D_
+NCI preferred term: Breaths per Minute",1760,{breaths}/min,N,N,N,N,N,Y,
+/PL,CELL COUNT,Y,Y,N,N,N,,,1000.0,10^12/L,,C67308,"equal to 10^12/L_x000D_
+No CDISC standard for submission value or definition exist",30,10*12/L,N,N,N,N,N,Y,
+mL/min,FLOW,Y,Y,N,Y,N,,,60.0,mL/min,,C64777,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C64777_x000D_
+CDISC submission value: mL/min_x000D_
+CDISC synonym: Milliliters per Minute_x000D_
+CDISC Description: A metric unit of volumetric flow rate defined as the rate at which one milliliter of matter travels during the period of time equal to one minute.(NCI)_x000D_
+NCI preferred term: Milliliter per Minute_x000D_
+",60,mL/min,N,N,N,N,N,Y,
+1/uL,CELL COUNT,Y,Y,N,Y,N,,,0.001,10^6/L,,C67452,"equal to 10^6/L_x000D_
+_x000D_
+CDISC submission value: 10^6/L_x000D_
+CDISC synonym: 1/uL",30,10*6/L,N,N,N,N,N,Y,
+kcal/day,ENERGY EXPENDITURE,Y,Y,N,N,N,,,0.0484,kcal/day,,C139135,A unit of energy equal to one kilocalorie per day. (NCI),1,kcal/d,N,N,N,N,N,Y,
+cm,LENGTH,Y,Y,N,Y,N,,,0.01,cm,,C49668,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C49668_x000D_
+CDISC submission value: cm_x000D_
+CDISC synonym: Centimeter_x000D_
+CDISC Description: A basic unit of length equal to one hundredth of a meter or approximately 0.393700787 inch._x000D_
+NCI preferred term: Centimeter_x000D_
+",120,cm,N,N,N,N,N,Y,
+g/dL,CONCENTRATION,Y,Y,N,Y,Y,,0.0,10.0,g/dL,,C64783,"CDISC code: C64783_x000D_
+CDISC submission value: g/dL_x000D_
+CDISC synonym: Gram per Deciliter; g%_x000D_
+CDISC Description: A unit of mass concentration defined as the concentration of one gram of a substance per unit volume of the mixture equal to one deciliter (100 milliliters). The concept also refers to the metric unit of mass density (volumic mass) defined as the density of substance which mass equal to one gram occupies the volume one deciliter.(NCI)_x000D_
+NCI preferred term: Gram per Deciliter",35,g/dL,N,N,N,N,N,Y,
+/day,ELIMINATION,Y,Y,N,Y,N,,,0.04166,/day,,C25473,"CDISC code: C25473_x000D_
+CDISC submission value: /day_x000D_
+CDISC synonym: Daily; Per Day_x000D_
+CDISC Description: Occurring or done each day. (NCI)_x000D_
+NCI preferred term: Daily",50,/d,N,N,N,N,N,Y,
+10^6/L,CELL COUNT,Y,Y,N,Y,N,,,0.001,10^6/L,,C67452,"10^6 / liter_x000D_
+",30,10*6/L,N,N,N,N,N,Y,
+g/day,MASS FLOW RATE,Y,Y,N,Y,N,,,0.6944,g/day,,C67372,"unit for measurement of 24-hour quantitatively collected urine._x000D_
+CDISC code: C67372_x000D_
+CDISC submission value: g/day_x000D_
+CDISC synonym(s): Gram per Day; g/24h; g/d; gram/24 Hours; gram/day _x000D_
+CDISC definition: A dose calculation unit expressed in gram(s) per period of time equal to twenty-four hours._x000D_
+NCI preferred term: Gram per 24 Hours_x000D_
+_x000D_
+[dose subset]",120,g/d,N,N,Y,N,N,Y,
+ng,WEIGHT,Y,Y,N,Y,N,,,1e-12,ng,,C48516,"A unit of mass equal to one billionth (1E-9) of a gram._x000D_
+_x000D_
+[dose subset]",1,ng,N,N,Y,N,N,Y,
+IU/mL,U_IU Concentration,Y,Y,N,N,N,,0.0,1000.0,IU/mL,,C67377,"CDISC code: C67377_x000D_
+CDISC submission value: IU/mL_x000D_
+CDISC synonym: International Unit per Milliliter; kIU/L; Kilo International Unit per Liter_x000D_
+CDISC Description: Unit of arbitrary substance concentration (biologic activity concentration) defined as the concentration of one international unit per one milliliter of system volume.(NCI)_x000D_
+NCI preferred term: International Unit per Milliliter_x000D_
+_x000D_
+[strength subset]_x000D_
+",2000,[IU]/mL,N,N,N,N,Y,Y,
+kg/m2,BMI,Y,Y,N,Y,N,,,1.0,kg/m2,,C49671,A unit expressed as kilogram of mass per square meter of area.(NCI),1,kg/m2,N,N,N,N,N,Y,
+in,LENGTH,Y,Y,N,N,Y,,,0.0254,in,IN,C48500,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+_x000D_
+A traditional unit of length equal to 2.54 centimeters. (NCI)_x000D_
+_x000D_
+",120,[in_i],N,N,N,N,N,Y,
+cpm,COUNT PER TIME,Y,Y,N,N,N,,,60.0,cpm,,C73688,A unit of frequency expressed as the detection rate of ionization events per minute.,1,{counts}/min,N,N,N,N,N,Y,
+MPL U/mL,U_IU Concentration,N,Y,N,N,N,,,1.0,MPL U/mL,,C117973,"A unit for semiquantitative measurement of IgM autoantibodies to proteins associated with negatively charged phospholipids evaluated against an established reference standard, per unit of volume equal to one milliliter.",1,[MPL'U]/mL,N,N,N,N,N,Y,
+sec,TIME,Y,Y,N,Y,N,,,1.0,sec,,C42535,"The base unit of time in the International System of Units (SI) equal to the duration of 9,192,631,770 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the cesium 133 atom in its ground state at 0 K._x000D_
+_x000D_
+[time subset]",1950,s,N,N,N,Y,N,Y,
+ukat/L,U_IU Concentration,Y,Y,N,Y,N,,,59.88,ukat/L,,C67397,"CDISC code: C67397_x000D_
+CDISC submission value: ukat/L_x000D_
+CDISC synonym: Microkatal per Liter; mckat/L_x000D_
+CDISC Description: Unit of catalytic activity concentration defined as activity equal to one millionth of katal per one liter of the system volume.(NCI)_x000D_
+NCI preferred term: Microkatal per Liter",2000,ukat/l,N,N,N,N,N,Y,
+lb,WEIGHT,Y,Y,N,N,Y,,,0.45359237,LB,,C48531,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C48531_x000D_
+CDISC submission value: LB_x000D_
+CDISC synonym: Pound_x000D_
+CDISC Description: A traditional unit of mass. By international agreement, one avoirdupois pound is equal to exactly 0.453 592 37 kilogram, 16 ounces, or 1.215 28 troy pounds. (NCI)_x000D_
+NCI preferred term: Pound_x000D_
+",2200,[lb_av],N,N,N,N,N,Y,
+/HPF,MICROSCOPE DEPENDENT COUNTS,N,Y,Y,N,N,,,1.0,/HPF,,C96619,"CDISC code: C96619_x000D_
+CDISC submission value: /HPF_x000D_
+CDISC synonym(s): per High Powered Field_x000D_
+CDISC definition: A unit of measure equal to the instances of an entity per visual field of a microscope set to its maximum magnification power._x000D_
+NCI preferred term: Per High Powered Field",136,/[HPF],N,N,N,N,N,Y,
+OD Unit,OPTICAL DENSITY,N,Y,N,N,N,,,1.0,OD Unit,,C73681,A unit of optical density expressed as the degree of absorption of light at a specified wavelength by a solution or suspension.,1,{OD Unit},N,N,N,N,N,Y,
+MET-minutes,ENERGY EXPENDITURE,N,Y,N,N,N,,,1.0,MET*min,,C127807,"A metabolic equivalent, or MET, is a unit useful for describing the energy expenditure of a specific activity. A MET is the ratio of the rate of energy expended during an activity to the rate of energy expended at rest.eg If a person does a 4 MET activity for 30 minutes, he or she has done 4 x 30 = 120 MET-minutes.",55,[MET].min,N,N,N,N,N,Y,
+g%,CONCENTRATION,N,Y,N,N,N,,0.0,10.0,g/dL,,C64783,CDISC Not Found. Found this explanation using this link:https://fscimage.fishersci.com/webimages_FSC/downloads/winek.pdf,35,g/dL,N,N,N,N,N,Y,
+mOsm/kg,OSMOLALITY,Y,Y,N,N,N,,,0.001,mOsm/kg,,C67427,"CDISC code: C67427_x000D_
+CDISC submission value: mOsm/kg_x000D_
+CDISC synonym: Milliosmole per Kilogram_x000D_
+CDISC Description: A unit of osmotic pressure equal to one thousandth of an osmole per kilogram substance._x000D_
+NCI preferred term: mOsm/kg",115,mosm/kg,N,N,N,N,N,Y,
+titer,CONCENTRATION,N,Y,N,N,N,,0.0,0.0,titer,,C67454,"CDISC CODE: C67454_x000D_
+CDISC submission value:titer_x000D_
+CDISC synonym: Concentration of a substance in a solution as determined by the quantitative reaction with added measured volume(s) of a solution of the precisely known concentration(s) of a standard reagent._x000D_
+NCI preffered term: Titer_x000D_
+",35,{titer},N,N,N,N,N,Y,
+nmol/mL,CONCENTRATION,Y,Y,N,Y,N,,1.0,1e-06,umol/L,,C48508,"CDISC code: umol/L_x000D_
+CDISC synonym: nmol/mL_x000D_
+_x000D_
+",35,umol/L,N,N,N,N,N,Y,
+g/mol,CONCENTRATION,N,Y,N,Y,N,,1.0,1.0,g/mol,,C73721,A unit of mass commonly used to express the molar mass of a substance in gram(s) per mole. (NCI),1,g/mol,N,N,N,N,N,Y,
+uU/mL,U_IU Concentration,Y,Y,N,N,N,,0.0,0.001,mU/L,,C67408,"uU/mL : microunits / mililiter_x000D_
+CDISC not found_x000D_
+_x000D_
+",2000,uU/mL,N,N,N,N,N,Y,
+arbitrary units,ARBITRARINESS,N,Y,Y,N,N,,,1.0,Arbitrary U,,C75765,"A unit based on or subject to individual judgment, preference, or predetermined reference. (NCI)",1,[arb'U],N,N,N,N,N,Y,
+m/s,VELOCITY,Y,Y,Y,Y,N,,,1.0,m/sec,,C42571,"CDISC code: C42571_x000D_
+CDISC submission value: m/sec_x000D_
+CDISC synonym: Meter Per Second_x000D_
+CDISC Description: A unit of both speed (scalar) and velocity (vector), defined as the distance of one meter travelled per unit time equal to one second.(NCI)_x000D_
+NCI preferred term: Meter Per Second",2110,m/s,N,N,N,N,N,Y,
+min,TIME,Y,Y,N,Y,N,,,60.0,min,,C48154,"CDISC code: C48154_x000D_
+CDISC submission value: min_x000D_
+CDISC synonym: Minute Unit of Time_x000D_
+CDISC Description: A unit measure of time equal to 60 seconds.(NCI)_x000D_
+NCI preferred term: Minute_x000D_
+_x000D_
+[time subset]",1950,min,N,N,N,Y,N,Y,
+(mL/day)/kg,RELATIVE FLOW RATE,N,Y,N,Y,N,,,1.0,mL/kg/day,,C73758,"Days times micrograms per milliliter (area under the curve)._x000D_
+CDISC code:C73758_x000D_
+CDISC submission value: (mL/day)/kg_x000D_
+CDISC synonym(s): (mL/day)/kg; mL/kg/day_x000D_
+CDISC definition: Milliliters per kilogram per day or milliliters per day (flow rate), divided by kilograms (weight)._x000D_
+NCI preferred term: Milliliter per Kilogram per Day_x000D_
+",2002,mL/kg/d,N,N,N,N,N,Y,
+Events/h,COUNT PER TIME,Y,Y,Y,N,N,,,1.0,/h,,C66966,Number of events per hour,500,/h,N,N,N,N,N,Y,
+mL/min/1.73m2,VOLUMETRIC FLOW RATE,Y,Y,N,N,N,,,1.0,mL/min/1.73m2,,C67412,"CDISC code: C67412_x000D_
+CDISC submission value: mL/min/1.73m2_x000D_
+CDISC synonym: _x000D_
+CDISC Description: A metric unit of volumetric flow rate defined as the rate at which one milliliter of matter travels during the period of time equal to one minute per 1.73 meters squared of body surface area._x000D_
+NCI preferred term: Milliliter per Minute per 1.73 m2 of Body Surface Area",2140,mL/min/(173/100).m2,N,N,N,N,N,Y,
+PUFF,DOSE UNIT,N,Y,N,N,N,,,1.0,PUFF,,C65060,"A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)_x000D_
+_x000D_
+[dose subset]",1,{PUFF},N,N,Y,N,N,Y,
+MET,ENERGY,N,Y,N,N,N,,,1.0,MET,,C127805,"Metabolic equivalent of task_x000D_
+From Wikipedia_x000D_
+The metabolic equivalent of task (MET), or simply metabolic equivalent, is a physiological concept expressing the energy cost of physical activities[1] as multiples of resting metabolic rate (RMR) and is defined as the ratio of metabolic rate (and therefore the rate of energy consumption) during a specific physical activity to a reference rate of metabolic rate at rest, set by convention to 3.5 ml O2·kg-1·min-1 or equivalently 1 kcal·kg-1· h-1 or 4.184 kJ·kg-1· h-1. By convention 1 MET is considered as the resting metabolic rate obtained during quiet sitting.[2][3] MET values of physical activities range from 0.9 (sleeping) to 18 (running at 17.5 km/h or a 5:31 mile pace)._x000D_
+",50,[MET],N,N,N,N,N,Y,
+1/h,ELIMINATION,Y,Y,Y,Y,N,,,1.0,/h,,C66966,"1/h_x000D_
+",50,/h,N,N,N,N,N,Y,
+L/day,FLOW,Y,Y,N,Y,N,,,41.6667,L/day,,C69110,A unit of flow rate equal to one liter per day.,70,L/d,N,N,N,N,N,Y,
+10^6/Ejaculate U,CELL COUNT,N,Y,N,N,N,,,1.0,10^6/Ejaculate U,,C130189,"10^6/Ejaculate U_x000D_
+_x000D_
+Used for count of total sperm cells in a sample",1,10*6/{Ejaculate U},N,N,N,N,N,Y,
+nm,LENGTH,Y,Y,N,Y,N,,0.0,1e-09,nm,,C67328,"A unit of length equal to one billionth of a meter (1E-9 meter). Nanometer is used as a unit for light wavelength measurement. (NCI)_x000D_
+",1,nm,N,N,N,N,N,Y,
+Per Year,COUNT PER TIME,Y,Y,N,N,N,,0.0,0.0001140795527167007,PA,,C74924,"SDTM Terminology 2017-06-30_x000D_
+Code:C74924_x000D_
+CDISC Code Value: PA_x000D_
+CDISC Value Label: PA_x000D_
+CDISC synonym(s): /Year; Every Year; Per Annum; Per Year_x000D_
+CDISC definition: A frequency rate of occurrences of something within a period of time equal to three hundred sixty-five days._x000D_
+NCI preferred term: Per Year",39,/a,N,N,N,N,N,Y,
+kIU/L,U_IU Concentration,Y,Y,N,N,N,,0.0,1000.0,IU/mL,,C67377,"KIU/L is equivalent to_x000D_
+CDISC code: C67377_x000D_
+CDISC submission value: IU/mL_x000D_
+CDISC synonym(s): IE/mL; International Unit per Milliliter; Kilo International Unit per Liter; kIU/L_x000D_
+CDISC definition: A unit of concentration (biologic activity) equal to one international unit of substance per milliliter of solution._x000D_
+NCI preferred term: International Unit per Milliliter",2000,[IU]/mL,N,N,N,N,N,Y,
+ft,LENGTH,Y,Y,N,N,N,,,0.3048,ft,,C71253,"A unit of length defined by the U.S. National Bureau of Standards as 30.48 centimeters. It is equal to 0.3048 meter, 12 inches, or to approximately 0.999998 survey foot.(NCI)_x000D_
+",120,[ft_i],N,N,N,N,N,Y,
+mg/mmol,CONCENTRATION,Y,Y,N,Y,N,,1.0,1.0,g/mol,,C73721,"CDISC code: C73721_x000D_
+CDISC submission value: g/mol_x000D_
+CDISC synonym: mg/mmol",35,g/mol,N,N,N,N,N,Y,
+pg/dL,CONCENTRATION,Y,Y,N,Y,N,,0.0,1e-11,pg/dL,,C67331,"CDISC code: C67331_x000D_
+CDISC submission value: pg/dL_x000D_
+CDISC synonym(s): Picogram per Deciliter_x000D_
+CDISC definition: Picograms per deciliter._x000D_
+NCI preferred term: pg/dL_x000D_
+",35,pg/dL,N,N,N,N,N,Y,
+10^4/uL,CELL COUNT,Y,Y,N,Y,N,,,10.0,10^10/L,,C105517,"A unit of measurement equal to 10 to the tenth power of entities per unit of volume equal to one liter. (NCI)_x000D_
+_x000D_
+CDISC synonyms: 10^4/mm3; 10^4/uL; 10^7/mL",30,10^10/L,N,N,N,N,N,Y,
+mU/mL,U_IU Concentration,Y,Y,N,N,N,,0.0,1.0,U/L,,C67456,"mU/mL equivalent to U/L_x000D_
+_x000D_
+",2000,{Unit}/L,N,N,N,N,N,Y,
+mmol/day,MASS FLOW RATE,Y,Y,N,Y,N,,,0.0006944,mmol/day,,C67420,A unit of substance flow rate equal to one millimole per day.,1,mmol/d,N,N,N,N,N,Y,
+/wk,COUNT PER TIME,Y,Y,N,N,N,,0.0,0.0059524,/wk,,C67069,"Code:C67069_x000D_
+CDISC submission Value: /wk_x000D_
+CDISC Value Label: EVERY WEEK_x000D_
+CDISC synonym(s): Every week; Per Week; QS_x000D_
+CDISC definition: Every week. (NCI)_x000D_
+NCI preferred term: Weekly_x000D_
+",39,/wk,N,N,N,N,N,Y,
+F,TEMPERATURE,N,Y,N,N,N,,,1.0,F,,C44277,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C44277_x000D_
+CDISC submission value: F_x000D_
+CDISC synonym: Degree Fahrenheit_x000D_
+CDISC Description: The Fahrenheit temperature scale is named after the German physicist Gabriel Fahrenheit (1686-1736), who proposed it in 1724. In this scale, the freezing point of water is 32 degrees Fahrenheit and the boiling point is 212 degrees, placing the boiling and melting points of water 180 degrees apart. In this scale a degree Fahrenheit is 5/9ths of a Kelvin (or of a degree Celsius), and minus 40 degrees Fahrenheit is equal to minus 40 degrees Celsius. (NCI)_x000D_
+NCI preferred term: Degree Fahrenheit_x000D_
+",1910,[degF],N,N,N,N,N,Y,
+mL/s/m2,VOLUMETRIC FLOW RATE,Y,Y,N,Y,N,,,103.8,mL/s/m2,,C166100,A metric unit of volumetric flow rate defined as the rate at which one milliliter of matter travels during the period of time equal to one second per meter squared.,2141,ml/s/m2,N,N,N,N,N,Y,
+dpm/mL,VOLUMETRIC RADIOACTIVITY,Y,Y,N,N,N,,,1.0,dpm/mL,,C117970,"CDISC value found _x000D_
+CDISC Code: C117970_x000D_
+CDISC Submission Value: dpm/mL_x000D_
+CDISC Synonym(s): Disintegrations per Minute per Milliliter_x000D_
+CDISC Definition: A unit of radioactive decay expressed in atoms of radioactive material that decay over a period of time equal to sixty seconds in a volume unit equal to one milliliter._x000D_
+NCI Preferred Term: Disintegration per Minute per Milliliter",2150,{disintegrations}/min/mL,N,N,N,N,N,Y,
+umol/kg/min,DOSE RATE,N,Y,N,Y,N,,,1.0,umol/kg/min,,C126082,"A unit of concentration (molarity unit) equal to one millionth of a mole (1E-6 mole) per kilogram of a substance per period of time equal to sixty seconds._x000D_
+_x000D_
+[dose subset]",1,umol/kg/min,N,N,Y,N,N,Y,
+g/cm2,BMI,Y,Y,N,Y,N,,,10.0,g/cm2,,C71201,A unit of area density defined as a spread rate at which one gram of a substance is spread over the area of one square centimeter. The unit is also used as a dose calculation unit.(NCI),1,g/cm2,N,N,N,N,N,Y,
+g/mL,CONCENTRATION,Y,Y,N,Y,N,,0.0,1000.0,kg/L,,C64566,"CDISC code:C64566_x000D_
+CDISC submission value:g/mL_x000D_
+CDISC synonym:Gram per Milliliter; Kilogram per Liter; g/mL; gram/mL; kg/L; mg/uL_x000D_
+CDISC definition:A unit of mass concentration defined as the concentration of one kilogram of a substance in unit volume of the mixture equal to one liter. The concept also refers to the unit of mass density (volumic mass) defined as the density of substance which mass equal to one kilogram occupies the volume one liter.(NCI)_x000D_
+NCI preferred term: Kilogram per Liter",35,kg/L,N,N,N,N,N,Y,
+mg/dL,CONCENTRATION,Y,Y,N,Y,Y,,0.0,0.01,mg/dL,,C67015,"CDISC code: C67015_x000D_
+CDISC submission value: mg/dL_x000D_
+CDISC synonym: Milligram per Deciliter; mg%_x000D_
+CDISC Description: A unit of mass concentration defined as the concentration of one milligram of a substance in unit volume of the mixture equal to one cubic deciliter or 100 cubic centimeters. It is also a unit of mass density (volumic mass) defined as the density of substance which mass equal to one milligram occupies the volume one cubic deciliter or 100 cubic centimeters.(NCI)_x000D_
+NCI preferred term: Milligram per Deciliter",35,mg/dL,N,N,N,N,N,Y,
+mIU/mL,U_IU Concentration,Y,Y,N,N,N,,0.0,1.0,IU/L,,C67376,milli IU per milliliter. mIU/mL is equivalent to IU/L,2000,m[IU]/mL,N,N,N,N,N,Y,
+uEq/L,CONCENTRATION,Y,Y,N,N,N,,1.0,1e-06,ugEq/L,,C122230,"Microequivalent of solute per liter of solution. CDISC not found._x000D_
+",35,ug.eq/l,N,N,N,N,N,Y,
+kg/mol,CONCENTRATION,N,Y,N,Y,N,,1.0,1.0,kg/mol,,C122210,A unit of mass commonly used to express the molar mass of a substance in kilogram(s) per mole.,1,kg/mol,N,N,N,N,N,Y,
+ug/L/h,CONCENTRATION PER TIME,Y,Y,N,Y,N,,,0.0001,ug/L/h,,C122229,A rate unit equal to the number of micrograms per unit of volume equal to one liter per unit of time equal to one hour.,1,ug/l/h,N,N,N,N,N,Y,
+ng/dL,CONCENTRATION,Y,Y,N,Y,N,,0.0,1e-08,ng/dL,,C67326,"CDISC code: C67326_x000D_
+CDISC submission value: ng/dL_x000D_
+CDISC synonym: Nanogram per Deciliter_x000D_
+CDISC Description: A unit of mass concentration defined as the concentration of one nanogram of a substance in unit volume of the mixture equal to one deciliter. The concept also refers to the unit of mass density (volumic mass) defined as the density of substance which mass equal to one nanogram occupies the volume one deciliter.(NCI)_x000D_
+NCI preferred term: Nanogram per Deciliter",35,ng/dL,N,N,N,N,N,Y,
+Bq,RADIOACTIVITY,Y,Y,Y,Y,N,,,1.0,Bq,,C42562,"CDISC code: C42562_x000D_
+CDISC submission value: Bq_x000D_
+CDISC synonym: Becquerel_x000D_
+CDISC Description: A unit of activity of a radionuclide, equal to one nuclear disintegration or other nuclear transition from a particular energy state occurring in an amount of a radionuclide during one second-long time interval.(NCI)_x000D_
+NCI preferred term: Becquerel",1710,Bq,N,N,N,N,N,Y,
+mg/kg/h,RELATIVE MASS FLOW RATE,Y,Y,N,Y,N,,,0.01667,mg/kg/h,,C71362,A dose calculation unit equal to one thousandth of a gram of a preparation per one kilogram of body mass administered per unit of time equal to one hour.(NCI),1,mg/kg/h,N,N,N,N,N,Y,
+fraction of 1,PERCENTAGE,Y,Y,N,N,N,,,100.0,fraction of 1,,C105484,A unit for expressing a percentage as a decimal whereby the total value is measured as a fraction of the numeric 1.,1,{fraction of 1},N,N,N,N,N,Y,
+mEq/day,EQUIVALENT RATE,Y,Y,Y,N,N,,1.0,1.0,mEq/day,,C67471,"MilliEquivalent (mEq) . The equivalent of a substance is the amount of the substance multiplied by its valence.  For example, 1 mEq = 39 mg of potassium or 23 mg of sodium or  35.4 mg of chlorine_x000D_
+CDISC code: C67471_x000D_
+CDISC submission value: mEq/day_x000D_
+CDISC synonym(s): Milliequivalents per Day  _x000D_
+CDISC definition: A unit of relative amount of substance flow rate equivalent to the rate at which one thousandth of an equivalent of substance travels to a given object or space over a period of time equal to twenty four hours.(NCI)_x000D_
+NCI preferred term: Milliequivalent per 24 Hours",50,meq/d,N,N,N,N,N,Y,
+U/L,U_IU Concentration,Y,Y,Y,N,N,,0.0,1.0,U/L,,C67456,"CDISC code: C67456_x000D_
+CDISC submission value: U/L_x000D_
+CDISC synonym: mU/mL; Unit per Liter_x000D_
+CDISC Description: An arbitrary unit of substance concentration equal to the concentration at which one liter of mixture contains one unit of a substance. (NCI)_x000D_
+NCI preferred term: Unit per Liter_x000D_
+_x000D_
+[strength subset]_x000D_
+",2000,{Unit}/L,N,N,N,N,Y,Y,
+mEq/L,CONCENTRATION,Y,Y,N,N,Y,,1.0,0.001,mEq/L,,C67474,"CDISC code: C67474_x000D_
+CDISC submission value: mEq/L_x000D_
+CDISC synonym: Milliequivalent Per Liter; mval/L; Millivalent per Liter_x000D_
+CDISC Description: A concentration unit measured as a number of milliequivalents of solute per liter of solution.(NCI)_x000D_
+NCI preferred term: Milliequivalent per Liter",35,meq/L,N,N,N,N,N,Y,
+m,LENGTH,Y,Y,Y,Y,N,,,1.0,m,,C41139,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU"" CodeSubmValue=""m""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C41139_x000D_
+CDISC submission value: m_x000D_
+CDISC synonym: Meter_x000D_
+CDISC Description: A meter is defined as the length of the path traveled by light in a vacuum during a time interval of 1/299 792 458 of a second and is equal to 1.093 61 yards.(NCI)_x000D_
+NCI preferred term: Meter_x000D_
+",120,m,N,N,N,N,N,Y,
+YEARS,TIME,N,Y,N,N,N,,,1.0,YEARS,,C29848,"The period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period. (NCI)",1,a,N,N,N,N,N,Y,
+fL,VOLUME,Y,Y,N,Y,N,,,1e-15,fL,,C64780,"CDISC code: C64780_x000D_
+CDISC submission value: fL_x000D_
+CDISC synonym: Femtoliter_x000D_
+CDISC Description: The unit of volume equal 10E-15 liter._x000D_
+NCI preferred term: Femtoliter",2130,fL,N,N,N,N,N,Y,
+1/d,ELIMINATION,Y,Y,N,Y,N,,,0.04166,/day,,C25473,"CDISC code: C25473_x000D_
+CDISC submission value: /day_x000D_
+CDISC synonym: Daily; Per Day_x000D_
+CDISC Description: Occurring or done each day. (NCI)_x000D_
+NCI preferred term: Daily",50,/d,N,N,N,N,N,Y,
+mcg/day,MASS FLOW RATE,Y,Y,N,Y,N,,0.0,0.0006944,ug/day,,C71205,"Micrograms per day or Micrograms per 24 hours._x000D_
+_x000D_
+In its current use NN defines mcg=ug as confirmed by CHHE. But UCUM defines it as mcg/day = millicentigram/day. There is a factor 10 difference. This means that mcg/day is defined as and linked to ug/day. _x000D_
+",1,ug/d,N,N,N,N,N,Y,
+mg/L,CONCENTRATION,Y,Y,N,Y,N,,0.0,0.001,mg/L,,C64572,"CDISC code: C64572_x000D_
+CDISC submission value: mg/L_x000D_
+CDISC synonym: g/m3; Gram per Cubic Meter; mg/L; Microgram per Milliliter; Milligram per Liter; mcg/mL; ng/uL; ug/mL_x000D_
+CDISC Description: A unit of mass concentration equal to the concentration of one gram of a substance per unit volume of the mixture equal to one cubic meter. The concept also refers to the metric unit of mass density (volumic mass) defined as the density of substance which mass equal to one gram occupies the volume one cubic meter.(NCI)_x000D_
+NCI preferred term: Microgram per Milliliter_x000D_
+_x000D_
+[strength subset]_x000D_
+",35,ug/mL,N,N,N,N,Y,Y,
+RFU,ARBITRARINESS,N,Y,N,N,N,,0.0,1.0,RFU,,C77535,Relative Fluorescence Intensity Unit,1,{RFU},N,N,N,N,N,Y,
+10^9/L,CELL COUNT,Y,Y,Y,Y,N,,,1.0,10^9/L,,C67255,"CDISC code: C67255_x000D_
+CDISC submission value: 10^9/L_x000D_
+CDISC synonym: 10^3/uL;10^3/mm3_x000D_
+CDISC Description: A unit of measurement equal to 10 to the ninth power of the number of entities per unit of volume equal to one liter._x000D_
+NCI preferred term: Billion per Liter",30,10*9/L,N,N,N,N,N,Y,
+ug/mL,CONCENTRATION,Y,Y,N,Y,N,,0.0,0.001,mg/L,,C64572,"<CodeLists>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+<CodeList Value=""UNIT"" CodeSubmValue=""ug/mL""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC submission value:ug/mL (in PKUNIT) / mg/L (in UNIT)_x000D_
+CDISC synonym:Gram per Cubic Meter; ug/mL; Microgram per Milliliter; mg/L; Milligram per Liter_x000D_
+CDSIC code:C64572_x000D_
+CDISC definition:A unit of mass concentration equal to the concentration of one gram of a substance per unit volume of the mixture equal to one cubic meter. The concept also refers to the metric unit of mass density (volumic mass) defined as the density of substance which mass equal to one gram occupies the volume one cubic meter.(NCI)_x000D_
+_x000D_
+",35,ug/mL,N,N,N,N,N,Y,
+uL,VOLUME,Y,Y,N,Y,N,,,1e-06,uL,,C48153,"CDISC code: C48153_x000D_
+CDISC submission value: uL_x000D_
+CDISC synonym(s): Microliter; mcL; mm3 _x000D_
+CDISC definition: A unit of volume accepted for use with the SI and equal to one millionth of a liter (10E-6 liter).(NCI)_x000D_
+NCI preferred term: Microliter",2130,uL,N,N,N,N,N,Y,
+nL,VOLUME,Y,Y,N,Y,N,,0.0,1e-09,nL,,C69188,Nanoliter. Equal to cubic micrometer times 10^6.,1,nL,N,N,N,N,N,Y,
+10^6/mL,CELL COUNT,Y,Y,N,Y,N,,,1.0,10^9/L,,C67255,"CDISC code: C67255_x000D_
+CDISC submission value: 10^9/L_x000D_
+CDISC synonym: 1/nL; 10^3/mm3; 10^3/uL; 10^6/mL; G/L; GI/L; Giga per Liter_x000D_
+CDISC Description: A unit of measurement equal to 10 to the ninth power of the number of entities per unit of volume equal to one liter._x000D_
+NCI Preferred Term: Billion per Liter",30,10*9/L,N,N,N,N,N,Y,
+uIU/mL,U_IU Concentration,Y,Y,N,N,Y,,0.0,0.001,mIU/L,uIU/mL,C67405,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C67405_x000D_
+CDISC submission value: uIU/mL_x000D_
+CDISC synonym: Micro-International Unit per milliliter; mIU/L; mcIU/mL; uIU/mL_x000D_
+CDISC Description: Microinternational units per milliliter._x000D_
+NCI preferred term: uIU/mL",2000,u[IU]/mL,N,N,N,N,N,Y,
+mg/(kg*h),RELATIVE MASS FLOW RATE,Y,Y,N,Y,N,,0.0,0.0166667,mg/kg/h,,C71362,"SDTM Terminology 2017-06-30_x000D_
+Code:C71362_x000D_
+CDISC Code Value: mg/kg/h_x000D_
+CDISC Value Label: mg/kg/h_x000D_
+CDISC synonym(s): Milligram per Kilogram per Hour_x000D_
+CDISC definition: _x000D_
+A dose calculation unit equal to one thousandth of a gram of a preparation per one kilogram of body mass administered per unit of ti_x000D_
+me equal to one hour.(NCI)_x000D_
+NCI preferred term: Milligram per Kilogram per Hour_x000D_
+",1735,mg/kg/h,N,N,N,N,N,Y,
+Kcal,ENERGY,Y,Y,N,N,N,,,4185.0,kcal,,C67194,"CDISC code: C67194_x000D_
+CDISC submission value: kcal_x000D_
+CDISC synonym: Kilogram-Calorie_x000D_
+CDISC Description: A unit of energy defined as the amount of heat required to raise the temperature of one kilogram of pure water by one degree Centigrade under standard conditions (the specific heat of the water at 15 degrees Celsius and the constant pressure of 101.325 kilopascals or one atm being defined as unity), equal to approximately 4.1855 kJ. It is also is used by nutritionists in measuring the energy-producing potential of food as a unit of potential energy contained by a substance, which can be liberated when the material is oxidized, usually by combustion in the presence of oxygen.(NCI)_x000D_
+NCI preferred term: Calorie",52,kcal,N,N,N,N,N,Y,
+C,TEMPERATURE,Y,Y,Y,N,N,,,1.0,C,,C42559,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C42559_x000D_
+CDISC submission value: C_x000D_
+CDISC synonym: Degree Celsius_x000D_
+CDISC Description: A unit of temperature of the temperature scale designed so that the freezing point of water is 0 degrees and the boiling point is 100 degrees at standard atmospheric pressure. The current official definition of the Celsius sets 0.01 C to be at the triple point of water and a degree to be 1/273.16 of the difference in temperature between the triple point of water and absolute zero. One degree Celsius represents the same temperature difference as one Kelvin.(NCI)_x000D_
+NCI preferred term: Degree Celsius_x000D_
+",1910,Cel,N,N,N,N,N,Y,
+nmol/kg,RELATIVE WEIGHT,Y,Y,N,Y,N,,1.0,1e-12,pmol/g,,C85754,"<CodeLists>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C85754_x000D_
+CDISC submission value: nmol/kg_x000D_
+CDISC synonym(s): pmol/g; nmol/kg _x000D_
+CDISC definition: Nanomoles per kilogram. _x000D_
+NCI preferred term: Nanomole per Kilogram",1750,pmol/g,N,N,N,N,N,Y,
+oz,WEIGHT,Y,Y,N,N,N,,,0.028,oz,,C48519,"A unit of mass, the avoirdupois ounce is equal to 1/16 pound, or 28.3495 grams, or 0.911 457 troy ounce.(NCI)_x000D_
+_x000D_
+[dose subset]",1,[oz_av],N,N,Y,N,N,Y,
+pmol/mmol,MASS FRACTION,Y,Y,N,Y,N,,1.0,0.001,nmol/mol,,C122220,"CDISC code:C122220_x000D_
+CDISC submission value: nmol/mol_x000D_
+CDISC synonym(s): pmol/mmol_x000D_
+CDISC definition: A unit of fraction expressed as the ratio of the amount of a substance in solution, in nanomoles, to the amount of a different substance in the mixture, in moles._x000D_
+NCI preferred term: Nanomole per Mole_x000D_
+_x000D_
+",1,nmol/mol,N,N,N,N,N,Y,
+g/L,CONCENTRATION,Y,Y,N,Y,Y,,0.0,1.0,g/L,,C42576,"CDISC code: C42576_x000D_
+CDISC submission value: g/L_x000D_
+CDISC synonym: g/L; Gram per Liter; kg/m3; Kilogram per Cubic Metre; Microgram per Microliter; Milligram per Milliliter; ug/uL; mg/mL_x000D_
+CDISC Description: A unit of mass concentration defined as the concentration of one kilogram of a substance per unit volume of the mixture equal to one cubic meter, or the concentration of one milligram of a substance per unit volume of the mixture equal to one milliliter, or one gram of a substance per one liter of the mixture. It is also a unit of mass density (volumic mass) defined as the density of substance which mass equal to one milligram occupies the volume one milliliter.(NCI)_x000D_
+NCI preferred term: Kilogram per Cubic Meter",35,kg/m3,N,N,N,N,N,Y,
+mg/mL,CONCENTRATION,Y,Y,N,Y,N,,0.0,1.0,g/L,,C42576,"miligram / mili liter_x000D_
+_x000D_
+[strength subset]_x000D_
+",35,kg/m3,N,N,N,N,Y,Y,
+GLOBULE,DOSE UNIT,N,Y,N,N,N,,,1.0,GLOBULE,,C91803,"A dosing measurement based on the globule unit._x000D_
+_x000D_
+[dose subset]",1,{GLOBULE},N,N,Y,N,N,Y,
+msec,TIME,Y,Y,N,Y,N,,,0.001,msec,,C41140,"CDISC code: C41140_x000D_
+CDISC submission value: msec_x000D_
+CDISC synonym: Millisecond_x000D_
+CDISC Description: A unit of time, which is equal to one thousandth of a second.(NCI)_x000D_
+NCI preferred term: Millisecond_x000D_
+_x000D_
+[time subset]",1950,ms,N,N,N,Y,N,Y,
+U/mL,U_IU Concentration,Y,Y,N,N,N,,0.0,1000.0,U/mL,,C77607,"CDISC code: C77607_x000D_
+CDISC submission value: U/mL_x000D_
+CDISC synonym: Unit per Milliliter_x000D_
+CDISC Description: An arbitrary unit of substance content expressed in unit(s) per milliliter. (NCI)_x000D_
+NCI preferred term: Unit per Milliliter_x000D_
+_x000D_
+[strength subset]_x000D_
+",2000,{Unit}/ml,N,N,N,N,Y,Y,
+Absorbance U,OPTICAL DENSITY,Y,Y,Y,N,N,,,1.0,Absorbance U,,C73686,"CDISC code: C73686_x000D_
+CDISC submission value: Absorbance U_x000D_
+CDISC synonym: Absorbance Unit_x000D_
+CDISC Description: A unit of optical density expressed as a logarithm of absorbance of light transmitted through a partially absorbing substance.",1510,{Absorbance U},N,N,N,N,N,Y,
+kg,WEIGHT,Y,Y,Y,Y,N,,,1.0,kg,,C28252,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""VSRESU""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C28252_x000D_
+CDISC submission value: kg_x000D_
+CDISC synonym: Kilogram_x000D_
+CDISC Description: The basic SI unit of mass. It is defined as the mass of an international prototype in the form of a platinum-iridium cylinder kept at Sevres in France. It is the only basic unit still defined in terms of a material object, and also the only one with a prefix [kilo] already in place. A kilogram is equal to 1,000 grams and 2.204 622 6 pounds. (NCI)_x000D_
+NCI preferred term: Kilogram_x000D_
+",2200,kg,N,N,N,N,N,Y,
+pmol/L,CONCENTRATION,Y,Y,N,Y,Y,,1.0,1e-12,pmol/L,,C67434,"CDISC code: C67434_x000D_
+CDISC submission value: pmol/L_x000D_
+CDISC synonym: Picomole per Liter; fmol/mL; Femtomole per Milliliter_x000D_
+CDISC Description: A unit of concentration (molarity unit) equal to one trillionth of a mole (10E-12 mole) in one liter of solution.(NCI)_x000D_
+NCI preferred term: Picomole per Liter_x000D_
+_x000D_
+[strength subset]_x000D_
+",35,pmol/L,N,N,N,N,Y,Y,
+BU,INHIBITOR ACTIVITY,Y,Y,Y,N,N,,,1.0,BU,,C117966,"CDISC code: C117966_x000D_
+CDISC submission value: BU_x000D_
+CDISC synonym(s): Bethesda unit_x000D_
+CDISC definition: A unit of measurement for blood coagulation inhibitor activity,expressed in the amount of an inhibitor neutralizing 50% of a coagulant during the incubation period._x000D_
+NCI preferred term: Bethesda unit_x000D_
+Not in 2013-04-12",90,[beth'U],N,N,N,N,N,Y,
+g/d,MASS FLOW RATE,Y,Y,N,Y,N,,,0.6944,g/day,,C67372,"unit for measurement of 24-hour quantitatively collected urine._x000D_
+CDISC code: C67372_x000D_
+CDISC submission value: g/day_x000D_
+CDISC synonym(s): Gram per Day; g/24h; g/d; gram/24 Hours; gram/day _x000D_
+CDISC definition: A dose calculation unit expressed in gram(s) per period of time equal to twenty-four hours._x000D_
+NCI preferred term: Gram per 24 Hours_x000D_
+_x000D_
+",120,g/d,N,N,N,N,N,Y,
+arbitrary units/mL,ARBITRARINESS,N,Y,N,N,N,Arbitrary U/mL,,1.0,,,,arbitrary units/mL,1,[arb'U]/mL,N,N,N,N,N,Y,
+K,TEMPERATURE,N,Y,N,Y,N,,,1.0,K,,C42537,"A basic unit of thermodynamic temperature, one of the seven base units of the International System of Units (Systeme International d'Unites, SI). It is 1/273.16th of the thermodynamic temperature of the triple point of water. This sets the size of the kelvin unit for temperature differences and defines the thermodynamic temperature of an equilibrium mixture of waters ice-liquid-vapor as 273.15 K, where 0 K is the lowest possible temperature (""absolute zero"").",1910,K,N,N,N,N,N,Y,
+/VF,MICROSCOPE DEPENDENT COUNTS,N,Y,N,N,N,,,,/VF,,C105516,"CDISC code: C105516_x000D_
+CDISC submission value: /VF_x000D_
+CDISC synonym(s): per Visual Field _x000D_
+CDISC definition: A unit of measure equal to the instances of an entity per visual field of a microscope. (NCI)_x000D_
+NCI preferred term: Per Visual Field",137,/{VF},N,N,N,N,N,Y,
+days/wk,TIME,N,Y,N,N,N,,,1.0,days/wk,,C170633,A unit of measurement equal to the number of days within a period of time equal to one week.,1950,d/wk,N,N,N,N,N,Y,
+U,DOSE UNIT,Y,Y,Y,N,N,,,1.0,U,,C44278,"CDISC code: C44278_x000D_
+CDISC submission value: U_x000D_
+CDISC synonym: Unit_x000D_
+CDISC Description: A single undivided thing occurring in the composition of something else._x000D_
+NCI preferred term: U_x000D_
+_x000D_
+[dose subset]",1500,{U},N,N,Y,N,N,Y,
+nmol BCE/L,CONCENTRATION,Y,Y,N,N,N,,1.0,1e-09,nmol BCE/L,,C117974,"SDTM Terminology 2015-12-18; Not available in version 2013-04-12_x000D_
+_x000D_
+CDISC code: C117974_x000D_
+CDISC submission value: nmol BCE/L_x000D_
+CDISC synonym: Nanomoles Bone Collagen Equivalents per Liter_x000D_
+CDISC Description:_x000D_
+A unit of relative amount of substance concentration equal to nanomoles of bone collagen equivalent weight per unit of volume equal to one liter._x000D_
+NCI preferred term: Nanomole Bone Collagen Equivalent per Liter",35,{nmolBCE}/L,N,N,N,N,N,Y,
+mL/100g/min,RELATIVE FLOW RATE,Y,Y,N,Y,N,,,600.0,mL/100g/min,,C154855,mL per 100g of tissue per minute,1,mL/10*2.g/min,N,N,N,N,N,Y,
+g/U,DOSE UNIT RATIO,N,Y,Y,N,N,,,1.0,g/U,,C166099,"g/U - Insulin:Carbohydrates ratio unit_x000D_
+",1000,g/{U},N,N,N,N,N,Y,
+L/kg,VOLUME,N,Y,N,Y,N,,,1.0,L/kg,,C73725,"CDISC submission value:  L/kg_x000D_
+CDISC code: C73725_x000D_
+CDISC synonym: Liter per Kilogram_x000D_
+CDISC: A dose calculation unit expressed in liter(s) per kilogram. (NCI) _x000D_
+NCI preferred term: Liter per Kilogram_x000D_
+",2130,L/kg,N,N,N,N,N,Y,
+IU/day,DOSE UNIT PER TIME,Y,Y,N,N,N,,,7.0,IU/day,,C85645,"A unit of substance (biologic activity) flow rate equal to one international unit per day.(NCI)_x000D_
+_x000D_
+[dose subset]",1,[IU]/d,N,N,Y,N,N,Y,
+L/h,FLOW,Y,Y,N,Y,N,,,1000.0,L/h,,C69160,"<CodeLists>_x000D_
+<CodeList Value=""UNIT""></CodeList>_x000D_
+<CodeList Value=""PKUNIT""></CodeList>_x000D_
+</CodeLists>_x000D_
+CDISC code: C69160_x000D_
+CDISC submission value: L/h_x000D_
+CDISC synonym: _x000D_
+CDISC Description: Liters per hour._x000D_
+NCI preferred term: Liter per Hour_x000D_
+",70,L/h,N,N,N,N,N,Y,
+mmol/24 hrs,MASS FLOW RATE,Y,Y,N,Y,N,,,0.00069444,mmol/day,,C67420,A unit of substance flow rate equal to one millimole per period of time equal to twentyfour hours.,1,mmol/d,N,N,N,N,N,Y,
+ug/g,MASS FRACTION,Y,Y,N,Y,N,,,1.0,mg/kg,,C67401,"CDISC code: C67401 (CDISC CT version 2017-03-31)_x000D_
+CDISC submission value: mg/kg_x000D_
+CDISC synonym(s):  Milligram per Kilogram; ug/g_x000D_
+CDISC definition: A unit of a mass fraction expressed as a number of milligrams of substance per kilogram of mixture. The unit is also used as a dose calculation unit.(NCI)_x000D_
+NCI preferred term: Milligram per Kilogram",131,mg/kg,N,N,N,N,N,Y,
+Watt,ENERGY EXPENDITURE,Y,Y,N,Y,N,,,1.0,Watt,,C42549,"A unit of power equal to the power which in one second produces or transfers the energy of one joule. The unit is used in measurements of power emitted, transferred or received as radiation, sound waves, heat flow rate, and rate of energy transfer. Equal to 1/746 of horsepower.(NCI)",1,W,N,N,N,N,N,Y,
+ug/day,MASS FLOW RATE,Y,Y,N,Y,N,,,6.944e-07,ug/day,,C71205,"Unit for measurement of 24-hour quantitatively collected urine._x000D_
+CDISC code: C71205_x000D_
+CDISC submission value: ug/day_x000D_
+CDISC synonym(s): Microgram per Day; mcg/day_x000D_
+CDISC definition: A unit of mass flow rate equivalent to the rate at which one millionth of a gram of matter travels to a given object or space over a period of time equal to twenty four hours. Microgram per day is also a dose administration rate unit equal to the rate at which one millionth of a gram of a product is administered per unit of time equal to twenty four hours.(NCI)_x000D_
+NCI preferred term: Microgram per Day_x000D_
+_x000D_
+[dose subset]",120,ug/d,N,N,Y,N,N,Y,
+OD,OPTICAL DENSITY,N,Y,N,N,N,,,1.0,OD Unit,,C73681,Optical Density,1511,{OD Unit},N,N,N,N,N,Y,
+hour,TIME,Y,Y,N,Y,N,,,3600.0,HOURS,,C25529,"CDISC submission value: HOURS_x000D_
+CDISC Synonym: Hour_x000D_
+CDISC definition: A unit measure of time equal to 3,600 seconds or 60 minutes. It is approximately 1/24 of a median day.(NCI)_x000D_
+_x000D_
+[age subset]_x000D_
+[time subset]",1,h,Y,N,N,Y,N,Y,
+tsp,DOSE UNIT,N,Y,N,N,N,,,1.0,tsp,,C48544,"A dosing measurement based on the teaspoon unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,[tsp_us],N,N,Y,N,N,Y,
+mg/g Creatinine,MASS FRACTION,Y,Y,N,Y,N,,,1000.0,g/kg,,C69104,mg/g Creatinine,1,ug/mg,N,N,N,N,N,Y,
+x10^9/L,CELL COUNT,Y,Y,N,Y,N,,0.0,1.0,10^9/L,,C67255,A unit of measurement equal to 10 to the ninth power of the number of entities per unit of volume equal to one liter.,30,10*9/L,N,N,N,N,N,Y,
+x10^12/L,CELL COUNT,Y,Y,N,Y,N,,0.0,1000.0,10^12/L,,C67308,A unit of measurement equal to 10 to the twelfth power of the number of entities per unit of volume equal to one liter.,30,10*12/L,N,N,N,N,N,Y,
+mg/24 hrs,MASS FLOW RATE,Y,Y,N,Y,N,,,0.0006944,mg/day,,C67399,A unit of mass flow rate equal to one milligram per period of time equal to twentyfour hours.,1,mg/d,N,N,N,N,N,Y,
+/NL,CELL COUNT,Y,Y,N,N,N,,,1.0,10^9/L,,C67255,"equal to 10^9/L_x000D_
+No CDISC standard for submission value or definition exist",30,10*9/L,N,N,N,N,N,Y,
+min/day,TIME,N,Y,N,Y,N,,0.0,1.0,min/day,,C176381,"A unit of amount of time per day equal to minutes per day_x000D_
+",150,min/d,N,N,N,N,N,Y,
+ng/mg,MASS FRACTION,Y,Y,N,Y,N,,0.0,1.0,mg/kg,,C67401,Nanogram per milligram,1,mg/kg,N,N,N,N,N,Y,
+Tbsp,DOSE UNIT,N,Y,N,N,N,,,1.0,Tbsp,,C48541,"A dosing measurement based on the tablespoon unit.(NCI)_x000D_
+_x000D_
+[dose subset]",1,[tbs_us],N,N,Y,N,N,Y,
+mU/kg,RELATIVE DOSE UNIT,Y,Y,N,N,N,,,0.001,0,,,"mU/kg, milli Units per Kilogram to be used for derived topic codes on dosing",1720,mU/kg,N,N,N,N,N,Y,
+days,TIME,Y,Y,N,Y,N,,,86400.0,DAYS,,C25301,,1950,d,Y,Y,N,Y,N,Y,
+hours,TIME,Y,Y,N,Y,N,,,3600.0,HOURS,,C25529,,1950,h,Y,N,N,Y,N,Y,
+months,TIME,N,Y,N,N,N,,0.0,,MONTHS,,C29846,,1950,mo,Y,N,N,N,N,Y,
+week,TIME,Y,Y,N,N,N,,0.0,604800.0,WEEKS,,C29844,,1950,wk,Y,Y,N,Y,N,Y,
+weeks,TIME,Y,Y,N,N,N,,0.0,604800.0,WEEKS,,C29844,,1950,wk,Y,Y,N,Y,N,Y,
+years,TIME,N,Y,N,N,N,,,,YEARS,,C29848,,1950,a,Y,Y,N,Y,N,Y,
+LB,WEIGHT,Y,Y,N,N,Y,,0.0,0.45359237,LB,,C48531,,2200,[lb_av],N,N,N,N,N,Y,
+IU/kg,RELATIVE DOSE UNIT,Y,Y,N,N,N,,0.0,1.0,IU/kg,,C67379,,1720,[IU]/kg,N,N,Y,N,N,Y,
+PA,COUNT PER TIME,Y,Y,N,N,N,,0.0,1140795527167.0,PA,,C74924,,39,/a,N,N,N,N,N,Y,
+RATIO,PERCENTAGE,Y,Y,N,N,Y,,0.0,100.0,RATIO,,C44256,,1520,{Ratio},N,N,N,N,N,Y,

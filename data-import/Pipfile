@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "~=2.28.1"
+aiohttp = "~=3.8.3"
+
+[dev-packages]
+pylint = "~=2.15.0"
+black = "~=22.6.0"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+import_all = "python run_import.py"
+config = "python run_import_config.py"
+dictionaries = "python run_import_dictionaries.py"
+activities = "python run_import_activities.py"
+codelistterms1 = "python run_import_standardcodelistterms1.py"
+codelistterms2 = "python run_import_standardcodelistterms2.py"
+unitdefinitions = "python run_import_unitdefinitions.py"
+codelistfinish = "python run_import_standardcodelistfinish.py"
+compounds = "python run_import_compounds.py"
+crfs = "python run_import_crfs.py"
+mockdata = "python run_import_mockdata.py"
+mockdatajson = "python run_import_mockdatajson.py"
+

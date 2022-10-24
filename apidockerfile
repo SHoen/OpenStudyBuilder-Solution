@@ -1,0 +1,29 @@
+FROM python:3.7.12-slim
+
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install git -y
+RUN apt-get install curl -y
+
+RUN pip install pipenv
+
+COPY ./clinical-mdr-api/Pipfile /tmp
+
+RUN cd /tmp && pipenv lock && pipenv requirements > requirements.txt
+RUN pip install -r /tmp/requirements.txt
+
+COPY ./clinical-mdr-api /tmp/cmdr
+WORKDIR /tmp/cmdr
+
+## add non root user and set permissions.
+RUN adduser appuser --disabled-password && chown -R appuser /tmp/cmdr
+
+## run as non root user
+USER appuser
+
+EXPOSE 5003
+
+## run healthcheck on the api endpoint
+HEALTHCHECK CMD curl --fail http://localhost:5003/openapi.json || exit 1
+
+CMD ["uvicorn", "clinical_mdr_api.main:app", "--host", "0.0.0.0", "--port", "5003", "--root-path", "/api"]

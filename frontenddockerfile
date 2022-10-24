@@ -1,0 +1,38 @@
+# build stage
+FROM node:lts-alpine as build-stage
+
+WORKDIR /app
+COPY ./studybuilder/package*.json ./
+
+RUN yarn install
+
+COPY ./studybuilder/ .
+COPY ./frontendfiles/config.json ./public/config.json
+
+RUN yarn build
+
+# production stage
+FROM nginx:alpine as production-stage
+
+RUN apk upgrade
+
+COPY --from=build-stage /app/dist /usr/share/nginx/html
+COPY ./frontendfiles/default.conf /etc/nginx/conf.d/
+
+## add permissions for non root user.
+RUN chown -R nginx:nginx /var/cache/nginx && \
+    chown -R nginx:nginx /var/log/nginx && \
+    chown -R nginx:nginx /etc/nginx/conf.d
+
+RUN touch /var/run/nginx.pid && \
+    chown -R nginx:nginx /var/run/nginx.pid
+
+## run as non root user
+USER nginx
+
+EXPOSE 5005
+
+## run healthcheck on the nginx endpoint
+HEALTHCHECK CMD curl --fail http://localhost:5005 || exit 1
+
+CMD ["nginx", "-g", "daemon off;"]

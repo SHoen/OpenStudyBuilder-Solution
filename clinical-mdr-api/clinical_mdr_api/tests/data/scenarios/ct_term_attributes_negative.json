@@ -1,0 +1,345 @@
+[
+    {
+        "name": "Test get all terms from non existing codelist",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/ct/terms/attributes?codelist_uid=non_existing_codelist"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "214",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no CTCodelistRoot identified by provided codelist uid (non_existing_codelist)",
+                "method": "GET",
+                "path": "http://testserver/ct/terms/attributes?codelist_uid=non_existing_codelist",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH term attributes non draft term",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "codeSubmissionValue": "codeSubmissionValue",
+                "nameSubmissionValue": "nameSubmissionValue",
+                "nciPreferredName": "nciPreferredName",
+                "definition": "definition",
+                "changeDescription": "changeDescription"
+            },
+            "url": "/ct/terms/term_root_final/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/terms/term_root_final/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH attributes terms in non editable library",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "codeSubmissionValue": "codeSubmissionValue",
+                "nameSubmissionValue": "nameSubmissionValue",
+                "nciPreferredName": "nciPreferredName",
+                "definition": "definition",
+                "changeDescription": "changeDescription"
+            },
+            "url": "/ct/terms/term_root_draft_non_edit/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Library is not editable.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/terms/term_root_draft_non_edit/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH attributes terms name_submission_value allready exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "codeSubmissionValue": "codeSubmissionValue",
+                "nameSubmissionValue": "name_submission_value1",
+                "nciPreferredName": "nciPreferredName",
+                "definition": "definition",
+                "changeDescription": "changeDescription"
+            },
+            "url": "/ct/terms/term_root_draft/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "CTTermAttributes with name (name_submission_value1) already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/terms/term_root_draft/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH attributes terms code_submission_value already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "codeSubmissionValue": "code_submission_value1",
+                "nameSubmissionValue": "nameSubmissionValue",
+                "nciPreferredName": "nciPreferredName",
+                "definition": "definition",
+                "changeDescription": "changeDescription"
+            },
+            "url": "/ct/terms/term_root_draft/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "CTTermAttributes with code_submission_value (code_submission_value1) already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/terms/term_root_draft/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test POST attributes new-version non editable library",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft_non_edit/attributes/new-version"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Library is not editable.",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_draft_non_edit/attributes/new-version",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST attributes approve non DRAFT term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/attributes/approve"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_final/attributes/approve",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST attributes approve non editable library",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft_non_edit/attributes/approve"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Library is not editable.",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_draft_non_edit/attributes/approve",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST attributes inactivate non FINAL term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/attributes/inactivate"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Cannot retire draft version.",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_draft/attributes/inactivate",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST attributes inactivate non editable library",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final_non_edit/attributes/inactivate"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Library is not editable.",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_final_non_edit/attributes/inactivate",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test DELETE attributes delete accepted term",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/ct/terms/term_root_final/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Object has been accepted",
+                "method": "DELETE",
+                "path": "http://testserver/ct/terms/term_root_final/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test add term node parent ",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/add-parent?parent_uid=term_root_final&relationship_type=type"
+        },
+        "response": {
+            "code": 201,
+            "result": {
+                "termUid": "term_root_final",
+                "catalogueName": "SDTM CT",
+                "codelistUid": "editable_cr",
+                "conceptId": null,
+                "codeSubmissionValue": "code_submission_value1",
+                "nameSubmissionValue": "name_submission_value1",
+                "nciPreferredName": "preferred_term",
+                "definition": "definition",
+                "sponsorPreferredName": "term_value_name1",
+                "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+                "order": 1,
+                "libraryName": "Sponsor",
+                "possibleActions": [
+                    "inactivate",
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test add term  parent node, parent of the same type already existing",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/add-parent?parent_uid=term_root_final&relationship_type=type"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The term identified by (term_root_final) already has a parent type node identified by (term_root_final) with the relationship of type (type)",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_final/add-parent?parent_uid=term_root_final&relationship_type=type",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test remove parent node when the term has no defined parent node of given type",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/remove-parent?parent_uid=term_root_final&relationship_type=subtype"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The term identified by (term_root_final) has no defined parent type node identified by (term_root_final) with the relationship of type (subtype)",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_final/remove-parent?parent_uid=term_root_final&relationship_type=subtype",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test add parent node wrong relationship type passed",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/add-parent?parent_uid=term_root_final&relationship_type=wrong_type"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The following type (wrong_type) is not valid relationship type.",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_final/add-parent?parent_uid=term_root_final&relationship_type=wrong_type",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test remove parent node wrong relationship type passed",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/remove-parent?parent_uid=term_root_final&relationship_type=wrong_type"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The following type (wrong_type) is not valid relationship type.",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_final/remove-parent?parent_uid=term_root_final&relationship_type=wrong_type",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

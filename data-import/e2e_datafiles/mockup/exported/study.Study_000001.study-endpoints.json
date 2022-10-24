@@ -1,0 +1,238 @@
+[
+  {
+      "studyUid": "Study_000004",
+      "order": 1,
+      "projectNumber": "CDISC DEV",
+      "projectName": "CDISC Dev",
+      "studyEndpointUid": "StudyEndpoint_000005",
+      "studyObjective": {
+          "studyUid": "Study_000004",
+          "order": 1,
+          "projectNumber": "CDISC DEV",
+          "projectName": "CDISC Dev",
+          "studyObjectiveUid": "StudyObjective_000004",
+          "objectiveLevel": {
+              "termUid": "C85827_OBJSEC",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "CTCodelist_000003",
+              "sponsorPreferredName": "Secondary Objective",
+              "sponsorPreferredNameSentenceCase": "secondary objective",
+              "order": 2,
+              "libraryName": "CDISC",
+              "startDate": "2022-06-15T15:06:43.427360",
+              "endDate": null,
+              "status": "Final",
+              "version": "2.0",
+              "changeDescription": "Approved version",
+              "userInitials": "unknown-user",
+              "possibleActions": [
+                  "inactivate",
+                  "newVersion"
+              ]
+          },
+          "objective": {
+              "uid": "Objective_000006",
+              "name": "To compare the effect of [NPH Insulin] relative to [Metformin] on [1,5 AG (Anhydroglucitol)]",
+              "namePlain": "To compare the effect of NPH Insulin relative to Metformin on 1,5 AG (Anhydroglucitol)",
+              "startDate": "2022-06-29T10:30:48.286120",
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "unknown-user",
+              "possibleActions": [
+                  "inactivate"
+              ],
+              "objectiveTemplate": {
+                  "name": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+                  "namePlain": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+                  "uid": "ObjectiveTemplate_000004"
+              },
+              "parameterValues": [
+                  {
+                      "position": 1,
+                      "conjunction": "",
+                      "values": [
+                          {
+                              "uid": "Compound_000002",
+                              "name": "NPH Insulin",
+                              "type": "Compound",
+                              "index": 1
+                          }
+                      ]
+                  },
+                  {
+                      "position": 2,
+                      "conjunction": "",
+                      "values": [
+                          {
+                              "uid": "Compound_000001",
+                              "name": "Metformin",
+                              "type": "Compound",
+                              "index": 1
+                          }
+                      ]
+                  },
+                  {
+                      "position": 3,
+                      "conjunction": "",
+                      "values": [
+                          {
+                              "uid": "NumericFinding_000145",
+                              "name": "1,5 AG (Anhydroglucitol)",
+                              "type": "ActivityInstance",
+                              "index": 1
+                          }
+                      ]
+                  }
+              ],
+              "library": {
+                  "name": "Sponsor",
+                  "isEditable": true
+              },
+              "studyCount": null
+          },
+          "startDate": "2022-06-29T10:39:09.144366",
+          "userInitials": "unknown-user",
+          "endpointCount": 1,
+          "latestObjective": null,
+          "acceptedVersion": false
+      },
+      "endpointLevel": {
+          "termUid": "C98772_OUTMSPRI",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "CTCodelist_000004",
+          "sponsorPreferredName": "Primary Endpoint",
+          "sponsorPreferredNameSentenceCase": "primary endpoint",
+          "order": 1,
+          "libraryName": "CDISC",
+          "startDate": "2022-06-15T15:06:42.073722",
+          "endDate": null,
+          "status": "Final",
+          "version": "2.0",
+          "changeDescription": "Approved version",
+          "userInitials": "unknown-user",
+          "possibleActions": [
+              "inactivate",
+              "newVersion"
+          ]
+      },
+      "endpointSubLevel": {
+          "termUid": "CTTerm_000053",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "CTCodelist_000029",
+          "sponsorPreferredName": "Primary",
+          "sponsorPreferredNameSentenceCase": "primary",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2022-06-15T15:06:52.547000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "unknown-user",
+          "possibleActions": [
+              "inactivate",
+              "newVersion"
+          ]
+      },
+      "endpointUnits": {
+          "units": [
+              "UnitDefinition_000004"
+          ],
+          "separator": null
+      },
+      "endpoint": {
+          "uid": "Endpoint_000004",
+          "name": "test [Accidental Misadministration] and [Alzheimer's disease]",
+          "namePlain": "test Accidental Misadministration and Alzheimer's disease",
+          "startDate": "2022-06-29T10:47:57.593812",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "unknown-user",
+          "possibleActions": [
+              "inactivate"
+          ],
+          "endpointTemplate": {
+              "name": "test [ActivityInstance] and [DiseaseDisorder]",
+              "namePlain": "test [ActivityInstance] and [DiseaseDisorder]",
+              "uid": "EndpointTemplate_000002"
+          },
+          "parameterValues": [
+              {
+                  "position": 1,
+                  "conjunction": "",
+                  "values": [
+                      {
+                          "uid": "Event_000001",
+                          "name": "Accidental Misadministration",
+                          "type": "ActivityInstance",
+                          "index": 1
+                      }
+                  ]
+              },
+              {
+                  "position": 2,
+                  "conjunction": "",
+                  "values": [
+                      {
+                          "uid": "DictionaryTerm_000004",
+                          "name": "Alzheimer's disease",
+                          "type": "DiseaseDisorder",
+                          "index": 1
+                      }
+                  ]
+              }
+          ],
+          "library": {
+              "name": "Sponsor",
+              "isEditable": true
+          },
+          "studyCount": null
+      },
+      "timeframe": {
+          "uid": "Timeframe_000004",
+          "name": "test [25-Hydroxyvitamin D]",
+          "namePlain": "test 25-Hydroxyvitamin D",
+          "startDate": "2022-06-29T10:47:57.104322",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "unknown-user",
+          "possibleActions": [
+              "inactivate"
+          ],
+          "timeframeTemplate": {
+              "name": "test [ActivityInstance]",
+              "namePlain": "test [ActivityInstance]",
+              "uid": "TimeframeTemplate_000001"
+          },
+          "parameterValues": [
+              {
+                  "position": 1,
+                  "conjunction": "",
+                  "values": [
+                      {
+                          "uid": "NumericFinding_000002",
+                          "name": "25-Hydroxyvitamin D",
+                          "type": "ActivityInstance",
+                          "index": 1
+                      }
+                  ]
+              }
+          ],
+          "library": {
+              "name": "Sponsor",
+              "isEditable": true
+          }
+      },
+      "latestEndpoint": null,
+      "latestTimeframe": null,
+      "startDate": "2022-06-29T10:47:57.827778",
+      "userInitials": "unknown-user",
+      "acceptedVersion": false
+  }
+]

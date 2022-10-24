@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Modern Insulin",
+    "uid": "ClinicalProgramme_000001"
+  },
+  {
+    "name": "CDISC Development programme",
+    "uid": "ClinicalProgramme_000002"
+  },
+  {
+    "name": "Diabetes",
+    "uid": "ClinicalProgramme_000003"
+  },
+  {
+    "name": "GLP-1 analogues",
+    "uid": "ClinicalProgramme_000004"
+  },
+  {
+    "name": "Future Insulin",
+    "uid": "ClinicalProgramme_000005"
+  },
+  {
+    "name": "Growth Hormone",
+    "uid": "ClinicalProgramme_000006"
+  },
+  {
+    "name": "Chronic Kidney Disease",
+    "uid": "ClinicalProgramme_000007"
+  },
+  {
+    "name": "Obesity and NADs",
+    "uid": "ClinicalProgramme_000008"
+  },
+  {
+    "name": "Cardiovascular Disease",
+    "uid": "ClinicalProgramme_000009"
+  },
+  {
+    "name": "Cognitive Impairment",
+    "uid": "ClinicalProgramme_000010"
+  },
+  {
+    "name": "VAP-1 Inhibitor",
+    "uid": "ClinicalProgramme_000011"
+  },
+  {
+    "name": "Non-Alcoholic Steatohepatitis",
+    "uid": "ClinicalProgramme_000012"
+  },
+  {
+    "name": "Haemophilia",
+    "uid": "ClinicalProgramme_000013"
+  },
+  {
+    "name": "Sickle Cell Disease",
+    "uid": "ClinicalProgramme_000014"
+  },
+  {
+    "name": "Rheumatoid arthritis",
+    "uid": "ClinicalProgramme_000015"
+  },
+  {
+    "name": "GLP-1 analogues and Insulins combi.",
+    "uid": "ClinicalProgramme_000016"
+  },
+  {
+    "name": "Non-API Oral Formulation",
+    "uid": "ClinicalProgramme_000017"
+  }
+]

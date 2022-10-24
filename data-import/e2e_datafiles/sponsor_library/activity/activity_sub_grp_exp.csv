@@ -1,0 +1,27 @@
+std_assm_grp,std_assm_sub_grp
+AE Requiring Additional Data,Acute Kidney Injury
+AE Requiring Additional Data,Laboratory Assessment
+AE Requiring Additional Data,Pancreatitis
+Clinical Outcome Assessments,Pain Rating
+Clinical Outcome Assessments,Treadmill Test
+Event Adjudication,General
+Event Adjudication,Death
+Event Adjudication,Acute Pancreatitis
+Event Adjudication,Acute Coronary Syndrome
+Event Adjudication,Heart Failure
+Event Adjudication,Hypoglycaemic Episode
+Event Adjudication,Coronary Revascularisation
+Event Adjudication,Cerebrovascular Event
+General,Adverse Event
+General,Collection of Samples for Laboratory
+General,Vital Signs
+General,Body Measurements
+General,Childbearing Potential
+General,Informed Consent and Demography
+General,Eligibility Criteria
+General,End of Study
+General,Medical History/Concomitant Illness
+General,Randomisation
+Laboratory Assessments,Antibodies
+Laboratory Assessments,Urinalysis
+Laboratory Assessments,Glucose Metabolism

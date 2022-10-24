@@ -1,0 +1,248 @@
+[
+    {
+        "name": "Create a new odm template",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effectiveDate": "2022-04-21",
+                "retiredDate": "2022-04-21",
+                "description": "description1"
+            },
+            "url": "concepts/odms/templates"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmTemplate_000001",
+                "libraryName": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effectiveDate": "2022-04-21",
+                "retiredDate": "2022-04-21",
+                "description": "description1",
+                "startDate": "2022-03-03T11:17:56.799074",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.1",
+                "changeDescription": "Initial version",
+                "userInitials": "TODO user initials",
+                "forms": [],
+                "possibleActions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new odm template with existing name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effectiveDate": "2022-04-21",
+                "retiredDate": "2022-04-21",
+                "formUids": []
+            },
+            "url": "concepts/odms/templates"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "OdmTemplate with name (name1) already exists.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/templates",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test getting error for retrieving non existing odm template",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/templates/OdmTemplate_000002"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "OdmTemplateAR with uid OdmTemplate_000002 does not exist or there's no version with requested status or version number.",
+                "time": "2022-03-07T12:20:39.613764",
+                "path": "http://testserver/concepts/odms/templates/OdmTemplate_000002",
+                "method": "GET",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot inactivate an odm template that is in Draft status",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/templates/OdmTemplate_000001/inactivate"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Cannot retire draft version.",
+                "time": "2022-03-07T12:24:39.980123",
+                "path": "http://testserver/concepts/odms/templates/OdmTemplate_000001/inactivate",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot reactivate an odm template that is not retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/templates/OdmTemplate_000001/reactivate"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/templates/OdmTemplate_000001/reactivate",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Approve odm template",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/templates/OdmTemplate_000001/approve"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "startDate": "2022-09-28T13:09:05.052653",
+                "endDate": null,
+                "status": "Final",
+                "version": "1.0",
+                "userInitials": "TODO user initials",
+                "changeDescription": "Approved version",
+                "uid": "OdmTemplate_000001",
+                "name": "name1",
+                "libraryName": "Sponsor",
+                "oid": "oid1",
+                "effectiveDate": "2022-04-21",
+                "retiredDate": "2022-04-21",
+                "description": "description1",
+                "forms": [],
+                "possibleActions": [
+                    "inactivate",
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Inactivate odm template",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/templates/OdmTemplate_000001/inactivate"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "startDate": "2022-09-28T13:15:41.238896",
+                "endDate": null,
+                "status": "Retired",
+                "version": "1.0",
+                "userInitials": "TODO user initials",
+                "changeDescription": "Deactivated version",
+                "uid": "OdmTemplate_000001",
+                "name": "name1",
+                "libraryName": "Sponsor",
+                "oid": "oid1",
+                "effectiveDate": "2022-04-21",
+                "retiredDate": "2022-04-21",
+                "description": "description1",
+                "forms": [],
+                "possibleActions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot add odm forms to an odm template that is in Retired status",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_form1",
+                    "orderNumber": 1,
+                    "mandatory": "Yes",
+                    "locked": "No",
+                    "collectionExceptionConditionOid": "None"
+                }
+            ],
+            "url": "concepts/odms/templates/OdmTemplate_000001/add-forms"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The object is inactive",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/templates/OdmTemplate_000001/add-forms",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

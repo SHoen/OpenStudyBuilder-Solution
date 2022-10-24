@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Test CT Stats",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/ct/stats"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "catalogues": 3,
+                "packages": 2,
+                "codelistCounts": [
+                    {
+                        "libraryName": "Sponsor",
+                        "count": 3
+                    },
+                    {
+                        "libraryName": "CDISC",
+                        "count": 2
+                    }
+                ],
+                "termCounts": [
+                    {
+                        "libraryName": "Sponsor",
+                        "count": 2
+                    },
+                    {
+                        "libraryName": "CDISC",
+                        "count": 2
+                    }
+                ],
+                "codelistChangePercentage": 0.0,
+                "termChangePercentage": 0.0,
+                "codelistChangeDetails": [],
+                "termChangeDetails": [],
+                "latestAddedCodelists": [
+                    {
+                        "catalogueName": "SDTM CT",
+                        "codelistUid": "ct_codelist_root1",
+                        "libraryName": "Sponsor",
+                        "parentCodelistUid": null,
+                        "childCodelistUids": [],
+                        "name": {
+                            "catalogueName": null,
+                            "codelistUid": null,
+                            "name": "tp_codelist_name_value",
+                            "templateParameter": true,
+                            "libraryName": null,
+                            "startDate": "2020-06-26T00:00:00",
+                            "endDate": null,
+                            "status": "Final",
+                            "version": "1.0",
+                            "changeDescription": "Approved version",
+                            "userInitials": "TODO initials",
+                            "possibleActions": [
+                                "newVersion"
+                            ]
+                        },
+                        "attributes": {
+                            "catalogueName": null,
+                            "codelistUid": null,
+                            "parentCodelistUid": null,
+                            "childCodelistUids": [],
+                            "name": "codelist attributes value1",
+                            "submissionValue": "codelist submission value1",
+                            "nciPreferredName": "codelist preferred term",
+                            "definition": "codelist definition",
+                            "extensible": false,
+                            "libraryName": null,
+                            "startDate": "2020-06-26T00:00:00",
+                            "endDate": null,
+                            "status": "Final",
+                            "version": "1.0",
+                            "changeDescription": "Approved version",
+                            "userInitials": "TODO initials",
+                            "possibleActions": [
+                                "newVersion"
+                            ]
+                        }
+                    },
+                    {
+                        "catalogueName": "SDTM CT",
+                        "codelistUid": "ct_codelist_root2",
+                        "libraryName": "CDISC",
+                        "parentCodelistUid": null,
+                        "childCodelistUids": [],
+                        "name": {
+                            "catalogueName": null,
+                            "codelistUid": null,
+                            "name": "not_tp_codelist_name_value",
+                            "templateParameter": false,
+                            "libraryName": null,
+                            "startDate": "2020-06-26T00:00:00",
+                            "endDate": null,
+                            "status": "Draft",
+                            "version": "1.1",
+                            "changeDescription": "latest draft",
+                            "userInitials": "TODO initials",
+                            "possibleActions": [
+                                "approve",
+                                "edit"
+                            ]
+                        },
+                        "attributes": {
+                            "catalogueName": null,
+                            "codelistUid": null,
+                            "parentCodelistUid": null,
+                            "childCodelistUids": [],
+                            "name": "codelist attributes value2",
+                            "submissionValue": "codelist submission value2",
+                            "nciPreferredName": "codelist preferred term",
+                            "definition": "codelist definition",
+                            "extensible": false,
+                            "libraryName": null,
+                            "startDate": "2020-06-26T00:00:00",
+                            "endDate": null,
+                            "status": "Draft",
+                            "version": "1.1",
+                            "changeDescription": "latest draft",
+                            "userInitials": "TODO initials",
+                            "possibleActions": []
+                        }
+                    },
+                    {
+                        "catalogueName": "SDTM CT",
+                        "codelistUid": "ct_codelist_root3",
+                        "libraryName": "Sponsor",
+                        "parentCodelistUid": null,
+                        "childCodelistUids": [],
+                        "name": {
+                            "catalogueName": null,
+                            "codelistUid": null,
+                            "name": "codelist_name_value",
+                            "templateParameter": false,
+                            "libraryName": null,
+                            "startDate": "2020-06-26T00:00:00",
+                            "endDate": null,
+                            "status": "Draft",
+                            "version": "0.1",
+                            "changeDescription": "latest draft",
+                            "userInitials": "TODO initials",
+                            "possibleActions": [
+                                "approve",
+                                "edit"
+                            ]
+                        },
+                        "attributes": {
+                            "catalogueName": null,
+                            "codelistUid": null,
+                            "parentCodelistUid": null,
+                            "childCodelistUids": [],
+                            "name": "codelist attributes value3",
+                            "submissionValue": "codelist submission value3",
+                            "nciPreferredName": "codelist preferred term",
+                            "definition": "codelist definition",
+                            "extensible": false,
+                            "libraryName": null,
+                            "startDate": "2020-06-26T00:00:00",
+                            "endDate": null,
+                            "status": "Draft",
+                            "version": "0.1",
+                            "changeDescription": "latest draft",
+                            "userInitials": "TODO initials",
+                            "possibleActions": [
+                                "approve",
+                                "edit"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

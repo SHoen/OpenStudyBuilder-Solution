@@ -1,0 +1,164 @@
+[
+  {
+    "codelist_name": "Study Type Response",
+    "codelist_code": "C99077",
+    "code": "C98722",
+    "nci_preferred_term": "Expanded Access Study",
+    "cdisc_definition": "Studies that provide a means for obtaining an experimental drug or device for patients who are not adequately treated by existing therapy, who do not meet the eligibility criteria for enrollment, or who are otherwise unable to participate in another clinical study. Expanded Access studies include individual-patient IND, treatment IND, compassionate use, emergency use or continued access."
+  }
+  ,{
+    "codelist_name": "Study Type Response",
+    "codelist_code": "C99077",
+    "code": "C98388",
+    "nci_preferred_term": "Interventional Study",
+    "cdisc_definition": "Studies in which individuals are assigned by an investigator based on a protocol to receive specific interventions. Subjects may receive diagnostic, therapeutic or other types of interventions. The assignment of the intervention may or may not be random. The individuals are then followed and biomedical and/or health outcomes are assessed."
+  }
+  ,{
+    "codelist_name": "Study Type Response",
+    "codelist_code": "C99077",
+    "code": "C16084",
+    "nci_preferred_term": "Observational Study",
+    "cdisc_definition": "Studies in which biomedical and/or health outcomes are assessed in pre-defined groups of individuals. Subjects in the study may receive diagnostic, therapeutic, or other interventions, but the investigator does not assign specific interventions to the subjects of the study."
+  }
+  ,{
+    "codelist_name": "Study Type Response",
+    "codelist_code": "C99077",
+    "code": "C12900",
+    "nci_preferred_term": "Patient Registry Study",
+    "cdisc_definition": "Observational studies which include an organized system that uses observational methods to collect uniform data (clinical and other) prospectively for a population defined by a particular disorder/disease, condition (including susceptibility to a disorder), or exposure (including products, health care services, and/or procedures) and that serves a predetermined scientific, clinical, or policy purpose. Patient registries may be single purpose or on-going data collection programs that address one or more questions. (AHRQ)"
+  }
+  ,{
+    "codelist_name": "Trial Intent Type Response",
+    "codelist_code": "C66736",
+    "code": "C49656",
+    "nci_preferred_term": "Treatment Study",
+    "cdisc_definition": "A type of study designed to evaluate intervention(s) for treatment of disease, syndrome or condition."
+  }
+  ,{
+    "codelist_name": "Trial Intent Type Response",
+    "codelist_code": "C66736",
+    "code": "C49657",
+    "nci_preferred_term": "Prevention Study",
+    "cdisc_definition": "A type of study designed to identify actions necessary to permanently eliminate or reduce the long-term risk to human life as a result of a particular medication or treatment regimen."
+  }
+  ,{
+    "codelist_name": "Trial Intent Type Response",
+    "codelist_code": "C66736",
+    "code": "C49654",
+    "nci_preferred_term": "Cure Study",
+    "cdisc_definition": "A type of study designed to evaluate intervention(s) aimed to cure a disease or condition."
+  }
+  ,{
+    "codelist_name": "Trial Intent Type Response",
+    "codelist_code": "C66736",
+    "code": "C139174",
+    "nci_preferred_term": "Device Feasibility Study",
+    "cdisc_definition": "An intervention of a device product is being evaluated to determine the feasibility of the product or to test a prototype device and not health outcomes. Such studies are conducted to confirm the design and operating specifications of a device before beginning a full clinical trial. (ClinicalTrials.gov)"
+  }
+  ,{
+    "codelist_name": "Trial Type Response",
+    "codelist_code": "C66739",
+    "code": "C49665",
+    "nci_preferred_term": "Therapeutic Equivalency Study",
+    "cdisc_definition": "A study most often used to compare the efficacy of different formulations to treat a given disease. It is the testing of an old versus a new formulation in healthy volunteers or subjects with the disease under study and usually in one dose. (NCI)"
+  }
+  ,{
+    "codelist_name": "Trial Type Response",
+    "codelist_code": "C66739",
+    "code": "C158288",
+    "nci_preferred_term": "Biosimilarity Study",
+    "cdisc_definition": "A type of study designed to evaluate whether a biologic test article is highly similar in function and effect to an existing biologic that has already been clinically tested and approved for use."
+  }
+  ,{
+    "codelist_name": "Trial Type Response",
+    "codelist_code": "C66739",
+    "code": "C49666",
+    "nci_preferred_term": "Efficacy Study",
+    "cdisc_definition": "A study of the relative therapeutic efficacy of treatment of a disease. Usually this is a Phase II or III study. (NCI)"
+  }
+  ,{
+    "codelist_name": "Trial Type Response",
+    "codelist_code": "C66739",
+    "code": "C49667",
+    "nci_preferred_term": "Safety Study",
+    "cdisc_definition": "A study that assesses the medical risks to a subject. Safety is usually assessed by examining a wide range of clinical parameters, including adverse events, vital signs, physical exam, laboratory tests."
+  }
+  ,{
+    "codelist_name": "Trial Type Response",
+    "codelist_code": "C66739",
+    "code": "C49657",
+    "nci_preferred_term": "Prevention Study",
+    "cdisc_definition": "A type of study designed to identify actions necessary to permanently eliminate or reduce the long-term risk to human life as a result of a particular medication or treatment regimen."
+  }
+  ,{
+    "codelist_name": "Trial Type Response",
+    "codelist_code": "C66739",
+    "code": "C49656",
+    "nci_preferred_term": "Treatment Study",
+    "cdisc_definition": "A type of study designed to evaluate intervention(s) for treatment of disease, syndrome or condition."
+  }
+  ,{
+    "codelist_name": "Trial Phase Response",
+    "codelist_code": "C66737",
+    "code": "C15600",
+    "nci_preferred_term": "Phase I Trial",
+    "cdisc_definition": "The initial introduction of an investigational new drug into humans. Phase 1 studies are typically closely monitored and may be conducted in patients or normal volunteer subjects. NOTE: These studies are designed to determine the metabolism and pharmacologic actions of the drug in humans, the side effects associated with increasing doses, and, if possible, to gain early evidence on effectiveness. During Phase 1, sufficient information about the drug's pharmacokinetics and pharmacological effects should be obtained to permit the design of well-controlled, scientifically valid, Phase 2 studies. The total number of subjects and patients included in Phase I studies varies with the drug, but is generally in the range of 20 to 80. Phase 1 studies also include studies of drug metabolism, structure-activity relationships, and mechanism of action in humans, as well as studies in which investigational drugs are used as research tools to explore biological phenomena or disease processes. [After FDA CDER Handbook, ICH E8] (CDISC glossary)"
+  }
+  ,{
+    "codelist_name": "Trial Phase Response",
+    "codelist_code": "C66737",
+    "code": "C15601",
+    "nci_preferred_term": "Phase II Trial",
+    "cdisc_definition": "Phase 2. Controlled clinical studies conducted to evaluate the effectiveness of the drug for a particular indication or indications in patients with the disease or condition under study and to determine the common short-term side effects and risks associated with the drug. NOTE: Phase 2 studies are typically well controlled, closely monitored, and conducted in a relatively small number of patients, usually involving no more than several hundred subjects. [After FDA CDER Handbook, ICH E8] (CDISC glossary)"
+  }
+  ,{
+    "codelist_name": "Trial Phase Response",
+    "codelist_code": "C66737",
+    "code": "C15694",
+    "nci_preferred_term": "Phase II/III Trial",
+    "cdisc_definition": "A class of clinical study that combines elements characteristic of traditional Phase II and Phase III trials."
+  },
+  {
+    "codelist_name": "Trial Phase Response",
+    "codelist_code": "C66737",
+    "code": "C15602",
+    "nci_preferred_term": "Phase III Trial",
+    "cdisc_definition": "Phase 3. Studies are expanded controlled and uncontrolled trials. They are performed after preliminary evidence suggesting effectiveness of the drug has been obtained, and are intended to gather the additional information about effectiveness and safety that is needed to confirm efficacy and evaluate the overall benefit-risk relationship of the drug and to provide an adequate basis for physician labeling. NOTE: Phase 3 studies usually include from several hundred to several thousand subjects. [After FDA CDER Handbook, ICH E8] (CDISC glossary)"
+  },
+  {
+    "codelist_name": "Age unit",
+    "codelist_code": "C66781",
+    "code": "C25301",
+    "nci_preferred_term": "Day",
+    "cdisc_definition": "A unit of measurement of time equal to 24 hours."
+  },
+  {
+    "codelist_name": "Age unit",
+    "codelist_code": "C66781",
+    "code": "C25529",
+    "nci_preferred_term": "Hour",
+    "cdisc_definition": "A unit of measurement of time equal to 60 minutes."
+  },
+  {
+    "codelist_name": "Age unit",
+    "codelist_code": "C66781",
+    "code": "C29846",
+    "nci_preferred_term": "Month",
+    "cdisc_definition": "One of the 12 divisions of a year as determined by a calendar. It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks. (NCI)"
+  },
+  {
+    "codelist_name": "Age unit",
+    "codelist_code": "C66781",
+    "code": "C29844",
+    "nci_preferred_term": "Week",
+    "cdisc_definition": "Any period of seven consecutive days. (NCI)"
+  },
+  {
+    "codelist_name": "Age unit",
+    "codelist_code": "C66781",
+    "code": "C29848",
+    "nci_preferred_term": "Year",
+    "cdisc_definition": "The period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period. (NCI)"
+  }
+
+]

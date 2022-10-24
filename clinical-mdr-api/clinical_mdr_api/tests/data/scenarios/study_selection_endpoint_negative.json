@@ -1,0 +1,139 @@
+[
+    {
+        "name": "Test adding selection endpoint does not exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpointUid": "Endpoint_000001_does_not_exists",
+                "endpointLevel": "Primary"
+            },
+            "url": "/study/study_root/study-endpoints/select"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no approved endpoint identified by provided uid (Endpoint_000001_does_not_exists)",
+                "method": "POST",
+                "path": "http://testserver/study/study_root/study-endpoints/select",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test adding selection study objective does not exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "studyObjectiveUid": "Study_Objective_000001_does_not_exists",
+                "endpointLevel": "Primary"
+            },
+            "url": "/study/study_root/study-endpoints/select"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no selected study objective identified by provided uid (Study_Objective_000001_does_not_exists)",
+                "method": "POST",
+                "path": "http://testserver/study/study_root/study-endpoints/select",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test adding selection endpoint units are missing a separator",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpointLevel": "Primary",
+                "endpointUnits": {
+                    "units": [
+                        "unit 1",
+                        "unit 2"
+                    ],
+                    "separator": null
+                }
+            },
+            "url": "/study/study_root/study-endpoints/select"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "If the endpoint units have move than one value then a separator is needed (('unit 1', 'unit 2'))",
+                "method": "POST",
+                "path": "http://testserver/study/study_root/study-endpoints/select",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test adding selection endpoint units having a separator but no units",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpointLevel": "Primary",
+                "endpointUnits": {
+                    "units": [],
+                    "separator": "and"
+                }
+            },
+            "url": "/study/study_root/study-endpoints/select"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Separator should only be set if more than 1 unit is selected (())",
+                "method": "POST",
+                "path": "http://testserver/study/study_root/study-endpoints/select",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test get specific selection where no selection exists",
+        "request": {
+            "sleep": 2,
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/study/study_root/study-endpoints/study_endpoint_uid"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no selection between the study endpoint (study_endpoint_uid and the study)",
+                "method": "GET",
+                "path": "http://testserver/study/study_root/study-endpoints/study_endpoint_uid",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "NotFoundException"
+            }
+        }
+    }
+]

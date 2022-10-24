@@ -1,0 +1,448 @@
+[
+  {
+    "name": "Test name generation of study objective with 0 template parameters values",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "objectiveData": {
+          "libraryName": "Test library",
+          "name": "Test objective",
+          "objectiveTemplateUid": "{otuid}",
+          "parameterValues": [
+            {
+              "position": 1,
+              "conjunction": "and",
+              "values": []
+            }
+          ]
+        },
+        "objectiveLevelUid": "term_root_final"
+      },
+      "url": "/study/study_root/study-objectives/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 1,
+        "projectNumber": "123",
+        "projectName": "Project ABC",
+        "studyObjectiveUid": "StudyObjective_000001",
+        "objectiveLevel": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "editable_cr",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2021-10-25T11:17:00.998000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "objective": {
+          "uid": "Objective_000001",
+          "name": "To investigate []",
+          "namePlain": "To investigate ",
+          "startDate": "2021-10-25T13:17:02.868961",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TEST_USER",
+          "possibleActions": [
+            "inactivate"
+          ],
+          "objectiveTemplate": {
+            "name": "To investigate [Indication]",
+            "namePlain": "To investigate [Indication]",
+            "uid": "ObjectiveTemplate_000001"
+          },
+          "parameterValues": [
+            {
+              "position": 1,
+              "conjunction": "and",
+              "values": []
+            }
+          ],
+          "library": {
+            "name": "Test library",
+            "isEditable": null
+          },
+          "studyCount": null
+        },
+        "startDate": "2021-10-25T13:17:02.952076",
+        "userInitials": "TEST_USER",
+        "endpointCount": 0,
+        "latestObjective": null,
+        "acceptedVersion": false
+      }
+    }
+  },
+  {
+    "name": "Test name generation of study objective with 1 template parameters value",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "objectiveData": {
+          "libraryName": "Test library",
+          "name": "To investigate [Indication]",
+          "objectiveTemplateUid": "{otuid}",
+          "parameterValues": [
+            {
+              "position": 1,
+              "conjunction": "and",
+              "values": [
+                {
+                  "index": 1,
+                  "type": "Indication",
+                  "name": "type 2 diabetes",
+                  "uid": "Indication-99991"
+                }
+              ]
+            }
+          ]
+        },
+        "objectiveLevelUid": "term_root_final"
+      },
+      "url": "/study/study_root/study-objectives/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 2,
+        "projectNumber": "123",
+        "projectName": "Project ABC",
+        "studyObjectiveUid": "StudyObjective_000002",
+        "objectiveLevel": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "editable_cr",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2021-10-25T11:17:00.998000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "objective": {
+          "uid": "Objective_000001",
+          "name": "To investigate [type 2 diabetes]",
+          "namePlain": "To investigate type 2 diabetes",
+          "startDate": "2021-10-25T13:17:02.868961",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TEST_USER",
+          "possibleActions": [
+            "inactivate"
+          ],
+          "objectiveTemplate": {
+            "name": "To investigate [Indication]",
+            "namePlain": "To investigate [Indication]",
+            "uid": "ObjectiveTemplate_000001"
+          },
+          "parameterValues": [
+            {
+              "position": 1,
+              "conjunction": "and",
+              "values": [
+                {
+                  "uid": "Indication-99991",
+                  "name": "type 2 diabetes",
+                  "type": "Indication",
+                  "index": 1
+                }
+              ]
+            }
+          ],
+          "library": {
+            "name": "Test library",
+            "isEditable": null
+          },
+          "studyCount": null
+        },
+        "startDate": "2021-10-25T13:17:02.952076",
+        "userInitials": "TEST_USER",
+        "endpointCount": 0,
+        "latestObjective": null,
+        "acceptedVersion": false
+      }
+    }
+  },
+  {
+    "name": "Test name generation of study objective with 2 template parameters values",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "objectiveData": {
+          "libraryName": "Test library",
+          "name": "To investigate [Indication]",
+          "objectiveTemplateUid": "{otuid}",
+          "parameterValues": [
+            {
+              "position": 1,
+              "conjunction": "and",
+              "values": [
+                {
+                  "index": 1,
+                  "type": "Indication",
+                  "name": "type 2 diabetes",
+                  "uid": "Indication-99991"
+                },
+                {
+                  "index": 2,
+                  "type": "Indication",
+                  "name": "coronary heart disease",
+                  "uid": "Indication-99992"
+                }
+              ]
+            }
+          ]
+        },
+        "objectiveLevelUid": "term_root_final"
+      },
+      "url": "/study/study_root/study-objectives/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 3,
+        "projectNumber": "123",
+        "projectName": "Project ABC",
+        "studyObjectiveUid": "StudyObjective_000003",
+        "objectiveLevel": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "editable_cr",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2021-10-25T11:17:00.998000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "objective": {
+          "uid": "Objective_000001",
+          "name": "To investigate [type 2 diabetes and coronary heart disease]",
+          "namePlain": "To investigate type 2 diabetes and coronary heart disease",
+          "startDate": "2021-10-25T13:17:02.868961",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TEST_USER",
+          "possibleActions": [
+            "inactivate"
+          ],
+          "objectiveTemplate": {
+            "name": "To investigate [Indication]",
+            "namePlain": "To investigate [Indication]",
+            "uid": "ObjectiveTemplate_000001"
+          },
+          "parameterValues": [
+            {
+              "position": 1,
+              "conjunction": "and",
+              "values": [
+                {
+                  "index": 1,
+                  "type": "Indication",
+                  "name": "type 2 diabetes",
+                  "uid": "Indication-99991"
+                },
+                {
+                  "index": 2,
+                  "type": "Indication",
+                  "name": "coronary heart disease",
+                  "uid": "Indication-99992"
+                }
+              ]
+            }
+          ],
+          "library": {
+            "name": "Test library",
+            "isEditable": null
+          },
+          "studyCount": null
+        },
+        "startDate": "2021-10-25T13:17:02.952076",
+        "userInitials": "TEST_USER",
+        "endpointCount": 0,
+        "latestObjective": null,
+        "acceptedVersion": false
+      }
+    }
+  },
+  {
+    "name": "Test name generation of study objective with 3 template parameters values",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "objectiveData": {
+          "libraryName": "Test library",
+          "name": "To investigate [Indication]",
+          "objectiveTemplateUid": "{otuid}",
+          "parameterValues": [
+            {
+              "position": 1,
+              "conjunction": "and",
+              "values": [
+                {
+                  "index": 1,
+                  "type": "Indication",
+                  "name": "type 2 diabetes",
+                  "uid": "Indication-99991"
+                },
+                {
+                  "index": 2,
+                  "type": "Indication",
+                  "name": "coronary heart disease",
+                  "uid": "Indication-99992"
+                },
+                {
+                  "index": 3,
+                  "type": "Indication",
+                  "name": "breathing problems",
+                  "uid": "Indication-99993"
+                }
+              ]
+            }
+          ]
+        },
+        "objectiveLevelUid": "term_root_final"
+      },
+      "url": "/study/study_root/study-objectives/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 4,
+        "projectNumber": "123",
+        "projectName": "Project ABC",
+        "studyObjectiveUid": "StudyObjective_000004",
+        "objectiveLevel": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "editable_cr",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2021-10-25T11:17:00.998000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "objective": {
+          "uid": "Objective_000001",
+          "name": "To investigate [type 2 diabetes, coronary heart disease and breathing problems]",
+          "namePlain": "To investigate type 2 diabetes, coronary heart disease and breathing problems",
+          "startDate": "2021-10-25T13:17:02.868961",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TEST_USER",
+          "possibleActions": [
+            "inactivate"
+          ],
+          "objectiveTemplate": {
+            "name": "To investigate [Indication]",
+            "namePlain": "To investigate [Indication]",
+            "uid": "ObjectiveTemplate_000001"
+          },
+          "parameterValues": [
+            {
+              "position": 1,
+              "conjunction": "and",
+              "values": [
+                {
+                  "index": 1,
+                  "type": "Indication",
+                  "name": "type 2 diabetes",
+                  "uid": "Indication-99991"
+                },
+                {
+                  "index": 2,
+                  "type": "Indication",
+                  "name": "coronary heart disease",
+                  "uid": "Indication-99992"
+                },
+                {
+                  "index": 3,
+                  "type": "Indication",
+                  "name": "breathing problems",
+                  "uid": "Indication-99993"
+                }
+              ]
+            }
+          ],
+          "library": {
+            "name": "Test library",
+            "isEditable": null
+          },
+          "studyCount": null
+        },
+        "startDate": "2021-10-25T13:17:02.952076",
+        "userInitials": "TEST_USER",
+        "endpointCount": 0,
+        "latestObjective": null,
+        "acceptedVersion": false
+      }
+    }
+  }
+]

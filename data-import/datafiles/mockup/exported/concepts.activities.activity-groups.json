@@ -1,0 +1,92 @@
+[
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Definition not provided",
+    "endDate": null,
+    "libraryName": "Sponsor",
+    "name": "AE Requiring Additional Data",
+    "nameSentenceCase": "ae requiring additional data",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:56:27.936110",
+    "status": "Final",
+    "uid": "ActivityGroup_000001",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Definition not provided",
+    "endDate": null,
+    "libraryName": "Sponsor",
+    "name": "Clinical Outcome Assessments",
+    "nameSentenceCase": "clinical outcome assessments",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:56:27.934302",
+    "status": "Final",
+    "uid": "ActivityGroup_000002",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Definition not provided",
+    "endDate": null,
+    "libraryName": "Sponsor",
+    "name": "General",
+    "nameSentenceCase": "general",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:56:27.926393",
+    "status": "Final",
+    "uid": "ActivityGroup_000003",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Definition not provided",
+    "endDate": null,
+    "libraryName": "Sponsor",
+    "name": "Laboratory Assessments",
+    "nameSentenceCase": "laboratory assessments",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:56:28.048042",
+    "status": "Final",
+    "uid": "ActivityGroup_000004",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": "Definition not provided",
+    "endDate": null,
+    "libraryName": "Sponsor",
+    "name": "Event Adjudication",
+    "nameSentenceCase": "event adjudication",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:56:28.110261",
+    "status": "Final",
+    "uid": "ActivityGroup_000005",
+    "userInitials": "MT",
+    "version": "1.0"
+  }
+]

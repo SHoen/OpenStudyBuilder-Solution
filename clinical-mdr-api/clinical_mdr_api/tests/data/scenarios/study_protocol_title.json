@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Test get study protocol title information",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/protocol-title"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "studyUid": "study_root",
+                "studyTitle": null,
+                "studyShortTitle": "Study short title",
+                "eudractId": "2019-123456-42",
+                "universalTrialNumberUTN": null,
+                "trialPhaseCode": null,
+                "indNumber": "ind-number-777",
+                "substanceName": "name"
+            }
+        }
+    }
+]

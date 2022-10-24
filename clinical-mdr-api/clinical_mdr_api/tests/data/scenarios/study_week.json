@@ -1,0 +1,159 @@
+[
+   {
+      "name": "Test POST study week which is a TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.23,
+            "definition": "study_week_definition1",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/study-weeks"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyWeek_000001",
+            "name": "Week 1.23",
+            "value": 1.23,
+            "nameSentenceCase": "week 1.23",
+            "definition": "study_week_definition1",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor",
+            "status": null,
+            "version": null,
+            "changeDescription": null,
+            "userInitials": null,
+            "startDate": null,
+            "endDate": null
+         }
+      }
+   },
+   {
+      "name": "Test POST study week which is a TP existing study week is returned",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.23,
+            "definition": "study_week_definition1",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/study-weeks"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyWeek_000001",
+            "name": "Week 1.23",
+            "value": 1.23,
+            "nameSentenceCase": "week 1.23",
+            "definition": "study_week_definition1",
+            "abbreviation": "abbv",
+            "templateParameter": true,
+            "libraryName": "Sponsor",
+            "status": null,
+            "version": null,
+            "changeDescription": null,
+            "userInitials": null,
+            "startDate": null,
+            "endDate": null
+         }
+      }
+   },
+   {
+      "name": "Test POST study week which is not TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.234,
+            "definition": "study_week_definition2",
+            "abbreviation": "abbv",
+            "templateParameter": false,
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/study-weeks"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyWeek_000002",
+            "name": "Week 1.234",
+            "value": 1.234,
+            "nameSentenceCase": "week 1.234",
+            "definition": "study_week_definition2",
+            "abbreviation": "abbv",
+            "templateParameter": false,
+            "libraryName": "Sponsor",
+            "status": null,
+            "version": null,
+            "changeDescription": null,
+            "userInitials": null,
+            "startDate": null,
+            "endDate": null
+         }
+      }
+   },
+   {
+      "name": "Test GET all study weeks",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/study-weeks?totalCount=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "StudyWeek_000001",
+                  "name": "Week 1.23",
+                  "value": 1.23,
+                  "nameSentenceCase": "week 1.23",
+                  "definition": "study_week_definition1",
+                  "abbreviation": "abbv",
+                  "templateParameter": true,
+                  "libraryName": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "changeDescription": null,
+                  "userInitials": null,
+                  "startDate": null,
+                  "endDate": null
+               },
+               {
+                  "uid": "StudyWeek_000002",
+                  "name": "Week 1.234",
+                  "value": 1.234,
+                  "nameSentenceCase": "week 1.234",
+                  "definition": "study_week_definition2",
+                  "abbreviation": "abbv",
+                  "templateParameter": false,
+                  "libraryName": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "changeDescription": null,
+                  "userInitials": null,
+                  "startDate": null,
+                  "endDate": null
+               }
+            ],
+            "total": 2,
+            "page": 1,
+            "size": 0
+         }
+      }
+   }
+]

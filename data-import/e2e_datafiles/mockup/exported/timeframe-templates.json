@@ -1,0 +1,84 @@
+[
+  {
+    "changeDescription": "Approved version",
+    "editableInstance": false,
+    "endDate": null,
+    "library": {
+      "isEditable": true,
+      "name": "User Defined"
+    },
+    "name": "test user defined [ActivityInstance]",
+    "namePlain": "test user defined [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:10.088959",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000003",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "changeDescription": "Approved version",
+    "editableInstance": false,
+    "endDate": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance] and [DiseaseDisorder]",
+    "namePlain": "test [ActivityInstance] and [DiseaseDisorder]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:09.987649",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000002",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "changeDescription": "Approved version",
+    "editableInstance": false,
+    "endDate": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance]",
+    "namePlain": "test [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:09.839990",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000001",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  }
+]

@@ -1,0 +1,141 @@
+[
+    {
+        "name": "Check add endpoint",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpointTemplateUid": "{etuid}",
+                "libraryName": "non existent library",
+                "name": "Test objective",
+                "objectiveUid": "{ouid}",
+                "parameterValues": []
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "173",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The library with the name='non existent library' could not be found.",
+                "method": "POST",
+                "path": "http://testserver/endpoints",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Check missing endpoint temlpate",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpointTemplateUid": "wrong-uid",
+                "libraryName": "Test library",
+                "name": "Test objective",
+                "objectiveUid": "{ouid}",
+                "parameterValues": []
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The template was not found. Make sure that there is a latest 'Final' version.",
+                "method": "POST",
+                "path": "http://testserver/endpoints",
+                "time": "2020-11-10T01:52:30.985556",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Check get by name returns 404",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/endpoints/get-by-name/test"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Not Found - The object with the specified 'name' wasn't found.",
+                "method": "GET",
+                "path": "http://testserver/endpoints/get-by-name/test",
+                "time": "2020-11-10T01:52:30.985556",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Check endpoint template not in final version ",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpointTemplateUid": "{otuidna}",
+                "libraryName": "Test library",
+                "name": "Test objective",
+                "objectiveUid": "{ouid}",
+                "parameterValues": []
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The template was not found. Make sure that there is a latest 'Final' version.",
+                "method": "POST",
+                "path": "http://testserver/endpoints",
+                "time": "2020-11-10T01:52:30.985556",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test overriding the template name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Test library",
+                "endpointTemplateUid": "{etuid}",
+                "nameOverride": "Name not approved - edited instance name",
+                "objectiveUid": "{ouid}",
+                "parameterValues": []
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "172",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Editing the name of an instance of this template is not allowed",
+                "time": "2022-04-12T10:34:00.680202",
+                "path": "http://testserver/endpoints",
+                "method": "POST",
+                "type": "ValidationException"
+            }
+        }
+    }
+]

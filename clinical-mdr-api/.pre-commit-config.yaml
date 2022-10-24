@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+  - repo: local
+    hooks:
+    - id: absolute-import-paths
+      name: absolute-import-paths
+      entry: ./.git-hooks/absolute-import-paths.sh
+      language: system
+      require_serial: true

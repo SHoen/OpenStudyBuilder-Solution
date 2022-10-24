@@ -1,0 +1,114 @@
+[
+  {
+    "acceptedVersion": false,
+    "endpointCount": 1,
+    "latestObjective": null,
+    "objective": {
+      "changeDescription": "Approved version",
+      "endDate": null,
+      "library": {
+        "isEditable": true,
+        "name": "User Defined"
+      },
+      "name": "<p>Time to first occurrence of MACE+, a composite endpoint consisting of: CV death, nonfatal MI,</p><p>nonfatal stroke, or hospitalization for unstable&nbsp;</p><p>angina</p>",
+      "namePlain": "Time to first occurrence of MACE+, a composite endpoint consisting of: CV death, nonfatal MI,nonfatal stroke, or hospitalization for unstable\u00a0angina",
+      "objectiveTemplate": {
+        "name": "<p>Time to first occurrence of MACE+, a composite endpoint consisting of: CV death, nonfatal MI,</p><p>nonfatal stroke, or hospitalization for unstable&nbsp;</p><p>angina</p>",
+        "namePlain": "Time to first occurrence of MACE+, a composite endpoint consisting of: CV death, nonfatal MI,nonfatal stroke, or hospitalization for unstable\u00a0angina",
+        "uid": "ObjectiveTemplate_000005"
+      },
+      "parameterValues": [],
+      "possibleActions": [
+        "inactivate"
+      ],
+      "startDate": "2022-10-20T06:32:44.810374",
+      "status": "Final",
+      "studyCount": null,
+      "uid": "Objective_000004",
+      "userInitials": "MT",
+      "version": "1.0"
+    },
+    "objectiveLevel": {
+      "catalogueName": "SDTM CT",
+      "changeDescription": "Approved version",
+      "codelistUid": "CTCodelist_000001",
+      "endDate": null,
+      "libraryName": "CDISC",
+      "order": 1,
+      "possibleActions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsorPreferredName": "Primary Objective",
+      "sponsorPreferredNameSentenceCase": "primary objective",
+      "startDate": "2022-10-18T12:52:48.896938",
+      "status": "Final",
+      "termUid": "C85826_OBJPRIM",
+      "userInitials": "MT",
+      "version": "2.0"
+    },
+    "order": 1,
+    "projectName": "CDISC Dev",
+    "projectNumber": "CDISC DEV",
+    "startDate": "2022-10-20T06:32:44.904961",
+    "studyObjectiveUid": "StudyObjective_000001",
+    "studyUid": "Study_000002",
+    "userInitials": "MT"
+  },
+  {
+    "acceptedVersion": false,
+    "endpointCount": 1,
+    "latestObjective": null,
+    "objective": {
+      "changeDescription": "Approved version",
+      "endDate": null,
+      "library": {
+        "isEditable": true,
+        "name": "User Defined"
+      },
+      "name": "<p>Time from randomisation to all cause death</p>",
+      "namePlain": "Time from randomisation to all cause death",
+      "objectiveTemplate": {
+        "name": "<p>Time from randomisation to all cause death</p>",
+        "namePlain": "Time from randomisation to all cause death",
+        "uid": "ObjectiveTemplate_000006"
+      },
+      "parameterValues": [],
+      "possibleActions": [
+        "inactivate"
+      ],
+      "startDate": "2022-10-20T12:27:17.588804",
+      "status": "Final",
+      "studyCount": null,
+      "uid": "Objective_000005",
+      "userInitials": "MT",
+      "version": "1.0"
+    },
+    "objectiveLevel": {
+      "catalogueName": "SDTM CT",
+      "changeDescription": "Approved version",
+      "codelistUid": "CTCodelist_000001",
+      "endDate": null,
+      "libraryName": "CDISC",
+      "order": 2,
+      "possibleActions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsorPreferredName": "Secondary Objective",
+      "sponsorPreferredNameSentenceCase": "secondary objective",
+      "startDate": "2022-10-18T12:52:49.546806",
+      "status": "Final",
+      "termUid": "C85827_OBJSEC",
+      "userInitials": "MT",
+      "version": "2.0"
+    },
+    "order": 2,
+    "projectName": "CDISC Dev",
+    "projectNumber": "CDISC DEV",
+    "startDate": "2022-10-20T12:27:17.685437",
+    "studyObjectiveUid": "StudyObjective_000002",
+    "studyUid": "Study_000002",
+    "userInitials": "MT"
+  }
+]

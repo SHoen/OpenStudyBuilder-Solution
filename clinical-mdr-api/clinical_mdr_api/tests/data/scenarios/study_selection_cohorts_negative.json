@@ -1,0 +1,317 @@
+[
+  {
+    "name": "Test adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_1"
+      },
+      "url": "/study/study_root/study-cohorts/create"
+    },
+    "response": {
+      "code": 400,
+      "result": {
+        "message": "Value \"Cohort_Name_1\" in field Cohort Name is not unique for the study",
+        "method": "POST",
+        "path": "http://testserver/study/study_root/study-cohorts/create",
+        "time": "2020-11-10T01:51:17.884429",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - everything to a new name",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "Cohort_Name_77",
+        "shortName": "Cohort_Short_Name_4",
+        "code": "Cohort_code_4",
+        "description": "desc...",
+        "colourCode": "desc..."
+      },
+      "url": "/study/study_root/study-cohorts/StudyCohort_000001"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "cohortUid": "StudyCohort_000001",
+        "order": 1,
+        "name": "Cohort_Name_77",
+        "shortName": "Cohort_Short_Name_4",
+        "code": "Cohort_code_4",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "branchArmRoots": null,
+        "armRoots": [
+          {
+            "studyUid": "study_root",
+            "order": 1,
+            "armUid": "StudyArm_000001",
+            "name": "StudyArm_000001",
+            "shortName": "StudyArm_000001",
+            "code": null,
+            "description": null,
+            "armColour": null,
+            "randomizationGroup": null,
+            "numberOfSubjects": null,
+            "armType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root_endpoint",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "order": 1,
+              "libraryName": "Sponsor",
+              "startDate": "2022-07-11T22:55:21.939000",
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "startDate": "2022-07-11T22:55:22.435000",
+            "userInitials": "TODO user initials",
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null
+          }
+        ],
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 100,
+        "userInitials": "TODO initials"
+      }
+    }
+  },
+  {
+    "name": "Test all history of specific selection",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-cohorts/StudyCohort_000001/audit-trail/"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "cohortUid": "StudyCohort_000001",
+          "name": "Cohort_Name_77",
+          "shortName": "Cohort_Short_Name_4",
+          "code": "Cohort_code_4",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "numberOfSubjects": 100,
+          "startDate": "2022-08-11T05:51:52.533976",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "branchArmRootsUids": null,
+          "armRootsUids": [
+            "StudyArm_000001"
+          ],
+          "changes": {
+            "studyUid": false,
+            "order": false,
+            "projectNumber": false,
+            "projectName": false,
+            "cohortUid": false,
+            "name": true,
+            "shortName": true,
+            "code": true,
+            "description": false,
+            "colourCode": false,
+            "numberOfSubjects": false,
+            "startDate": true,
+            "userInitials": true,
+            "endDate": true,
+            "status": false,
+            "changeType": true,
+            "acceptedVersion": false,
+            "branchArmRootsUids": false,
+            "armRootsUids": false
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "cohortUid": "StudyCohort_000001",
+          "name": "Cohort_Name_1",
+          "shortName": "Cohort_Short_Name_1",
+          "code": "Cohort_code_1",
+          "description": "desc...",
+          "colourCode": "desc...",
+          "numberOfSubjects": 100,
+          "startDate": "2022-08-11T05:51:19.087402",
+          "userInitials": "test",
+          "endDate": "2022-08-11T05:51:52.533976",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "branchArmRootsUids": null,
+          "armRootsUids": [
+            "StudyArm_000001"
+          ],
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test patch specific - patch a name that is in history not actual",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "Cohort_Name_1",
+        "shortName": "Cohort_Short_Name_5",
+        "code": "Cohort_code_5",
+        "description": "desc...",
+        "colourCode": "desc..."
+      },
+      "url": "/study/study_root/study-cohorts/StudyCohort_000001"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 1,
+        "cohortUid": "StudyCohort_000001",
+        "name": "Cohort_Name_1",
+        "shortName": "Cohort_Short_Name_5",
+        "code": "Cohort_code_5",
+        "description": "desc...",
+        "colourCode": "desc...",
+        "numberOfSubjects": 100,
+        "branchArmRoots": null,
+        "armRoots": [
+          {
+            "studyUid": "study_root",
+            "order": 1,
+            "armUid": "StudyArm_000001",
+            "name": "StudyArm_000001",
+            "shortName": "StudyArm_000001",
+            "code": null,
+            "description": null,
+            "armColour": null,
+            "randomizationGroup": null,
+            "numberOfSubjects": null,
+            "armType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root_endpoint",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "order": 1,
+              "libraryName": "Sponsor",
+              "startDate": "2022-07-11T22:55:21.939000",
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "startDate": "2022-07-11T22:55:22.435000",
+            "userInitials": "TODO user initials",
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null
+          }
+        ],
+        "startDate": "2022-05-11T08:52:26.575638",
+        "userInitials": "TEST_USER",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - patch some name that is already used on another cohort",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "Cohort_Name_2",
+        "shortName": "Cohort_Short_Name_8",
+        "code": "Cohort_code_8",
+        "description": "desc...",
+        "colourCode": "desc..."
+      },
+      "url": "/study/study_root/study-cohorts/StudyCohort_000001"
+    },
+    "response": {
+      "code": 400,
+      "result": {
+        "message": "Value \"Cohort_Name_2\" in field Cohort Name is not unique for the study",
+        "method": "PATCH",
+        "path": "http://testserver/study/study_root/study-cohorts/StudyCohort_000001",
+        "time": "2020-11-10T01:51:17.884429",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - patch some name that is already used on another cohort",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "Cohort_Name_8",
+        "shortName": "Cohort_Short_Name_8",
+        "code": "Cohort_code_2",
+        "description": "desc...",
+        "colourCode": "desc..."
+      },
+      "url": "/study/study_root/study-cohorts/StudyCohort_000001"
+    },
+    "response": {
+      "code": 400,
+      "result": {
+        "message": "Value \"Cohort_code_2\" in field Cohort code is not unique for the study",
+        "method": "PATCH",
+        "path": "http://testserver/study/study_root/study-cohorts/StudyCohort_000001",
+        "time": "2020-11-10T01:51:17.884429",
+        "type": "ValidationException"
+      }
+    }
+  }
+]

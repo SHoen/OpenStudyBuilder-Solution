@@ -1,0 +1,48 @@
+[
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "compound": {
+      "name": "Metformin",
+      "uid": "Compound_000001"
+    },
+    "definition": "Some typical generic Metformin",
+    "endDate": null,
+    "isPreferredSynonym": false,
+    "libraryName": "Sponsor",
+    "name": "Generic Metformin",
+    "nameSentenceCase": "generic metformin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-06-30T11:33:00.889616",
+    "status": "Final",
+    "uid": "CompoundAlias_000002",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "compound": {
+      "name": "Metformin",
+      "uid": "Compound_000001"
+    },
+    "definition": "A better drug based on Metformin",
+    "endDate": null,
+    "isPreferredSynonym": false,
+    "libraryName": "Sponsor",
+    "name": "Improved Metformin",
+    "nameSentenceCase": "improved metformin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-06-30T11:34:28.037772",
+    "status": "Final",
+    "uid": "CompoundAlias_000001",
+    "userInitials": "unknown-user",
+    "version": "2.0"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "brandName": null,
+    "clinicalProgramme": {
+      "name": "CDISC Development programme",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Project to be used for test of CDISC implementation, e.g. SDTM, ADAM",
+    "name": "CDISC Dev",
+    "projectNumber": "CDISC DEV",
+    "uid": "Project_000001"
+  },
+  {
+    "brandName": null,
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000002"
+    },
+    "description": "Project used for devices and other trials in insulin & devices.",
+    "name": "INS",
+    "projectNumber": "INS",
+    "uid": "Project_000002"
+  },
+  {
+    "brandName": "Levemir\u00ae",
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000002"
+    },
+    "description": "Insulin Detemir Levemir",
+    "name": "Insulin Detemir",
+    "projectNumber": "NN304",
+    "uid": "Project_000003"
+  },
+  {
+    "brandName": null,
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000003"
+    },
+    "description": "Cardio vascular outcome trial Semaglutide-Obesity",
+    "name": "CVOT Sema-Obesity",
+    "projectNumber": "EX9536",
+    "uid": "Project_000004"
+  },
+  {
+    "brandName": null,
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Semaglutide obesity - To develop semaglutide for the treatment of obesity by finding the semaglutide dose with the optimal benefit-risk and provide access to patients and providers with a convenient easy to use presentation",
+    "name": "Semaglutide obesity",
+    "projectNumber": "NN9536",
+    "uid": "Project_000005"
+  }
+]

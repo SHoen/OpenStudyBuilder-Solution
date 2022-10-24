@@ -1,0 +1,310 @@
+[
+  {
+    "activitySubGroups": [],
+    "aliases": [],
+    "changeDescription": "Initial version",
+    "comment": "",
+    "descriptions": [
+      {
+        "description": "Informed Consent item group",
+        "instruction": "Please complete the Informed Consent item group  before any other information",
+        "language": "ENG",
+        "name": "Informed Consent",
+        "sponsorInstruction": "",
+        "uid": "OdmDescription_000007",
+        "version": "0.1"
+      }
+    ],
+    "endDate": null,
+    "isReferenceData": "No",
+    "items": [],
+    "libraryName": "Sponsor",
+    "name": "Informed Consent",
+    "oid": "G.DM.IC",
+    "origin": "Collected Value",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "purpose": "Tabulation",
+    "repeating": "No",
+    "sasDatasetName": "DEMOG",
+    "sdtmDomains": [
+      {
+        "codeSubmissionValue": "DM",
+        "preferredTerm": "Demographics Domain",
+        "uid": "C49572_DM"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:44.587035",
+    "status": "Draft",
+    "uid": "OdmItemGroup_000001",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  },
+  {
+    "activitySubGroups": [],
+    "aliases": [],
+    "changeDescription": "Initial version",
+    "comment": "",
+    "descriptions": [
+      {
+        "description": "General Demographic item group",
+        "instruction": "Please complete this General Demographic item group  at the very beginning of the study",
+        "language": "ENG",
+        "name": "General Demography ",
+        "sponsorInstruction": "",
+        "uid": "OdmDescription_000008",
+        "version": "0.1"
+      }
+    ],
+    "endDate": null,
+    "isReferenceData": "No",
+    "items": [],
+    "libraryName": "Sponsor",
+    "name": "General Demography ",
+    "oid": "G.DM.DM",
+    "origin": "Collected Value",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "purpose": "Tabulation",
+    "repeating": "No",
+    "sasDatasetName": "DEMOG",
+    "sdtmDomains": [
+      {
+        "codeSubmissionValue": "DM",
+        "preferredTerm": "Demographics Domain",
+        "uid": "C49572_DM"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:45.129403",
+    "status": "Draft",
+    "uid": "OdmItemGroup_000002",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  },
+  {
+    "activitySubGroups": [],
+    "aliases": [],
+    "changeDescription": "Initial version",
+    "comment": "",
+    "descriptions": [
+      {
+        "description": "Any conditions / illnesses ?",
+        "instruction": "Please state if there was any conditions / Illnesses",
+        "language": "ENG",
+        "name": "Any conditions / illnesses",
+        "sponsorInstruction": "",
+        "uid": "OdmDescription_000009",
+        "version": "0.1"
+      }
+    ],
+    "endDate": null,
+    "isReferenceData": "No",
+    "items": [],
+    "libraryName": "Sponsor",
+    "name": "Any conditions / illnesses",
+    "oid": "G.MH.NS",
+    "origin": "Collected Value",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "purpose": "Tabulation",
+    "repeating": "No",
+    "sasDatasetName": "MEDHIS",
+    "sdtmDomains": [
+      {
+        "codeSubmissionValue": "MH",
+        "preferredTerm": "Medical History Domain",
+        "uid": "C49603_MH"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:45.392687",
+    "status": "Draft",
+    "uid": "OdmItemGroup_000003",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  },
+  {
+    "activitySubGroups": [],
+    "aliases": [],
+    "changeDescription": "Initial version",
+    "comment": "",
+    "descriptions": [
+      {
+        "description": "Medical History item group",
+        "instruction": "Please complete this Medical History item group before starting the treatment",
+        "language": "ENG",
+        "name": "Medical History / Concomitant Illness",
+        "sponsorInstruction": "",
+        "uid": "OdmDescription_000010",
+        "version": "0.1"
+      }
+    ],
+    "endDate": null,
+    "isReferenceData": "No",
+    "items": [],
+    "libraryName": "Sponsor",
+    "name": "Medical History / Concomitant Illness",
+    "oid": "G.MH.CM",
+    "origin": "Collected Value",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "purpose": "Tabulation",
+    "repeating": "Yes",
+    "sasDatasetName": "MEDHIS",
+    "sdtmDomains": [
+      {
+        "codeSubmissionValue": "MH",
+        "preferredTerm": "Medical History Domain",
+        "uid": "C49603_MH"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:45.680232",
+    "status": "Draft",
+    "uid": "OdmItemGroup_000004",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  },
+  {
+    "activitySubGroups": [],
+    "aliases": [],
+    "changeDescription": "Initial version",
+    "comment": "",
+    "descriptions": [
+      {
+        "description": "Vital signs",
+        "instruction": "Please complete the Vital Signs item group at each expected time point",
+        "language": "ENG",
+        "name": "Vital Signs",
+        "sponsorInstruction": "",
+        "uid": "OdmDescription_000011",
+        "version": "0.1"
+      }
+    ],
+    "endDate": null,
+    "isReferenceData": "No",
+    "items": [],
+    "libraryName": "Sponsor",
+    "name": "Vital Signs",
+    "oid": "G.VS.VS",
+    "origin": "Collected Value",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "purpose": "Tabulation",
+    "repeating": "Yes",
+    "sasDatasetName": "VITALSIGNS",
+    "sdtmDomains": [
+      {
+        "codeSubmissionValue": "VS",
+        "preferredTerm": "Vital Signs Domain",
+        "uid": "C49622_VS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:45.965721",
+    "status": "Draft",
+    "uid": "OdmItemGroup_000005",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  },
+  {
+    "activitySubGroups": [],
+    "aliases": [],
+    "changeDescription": "Initial version",
+    "comment": "",
+    "descriptions": [
+      {
+        "description": "Blood pressure and pulse",
+        "instruction": "Please complete the Blood pressure and Pulse item group at each expected time point",
+        "language": "ENG",
+        "name": "Blood pressure and pulse",
+        "sponsorInstruction": "",
+        "uid": "OdmDescription_000012",
+        "version": "0.1"
+      }
+    ],
+    "endDate": null,
+    "isReferenceData": "No",
+    "items": [],
+    "libraryName": "Sponsor",
+    "name": "Blood pressure and pulse",
+    "oid": "G.VS.BPP",
+    "origin": "Collected Value",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "purpose": "Tabulation",
+    "repeating": "No",
+    "sasDatasetName": "VITALSIGNSBPP",
+    "sdtmDomains": [
+      {
+        "codeSubmissionValue": "VS",
+        "preferredTerm": "Vital Signs Domain",
+        "uid": "C49622_VS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:46.293710",
+    "status": "Draft",
+    "uid": "OdmItemGroup_000006",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  },
+  {
+    "activitySubGroups": [],
+    "aliases": [],
+    "changeDescription": "Initial version",
+    "comment": "",
+    "descriptions": [
+      {
+        "description": "ECG Test Results",
+        "instruction": "Please complete the ECG Test Results item group at each expected time point",
+        "language": "ENG",
+        "name": "Is teh ECG",
+        "sponsorInstruction": "",
+        "uid": "OdmDescription_000013",
+        "version": "0.1"
+      }
+    ],
+    "endDate": null,
+    "isReferenceData": "No",
+    "items": [],
+    "libraryName": "Sponsor",
+    "name": "Is teh ECG",
+    "oid": "G.EG.ECGSTATUS",
+    "origin": "Collected Value",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "purpose": "Tabulation",
+    "repeating": "No",
+    "sasDatasetName": "ECGSTATUS",
+    "sdtmDomains": [
+      {
+        "codeSubmissionValue": "EG",
+        "preferredTerm": "Electrocardiogram Domain",
+        "uid": "C49626_EG"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:46.536508",
+    "status": "Draft",
+    "uid": "OdmItemGroup_000007",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  }
+]

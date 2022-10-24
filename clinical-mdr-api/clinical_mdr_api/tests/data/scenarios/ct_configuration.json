@@ -1,0 +1,1523 @@
+[
+  {
+    "name": "Test empty list (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": []
+    }
+  },
+  {
+    "name": "Test adding",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab"
+      },
+      "url": "/configurations"
+    },
+    "response": {
+      "save": {
+        "uid": "uid"
+      },
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "CodelistConfig_000001",
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "changeDescription": "Initial version",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get all (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "uid": "CodelistConfig_000001",
+          "userInitials": "TEST_USER",
+          "studyFieldName": "unit1",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "0.1",
+          "changeDescription": "Initial version",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test delete success",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test empty list",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": []
+    }
+  },
+  {
+    "name": "Test adding",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab"
+      },
+      "url": "/configurations"
+    },
+    "response": {
+      "save": {
+        "uid": "uid",
+        "startDateOfV0_1": "startDate"
+      },
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test retire draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/inactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/reactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test new-version draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/new-version"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test get all",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "userInitials": "TEST_USER",
+          "studyFieldName": "unit1",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "0.1",
+          "changeDescription": "Initial version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Draft)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Draft"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=0.1"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (atSpecifiedDate=startDateOfV0_1) (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?atSpecifiedDate={startDateOfV0_1}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Final"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.2) (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=0.2"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Retired)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Retired"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test patch",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version",
+        "studyFieldName": "unit1-patched"
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "save": {
+        "startDateOfV0_2": "startDate"
+      },
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get all",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "userInitials": "TEST_USER",
+          "studyFieldName": "unit1-patched",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "0.2",
+          "changeDescription": "Patched version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Draft)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Draft"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.2) (2)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=0.2"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (atSpecifiedDate=startDateOfV0_2)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?atSpecifiedDate={startDateOfV0_2}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.2",
+        "changeDescription": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=0.1"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "0.1",
+        "changeDescription": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Final"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Retired)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Retired"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test approve",
+    "request": {
+      "headers": {
+        "X-TEST-USER-ID": "Approver"
+      },
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/approve"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "userInitials": "Approver",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "changeDescription": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get all (after approval)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "userInitials": "Approver",
+          "studyFieldName": "unit1-patched",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test get by uid (after approval)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "Approver",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "changeDescription": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get by uid (after approval, status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Final"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "Approver",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "changeDescription": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get by uid (after approval, version=1.0)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=1.0"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "userInitials": "Approver",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "changeDescription": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test approve final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/approve"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/reactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch final fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version 2 (failed)",
+        "studyFieldName": "unit1-patched-fail",
+        "unitDimension": "unit1-dimension-patched-fail",
+        "legacyCode": "unit1-legacy-code-patched-fail"
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete final fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test inactivate",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/inactivate"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "userInitials": "TEST_USER",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Retired",
+        "version": "1.0",
+        "changeDescription": "Deactivated version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test retire retired fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/inactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test new-version on retired fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/new-version"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test approve retired fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/approve"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch retired fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version 2 (failed)",
+        "studyFieldName": "unit1-patched-fail",
+        "unitDimension": "unit1-dimension-patched-fail",
+        "legacyCode": "unit1-legacy-code-patched-fail"
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete retired fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate",
+    "request": {
+      "headers": {
+        "X-TEST-USER-ID": "Reactiver"
+      },
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/reactivate"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "userInitials": "Reactiver",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Final",
+        "version": "1.0",
+        "changeDescription": "Reactivated version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test approve final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/approve"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/reactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch final fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version 2 (failed)",
+        "studyFieldName": "unit1-patched-fail",
+        "unitDimension": "unit1-dimension-patched-fail",
+        "legacyCode": "unit1-legacy-code-patched-fail"
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete final fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test new-version",
+    "request": {
+      "headers": {
+        "X-TEST-USER-ID": "Anonymous"
+      },
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/new-version"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "userInitials": "Anonymous",
+        "studyFieldName": "unit1-patched",
+        "studyFieldGrouping": "sbtab",
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "status": "Draft",
+        "version": "1.1",
+        "changeDescription": "New draft created",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test retire draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/inactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/reactivate"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test new-version draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/new-version"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete draft that had been accepted fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch next major version",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "changeDescription": "Patched version 2",
+        "studyFieldName": "unit1-patched-2"
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "userInitials": "TEST_USER",
+        "changeDescription": "Patched version 2",
+        "studyFieldGrouping": "sbtab",
+        "status": "Draft",
+        "version": "1.2",
+        "studyFieldName": "unit1-patched-2",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "userInitials": "TEST_USER",
+        "changeDescription": "Patched version 2",
+        "studyFieldGrouping": "sbtab",
+        "status": "Draft",
+        "version": "1.2",
+        "studyFieldName": "unit1-patched-2",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Final"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "startDate": "2021-04-03T17:39:29.387415",
+        "endDate": null,
+        "userInitials": "Reactiver",
+        "changeDescription": "Reactivated version",
+        "studyFieldGrouping": "sbtab",
+        "status": "Final",
+        "version": "1.0",
+        "studyFieldName": "unit1-patched",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "studyFieldDataType": null,
+        "studyFieldNullValueCode": null,
+        "configuredCodelistUid": null,
+        "configuredTermUid": null,
+        "studyFieldNameProperty": null,
+        "studyFieldNameApi": null
+      }
+    }
+  },
+  {
+    "name": "Test get versions",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}/versions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "userInitials": "TEST_USER",
+          "studyFieldName": "unit1-patched-2",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "1.2",
+          "changeDescription": "Patched version 2",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        },
+        {
+          "userInitials": "Anonymous",
+          "studyFieldName": "unit1-patched",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "1.1",
+          "changeDescription": "New draft created",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        },
+        {
+          "userInitials": "Reactiver",
+          "studyFieldName": "unit1-patched",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Reactivated version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        },
+        {
+          "userInitials": "TEST_USER",
+          "studyFieldName": "unit1-patched",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Retired",
+          "version": "1.0",
+          "changeDescription": "Deactivated version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        },
+        {
+          "userInitials": "Approver",
+          "studyFieldName": "unit1-patched",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        },
+        {
+          "userInitials": "TEST_USER",
+          "studyFieldName": "unit1-patched",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "0.2",
+          "changeDescription": "Patched version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        },
+        {
+          "userInitials": "TEST_USER",
+          "studyFieldName": "unit1",
+          "studyFieldGrouping": "sbtab",
+          "startDate": "2021-04-03T17:39:29.387415",
+          "endDate": null,
+          "status": "Draft",
+          "version": "0.1",
+          "changeDescription": "Initial version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "studyFieldDataType": null,
+          "studyFieldNullValueCode": null,
+          "configuredCodelistUid": null,
+          "configuredTermUid": null,
+          "studyFieldNameProperty": null,
+          "studyFieldNameApi": null
+        }
+      ]
+    }
+  }
+]

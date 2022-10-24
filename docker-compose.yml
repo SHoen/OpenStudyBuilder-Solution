@@ -1,0 +1,80 @@
+version: "3.9"
+services:
+  database:
+    build: 
+      context: ./
+      dockerfile: databasedockerfile
+    container_name: database
+    environment:
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+      - NEO4J_dbms_memory_heap_max__size=500m
+      - NEO4J_dbms_memory_pagecache_size=500m
+      - NEO4J_dbms_connector_http_enabled=true
+      - NEO4J_dbms_connector_http_listen__address=:5001
+      - NEO4J_dbms_connector_http_advertised__address=localhost:5001
+      - NEO4J_dbms_connector_https_enabled=false
+      - NEO4J_dbms_connector_bolt_enabled=true
+      - NEO4J_dbms_connector_bolt_listen__address=:5002
+      - NEO4J_dbms_connector_bolt_advertised__address=localhost:5002
+      - NEO4JLABS_PLUGINS=["apoc"]
+    ports:
+      - "5001:5001"
+      - "5002:5002"
+
+  api:
+    build: 
+      context: ./
+      dockerfile: apidockerfile
+    container_name: api
+    restart: always
+    environment:
+      - NEO4J_DSN=bolt://neo4j:changeme1234@database:5002
+      - NEO4J_DATABASE=mdrdb
+      - OAUTH_ENABLED=False
+      - ALLOW_ORIGIN_REGEX=.*
+      - TENANT_ID=abc
+      - SERVER_ID=abc
+      - SCOPE=abc
+      - SWAGGER_CLIENT_ID=abc
+      - AUTHORIZE_URL=abc
+      - TOKEN_URL=abc
+      - TOKEN_ISSUER=abc
+      - OIDC_METADATA_DOCUMENT=abc
+      - SERVER_AUDIENCE=abc
+      - USER_ID_CLAIM=abc
+    ports:
+      - "5003:5003"
+    depends_on:
+      - "database"
+
+  frontend:
+    build: 
+      context: ./
+      dockerfile: frontenddockerfile
+    container_name: frontend
+    ports:
+      - "5005:5005"
+    depends_on:
+      - "api"
+      - "documentation"
+
+  documentation:
+    build: 
+      context: ./
+      dockerfile: documentationdockerfile
+    container_name: documentation
+    ports:
+      - "5006:5006"
+
+  sonarqube:
+    build: 
+      context: ./
+      dockerfile: sonarqubedockerfile
+      args:
+        sonarversion: community
+    container_name: sonarqube
+    profiles: ["sonarqube"]
+    ports:
+      - "9000:9000"
+    depends_on:
+      - "frontend"

@@ -1,0 +1,32 @@
+[
+  {
+    "abbreviation": null,
+    "activityGroups": [
+      {
+        "name": "Compliance",
+        "uid": "ActivityGroup_000002"
+      }
+    ],
+    "activitySubGroups": [
+      {
+        "name": "GeneralCompliance",
+        "uid": "ActivitySubGroup_000035"
+      }
+    ],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "libraryName": "Sponsor",
+    "name": "Visit compliance",
+    "nameSentenceCase": "Visit compliance",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-06-08T06:43:46.940165",
+    "status": "Final",
+    "uid": "Activity_000961",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  }
+]

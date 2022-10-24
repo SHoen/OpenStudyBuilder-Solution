@@ -1,0 +1,199 @@
+[
+    {
+        "name": "Test GET codelist attributes proper etag returned ",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root1/attributes"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "etag": "W/\"ct_codelist_root1_2020-06-26 00:00:00\"",
+                "traceresponse": "00-00000000000000000000000000000000-0000000000000000-00",
+                "content-length": "100",
+                "content-type": "application/json"
+            },
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root1",
+                "parentCodelistUid": null,
+                "childCodelistUids": [],
+                "name": "codelist attributes value1",
+                "submissionValue": "codelist submission value1",
+                "nciPreferredName": "codelist preferred term",
+                "definition": "codelist definition",
+                "extensible": false,
+                "libraryName": "Sponsor",
+                "startDate": "2021-03-18T11:54:20.898Z",
+                "endDate": null,
+                "status": "Final",
+                "version": "1.0",
+                "changeDescription": "Approved version",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test GET codelist name proper etag returned ",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root1/names"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "etag": "W/\"ct_codelist_root1_2020-06-26 00:00:00\"",
+                "traceresponse": "00-00000000000000000000000000000000-0000000000000000-00",
+                "content-length": "100",
+                "content-type": "application/json"
+            },
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root1",
+                "name": "tp_codelist_name_value",
+                "templateParameter": true,
+                "libraryName": "Sponsor",
+                "startDate": "2021-03-18T11:54:20.898Z",
+                "endDate": null,
+                "status": "Final",
+                "version": "1.0",
+                "changeDescription": "Approved version",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test add term to a codelist returns 412 with non valid etag",
+        "request": {
+            "headers": {
+                "if-match": "W/\"ct_codelist_root1_non_valid_ct_codelist_root1_non_valid\"",
+                "content-length": "100",
+                "content-type": "application/json"
+            },
+            "method": "POST",
+            "request": {
+                "termUid": "ct_term_root1",
+                "order": 1
+            },
+            "url": "/ct/codelists/ct_codelist_root1/add-term"
+        },
+        "response": {
+            "code": 412,
+            "result": {
+                "message": "412",
+                "method": "POST",
+                "path": "http://testserver/ct/codelists/ct_codelist_root1/add-term",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "PreconditionFailed"
+            }
+        }
+    },
+    {
+        "name": "Test add term to a codelist returns 201 valid etag passed",
+        "request": {
+            "headers": {
+                "if-match": "W/\"ct_codelist_root1_2020-06-26 00:00:00_ct_codelist_root1_2020-06-26 00:00:00\"",
+                "content-length": "100",
+                "content-type": "application/json"
+            },
+            "method": "POST",
+            "request": {
+                "termUid": "ct_term_root1",
+                "order": 1
+            },
+            "url": "/ct/codelists/ct_codelist_root1/add-term"
+        },
+        "response": {
+            "code": 201,
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root1",
+                "parentCodelistUid": null,
+                "childCodelistUids": [],
+                "name": "codelist attributes value1",
+                "submissionValue": "codelist submission value1",
+                "nciPreferredName": "codelist preferred term",
+                "definition": "codelist definition",
+                "extensible": false,
+                "sponsorPreferredName": "tp_codelist_name_value",
+                "templateParameter": true,
+                "libraryName": "Sponsor",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test remove term from a codelist returns 412 with non valid etag",
+        "request": {
+            "headers": {
+                "if-match": "W/\"ct_codelist_root1_non_valid_ct_codelist_root1_non_valid\"",
+                "content-length": "100",
+                "content-type": "application/json"
+            },
+            "method": "POST",
+            "request": {
+                "termUid": "ct_term_root1",
+                "order": 1
+            },
+            "url": "/ct/codelists/ct_codelist_root1/remove-term"
+        },
+        "response": {
+            "code": 412,
+            "result": {
+                "message": "412",
+                "method": "POST",
+                "path": "http://testserver/ct/codelists/ct_codelist_root1/remove-term",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "PreconditionFailed"
+            }
+        }
+    },
+    {
+        "name": "Test remove term from a codelist returns 201 valid etag passed",
+        "request": {
+            "headers": {
+                "if-match": "W/\"ct_codelist_root1_2020-06-26 00:00:00_ct_codelist_root1_2020-06-26 00:00:00\"",
+                "content-length": "100",
+                "content-type": "application/json"
+            },
+            "method": "POST",
+            "request": {
+                "termUid": "ct_term_root1",
+                "order": 1
+            },
+            "url": "/ct/codelists/ct_codelist_root1/remove-term"
+        },
+        "response": {
+            "code": 201,
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root1",
+                "parentCodelistUid": null,
+                "childCodelistUids": [],
+                "name": "codelist attributes value1",
+                "submissionValue": "codelist submission value1",
+                "nciPreferredName": "codelist preferred term",
+                "definition": "codelist definition",
+                "extensible": false,
+                "sponsorPreferredName": "tp_codelist_name_value",
+                "templateParameter": true,
+                "libraryName": "Sponsor",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    }
+]

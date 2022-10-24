@@ -1,0 +1,51 @@
+[project]
+name = 'clinical-mdr-api'
+readme = 'README.md'
+requires-python = '3.7'
+license = 'TBD'
+authors = [
+    {name = 'Novo Nordisk', email = 'mt@novonordisk.com'}
+]
+
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta:__legacy__"
+
+[project.urls]
+homepage = 'https://gitlab.com/Novo-Nordisk/nn-public/openstudybuilder'
+
+[tool.isort]
+profile = 'black'
+src_paths = ['clinical_mdr_api']
+skip = ['clinical_mdr_api/models/__init__.py']
+
+[tool.pylint.'MASTER']
+extension-pkg-allow-list = 'pydantic'
+unsafe-load-any-extension = 'yes'
+generated-members = '(.*)\.nodes\.(.*),(.*)\.connect$,(.*)\.__label__$,(.*)\.filter$,(.*)\.single$,_member_map_,.*.has_.*,ParameterTemplateRoot\.get,RelationshipDefinition\.get_or_none'
+
+[tool.pylint.'MESSAGES CONTROL']
+# Temporarily disabling trivial warnings
+disable = 'missing-function-docstring,missing-class-docstring,missing-module-docstring,fixme,invalid-name,global-statement,import-outside-toplevel,pointless-string-statement,protected-access,too-few-public-methods,too-many-ancestors,too-many-function-args,arguments-differ,cell-var-from-loop,super-init-not-called,cyclic-import'
+
+[tool.pylint.'FORMAT']
+max-line-length = 150
+max-module-lines = 4300
+
+[tool.pylint.'BASIC']
+good-names = 'i,j,k,ex,Run,_,e'
+
+[tool.pylint.'DESIGN']
+max-args = 30
+max-attributes = 85
+max-branches = 43
+max-locals = 46
+max-public-methods = 81
+max-returns = 9
+max-statements = 98
+
+[tool.pylint.'REFACTORING']
+max-nested-blocks = 10
+
+[tool.pylint.'SIMILARITIES']
+min-similarity-lines = 1000

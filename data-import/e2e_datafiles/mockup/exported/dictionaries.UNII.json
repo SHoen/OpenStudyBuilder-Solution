@@ -1,0 +1,59 @@
+[
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "9100L32L2N",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "METFORMIN",
+    "nameSentenceCase": "metformin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-09-20T10:53:23.919167",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000918",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "362O9ITL9D",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "PARACETAMOL",
+    "nameSentenceCase": "paracetamol",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-09-20T10:53:23.817292",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000917",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "1Y17CTI5SR",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN HUMAN",
+    "nameSentenceCase": "insulin human",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-09-20T10:53:23.687130",
+    "status": "Final",
+    "termUid": "DictionaryTerm_000916",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  }
+]

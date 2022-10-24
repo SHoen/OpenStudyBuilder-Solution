@@ -1,0 +1,1002 @@
+[
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Insulin Aspart. Fast acting Insulin. Novo Rapid. Same as project IASP.",
+    "name": "ANA",
+    "projectNumber": "ANA",
+    "uid": "Project_000001"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Biphasic Insulin Aspart",
+    "name": "Biphasic Insulin Asp",
+    "projectNumber": "BIASP",
+    "uid": "Project_000002"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "CDISC Development programme",
+      "uid": "ClinicalProgramme_000002"
+    },
+    "description": "Project to be used for test of CDISC implementation, e.g. SDTM, ADAM",
+    "name": "CDISC Dev",
+    "projectNumber": "CDISC DEV",
+    "uid": "Project_000003"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Diabetes",
+      "uid": "ClinicalProgramme_000003"
+    },
+    "description": "Digital health. Improving peoples treatment and health with insights from personal data.",
+    "name": "DH3366",
+    "projectNumber": "DH3366",
+    "uid": "Project_000004"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "DV3399",
+    "name": "DV3399",
+    "projectNumber": "DV3399",
+    "uid": "Project_000005"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Future Insulin",
+      "uid": "ClinicalProgramme_000005"
+    },
+    "description": "Degludec cardiovascular outcome trial",
+    "name": "Degludec CVOT",
+    "projectNumber": "EX1250",
+    "uid": "Project_000006"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": null,
+    "name": "Insulin Det(NN729)",
+    "projectNumber": "EX1729",
+    "uid": "Project_000007"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Growth Hormone",
+      "uid": "ClinicalProgramme_000006"
+    },
+    "description": "Norditropin (active ingredient: Somatropin [recombinant human GH])developed to treat different growth disorders in children and replacement therapy in adults. The product is in life cycle management.",
+    "name": "EX2010",
+    "projectNumber": "EX2010",
+    "uid": "Project_000008"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Growth Hormone",
+      "uid": "ClinicalProgramme_000006"
+    },
+    "description": "Macimorelin (trade name Macrilen)",
+    "name": "Macimorelin",
+    "projectNumber": "EX2020",
+    "uid": "Project_000009"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Determine the long-term safety of Victoza in terms of cardiovascular end-points and additional safety parameters in adults with type 2 diabetes. To accomodate post-approval commitments to regulatory authorities by ruling out CV risk and possibly show CV benefit of Victoza. Further end-points of the study are pancreatitis, thyroid-events and other neoplasms.",
+    "name": "LEADER",
+    "projectNumber": "EX2211",
+    "uid": "Project_000010"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Chronic Kidney Disease",
+      "uid": "ClinicalProgramme_000007"
+    },
+    "description": "Project code for ziltivekimab, an anti-interleukin-6 ligand monoclonal antibody (anti-IL6 mAb), targeting residual inflammatory cardiovascular risk in patients living with advanced chronic kidney disease.",
+    "name": "EX6018",
+    "projectNumber": "EX6018",
+    "uid": "Project_000011"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Cardio vascular outcome trial for GLP-1 analogue Semaglutide for once weekly administration",
+    "name": "OW GLP-1 CVOT",
+    "projectNumber": "EX9535",
+    "uid": "Project_000012"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Cardio vascular outcome trial Semaglutide-Obesity",
+    "name": "CVOT Sema-Obesity",
+    "projectNumber": "EX9536",
+    "uid": "Project_000013"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Semaglutide effects on long term cardiovascular outcomes in oral formulation",
+    "name": "EX9924",
+    "projectNumber": "EX9924",
+    "uid": "Project_000014"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Insulin Aspart. Fast acting Insulin. Novo Rapid.",
+    "name": "IAsp",
+    "projectNumber": "IASP",
+    "uid": "Project_000015"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Project used for devices and other trials in insulin & devices.",
+    "name": "INS",
+    "projectNumber": "INS",
+    "uid": "Project_000016"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Future Insulin",
+      "uid": "ClinicalProgramme_000005"
+    },
+    "description": "Combination of insulin aspart and insulin degludec 200 U/ml with the same excipients as DegludecPlus 100 U/ml",
+    "name": "DegludecPlus U200",
+    "projectNumber": "NN1045",
+    "uid": "Project_000017"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Future Insulin",
+      "uid": "ClinicalProgramme_000005"
+    },
+    "description": "New formulation of IDegAsp. IDegASp 15 consists of 85 pct IDEG and 15 pct IDegAsp",
+    "name": "IDegAsp 15",
+    "projectNumber": "NN1050",
+    "uid": "Project_000018"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Diabetes",
+      "uid": "ClinicalProgramme_000003"
+    },
+    "description": "Insulin-PCSK9i",
+    "name": "NN1147",
+    "projectNumber": "NN1147",
+    "uid": "Project_000019"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Future Insulin",
+      "uid": "ClinicalProgramme_000005"
+    },
+    "description": "Fiasp U200",
+    "name": "NN1200",
+    "projectNumber": "NN1200",
+    "uid": "Project_000020"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Provide the most flexible, safe and convenient fast-acting insulin for improvement of metabolic control",
+    "name": "FIA",
+    "projectNumber": "NN1218",
+    "uid": "Project_000021"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Future Insulin",
+      "uid": "ClinicalProgramme_000005"
+    },
+    "description": "SIBA once daily basal insulin for add on to OAD(s) and for basal/bolus in type 1 and type 2 diabetes.",
+    "name": "SIBA",
+    "projectNumber": "NN1250",
+    "uid": "Project_000022"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "NNC0143-0406 - A liver-preferential prandial insulin analogue",
+    "name": "NN1406",
+    "projectNumber": "NN1406",
+    "uid": "Project_000023"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "NN1434 - A subcutaneous long acting Insulin (NNC0259-0134)",
+    "name": "NN1434",
+    "projectNumber": "NN1434",
+    "uid": "Project_000024"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Once weekly administration of insulin",
+    "name": "NN1436",
+    "projectNumber": "NN1436",
+    "uid": "Project_000025"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "NN1438",
+    "name": "NN1438",
+    "projectNumber": "NN1438",
+    "uid": "Project_000026"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Future Insulin",
+      "uid": "ClinicalProgramme_000005"
+    },
+    "description": "NN1471\n\nSubstance number: NNC0471-0119\n\nNickname: Ideal Pump Insulin",
+    "name": "NN1471",
+    "projectNumber": "NN1471",
+    "uid": "Project_000027"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Ins338/SOMA",
+    "name": "Ins338/SOMA",
+    "projectNumber": "NN1495",
+    "uid": "Project_000028"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Diabetes",
+      "uid": "ClinicalProgramme_000003"
+    },
+    "description": "LAISema (Long Acting Insulin and Semaglutide)",
+    "name": "NN1535",
+    "projectNumber": "NN1535",
+    "uid": "Project_000029"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "GSI - T1DM",
+    "name": "NN1845",
+    "projectNumber": "NN1845",
+    "uid": "Project_000030"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Oral formulation of insulin 338",
+    "name": "GIItwo",
+    "projectNumber": "NN1953",
+    "uid": "Project_000031"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "GIIthree",
+    "name": "GIIthree",
+    "projectNumber": "NN1954",
+    "uid": "Project_000032"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Oral formulation of insulin 287",
+    "name": "NN1956",
+    "projectNumber": "NN1956",
+    "uid": "Project_000033"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Long-acting insulin analogue for the treatment of diabetes mellitus, with primary focus on subjects with type 2 diabetes",
+    "name": "LAI320",
+    "projectNumber": "NN1957",
+    "uid": "Project_000034"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Future Insulin",
+      "uid": "ClinicalProgramme_000005"
+    },
+    "description": "Functionally Selective Insulin",
+    "name": "NN1965",
+    "projectNumber": "NN1965",
+    "uid": "Project_000035"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Liraglutide is a once-daily human GLP-1 analogue that provides easy, effective and safe control of diabetes. Liraglutide helps patients to control weight and to limit progression of their disease. Liraglutide will be the #1 value brand within diabetes.",
+    "name": "Liraglutide",
+    "projectNumber": "NN2211",
+    "uid": "Project_000036"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Insulin Detemir Levemir",
+    "name": "Insulin Detemir",
+    "projectNumber": "NN304",
+    "uid": "Project_000037"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Future Insulin",
+      "uid": "ClinicalProgramme_000005"
+    },
+    "description": "To develop SIAC for twice daily intensification and to replace NovoMix? when it goes off patent.",
+    "name": "SIAC",
+    "projectNumber": "NN5401",
+    "uid": "Project_000038"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Chronic Kidney Disease",
+      "uid": "ClinicalProgramme_000007"
+    },
+    "description": "Effect of ziltivekimab in Chinese patients with CKD",
+    "name": "NN6018",
+    "projectNumber": "NN6018",
+    "uid": "Project_000039"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Cardiovascular Disease",
+      "uid": "ClinicalProgramme_000009"
+    },
+    "description": "Investigational humanised monoclonal antibodies used for ATTR cardiomyopathy IV infusion and hATTR-FHD/MD",
+    "name": "NN6019",
+    "projectNumber": "NN6019",
+    "uid": "Project_000040"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "GLP-1/glucagon co-agonist Non-alcoholic steatohepatitis (NASH)",
+    "name": "NN6177",
+    "projectNumber": "NN6177",
+    "uid": "Project_000041"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Diabetes",
+      "uid": "ClinicalProgramme_000003"
+    },
+    "description": "PCSK9i peptide for subjects with hyperlipidaemia",
+    "name": "NN6434",
+    "projectNumber": "NN6434",
+    "uid": "Project_000042"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Diabetes",
+      "uid": "ClinicalProgramme_000003"
+    },
+    "description": "Oral PCSK9i peptide for subjects with hyperlipidaemia",
+    "name": "NN6435",
+    "projectNumber": "NN6435",
+    "uid": "Project_000043"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Cardiovascular Disease",
+      "uid": "ClinicalProgramme_000009"
+    },
+    "description": "The aspiration is to provide a once monthly SC inhibitor of ANGPTL3 to reduce triglycerides and LDL-C for cardiovascular risk reduction in patients with elevated triglycerides and established ASCVD or T2D with additional CV risk factors.",
+    "name": "NN6491",
+    "projectNumber": "NN6491",
+    "uid": "Project_000044"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Cognitive Impairment",
+      "uid": "ClinicalProgramme_000010"
+    },
+    "description": "Mild Cognitive Impairment (MCI). Substance is Semaglutide in Alzheimer?s disease.",
+    "name": "MCI",
+    "projectNumber": "NN6535",
+    "uid": "Project_000045"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "VAP-1 Inhibitor",
+      "uid": "ClinicalProgramme_000011"
+    },
+    "description": "Oral VAP-1 inhibitor for Non-alcoholic steatohepatitis (NASH)",
+    "name": "NN6560",
+    "projectNumber": "NN6560",
+    "uid": "Project_000046"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Non-Alcoholic Steatohepatitis",
+      "uid": "ClinicalProgramme_000012"
+    },
+    "description": "SiRNA targeting hepatic knock-down of MARC1 for treatment of NASH. Chemical Name NNC0581-000-0001",
+    "name": "NN6581",
+    "projectNumber": "NN6581",
+    "uid": "Project_000047"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Non-Alcoholic Steatohepatitis",
+      "uid": "ClinicalProgramme_000012"
+    },
+    "description": "SiRNA targeting hepatic knock-down of LXRa for treatment of NASH. Chemical Name NNC0582-000-0001",
+    "name": "NN6582",
+    "projectNumber": "NN6582",
+    "uid": "Project_000048"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Haemophilia",
+      "uid": "ClinicalProgramme_000013"
+    },
+    "description": "NovoEight",
+    "name": "NN7008",
+    "projectNumber": "NN7008",
+    "uid": "Project_000049"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Haemophilia",
+      "uid": "ClinicalProgramme_000013"
+    },
+    "description": "N9-GP\nTo improve treatment of haemophilia B patients by providing a longer-acting FIX variant useful for on-demand use as well as prophylaxis",
+    "name": "NN7088",
+    "projectNumber": "NN7088",
+    "uid": "Project_000050"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Haemophilia",
+      "uid": "ClinicalProgramme_000013"
+    },
+    "description": "N8-GP sc",
+    "name": "NN7170",
+    "projectNumber": "NN7170",
+    "uid": "Project_000051"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Haemophilia",
+      "uid": "ClinicalProgramme_000013"
+    },
+    "description": "Concizumab, a humanised mAb against the Kunitz 2 domain on TFPI, intended for bleeding prevention after sc administration in patients with haemophilia A and haemophilia with inhibitors.\nConcizumab an anti-TFPI antibody, TFPI - Tissue Factor Pathway Inhibitor, this gene encodes a protease inhibitor that regulates the tissue factor (TF)-dependent pathway of blood coagulation).",
+    "name": "Concizumab",
+    "projectNumber": "NN7415",
+    "uid": "Project_000052"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Sickle Cell Disease",
+      "uid": "ClinicalProgramme_000014"
+    },
+    "description": "Sickle cell disease. Nickname ASCENT. Substance is oral decitabine-tetrahydrouridine (EPI01)",
+    "name": "ASCENT",
+    "projectNumber": "NN7533",
+    "uid": "Project_000053"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Haemophilia",
+      "uid": "ClinicalProgramme_000013"
+    },
+    "description": "rFVIIa/NovoSeven\nThis project code covers trials in rFVIIa/NovoSeven life cycle management",
+    "name": "NN7711",
+    "projectNumber": "NN7711",
+    "uid": "Project_000054"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Haemophilia",
+      "uid": "ClinicalProgramme_000013"
+    },
+    "description": "Haemophilia",
+    "name": "NN7769",
+    "projectNumber": "NN7769",
+    "uid": "Project_000055"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Haemophilia",
+      "uid": "ClinicalProgramme_000013"
+    },
+    "description": "N8-GP improves the quality of life for haemophilia A patients by reducing the burden of frequent infusions, improving coverage and compliance",
+    "name": "NN7999",
+    "projectNumber": "NN7999",
+    "uid": "Project_000056"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Liraglutide for obese people or overweight people with co-morbidities such as diabetes, pre-diabetes, dyslipidemia and/or hypertension",
+    "name": "Liraglutide Obesity",
+    "projectNumber": "NN8022",
+    "uid": "Project_000057"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Rheumatoid arthritis",
+      "uid": "ClinicalProgramme_000015"
+    },
+    "description": "Establish NNC0109-0012, an immunotherapeutic with a novel MoA, as an offering with improved treatment outcomes in patients with rheumatoid arthritis and potentially other chronic inflammatory and autoimmune disorder",
+    "name": "Anti-IL-20",
+    "projectNumber": "NN8226",
+    "uid": "Project_000058"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Growth Hormone",
+      "uid": "ClinicalProgramme_000006"
+    },
+    "description": "Long-acting product making growth hormone treatment easier.",
+    "name": "Long-acting GH",
+    "projectNumber": "NN8640",
+    "uid": "Project_000059"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Haemophilia",
+      "uid": "ClinicalProgramme_000013"
+    },
+    "description": "Stem Cells-Parkinson",
+    "name": "NN9001",
+    "projectNumber": "NN9001",
+    "uid": "Project_000060"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Oral GLP-1 2023",
+    "name": "NN9023",
+    "projectNumber": "NN9023",
+    "uid": "Project_000061"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Glucagon Liraglutide Obesity",
+    "name": "Gluca Lira Obesity",
+    "projectNumber": "NN9030",
+    "uid": "Project_000062"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "DNA Immunotherapy",
+    "name": "NN9041",
+    "projectNumber": "NN9041",
+    "uid": "Project_000063"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Cholecystokinin 0056 obesity",
+    "name": "CCK obesity",
+    "projectNumber": "NN9056",
+    "uid": "Project_000064"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues and Insulins combi.",
+      "uid": "ClinicalProgramme_000016"
+    },
+    "description": "Insulin Degludec and Liraglutide combination (GIC B3)",
+    "name": "IDegLira",
+    "projectNumber": "NN9068",
+    "uid": "Project_000065"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Glucagon-Semaglutide",
+    "name": "NN9130",
+    "projectNumber": "NN9130",
+    "uid": "Project_000066"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "LATIN T1D, Liraglutide T1D",
+    "name": "LATIN T1D",
+    "projectNumber": "NN9211",
+    "uid": "Project_000067"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "MIC-1 Obesity",
+    "name": "MIC-1 Obesity",
+    "projectNumber": "NN9214",
+    "uid": "Project_000068"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "LA-GDF15 Obesity",
+    "name": "NN9215",
+    "projectNumber": "NN9215",
+    "uid": "Project_000069"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Liraglutide sustained release",
+    "name": "Lira Depot",
+    "projectNumber": "NN9223",
+    "uid": "Project_000070"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Provide a unique treatment that goes beyond glucose control and improves long-term outcomes for people with type 2 diabetes with a convenient once weekly injection.",
+    "name": "FGF21",
+    "projectNumber": "NN9230",
+    "uid": "Project_000071"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Single Dose escalation in Healthy subjects",
+    "name": "Lira Nasal",
+    "projectNumber": "NN9233",
+    "uid": "Project_000072"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Glucagon and GLP-1 co-agonist 1177 obesity",
+    "name": "Co-agonist 1177 obes",
+    "projectNumber": "NN9277",
+    "uid": "Project_000073"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Sponsor defined: NNC0113-2342 is a glucagon-like peptide 1 (GLP-1) receptor agonist in development for once-monthly subcutaneous administration with the goal of providing better and more convenient glycaemic control for patients with type 2 diabetes compared to current GLP-1 agonist treatment.",
+    "name": "QM GLP-1",
+    "projectNumber": "NN9342",
+    "uid": "Project_000074"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "GLP-1/GIP combination product \nGIP=Glucose-dependent Insulinotropic Peptide, or Gastric Inhibitory Polypeptide\nGLP-1=Glucagon-like peptide-1",
+    "name": "NN9389",
+    "projectNumber": "NN9389",
+    "uid": "Project_000075"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Glucagon+GLP-1+GIP triple agonist 1706 obesity\n\nGIP=Glucose-dependent Insulinotropic Peptide, or Gastric Inhibitory Polypeptide\nGLP-1=Glucagon-like peptide-1",
+    "name": "Tri-agonist 1706 obe",
+    "projectNumber": "NN9423",
+    "uid": "Project_000076"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Oral Amycretin for overweight or obesity",
+    "name": "NN9487",
+    "projectNumber": "NN9487",
+    "uid": "Project_000077"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Fibroblast Growth Factor 21 Obesity",
+    "name": "FGF21 Obesity",
+    "projectNumber": "NN9499",
+    "uid": "Project_000078"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "FGF21 NASH",
+    "name": "NN9500",
+    "projectNumber": "NN9500",
+    "uid": "Project_000079"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Non-API Oral Formulation",
+      "uid": "ClinicalProgramme_000017"
+    },
+    "description": "Oral formulation upgrade project focusing on enhancing the non-API part of the oral formulations.",
+    "name": "NN9501",
+    "projectNumber": "NN9501",
+    "uid": "Project_000080"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "HypoPen",
+    "name": "NN9513",
+    "projectNumber": "NN9513",
+    "uid": "Project_000081"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Protein UCN2 for Overweight / Obesity",
+    "name": "NN9518",
+    "projectNumber": "NN9518",
+    "uid": "Project_000082"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Once-monthly GLP-1.",
+    "name": "NN9520",
+    "projectNumber": "NN9520",
+    "uid": "Project_000083"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "To develop a best in class GLP-1 analogue suitable for once weekly administration.",
+    "name": "Once-weekly GLP-1",
+    "projectNumber": "NN9535",
+    "uid": "Project_000084"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Semaglutide obesity - To develop semaglutide for the treatment of obesity by finding the semaglutide dose with the optimal benefit-risk and provide access to patients and providers with a convenient easy to use presentation",
+    "name": "Semaglutide obesity",
+    "projectNumber": "NN9536",
+    "uid": "Project_000085"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Oral GLP1-GIP\n\nGIP=Glucose-dependent Insulinotropic Peptide, or Gastric Inhibitory Polypeptide\nGLP-1=Glucagon-like peptide-1",
+    "name": "NN9541",
+    "projectNumber": "NN9541",
+    "uid": "Project_000086"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Long acting PYY analogue for treatment of diabetes, obesity and for weight management",
+    "name": "PYY-1562 Obesity",
+    "projectNumber": "NN9747",
+    "uid": "Project_000087"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues and Insulins combi.",
+      "uid": "ClinicalProgramme_000016"
+    },
+    "description": "Long acting PYY analogue for treatment of diabetes",
+    "name": "NN9748",
+    "projectNumber": "NN9748",
+    "uid": "Project_000088"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "PYY1875 Obesity",
+    "name": "NN9775",
+    "projectNumber": "NN9775",
+    "uid": "Project_000089"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Modern Insulin",
+      "uid": "ClinicalProgramme_000001"
+    },
+    "description": "Anti-IL 21 (and liraglutide) - preservation of beta-cell function, NNC0114-0006.",
+    "name": "Anti-IL 21 in T1D",
+    "projectNumber": "NN9828",
+    "uid": "Project_000090"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "NNC0174-0833 is a dual and long acting amylin analogue with agonistic effects on both the amylin 40 receptor as well as on the calcitonin receptor. This receptor profile is speculated to enhance the 41 effect on weight management, and is different from that of pramlintide.",
+    "name": "Dual+long amylin ana",
+    "projectNumber": "NN9838",
+    "uid": "Project_000091"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "NNC0174-1213, (4HOAc) is an amylin analogue intended to be developed for weight management.",
+    "name": "Amylin analogue",
+    "projectNumber": "NN9839",
+    "uid": "Project_000092"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Once weekly oral GLP-1. Chemical Name NNC0113-6856.",
+    "name": "NN9904",
+    "projectNumber": "NN9904",
+    "uid": "Project_000093"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Fixed dose combination GLP-1/SGLT2i",
+    "name": "NN9917",
+    "projectNumber": "NN9917",
+    "uid": "Project_000094"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "GLP-1 SNAC",
+    "name": "GLP-1 SNAC",
+    "projectNumber": "NN9924",
+    "uid": "Project_000095"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "GLP-1 SG GIPET",
+    "name": "GLP-1 SG GIPET",
+    "projectNumber": "NN9926",
+    "uid": "Project_000096"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "NNC0113-0987 SNAC",
+    "name": "GLP1 987 SNAC",
+    "projectNumber": "NN9927",
+    "uid": "Project_000097"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Oral semaglutide with enhancer sodium caprate for the beneficial effects of GLP-1 on both glycaemic and body weight.",
+    "name": "Oral sema",
+    "projectNumber": "NN9928",
+    "uid": "Project_000098"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "GLP-1 analogues",
+      "uid": "ClinicalProgramme_000004"
+    },
+    "description": "Semaglutide Non-alcoholic steatohepatitis (NASH)",
+    "name": "NASH",
+    "projectNumber": "NN9931",
+    "uid": "Project_000099"
+  },
+  {
+    "clinicalProgramme": {
+      "name": "Obesity and NADs",
+      "uid": "ClinicalProgramme_000008"
+    },
+    "description": "Oral semaglutide in weight management",
+    "name": "NN9932",
+    "projectNumber": "NN9932",
+    "uid": "Project_000100"
+  }
+]

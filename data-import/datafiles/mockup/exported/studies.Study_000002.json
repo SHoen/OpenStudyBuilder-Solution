@@ -1,0 +1,168 @@
+{
+  "currentMetadata": {
+    "highLevelStudyDesign": {
+      "confirmedResponseMinimumDuration": null,
+      "confirmedResponseMinimumDurationNullValueCode": {
+        "name": "Not Applicable",
+        "termUid": "C48660_Not Applicable"
+      },
+      "isAdaptiveDesign": false,
+      "isAdaptiveDesignNullValueCode": null,
+      "isExtensionTrial": false,
+      "isExtensionTrialNullValueCode": null,
+      "postAuthIndicator": false,
+      "postAuthIndicatorNullValueCode": null,
+      "studyStopRules": "NONE",
+      "studyStopRulesNullValueCode": null,
+      "studyTypeCode": {
+        "name": "Interventional",
+        "termUid": "C98388_INTERVENTIONAL"
+      },
+      "studyTypeNullValueCode": null,
+      "trialPhaseCode": {
+        "name": "Phase III Trial",
+        "termUid": "C15602_PHASE III TRIAL"
+      },
+      "trialPhaseNullValueCode": null,
+      "trialTypesCodes": [
+        {
+          "name": "Efficacy Study",
+          "termUid": "C49666_EFFICACY"
+        },
+        {
+          "name": "Multi-centre",
+          "termUid": "CTTerm_000194"
+        },
+        {
+          "name": "Multi-national",
+          "termUid": "CTTerm_000195"
+        },
+        {
+          "name": "Safety Study",
+          "termUid": "C49667_SAFETY"
+        },
+        {
+          "name": "Treat-to-target",
+          "termUid": "CTTerm_000196"
+        },
+        {
+          "name": "Treatment",
+          "termUid": "C49656_TREATMENT"
+        }
+      ],
+      "trialTypesNullValueCode": null
+    },
+    "identificationMetadata": {
+      "clinicalProgrammeName": "CDISC Development programme",
+      "projectName": "CDISC Dev",
+      "projectNumber": "CDISC DEV",
+      "registryIdentifiers": {
+        "ctGovId": "NCT12345678",
+        "ctGovIdNullValueCode": null,
+        "eudractId": "2019-123456-42",
+        "eudractIdNullValueCode": null,
+        "investigationalNewDrugApplicationNumberIND": null,
+        "investigationalNewDrugApplicationNumberINDNullValueCode": null,
+        "japaneseTrialRegistryIdJAPIC": null,
+        "japaneseTrialRegistryIdJAPICNullValueCode": null,
+        "universalTrialNumberUTN": null,
+        "universalTrialNumberUTNNullValueCode": null
+      },
+      "studyAcronym": "CDISC360-2",
+      "studyId": "CDISC DEV-0",
+      "studyNumber": "0"
+    },
+    "studyDescription": {
+      "studyShortTitle": "A trial comparing cardiovascular safety of human insulin versus metformin in subjects with type 2 diabetes at high risk of cardiovascular events",
+      "studyTitle": "A trial comparing cardiovascular safety of human insulin versus metformin in subjects with type 2 diabetes at high risk of cardiovascular events"
+    },
+    "studyIntervention": {
+      "addOnToExistingTreatments": null,
+      "addOnToExistingTreatmentsNullValueCode": null,
+      "controlTypeCode": null,
+      "controlTypeNullValueCode": null,
+      "interventionModelCode": null,
+      "interventionModelNullValueCode": null,
+      "interventionTypeCode": null,
+      "interventionTypeNullValueCode": null,
+      "isTrialRandomised": null,
+      "isTrialRandomisedNullValueCode": null,
+      "plannedStudyLength": null,
+      "plannedStudyLengthNullValueCode": null,
+      "stratificationFactor": null,
+      "stratificationFactorNullValueCode": null,
+      "trialBlindingSchemaCode": null,
+      "trialBlindingSchemaNullValueCode": null,
+      "trialIntentTypesCodes": [],
+      "trialIntentTypesNullValueCode": null
+    },
+    "studyPopulation": {
+      "diagnosisGroupsCodes": [
+        {
+          "name": "Type 2 diabetes mellitus",
+          "termUid": "DictionaryTerm_000007"
+        }
+      ],
+      "diagnosisGroupsNullValueCode": null,
+      "diseaseConditionsOrIndicationsCodes": [
+        {
+          "name": "Type 2 diabetes mellitus",
+          "termUid": "DictionaryTerm_000007"
+        }
+      ],
+      "diseaseConditionsOrIndicationsNullValueCode": null,
+      "healthySubjectIndicator": null,
+      "healthySubjectIndicatorNullValueCode": null,
+      "numberOfExpectedSubjects": 120,
+      "numberOfExpectedSubjectsNullValueCode": null,
+      "pediatricInvestigationPlanIndicator": false,
+      "pediatricInvestigationPlanIndicatorNullValueCode": null,
+      "pediatricPostmarketStudyIndicator": false,
+      "pediatricPostmarketStudyIndicatorNullValueCode": null,
+      "pediatricStudyIndicator": false,
+      "pediatricStudyIndicatorNullValueCode": null,
+      "plannedMaximumAgeOfSubjects": {
+        "durationUnitCode": {
+          "name": "year",
+          "uid": "UnitDefinition_000094"
+        },
+        "durationValue": 64
+      },
+      "plannedMaximumAgeOfSubjectsNullValueCode": null,
+      "plannedMinimumAgeOfSubjects": {
+        "durationUnitCode": {
+          "name": "year",
+          "uid": "UnitDefinition_000094"
+        },
+        "durationValue": 18
+      },
+      "plannedMinimumAgeOfSubjectsNullValueCode": null,
+      "rareDiseaseIndicator": null,
+      "rareDiseaseIndicatorNullValueCode": null,
+      "relapseCriteria": null,
+      "relapseCriteriaNullValueCode": {
+        "name": "Not Applicable",
+        "termUid": "C48660_Not Applicable"
+      },
+      "sexOfParticipantsCode": {
+        "name": "Both",
+        "termUid": "C49636_BOTH"
+      },
+      "sexOfParticipantsNullValueCode": null,
+      "stableDiseaseMinimumDuration": null,
+      "stableDiseaseMinimumDurationNullValueCode": {
+        "name": "Not Applicable",
+        "termUid": "C48660_Not Applicable"
+      },
+      "therapeuticAreasCodes": [
+        {
+          "name": "Diabetes mellitus",
+          "termUid": "DictionaryTerm_000013"
+        }
+      ],
+      "therapeuticAreasNullValueCode": null
+    }
+  },
+  "studyStatus": "DRAFT",
+  "uid": "Study_000002"
+}

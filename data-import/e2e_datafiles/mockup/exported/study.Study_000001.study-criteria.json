@@ -1,0 +1,71 @@
+[
+    {
+        "studyUid": "Study_000004",
+        "order": 1,
+        "projectNumber": "CDISC DEV",
+        "projectName": "CDISC Dev",
+        "studyCriteriaUid": "StudyCriteria_000001",
+        "criteriaType": {
+            "termUid": "C25532_inclusion criteria",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000013",
+            "sponsorPreferredName": "Inclusion Criteria",
+            "sponsorPreferredNameSentenceCase": "inclusion criteria",
+            "order": 1,
+            "libraryName": "CDISC",
+            "startDate": "2022-06-15T10:11:13.118000",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Initial import from CDISC",
+            "userInitials": "TEST",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "criteria": {
+            "uid": "Criteria_000001",
+            "name": "<p>must be [Ammonia]</p>",
+            "namePlain": "must be Ammonia",
+            "startDate": "2022-06-27T15:26:29.025267",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate"
+            ],
+            "criteriaTemplate": {
+                "name": "<p>must be [Activity]</p>",
+                "namePlain": "must be Ammonia",
+                "guidanceText": null,
+                "uid": "CriteriaTemplate_000001"
+            },
+            "parameterValues": [
+                {
+                    "position": 1,
+                    "conjunction": "",
+                    "values": [
+                        {
+                            "uid": "Activity_000323",
+                            "name": "Ammonia",
+                            "type": "Activity",
+                            "index": 1
+                        }
+                    ]
+                }
+            ],
+            "library": {
+                "name": "Sponsor",
+                "isEditable": true
+            },
+            "studyCount": null
+        },
+        "startDate": "2022-06-27T15:13:57.084679",
+        "userInitials": "unknown-user",
+        "latestCriteria": null,
+        "acceptedVersion": false
+    }
+]

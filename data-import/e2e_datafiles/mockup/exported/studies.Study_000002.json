@@ -1,0 +1,162 @@
+{
+    "currentMetadata": {
+        "highLevelStudyDesign": {
+            "confirmedResponseMinimumDuration": {
+                "durationUnitCode": {
+                    "name": "DAYS",
+                    "termUid": "C25301_DAYS"
+                },
+                "durationValue": 1
+            },
+            "confirmedResponseMinimumDurationNullValueCode": null,
+            "isAdaptiveDesign": false,
+            "isAdaptiveDesignNullValueCode": null,
+            "isExtensionTrial": false,
+            "isExtensionTrialNullValueCode": null,
+            "postAuthIndicator": false,
+            "postAuthIndicatorNullValueCode": null,
+            "studyStopRules": "Some stop rule",
+            "studyStopRulesNullValueCode": null,
+            "studyTypeCode": {
+                "name": "Interventional",
+                "termUid": "C98388_INTERVENTIONAL"
+            },
+            "studyTypeNullValueCode": null,
+            "trialPhaseCode": {
+                "name": "Phase III Trial",
+                "termUid": "C15602_PHASE III TRIAL"
+            },
+            "trialPhaseNullValueCode": null,
+            "trialTypesCodes": [{
+                "name": "Efficacy",
+                "termUid": "C49666_EFFICACY"
+            }],
+            "trialTypesNullValueCode": null
+        },
+        "identificationMetadata": {
+            "clinicalProgrammeName": "CDISC Development programme",
+            "projectName": "CDISC Dev",
+            "projectNumber": "CDISC DEV",
+            "registryIdentifiers": {
+                "ctGovId": "abc123",
+                "ctGovIdNullValueCode": null,
+                "eudractId": "123abc",
+                "eudractIdNullValueCode": null,
+                "investigationalNewDrugApplicationNumberIND": "12344321",
+                "investigationalNewDrugApplicationNumberINDNullValueCode": null,
+                "japaneseTrialRegistryIdJAPIC": "987654321",
+                "japaneseTrialRegistryIdJAPICNullValueCode": null,
+                "universalTrialNumberUTN": "123456789",
+                "universalTrialNumberUTNNullValueCode": null
+            },
+            "studyAcronym": "Acronym for the study",
+            "studyId": "CDISC DEV-1234",
+            "studyNumber": "1234"
+        },
+        "studyDescription": {
+            "studyShortTitle": null,
+            "studyTitle": "This it the title which must include the name of the study intervention(s) under clinical investigation, the condition being studied, the participants included and the primary purpose."
+        },
+        "studyIntervention": {
+            "addOnToExistingTreatments": false,
+            "addOnToExistingTreatmentsNullValueCode": null,
+            "controlTypeCode": {
+                "name": "Placebo",
+                "termUid": "C49648_PLACEBO"
+            },
+            "controlTypeNullValueCode": null,
+            "interventionModelCode": {
+                "name": "Parallel",
+                "termUid": "C82639_PARALLEL"
+            },
+            "interventionModelNullValueCode": null,
+            "interventionTypeCode": {
+                "name": "Pharmacologic Substance",
+                "termUid": "C1909_DRUG"
+            },
+            "interventionTypeNullValueCode": null,
+            "isTrialRandomised": true,
+            "isTrialRandomisedNullValueCode": null,
+            "plannedStudyLength": {
+                "durationUnitCode": {
+                    "name": "YEARS",
+                    "termUid": "C29848_YEARS"
+                },
+                "durationValue": 5
+            },
+            "plannedStudyLengthNullValueCode": null,
+            "stratificationFactor": "Some stratification factor",
+            "stratificationFactorNullValueCode": null,
+            "trialBlindingSchemaCode": {
+                "name": "Double Blind",
+                "termUid": "C15228_DOUBLE BLIND"
+            },
+            "trialBlindingSchemaNullValueCode": null,
+            "trialIntentTypesCodes": [{
+                "name": "Cure",
+                "termUid": "C49654_CURE"
+            }],
+            "trialIntentTypesNullValueCode": null
+        },
+        "studyPopulation": {
+            "diagnosisGroupsCodes": [{
+                "name": "Heart failure",
+                "termUid": "DictionaryTerm_000015"
+            }],
+            "diagnosisGroupsNullValueCode": null,
+            "diseaseConditionsOrIndicationsCodes": [{
+                "name": "Heart failure",
+                "termUid": "DictionaryTerm_000015"
+            }],
+            "diseaseConditionsOrIndicationsNullValueCode": null,
+            "healthySubjectIndicator": false,
+            "healthySubjectIndicatorNullValueCode": null,
+            "pediatricInvestigationPlanIndicator": false,
+            "pediatricInvestigationPlanIndicatorNullValueCode": null,
+            "pediatricPostmarketStudyIndicator": false,
+            "pediatricPostmarketStudyIndicatorNullValueCode": null,
+            "pediatricStudyIndicator": false,
+            "pediatricStudyIndicatorNullValueCode": null,
+            "plannedMaximumAgeOfSubjects": {
+                "durationUnitCode": {
+                    "name": "YEARS",
+                    "termUid": "C29848_YEARS"
+                },
+                "durationValue": 60
+            },
+            "plannedMaximumAgeOfSubjectsNullValueCode": null,
+            "plannedMinimumAgeOfSubjects": {
+                "durationUnitCode": {
+                    "name": "YEARS",
+                    "termUid": "C29848_YEARS"
+                },
+                "durationValue": 50
+            },
+            "plannedMinimumAgeOfSubjectsNullValueCode": null,
+            "rareDiseaseIndicator": false,
+            "rareDiseaseIndicatorNullValueCode": null,
+            "relapseCriteria": "Some relapse criteria",
+            "relapseCriteriaNullValueCode": null,
+            "sexOfParticipantsCode": {
+                "name": "Both",
+                "termUid": "C49636_BOTH"
+            },
+            "sexOfParticipantsNullValueCode": null,
+            "stableDiseaseMinimumDuration": {
+                "durationUnitCode": {
+                    "name": "YEARS",
+                    "termUid": "C29848_YEARS"
+                },
+                "durationValue": 1
+            },
+            "stableDiseaseMinimumDurationNullValueCode": null,
+            "therapeuticAreasCodes": [{
+                "name": "Heart failure",
+                "termUid": "DictionaryTerm_000015"
+            }],
+            "therapeuticAreasNullValueCode": null
+        }
+    },
+    "studyStatus": "DRAFT",
+    "uid": "Study_000002"
+}

@@ -1,0 +1,131 @@
+[
+   {
+      "name": "Test get audit trail for study fields of non-existing study",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/studies/___NON_EXISTING_STUDY___/fields-audit-trail"
+      },
+      "response": {
+         "code": 404,
+         "headers": {
+            "content-length": "336",
+            "content-type": "application/json"
+         },
+         "result": {
+            "message": "The study '___NON_EXISTING_STUDY___' was not found.",
+            "method": "GET",
+            "path": "http://testserver/studies/___NON_EXISTING_STUDY___/fields-audit-trail",
+            "time": "2021-11-03T23:42:41.518146",
+            "type": "NotFoundException"
+         }
+      }
+   },
+   {
+      "name": "Test adding study",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "studyNumber": "007",
+            "studyAcronym": "Study-007",
+            "projectNumber": "123"
+         },
+         "url": "/studies"
+      },
+      "response": {
+         "code": 201,
+         "headers": {
+            "content-length": "336",
+            "content-type": "application/json"
+         },
+         "result": {
+            "uid": "Study_000001",
+            "studyNumber": "007",
+            "studyId": "123-007",
+            "studyAcronym": "Study-007",
+            "projectNumber": "123",
+            "studyStatus": "DRAFT",
+            "currentMetadata": {
+               "identificationMetadata": {
+                  "studyNumber": "007",
+                  "studyAcronym": "Study-007",
+                  "projectNumber": "123",
+                  "projectName": "Project ABC",
+                  "clinicalProgrammeName": "CP",
+                  "studyId": "123-007",
+                  "registryIdentifiers": {
+                     "ctGovId": null,
+                     "eudractId": null,
+                     "universalTrialNumberUTN": null,
+                     "japaneseTrialRegistryIdJAPIC": null,
+                     "investigationalNewDrugApplicationNumberIND": null,
+                     "ctGovIdNullValueCode": null,
+                     "eudractIdNullValueCode": null,
+                     "universalTrialNumberUTNNullValueCode": null,
+                     "japaneseTrialRegistryIdJAPICNullValueCode": null,
+                     "investigationalNewDrugApplicationNumberINDNullValueCode": null
+                  }
+               },
+               "versionMetadata": {
+                  "studyStatus": "DRAFT",
+                  "lockedVersionNumber": null,
+                  "versionTimestamp": "2021-04-06T13:51:58.468263",
+                  "lockedVersionAuthor": null,
+                  "lockedVersionInfo": null
+               }
+            }
+         }
+      }
+   },
+   {
+      "name": "Test create study with duplicated study number",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "studyNumber": "007",
+            "projectNumber": "123"
+         },
+         "url": "/studies"
+      },
+      "response": {
+         "code": 400,
+         "headers": {},
+         "result": {
+            "message": "The following study number already exists in the database (007)",
+            "method": "POST",
+            "path": "http://testserver/studies",
+            "time": "2021-11-03T23:42:41.518146",
+            "type": "BusinessLogicException"
+         }
+      }
+   },
+   {
+      "name": "Test patch study number",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "currentMetadata": {
+               "identificationMetadata": {
+                  "studyNumber": "008"
+               }
+            }
+         },
+         "url": "/studies/Study_000001"
+      },
+      "response": {
+         "code": 400,
+         "headers": {},
+         "result": {
+            "message": "The study number for a study Study_000001 can't be changed.",
+            "method": "PATCH",
+            "path": "http://testserver/studies/Study_000001",
+            "time": "2021-11-03T23:42:41.518146",
+            "type": "BusinessLogicException"
+         }
+      }
+   }
+]

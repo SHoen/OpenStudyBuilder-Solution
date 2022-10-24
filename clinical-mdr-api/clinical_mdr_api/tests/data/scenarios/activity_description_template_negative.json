@@ -1,0 +1,66 @@
+[
+   {
+      "name": "Test create no library",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "libraryName": "test library",
+            "name": "test",
+            "activitySubGroupUids": [
+               "activity_sub_group_root1"
+            ],
+            "activityGroupUids": [
+               "activity_group_root1"
+            ]
+         },
+         "url": "/activity-description-templates"
+      },
+      "response": {
+         "code": 404,
+         "headers": {
+            "content-length": "173",
+            "content-type": "application/json"
+         },
+         "result": {
+            "message": "The library with the name='test library' could not be found.",
+            "method": "POST",
+            "path": "http://testserver/activity-description-templates",
+            "time": "2020-11-03T23:42:41.518146",
+            "type": "NotFoundException"
+         }
+      }
+   },
+   {
+      "name": "Test readonly library",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "libraryName": "Test library",
+            "name": "test",
+            "activitySubGroupUids": [
+               "activity_sub_group_root1"
+            ],
+            "activityGroupUids": [
+               "activity_group_root1"
+            ]
+         },
+         "url": "/activity-description-templates"
+      },
+      "response": {
+         "code": 400,
+         "headers": {
+            "content-length": "198",
+            "content-type": "application/json"
+         },
+         "result": {
+            "message": "The library with the name='Test library' does not allow to create objects.",
+            "method": "POST",
+            "path": "http://testserver/activity-description-templates",
+            "time": "2020-11-03T23:42:41.518146",
+            "type": "ValidationException"
+         }
+      }
+   }
+]

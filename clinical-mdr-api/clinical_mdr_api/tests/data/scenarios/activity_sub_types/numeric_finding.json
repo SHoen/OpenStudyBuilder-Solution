@@ -1,0 +1,847 @@
+[
+   {
+      "name": "Test POST create numeric finding",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "numeric_finding_name1",
+            "nameSentenceCase": "numeric_finding_name_sentence_case1",
+            "definition": "numeric_finding_definition1",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code1",
+            "adamParamCode": "numeric_finding_adam_param_code1",
+            "legacyDescription": "numeric_finding_legacy_description",
+            "sdtmVariable": "sdtm_variable_uid1",
+            "sdtmSubcat": "sdtm_subcat_uid1",
+            "sdtmCat": "sdtm_cat_uid1",
+            "sdtmDomain": "sdtm_domain_uid1",
+            "activities": [
+               "activity_root1"
+            ],
+            "valueSasDisplayFormat": "numeric_finding_value_sas_display_format",
+            "specimen": "specimen_uid1",
+            "testCode": "test_code_uid1",
+            "molecularWeight": 7,
+            "convertToSiUnit": true,
+            "convertToUsConventionalUnit": true,
+            "unitDimension": "unit_dimension_uid1",
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/activities/numeric-findings"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericFinding_000001",
+            "name": "numeric_finding_name1",
+            "nameSentenceCase": "numeric_finding_name_sentence_case1",
+            "definition": "numeric_finding_definition1",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code1",
+            "adamParamCode": "numeric_finding_adam_param_code1",
+            "legacyDescription": "numeric_finding_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid1",
+               "name": null
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid1",
+               "name": null
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid1",
+               "name": null
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid1",
+               "name": null
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "valueSasDisplayFormat": "numeric_finding_value_sas_display_format",
+            "specimen": {
+               "termUid": "specimen_uid1",
+               "name": null
+            },
+            "testCode": {
+               "termUid": "test_code_uid1",
+               "name": "test_code_name1"
+            },
+            "molecularWeight": 7,
+            "convertToSiUnit": true,
+            "convertToUsConventionalUnit": true,
+            "unitDimension": {
+               "termUid": "unit_dimension_uid1",
+               "name": "unit_dimension_name1"
+            },
+            "unitDefinition": null,
+            "libraryName": "Sponsor",
+            "type": "numeric-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Draft",
+            "version": "0.1",
+            "changeDescription": "Initial version",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "approve",
+               "delete",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test GET all numeric findings",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/activities/numeric-findings?totalCount=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "NumericFinding_000001",
+                  "name": "numeric_finding_name1",
+                  "nameSentenceCase": "numeric_finding_name_sentence_case1",
+                  "definition": "numeric_finding_definition1",
+                  "abbreviation": "abbv",
+                  "topicCode": "numeric_finding_topic_code1",
+                  "adamParamCode": "numeric_finding_adam_param_code1",
+                  "legacyDescription": "numeric_finding_legacy_description",
+                  "sdtmVariable": {
+                     "termUid": "sdtm_variable_uid1",
+                     "name": "sdtm_variable_name1"
+                  },
+                  "sdtmSubcat": {
+                     "termUid": "sdtm_subcat_uid1",
+                     "name": "sdtm_subcat_name1"
+                  },
+                  "sdtmCat": {
+                     "termUid": "sdtm_cat_uid1",
+                     "name": "sdtm_cat_name1"
+                  },
+                  "sdtmDomain": {
+                     "termUid": "sdtm_domain_uid1",
+                     "name": "sdtm_domain_name1"
+                  },
+                  "activities": [
+                     {
+                        "uid": "activity_root1",
+                        "name": "name1"
+                     }
+                  ],
+                  "activitySubgroups": [
+                     {
+                        "uid": "activity_sub_group_root1",
+                        "name": "name1"
+                     }
+                  ],
+                  "activityGroups": [
+                     {
+                        "uid": "activity_group_root1",
+                        "name": "name1"
+                     }
+                  ],
+                  "valueSasDisplayFormat": "numeric_finding_value_sas_display_format",
+                  "specimen": {
+                     "termUid": "specimen_uid1",
+                     "name": "specimen_name1"
+                  },
+                  "testCode": {
+                     "termUid": "test_code_uid1",
+                     "name": "test_code_name1"
+                  },
+                  "molecularWeight": 7,
+                  "convertToSiUnit": true,
+                  "convertToUsConventionalUnit": true,
+                  "unitDimension": {
+                     "termUid": "unit_dimension_uid1",
+                     "name": "unit_dimension_name1"
+                  },
+                  "unitDefinition": null,
+                  "libraryName": "Sponsor",
+                  "type": "numeric-findings",
+                  "startDate": "2021-03-18T11:54:20.898Z",
+                  "endDate": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "changeDescription": "Initial version",
+                  "userInitials": "TODO user initials",
+                  "possibleActions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ]
+               }
+            ],
+            "total": 1,
+            "page": 1,
+            "size": 0
+         }
+      }
+   },
+   {
+      "name": "Test POST approve numeric finding",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activity-instances/NumericFinding_000001/approve"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericFinding_000001",
+            "name": "numeric_finding_name1",
+            "nameSentenceCase": "numeric_finding_name_sentence_case1",
+            "definition": "numeric_finding_definition1",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code1",
+            "adamParamCode": "numeric_finding_adam_param_code1",
+            "legacyDescription": "numeric_finding_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid1",
+               "name": "sdtm_variable_name1"
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid1",
+               "name": "sdtm_subcat_name1"
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid1",
+               "name": "sdtm_cat_name1"
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid1",
+               "name": "sdtm_domain_name1"
+            },
+            "specimen": {
+               "termUid": "specimen_uid1",
+               "name": "specimen_name1"
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "libraryName": "Sponsor",
+            "type": "numeric-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "inactivate",
+               "newVersion"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test POST new-version numeric finding",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activity-instances/NumericFinding_000001/new-version"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericFinding_000001",
+            "name": "numeric_finding_name1",
+            "nameSentenceCase": "numeric_finding_name_sentence_case1",
+            "definition": "numeric_finding_definition1",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code1",
+            "adamParamCode": "numeric_finding_adam_param_code1",
+            "legacyDescription": "numeric_finding_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid1",
+               "name": "sdtm_variable_name1"
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid1",
+               "name": "sdtm_subcat_name1"
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid1",
+               "name": "sdtm_cat_name1"
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid1",
+               "name": "sdtm_domain_name1"
+            },
+            "specimen": {
+               "termUid": "specimen_uid1",
+               "name": "specimen_name1"
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "libraryName": "Sponsor",
+            "type": "numeric-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Draft",
+            "version": "1.1",
+            "changeDescription": "New draft created",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "approve",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test PATCH DRAFT numeric finding",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "name": "new_numeric_finding_name",
+            "definition": "new_numeric_finding_definition",
+            "sdtmVariable": "sdtm_variable_uid2",
+            "sdtmSubcat": "sdtm_subcat_uid2",
+            "sdtmCat": "sdtm_cat_uid2",
+            "sdtmDomain": "sdtm_domain_uid2",
+            "activities": [
+               "activity_root1",
+               "activity_root2"
+            ],
+            "valueSasDisplayFormat": "new_numeric_finding_value_sas_display_format",
+            "specimen": "specimen_uid2",
+            "testCode": "test_code_uid2",
+            "molecularWeight": 77,
+            "convertToSiUnit": false,
+            "convertToUsConventionalUnit": false,
+            "unitDimension": "unit_dimension_uid2",
+            "changeDescription": "numeric_finding_patch"
+         },
+         "url": "/concepts/activities/numeric-findings/NumericFinding_000001"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "uid": "NumericFinding_000001",
+            "name": "new_numeric_finding_name",
+            "nameSentenceCase": "numeric_finding_name_sentence_case1",
+            "definition": "new_numeric_finding_definition",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code1",
+            "adamParamCode": "numeric_finding_adam_param_code1",
+            "legacyDescription": "numeric_finding_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid2",
+               "name": null
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid2",
+               "name": null
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid2",
+               "name": null
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid2",
+               "name": null
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_root2",
+                  "name": "name2"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_sub_group_root2",
+                  "name": "name2"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_group_root2",
+                  "name": "name2"
+               }
+            ],
+            "valueSasDisplayFormat": "new_numeric_finding_value_sas_display_format",
+            "specimen": {
+               "termUid": "specimen_uid2",
+               "name": null
+            },
+            "testCode": {
+               "termUid": "test_code_uid2",
+               "name": "test_code_name2"
+            },
+            "molecularWeight": 77,
+            "convertToSiUnit": false,
+            "convertToUsConventionalUnit": false,
+            "unitDimension": {
+               "termUid": "unit_dimension_uid2",
+               "name": "unit_dimension_name2"
+            },
+            "unitDefinition": null,
+            "libraryName": "Sponsor",
+            "type": "numeric-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Draft",
+            "version": "1.2",
+            "changeDescription": "numeric_finding_patch",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "approve",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test POST approve numeric finding",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activity-instances/NumericFinding_000001/approve"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericFinding_000001",
+            "name": "new_numeric_finding_name",
+            "nameSentenceCase": "numeric_finding_name_sentence_case1",
+            "definition": "new_numeric_finding_definition",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code1",
+            "adamParamCode": "numeric_finding_adam_param_code1",
+            "legacyDescription": "numeric_finding_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid2",
+               "name": "sdtm_variable_name2"
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid2",
+               "name": "sdtm_subcat_name2"
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid2",
+               "name": "sdtm_cat_name2"
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid2",
+               "name": "sdtm_domain_name2"
+            },
+            "specimen": {
+               "termUid": "specimen_uid2",
+               "name": "specimen_name2"
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_root2",
+                  "name": "name2"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_sub_group_root2",
+                  "name": "name2"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_group_root2",
+                  "name": "name2"
+               }
+            ],
+            "libraryName": "Sponsor",
+            "type": "numeric-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Final",
+            "version": "2.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "inactivate",
+               "newVersion"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test POST inactivate numeric finding",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activity-instances/NumericFinding_000001/inactivate"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericFinding_000001",
+            "name": "new_numeric_finding_name",
+            "nameSentenceCase": "numeric_finding_name_sentence_case1",
+            "definition": "new_numeric_finding_definition",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code1",
+            "adamParamCode": "numeric_finding_adam_param_code1",
+            "legacyDescription": "numeric_finding_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid2",
+               "name": "sdtm_variable_name2"
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid2",
+               "name": "sdtm_subcat_name2"
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid2",
+               "name": "sdtm_cat_name2"
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid2",
+               "name": "sdtm_domain_name2"
+            },
+            "specimen": {
+               "termUid": "specimen_uid2",
+               "name": "specimen_name2"
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_root2",
+                  "name": "name2"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_sub_group_root2",
+                  "name": "name2"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_group_root2",
+                  "name": "name2"
+               }
+            ],
+            "libraryName": "Sponsor",
+            "type": "numeric-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Retired",
+            "version": "2.0",
+            "changeDescription": "Deactivated version",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "reactivate"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test POST reactivate numeric finding",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activity-instances/NumericFinding_000001/reactivate"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericFinding_000001",
+            "name": "new_numeric_finding_name",
+            "nameSentenceCase": "numeric_finding_name_sentence_case1",
+            "definition": "new_numeric_finding_definition",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code1",
+            "adamParamCode": "numeric_finding_adam_param_code1",
+            "legacyDescription": "numeric_finding_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid2",
+               "name": "sdtm_variable_name2"
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid2",
+               "name": "sdtm_subcat_name2"
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid2",
+               "name": "sdtm_cat_name2"
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid2",
+               "name": "sdtm_domain_name2"
+            },
+            "specimen": {
+               "termUid": "specimen_uid2",
+               "name": "specimen_name2"
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_root2",
+                  "name": "name2"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_sub_group_root2",
+                  "name": "name2"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               },
+               {
+                  "uid": "activity_group_root2",
+                  "name": "name2"
+               }
+            ],
+            "libraryName": "Sponsor",
+            "type": "numeric-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Final",
+            "version": "2.0",
+            "changeDescription": "Reactivated version",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "inactivate",
+               "newVersion"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test POST create numeric finding to delete",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "numeric_finding_name2",
+            "nameSentenceCase": "numeric_finding_name_sentence_case2",
+            "definition": "numeric_finding_definition2",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code2",
+            "adamParamCode": "numeric_finding_adam_param_code2",
+            "legacyDescription": "numeric_finding_legacy_description2",
+            "sdtmVariable": "sdtm_variable_uid1",
+            "sdtmSubcat": "sdtm_subcat_uid1",
+            "sdtmCat": "sdtm_cat_uid1",
+            "sdtmDomain": "sdtm_domain_uid1",
+            "activities": [
+               "activity_root1"
+            ],
+            "valueSasDisplayFormat": "numeric_finding_value_sas_display_format",
+            "specimen": "specimen_uid1",
+            "testCode": "test_code_uid1",
+            "molecularWeight": 77,
+            "convertToSiUnit": false,
+            "convertToUsConventionalUnit": false,
+            "unitDimension": "unit_dimension_uid2",
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/activities/numeric-findings"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "NumericFinding_000002",
+            "name": "numeric_finding_name2",
+            "nameSentenceCase": "numeric_finding_name_sentence_case2",
+            "definition": "numeric_finding_definition2",
+            "abbreviation": "abbv",
+            "topicCode": "numeric_finding_topic_code2",
+            "adamParamCode": "numeric_finding_adam_param_code2",
+            "legacyDescription": "numeric_finding_legacy_description2",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid1",
+               "name": null
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid1",
+               "name": null
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid1",
+               "name": null
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid1",
+               "name": null
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "valueSasDisplayFormat": "numeric_finding_value_sas_display_format",
+            "specimen": {
+               "termUid": "specimen_uid1",
+               "name": null
+            },
+            "testCode": {
+               "termUid": "test_code_uid1",
+               "name": "test_code_name1"
+            },
+            "molecularWeight": 77,
+            "convertToSiUnit": false,
+            "convertToUsConventionalUnit": false,
+            "unitDimension": {
+               "termUid": "unit_dimension_uid2",
+               "name": "unit_dimension_name2"
+            },
+            "unitDefinition": null,
+            "libraryName": "Sponsor",
+            "type": "numeric-findings",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Draft",
+            "version": "0.1",
+            "changeDescription": "Initial version",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "approve",
+               "delete",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test DELETE numeric finding",
+      "request": {
+         "headers": {},
+         "method": "DELETE",
+         "request": {},
+         "url": "/concepts/activities/activity-instances/NumericFinding_000002"
+      },
+      "response": {
+         "code": 204,
+         "headers": {},
+         "result": null
+      }
+   }
+]

@@ -1,0 +1,1732 @@
+[
+  {
+    "name": "Test getting empty list",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-compounds"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [],
+        "total_count": 0
+      }
+    }
+  },
+  {
+    "name": "Test getting empty list for all studies",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study-compounds"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "compoundAliasUid": "TemplateParameter_000002",
+        "typeOfTreatmentUid": "CTTerm_000001",
+        "routeOfAdministrationUid": "CTTerm_000002",
+        "strengthValueUid": "NumericValueWithUnit_000001",
+        "dosageFormUid": "CTTerm_000003",
+        "dispensedInUid": "CTTerm_000004",
+        "deviceUid": "CTTerm_000005",
+        "formulationUid": "CTTerm_000006",
+        "otherInfo": "some other information"
+      },
+      "url": "/study/study_root/study-compounds/select"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "order": 1,
+        "studyUid": "study_root",
+        "projectNumber": null,
+        "projectName": null,
+        "studyCompoundUid": "StudyCompound_000001",
+        "studyCompoundDosingCount": 0,
+        "compoundAlias": {
+          "uid": "TemplateParameter_000002",
+          "name": "name",
+          "nameSentenceCase": null,
+          "definition": "definition",
+          "abbreviation": null,
+          "libraryName": "Sponsor",
+          "startDate": "2022-06-15T14:23:39.983436",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "unknown-user",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ],
+          "compound": {
+            "uid": "TemplateParameter_000001",
+            "name": "name"
+          },
+          "isPreferredSynonym": false
+        },
+        "compound": {
+          "name": "name",
+          "nameSentenceCase": null,
+          "abbreviation": null,
+          "definition": "definition",
+          "uid": "TemplateParameter_000001",
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO user initials",
+          "startDate": null,
+          "endDate": null,
+          "libraryName": "Sponsor",
+          "doseValues": [
+            {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            }
+          ],
+          "strengthValues": [
+            {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            }
+          ],
+          "lagTimes": [],
+          "deliveryDevices": [
+            {
+              "termUid": "CTTerm_000005",
+              "name": "CTTerm_000005"
+            }
+          ],
+          "dispensers": [
+            {
+              "termUid": "CTTerm_000004",
+              "name": "CTTerm_000004"
+            }
+          ],
+          "projects": [],
+          "brands": [],
+          "halfLife": {
+            "uid": "NumericValueWithUnit_000001",
+            "value": 1.23,
+            "unitDefinitionUid": "UnitDefinition_000001",
+            "unitLabel": "name_1"
+          },
+          "doseFrequencies": [
+            {
+              "termUid": "dose_frequency_uid1",
+              "name": "dose_frequency_name1"
+            }
+          ],
+          "dosageForms": [
+            {
+              "termUid": "CTTerm_000003",
+              "name": "CTTerm_000003"
+            }
+          ],
+          "routesOfAdministration": [
+            {
+              "termUid": "CTTerm_000002",
+              "name": "CTTerm_000002"
+            }
+          ],
+          "analyteNumber": null,
+          "nncShortNumber": null,
+          "nncLongNumber": null,
+          "isSponsorCompound": true,
+          "isNameInn": true,
+          "substances": [],
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "typeOfTreatment": {
+          "termUid": "CTTerm_000001",
+          "name": "CTTerm_000001"
+        },
+        "routeOfAdministration": {
+          "termUid": "CTTerm_000002",
+          "name": "CTTerm_000002"
+        },
+        "strengthValue": {
+          "uid": "NumericValueWithUnit_000001",
+          "value": 1.23,
+          "unitDefinitionUid": "UnitDefinition_000001",
+          "unitLabel": "name_1"
+        },
+        "dosageForm": {
+          "termUid": "CTTerm_000003",
+          "name": "CTTerm_000003"
+        },
+        "dispensedIn": {
+          "termUid": "CTTerm_000004",
+          "name": "CTTerm_000004"
+        },
+        "device": {
+          "termUid": "CTTerm_000005",
+          "name": "CTTerm_000005"
+        },
+        "formulation": {
+          "termUid": "CTTerm_000006",
+          "name": "CTTerm_000006"
+        },
+        "otherInfo": "some other information",
+        "reasonForMissingNullValue": null,
+        "startDate": "2021-04-08T07:54:04.733562",
+        "userInitials": "TEST_USER"
+      }
+    }
+  },
+  {
+    "name": "Test get all list non empty",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-compounds"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [
+          {
+            "order": 1,
+            "studyUid": "study_root",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "studyCompoundUid": "StudyCompound_000001",
+            "studyCompoundDosingCount": 0,
+            "compoundAlias": {
+              "uid": "TemplateParameter_000002",
+              "name": "name",
+              "nameSentenceCase": null,
+              "definition": "definition",
+              "abbreviation": null,
+              "libraryName": "Sponsor",
+              "startDate": "2022-06-15T14:23:39.983436",
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "unknown-user",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ],
+              "compound": {
+                "uid": "TemplateParameter_000001",
+                "name": "name"
+              },
+              "isPreferredSynonym": false
+            },
+            "compound": {
+              "name": "name",
+              "nameSentenceCase": null,
+              "abbreviation": null,
+              "definition": "definition",
+              "uid": "TemplateParameter_000001",
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO user initials",
+              "startDate": null,
+              "endDate": null,
+              "libraryName": "Sponsor",
+              "doseValues": [
+                {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unitDefinitionUid": "UnitDefinition_000001",
+                  "unitLabel": "name_1"
+                }
+              ],
+              "strengthValues": [
+                {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unitDefinitionUid": "UnitDefinition_000001",
+                  "unitLabel": "name_1"
+                }
+              ],
+              "lagTimes": [],
+              "deliveryDevices": [
+                {
+                  "termUid": "CTTerm_000005",
+                  "name": "CTTerm_000005"
+                }
+              ],
+              "dispensers": [
+                {
+                  "termUid": "CTTerm_000004",
+                  "name": "CTTerm_000004"
+                }
+              ],
+              "projects": [],
+              "brands": [],
+              "halfLife": {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 1.23,
+                "unitDefinitionUid": "UnitDefinition_000001",
+                "unitLabel": "name_1"
+              },
+              "doseFrequencies": [
+                {
+                  "termUid": "dose_frequency_uid1",
+                  "name": "dose_frequency_name1"
+                }
+              ],
+              "dosageForms": [
+                {
+                  "termUid": "CTTerm_000003",
+                  "name": "CTTerm_000003"
+                }
+              ],
+              "routesOfAdministration": [
+                {
+                  "termUid": "CTTerm_000002",
+                  "name": "CTTerm_000002"
+                }
+              ],
+              "analyteNumber": null,
+              "nncShortNumber": null,
+              "nncLongNumber": null,
+              "isSponsorCompound": true,
+              "isNameInn": true,
+              "substances": [],
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "typeOfTreatment": {
+              "termUid": "CTTerm_000001",
+              "name": "CTTerm_000001"
+            },
+            "routeOfAdministration": {
+              "termUid": "CTTerm_000002",
+              "name": "CTTerm_000002"
+            },
+            "strengthValue": {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            },
+            "dosageForm": {
+              "termUid": "CTTerm_000003",
+              "name": "CTTerm_000003"
+            },
+            "dispensedIn": {
+              "termUid": "CTTerm_000004",
+              "name": "CTTerm_000004"
+            },
+            "device": {
+              "termUid": "CTTerm_000005",
+              "name": "CTTerm_000005"
+            },
+            "formulation": {
+              "termUid": "CTTerm_000006",
+              "name": "CTTerm_000006"
+            },
+            "otherInfo": "some other information",
+            "reasonForMissingNullValue": null,
+            "startDate": "2021-04-08T07:54:04.733562",
+            "userInitials": "TEST_USER"
+          }
+        ],
+        "total_count": 0
+      }
+    }
+  },
+  {
+    "name": "Test get all for all studies",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study-compounds"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "total": 0,
+        "page": 1,
+        "size": 0,
+        "items": [
+          {
+            "studyUid": "study_root",
+            "order": 1,
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "studyCompoundUid": "StudyCompound_000001",
+            "studyCompoundDosingCount": 0,
+            "compoundAlias": {
+              "uid": "TemplateParameter_000002",
+              "name": "name",
+              "nameSentenceCase": null,
+              "definition": "definition",
+              "abbreviation": null,
+              "libraryName": "Sponsor",
+              "startDate": "2022-06-15T14:23:39.983436",
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "unknown-user",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ],
+              "compound": {
+                "uid": "TemplateParameter_000001",
+                "name": "name"
+              },
+              "isPreferredSynonym": false
+            },
+            "compound": {
+              "name": "name",
+              "nameSentenceCase": null,
+              "abbreviation": null,
+              "definition": "definition",
+              "uid": "TemplateParameter_000001",
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO user initials",
+              "startDate": null,
+              "endDate": null,
+              "libraryName": "Sponsor",
+              "doseValues": [
+                {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unitDefinitionUid": "UnitDefinition_000001",
+                  "unitLabel": "name_1"
+                }
+              ],
+              "strengthValues": [
+                {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unitDefinitionUid": "UnitDefinition_000001",
+                  "unitLabel": "name_1"
+                }
+              ],
+              "lagTimes": [],
+              "deliveryDevices": [
+                {
+                  "termUid": "CTTerm_000005",
+                  "name": "CTTerm_000005"
+                }
+              ],
+              "dispensers": [
+                {
+                  "termUid": "CTTerm_000004",
+                  "name": "CTTerm_000004"
+                }
+              ],
+              "projects": [],
+              "brands": [],
+              "halfLife": {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 1.23,
+                "unitDefinitionUid": "UnitDefinition_000001",
+                "unitLabel": "name_1"
+              },
+              "doseFrequencies": [
+                {
+                  "termUid": "dose_frequency_uid1",
+                  "name": "dose_frequency_name1"
+                }
+              ],
+              "dosageForms": [
+                {
+                  "termUid": "CTTerm_000003",
+                  "name": "CTTerm_000003"
+                }
+              ],
+              "routesOfAdministration": [
+                {
+                  "termUid": "CTTerm_000002",
+                  "name": "CTTerm_000002"
+                }
+              ],
+              "analyteNumber": null,
+              "nncShortNumber": null,
+              "nncLongNumber": null,
+              "isSponsorCompound": true,
+              "isNameInn": true,
+              "substances": [],
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "typeOfTreatment": {
+              "termUid": "CTTerm_000001",
+              "name": "CTTerm_000001"
+            },
+            "routeOfAdministration": {
+              "termUid": "CTTerm_000002",
+              "name": "CTTerm_000002"
+            },
+            "strengthValue": {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            },
+            "dosageForm": {
+              "termUid": "CTTerm_000003",
+              "name": "CTTerm_000003"
+            },
+            "dispensedIn": {
+              "termUid": "CTTerm_000004",
+              "name": "CTTerm_000004"
+            },
+            "device": {
+              "termUid": "CTTerm_000005",
+              "name": "CTTerm_000005"
+            },
+            "formulation": {
+              "termUid": "CTTerm_000006",
+              "name": "CTTerm_000006"
+            },
+            "otherInfo": "some other information",
+            "reasonForMissingNullValue": null,
+            "startDate": "2021-04-08T07:54:04.733562",
+            "userInitials": "TEST_USER"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Test get history of all selections",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-compounds/audit-trail/"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "order": 1,
+          "studyUid": "study_root",
+          "studyCompoundUid": "StudyCompound_000001",
+          "compoundAlias": {
+            "uid": "TemplateParameter_000002",
+            "name": "name",
+            "nameSentenceCase": null,
+            "definition": "definition",
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-06-15T14:23:39.983436",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ],
+            "compound": {
+              "uid": "TemplateParameter_000001",
+              "name": "name"
+            },
+            "isPreferredSynonym": false
+          },
+          "compound": {
+            "name": "name",
+            "nameSentenceCase": null,
+            "abbreviation": null,
+            "definition": "definition",
+            "uid": "TemplateParameter_000001",
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO user initials",
+            "startDate": null,
+            "endDate": null,
+            "libraryName": "Sponsor",
+            "doseValues": [
+              {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 1.23,
+                "unitDefinitionUid": "UnitDefinition_000001",
+                "unitLabel": "name_1"
+              }
+            ],
+            "strengthValues": [
+              {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 1.23,
+                "unitDefinitionUid": "UnitDefinition_000001",
+                "unitLabel": "name_1"
+              }
+            ],
+            "lagTimes": [],
+            "deliveryDevices": [
+              {
+                "termUid": "CTTerm_000005",
+                "name": "CTTerm_000005"
+              }
+            ],
+            "dispensers": [
+              {
+                "termUid": "CTTerm_000004",
+                "name": "CTTerm_000004"
+              }
+            ],
+            "projects": [],
+            "brands": [],
+            "halfLife": {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            },
+            "doseFrequencies": [
+              {
+                "termUid": "dose_frequency_uid1",
+                "name": "dose_frequency_name1"
+              }
+            ],
+            "dosageForms": [
+              {
+                "termUid": "CTTerm_000003",
+                "name": "CTTerm_000003"
+              }
+            ],
+            "routesOfAdministration": [
+              {
+                "termUid": "CTTerm_000002",
+                "name": "CTTerm_000002"
+              }
+            ],
+            "analyteNumber": null,
+            "nncShortNumber": null,
+            "nncLongNumber": null,
+            "isSponsorCompound": true,
+            "isNameInn": true,
+            "substances": [],
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "typeOfTreatment": {
+            "termUid": "CTTerm_000001",
+            "name": "CTTerm_000001"
+          },
+          "routeOfAdministration": {
+            "termUid": "CTTerm_000002",
+            "name": "CTTerm_000002"
+          },
+          "strengthValue": {
+            "uid": "NumericValueWithUnit_000001",
+            "value": 1.23,
+            "unitDefinitionUid": "UnitDefinition_000001",
+            "unitLabel": "name_1"
+          },
+          "dosageForm": {
+            "termUid": "CTTerm_000003",
+            "name": "CTTerm_000003"
+          },
+          "dispensedIn": {
+            "termUid": "CTTerm_000004",
+            "name": "CTTerm_000004"
+          },
+          "device": {
+            "termUid": "CTTerm_000005",
+            "name": "CTTerm_000005"
+          },
+          "formulation": {
+            "termUid": "CTTerm_000006",
+            "name": "CTTerm_000006"
+          },
+          "otherInfo": "some other information",
+          "reasonForMissingNullValue": null,
+          "startDate": "2021-04-08T08:08:38.311888",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Create"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test add selection 2, missing some values",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "compoundAliasUid": "TemplateParameter_000002",
+        "typeOfTreatmentUid": "CTTerm_000001",
+        "routeOfAdministrationUid": "CTTerm_000002",
+        "otherInfo": "some other information"
+      },
+      "url": "/study/study_root/study-compounds/select"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "order": 2,
+        "studyUid": "study_root",
+        "projectNumber": null,
+        "projectName": null,
+        "studyCompoundUid": "StudyCompound_000003",
+        "studyCompoundDosingCount": 0,
+        "compoundAlias": {
+          "uid": "TemplateParameter_000002",
+          "name": "name",
+          "nameSentenceCase": null,
+          "definition": "definition",
+          "abbreviation": null,
+          "libraryName": "Sponsor",
+          "startDate": "2022-06-15T14:23:39.983436",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "unknown-user",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ],
+          "compound": {
+            "uid": "TemplateParameter_000001",
+            "name": "name"
+          },
+          "isPreferredSynonym": false
+        },
+        "compound": {
+          "name": "name",
+          "nameSentenceCase": null,
+          "abbreviation": null,
+          "definition": "definition",
+          "uid": "TemplateParameter_000001",
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO user initials",
+          "startDate": null,
+          "endDate": null,
+          "libraryName": "Sponsor",
+          "doseValues": [
+            {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            }
+          ],
+          "strengthValues": [
+            {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            }
+          ],
+          "lagTimes": [],
+          "deliveryDevices": [
+            {
+              "termUid": "CTTerm_000005",
+              "name": "CTTerm_000005"
+            }
+          ],
+          "dispensers": [
+            {
+              "termUid": "CTTerm_000004",
+              "name": "CTTerm_000004"
+            }
+          ],
+          "projects": [],
+          "brands": [],
+          "halfLife": {
+            "uid": "NumericValueWithUnit_000001",
+            "value": 1.23,
+            "unitDefinitionUid": "UnitDefinition_000001",
+            "unitLabel": "name_1"
+          },
+          "doseFrequencies": [
+            {
+              "termUid": "dose_frequency_uid1",
+              "name": "dose_frequency_name1"
+            }
+          ],
+          "dosageForms": [
+            {
+              "termUid": "CTTerm_000003",
+              "name": "CTTerm_000003"
+            }
+          ],
+          "routesOfAdministration": [
+            {
+              "termUid": "CTTerm_000002",
+              "name": "CTTerm_000002"
+            }
+          ],
+          "analyteNumber": null,
+          "nncShortNumber": null,
+          "nncLongNumber": null,
+          "isSponsorCompound": true,
+          "isNameInn": true,
+          "substances": [],
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "typeOfTreatment": {
+          "termUid": "CTTerm_000001",
+          "name": "CTTerm_000001"
+        },
+        "routeOfAdministration": {
+          "termUid": "CTTerm_000002",
+          "name": "CTTerm_000002"
+        },
+        "strengthValue": null,
+        "dosageForm": null,
+        "dispensedIn": null,
+        "device": null,
+        "formulation": null,
+        "otherInfo": "some other information",
+        "reasonForMissingNullValue": null,
+        "startDate": "2021-04-08T07:54:04.733562",
+        "userInitials": "TEST_USER"
+      }
+    }
+  },
+  {
+    "name": "Test add selection 3, no compound set",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "typeOfTreatmentUid": "CTTerm_000001",
+        "routeOfAdministrationUid": "CTTerm_000002",
+        "otherInfo": "some other information"
+      },
+      "url": "/study/study_root/study-compounds/select"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "order": 3,
+        "studyUid": "study_root",
+        "projectNumber": null,
+        "projectName": null,
+        "studyCompoundUid": "StudyCompound_000005",
+        "studyCompoundDosingCount": 0,
+        "compoundAlias": null,
+        "compound": null,
+        "typeOfTreatment": {
+          "termUid": "CTTerm_000001",
+          "name": "CTTerm_000001"
+        },
+        "routeOfAdministration": {
+          "termUid": "CTTerm_000002",
+          "name": "CTTerm_000002"
+        },
+        "strengthValue": null,
+        "dosageForm": null,
+        "dispensedIn": null,
+        "device": null,
+        "formulation": null,
+        "otherInfo": "some other information",
+        "reasonForMissingNullValue": null,
+        "startDate": "2021-04-08T07:54:04.733562",
+        "userInitials": "TEST_USER"
+      }
+    }
+  },
+  {
+    "name": "Test add selection 4, reason for missing set",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "typeOfTreatmentUid": "CTTerm_000001",
+        "reasonForMissingNullValueUid": "CTTerm_000007"
+      },
+      "url": "/study/study_root/study-compounds/select"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "order": 4,
+        "studyUid": "study_root",
+        "projectNumber": null,
+        "projectName": null,
+        "studyCompoundUid": "StudyCompound_000007",
+        "studyCompoundDosingCount": 0,
+        "compoundAlias": null,
+        "compound": null,
+        "typeOfTreatment": {
+          "termUid": "CTTerm_000001",
+          "name": "CTTerm_000001"
+        },
+        "routeOfAdministration": null,
+        "strengthValue": null,
+        "dosageForm": null,
+        "dispensedIn": null,
+        "device": null,
+        "formulation": null,
+        "otherInfo": null,
+        "reasonForMissingNullValue": {
+          "termUid": "CTTerm_000007",
+          "name": "CTTerm_000007"
+        },
+        "startDate": "2021-04-08T07:54:04.733562",
+        "userInitials": "TEST_USER"
+      },
+      "save": {
+        "studyCompoundUid": "studyCompoundUid"
+      }
+    }
+  },
+  {
+    "name": "Test check list has 4",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-compounds"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [
+          {
+            "order": 1,
+            "studyUid": "study_root",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "studyCompoundUid": "StudyCompound_000001",
+            "studyCompoundDosingCount": 0,
+            "compoundAlias": {
+              "uid": "TemplateParameter_000002",
+              "name": "name",
+              "nameSentenceCase": null,
+              "definition": "definition",
+              "abbreviation": null,
+              "libraryName": "Sponsor",
+              "startDate": "2022-06-15T14:23:39.983436",
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "unknown-user",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ],
+              "compound": {
+                "uid": "TemplateParameter_000001",
+                "name": "name"
+              },
+              "isPreferredSynonym": false
+            },
+            "compound": {
+              "name": "name",
+              "nameSentenceCase": null,
+              "abbreviation": null,
+              "definition": "definition",
+              "uid": "TemplateParameter_000001",
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO user initials",
+              "startDate": null,
+              "endDate": null,
+              "libraryName": "Sponsor",
+              "doseValues": [
+                {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unitDefinitionUid": "UnitDefinition_000001",
+                  "unitLabel": "name_1"
+                }
+              ],
+              "strengthValues": [
+                {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unitDefinitionUid": "UnitDefinition_000001",
+                  "unitLabel": "name_1"
+                }
+              ],
+              "lagTimes": [],
+              "deliveryDevices": [
+                {
+                  "termUid": "CTTerm_000005",
+                  "name": "CTTerm_000005"
+                }
+              ],
+              "dispensers": [
+                {
+                  "termUid": "CTTerm_000004",
+                  "name": "CTTerm_000004"
+                }
+              ],
+              "projects": [],
+              "brands": [],
+              "halfLife": {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 1.23,
+                "unitDefinitionUid": "UnitDefinition_000001",
+                "unitLabel": "name_1"
+              },
+              "doseFrequencies": [
+                {
+                  "termUid": "dose_frequency_uid1",
+                  "name": "dose_frequency_name1"
+                }
+              ],
+              "dosageForms": [
+                {
+                  "termUid": "CTTerm_000003",
+                  "name": "CTTerm_000003"
+                }
+              ],
+              "routesOfAdministration": [
+                {
+                  "termUid": "CTTerm_000002",
+                  "name": "CTTerm_000002"
+                }
+              ],
+              "analyteNumber": null,
+              "nncShortNumber": null,
+              "nncLongNumber": null,
+              "isSponsorCompound": true,
+              "isNameInn": true,
+              "substances": [],
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "typeOfTreatment": {
+              "termUid": "CTTerm_000001",
+              "name": "CTTerm_000001"
+            },
+            "routeOfAdministration": {
+              "termUid": "CTTerm_000002",
+              "name": "CTTerm_000002"
+            },
+            "strengthValue": {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            },
+            "dosageForm": {
+              "termUid": "CTTerm_000003",
+              "name": "CTTerm_000003"
+            },
+            "dispensedIn": {
+              "termUid": "CTTerm_000004",
+              "name": "CTTerm_000004"
+            },
+            "device": {
+              "termUid": "CTTerm_000005",
+              "name": "CTTerm_000005"
+            },
+            "formulation": {
+              "termUid": "CTTerm_000006",
+              "name": "CTTerm_000006"
+            },
+            "otherInfo": "some other information",
+            "reasonForMissingNullValue": null,
+            "startDate": "2021-04-08T07:54:04.733562",
+            "userInitials": "TEST_USER"
+          },
+          {
+            "order": 2,
+            "studyUid": "study_root",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "studyCompoundUid": "StudyCompound_000003",
+            "studyCompoundDosingCount": 0,
+            "compoundAlias": {
+              "uid": "TemplateParameter_000002",
+              "name": "name",
+              "nameSentenceCase": null,
+              "definition": "definition",
+              "abbreviation": null,
+              "libraryName": "Sponsor",
+              "startDate": "2022-06-15T14:23:39.983436",
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "unknown-user",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ],
+              "compound": {
+                "uid": "TemplateParameter_000001",
+                "name": "name"
+              },
+              "isPreferredSynonym": false
+            },
+            "compound": {
+              "name": "name",
+              "nameSentenceCase": null,
+              "abbreviation": null,
+              "definition": "definition",
+              "uid": "TemplateParameter_000001",
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO user initials",
+              "startDate": null,
+              "endDate": null,
+              "libraryName": "Sponsor",
+              "doseValues": [
+                {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unitDefinitionUid": "UnitDefinition_000001",
+                  "unitLabel": "name_1"
+                }
+              ],
+              "strengthValues": [
+                {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unitDefinitionUid": "UnitDefinition_000001",
+                  "unitLabel": "name_1"
+                }
+              ],
+              "lagTimes": [],
+              "deliveryDevices": [
+                {
+                  "termUid": "CTTerm_000005",
+                  "name": "CTTerm_000005"
+                }
+              ],
+              "dispensers": [
+                {
+                  "termUid": "CTTerm_000004",
+                  "name": "CTTerm_000004"
+                }
+              ],
+              "projects": [],
+              "brands": [],
+              "halfLife": {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 1.23,
+                "unitDefinitionUid": "UnitDefinition_000001",
+                "unitLabel": "name_1"
+              },
+              "doseFrequencies": [
+                {
+                  "termUid": "dose_frequency_uid1",
+                  "name": "dose_frequency_name1"
+                }
+              ],
+              "dosageForms": [
+                {
+                  "termUid": "CTTerm_000003",
+                  "name": "CTTerm_000003"
+                }
+              ],
+              "routesOfAdministration": [
+                {
+                  "termUid": "CTTerm_000002",
+                  "name": "CTTerm_000002"
+                }
+              ],
+              "analyteNumber": null,
+              "nncShortNumber": null,
+              "nncLongNumber": null,
+              "isSponsorCompound": true,
+              "isNameInn": true,
+              "substances": [],
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "typeOfTreatment": {
+              "termUid": "CTTerm_000001",
+              "name": "CTTerm_000001"
+            },
+            "routeOfAdministration": {
+              "termUid": "CTTerm_000002",
+              "name": "CTTerm_000002"
+            },
+            "strengthValue": null,
+            "dosageForm": null,
+            "dispensedIn": null,
+            "device": null,
+            "formulation": null,
+            "otherInfo": "some other information",
+            "reasonForMissingNullValue": null,
+            "startDate": "2021-04-08T07:54:04.733562",
+            "userInitials": "TEST_USER"
+          },
+          {
+            "order": 3,
+            "studyUid": "study_root",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "studyCompoundUid": "StudyCompound_000005",
+            "studyCompoundDosingCount": 0,
+            "compoundAlias": null,
+            "compound": null,
+            "typeOfTreatment": {
+              "termUid": "CTTerm_000001",
+              "name": "CTTerm_000001"
+            },
+            "routeOfAdministration": {
+              "termUid": "CTTerm_000002",
+              "name": "CTTerm_000002"
+            },
+            "strengthValue": null,
+            "dosageForm": null,
+            "dispensedIn": null,
+            "device": null,
+            "formulation": null,
+            "otherInfo": "some other information",
+            "reasonForMissingNullValue": null,
+            "startDate": "2021-04-08T07:54:04.733562",
+            "userInitials": "TEST_USER"
+          },
+          {
+            "order": 4,
+            "studyUid": "study_root",
+            "projectNumber": "123",
+            "projectName": "Project ABC",
+            "studyCompoundUid": "StudyCompound_000007",
+            "studyCompoundDosingCount": 0,
+            "compoundAlias": null,
+            "compound": null,
+            "typeOfTreatment": {
+              "termUid": "CTTerm_000001",
+              "name": "CTTerm_000001"
+            },
+            "routeOfAdministration": null,
+            "strengthValue": null,
+            "dosageForm": null,
+            "dispensedIn": null,
+            "device": null,
+            "formulation": null,
+            "otherInfo": null,
+            "reasonForMissingNullValue": {
+              "termUid": "CTTerm_000007",
+              "name": "CTTerm_000007"
+            },
+            "startDate": "2021-04-08T07:54:04.733562",
+            "userInitials": "TEST_USER"
+          }
+        ],
+        "total_count": 0
+      }
+    }
+  },
+  {
+    "name": "Test get specific",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-compounds/{studyCompoundUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "order": 4,
+        "studyUid": "study_root",
+        "projectNumber": null,
+        "projectName": null,
+        "studyCompoundUid": "StudyCompound_000007",
+        "studyCompoundDosingCount": 0,
+        "typeOfTreatment": {
+          "termUid": "CTTerm_000001",
+          "name": "CTTerm_000001"
+        },
+        "compoundAlias": null,
+        "compound": null,
+        "routeOfAdministration": null,
+        "strengthValue": null,
+        "dosageForm": null,
+        "dispensedIn": null,
+        "device": null,
+        "formulation": null,
+        "otherInfo": null,
+        "reasonForMissingNullValue": {
+          "termUid": "CTTerm_000007",
+          "name": "CTTerm_000007"
+        },
+        "startDate": "2021-04-08T07:54:04.733562",
+        "userInitials": "TEST_USER"
+      }
+    }
+  },
+  {
+    "name": "Test reorder specific",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "new_order": 1
+      },
+      "url": "/study/study_root/study-compounds/{studyCompoundUid}/order"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "order": 1,
+        "studyUid": "study_root",
+        "projectNumber": null,
+        "projectName": null,
+        "studyCompoundUid": "StudyCompound_000007",
+        "studyCompoundDosingCount": 0,
+        "compoundAlias": null,
+        "compound": null,
+        "typeOfTreatment": {
+          "termUid": "CTTerm_000001",
+          "name": "CTTerm_000001"
+        },
+        "routeOfAdministration": null,
+        "strengthValue": null,
+        "dosageForm": null,
+        "dispensedIn": null,
+        "device": null,
+        "formulation": null,
+        "otherInfo": null,
+        "reasonForMissingNullValue": {
+          "termUid": "CTTerm_000007",
+          "name": "CTTerm_000007"
+        },
+        "startDate": "2021-04-08T07:54:04.733562",
+        "userInitials": "TEST_USER"
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - new compound",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "compoundAliasUid": "TemplateParameter_000002",
+        "reasonForMissingNullValueUid": null
+      },
+      "url": "/study/study_root/study-compounds/{studyCompoundUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "order": 1,
+        "studyUid": "study_root",
+        "projectNumber": null,
+        "projectName": null,
+        "studyCompoundUid": "StudyCompound_000007",
+        "studyCompoundDosingCount": 0,
+        "compoundAlias": {
+          "uid": "TemplateParameter_000002",
+          "name": "name",
+          "nameSentenceCase": null,
+          "definition": "definition",
+          "abbreviation": null,
+          "libraryName": "Sponsor",
+          "startDate": "2022-06-15T14:23:39.983436",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "unknown-user",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ],
+          "compound": {
+            "uid": "TemplateParameter_000001",
+            "name": "name"
+          },
+          "isPreferredSynonym": false
+        },
+        "compound": {
+          "name": "name",
+          "nameSentenceCase": null,
+          "abbreviation": null,
+          "definition": "definition",
+          "uid": "TemplateParameter_000001",
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO user initials",
+          "startDate": null,
+          "endDate": null,
+          "libraryName": "Sponsor",
+          "doseValues": [
+            {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            }
+          ],
+          "strengthValues": [
+            {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            }
+          ],
+          "lagTimes": [],
+          "deliveryDevices": [
+            {
+              "termUid": "CTTerm_000005",
+              "name": "CTTerm_000005"
+            }
+          ],
+          "dispensers": [
+            {
+              "termUid": "CTTerm_000004",
+              "name": "CTTerm_000004"
+            }
+          ],
+          "projects": [],
+          "brands": [],
+          "halfLife": {
+            "uid": "NumericValueWithUnit_000001",
+            "value": 1.23,
+            "unitDefinitionUid": "UnitDefinition_000001",
+            "unitLabel": "name_1"
+          },
+          "doseFrequencies": [
+            {
+              "termUid": "dose_frequency_uid1",
+              "name": "dose_frequency_name1"
+            }
+          ],
+          "dosageForms": [
+            {
+              "termUid": "CTTerm_000003",
+              "name": "CTTerm_000003"
+            }
+          ],
+          "routesOfAdministration": [
+            {
+              "termUid": "CTTerm_000002",
+              "name": "CTTerm_000002"
+            }
+          ],
+          "analyteNumber": null,
+          "nncShortNumber": null,
+          "nncLongNumber": null,
+          "isSponsorCompound": true,
+          "isNameInn": true,
+          "substances": [],
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "typeOfTreatment": null,
+        "routeOfAdministration": null,
+        "strengthValue": null,
+        "dosageForm": null,
+        "dispensedIn": null,
+        "device": null,
+        "formulation": null,
+        "otherInfo": null,
+        "reasonForMissingNullValue": null,
+        "startDate": "2021-04-08T07:54:04.733562",
+        "userInitials": "TEST_USER"
+      }
+    }
+  },
+  {
+    "name": "Test all history of specific selection",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-compounds/{studyCompoundUid}/audit-trail/"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "order": 1,
+          "studyUid": "study_root",
+          "studyCompoundUid": "StudyCompound_000007",
+          "compoundAlias": {
+            "uid": "TemplateParameter_000002",
+            "name": "name",
+            "nameSentenceCase": null,
+            "definition": "definition",
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-06-15T14:23:39.983436",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ],
+            "compound": {
+              "uid": "TemplateParameter_000001",
+              "name": "name"
+            },
+            "isPreferredSynonym": false
+          },
+          "compound": {
+            "name": "name",
+            "nameSentenceCase": null,
+            "abbreviation": null,
+            "definition": "definition",
+            "uid": "TemplateParameter_000001",
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "TODO user initials",
+            "startDate": null,
+            "endDate": null,
+            "libraryName": "Sponsor",
+            "doseValues": [
+              {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 1.23,
+                "unitDefinitionUid": "UnitDefinition_000001",
+                "unitLabel": "name_1"
+              }
+            ],
+            "strengthValues": [
+              {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 1.23,
+                "unitDefinitionUid": "UnitDefinition_000001",
+                "unitLabel": "name_1"
+              }
+            ],
+            "lagTimes": [],
+            "deliveryDevices": [
+              {
+                "termUid": "CTTerm_000005",
+                "name": "CTTerm_000005"
+              }
+            ],
+            "dispensers": [
+              {
+                "termUid": "CTTerm_000004",
+                "name": "CTTerm_000004"
+              }
+            ],
+            "projects": [],
+            "brands": [],
+            "halfLife": {
+              "uid": "NumericValueWithUnit_000001",
+              "value": 1.23,
+              "unitDefinitionUid": "UnitDefinition_000001",
+              "unitLabel": "name_1"
+            },
+            "doseFrequencies": [
+              {
+                "termUid": "dose_frequency_uid1",
+                "name": "dose_frequency_name1"
+              }
+            ],
+            "dosageForms": [
+              {
+                "termUid": "CTTerm_000003",
+                "name": "CTTerm_000003"
+              }
+            ],
+            "routesOfAdministration": [
+              {
+                "termUid": "CTTerm_000002",
+                "name": "CTTerm_000002"
+              }
+            ],
+            "analyteNumber": null,
+            "nncShortNumber": null,
+            "nncLongNumber": null,
+            "isSponsorCompound": true,
+            "isNameInn": true,
+            "substances": [],
+            "possibleActions": [
+              "inactivate",
+              "newVersion"
+            ]
+          },
+          "typeOfTreatment": null,
+          "routeOfAdministration": null,
+          "strengthValue": null,
+          "dosageForm": null,
+          "dispensedIn": null,
+          "device": null,
+          "formulation": null,
+          "otherInfo": null,
+          "reasonForMissingNullValue": null,
+          "startDate": "2021-04-08T07:54:04.733562",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit"
+        },
+        {
+          "order": 1,
+          "studyUid": "study_root",
+          "studyCompoundUid": "StudyCompound_000007",
+          "compoundAlias": null,
+          "compound": null,
+          "typeOfTreatment": {
+            "termUid": "CTTerm_000001",
+            "name": "CTTerm_000001"
+          },
+          "routeOfAdministration": null,
+          "strengthValue": null,
+          "dosageForm": null,
+          "dispensedIn": null,
+          "device": null,
+          "formulation": null,
+          "otherInfo": null,
+          "reasonForMissingNullValue": {
+            "termUid": "CTTerm_000007",
+            "name": "CTTerm_000007"
+          },
+          "startDate": "2021-04-08T07:54:04.733562",
+          "userInitials": "TEST_USER",
+          "endDate": "2021-04-08T08:10:04.373849",
+          "status": null,
+          "changeType": "Edit"
+        },
+        {
+          "order": 4,
+          "studyUid": "study_root",
+          "studyCompoundUid": "StudyCompound_000007",
+          "compoundAlias": null,
+          "compound": null,
+          "typeOfTreatment": {
+            "termUid": "CTTerm_000001",
+            "name": "CTTerm_000001"
+          },
+          "routeOfAdministration": null,
+          "strengthValue": null,
+          "dosageForm": null,
+          "dispensedIn": null,
+          "device": null,
+          "formulation": null,
+          "otherInfo": null,
+          "reasonForMissingNullValue": {
+            "termUid": "CTTerm_000007",
+            "name": "CTTerm_000007"
+          },
+          "startDate": "2021-04-08T07:54:04.733562",
+          "userInitials": "TEST_USER",
+          "endDate": "2021-04-08T08:10:04.215773",
+          "status": null,
+          "changeType": "Create"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test DELETE",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/study/study_root/study-compounds/{studyCompoundUid}"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  }
+]

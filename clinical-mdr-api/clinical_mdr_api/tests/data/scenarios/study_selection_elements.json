@@ -1,0 +1,1072 @@
+[
+  {
+    "name": "Test getting_all empty list",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-elements"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Element_Name_1",
+        "shortName": "Element_Short_Name_1",
+        "code": "Element_code_1",
+        "description": "desc...",
+        "plannedDuration": {
+          "durationValue": 50,
+          "durationUnitCode": {
+            "uid": "UnitDefinition_000001"
+          }
+        },
+        "startRule": "startRule...",
+        "endRule": "endRule...",
+        "elementColour": "elementColour",
+        "elementSubTypeUid": "term_root_final"
+      },
+      "url": "/study/study_root/study-elements/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "elementUid": "StudyElement_000001",
+        "order": 1,
+        "name": "Element_Name_1",
+        "shortName": "Element_Short_Name_1",
+        "code": "Element_code_1",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "studyCompoundDosingCount": 0,  
+        "elementSubType": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "ct_codelist_root1",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "libraryName": "Sponsor",
+          "startDate": "2020-06-26T00:00:00",
+          "order": null,
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "description": "desc...",
+        "plannedDuration": {
+          "durationValue": 50, 
+          "durationUnitCode": {
+            "uid": "UnitDefinition_000001",
+            "name": "hours"
+          }
+        },
+        "startRule": "startRule...",
+        "endRule": "endRule...",
+        "elementColour": "elementColour",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "elementUid": "elementUid"
+      }
+    }
+  },
+  {
+    "name": "Test get_all list non empty",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-elements"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [
+          {
+            "studyUid": "study_root",
+            "elementUid": "StudyElement_000001",
+            "order": 1,
+            "name": "Element_Name_1",
+            "shortName": "Element_Short_Name_1",
+            "code": "Element_code_1",
+            "startDate": "2020-06-26T00:00:00",
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null,
+            "studyCompoundDosingCount": 0,
+            "elementSubType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root1",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "libraryName": "Sponsor",
+              "startDate": "2020-06-26T00:00:00",
+              "order": null,
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "description": "desc...",
+            "plannedDuration": {
+              "durationValue": 50, 
+              "durationUnitCode": {
+                "uid": "UnitDefinition_000001",
+                "name": "hours"
+              }
+            },
+            "startRule": "startRule...",
+            "endRule": "endRule...",
+            "elementColour": "elementColour",
+            "userInitials": "TODO initials"
+          }
+        ],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test adding selection 2",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Element_Name_2",
+        "shortName": "Element_Short_Name_2",
+        "code": "Element_code_2",
+        "description": "desc...",
+        "plannedDuration": null,
+        "startRule": "startRule...",
+        "endRule": "endRule...",
+        "elementColour": "elementColour",
+        "elementSubTypeUid": "term_root_final"
+      },
+      "url": "/study/study_root/study-elements/create"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "elementUid": "StudyElement_000003",
+        "order": 2,
+        "name": "Element_Name_2",
+        "shortName": "Element_Short_Name_2",
+        "code": "Element_code_2",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "studyCompoundDosingCount": 0,
+        "elementSubType": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "ct_codelist_root1",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "libraryName": "Sponsor",
+          "startDate": "2020-06-26T00:00:00",
+          "order": null,
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        },
+        "description": "desc...",
+        "plannedDuration": null,
+        "startRule": "startRule...",
+        "endRule": "endRule...",
+        "elementColour": "elementColour",
+        "userInitials": "TODO initials"
+      },
+      "save": {
+        "elementUid": "elementUid"
+      }
+    }
+  },
+  {
+    "name": "Test get_all list non empty for multiple elements",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-elements"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [
+          {
+            "studyUid": "study_root",
+            "elementUid": "StudyElement_000001",
+            "order": 1,
+            "name": "Element_Name_1",
+            "shortName": "Element_Short_Name_1",
+            "code": "Element_code_1",
+            "startDate": "2020-06-26T00:00:00",
+            "endDate": null,
+            "status": null,
+            "changeType": null,
+            "acceptedVersion": null,
+            "studyCompoundDosingCount": 0,
+            "elementSubType": {
+              "termUid": "term_root_final",
+              "catalogueName": "SDTM CT",
+              "codelistUid": "ct_codelist_root1",
+              "sponsorPreferredName": "term_value_name1",
+              "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+              "libraryName": "Sponsor",
+              "startDate": "2020-06-26T00:00:00",
+              "order": null,
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "description": "desc...",
+            "plannedDuration": {
+              "durationValue": 50, 
+              "durationUnitCode": {
+                "uid": "UnitDefinition_000001",
+                "name": "hours"
+              }
+            },
+            "startRule": "startRule...",
+            "endRule": "endRule...",
+            "elementColour": "elementColour",
+            "userInitials": "TODO initials"
+        },
+        {
+          "studyUid": "study_root",
+          "elementUid": "StudyElement_000003",
+          "order": 2,
+          "name": "Element_Name_2",
+          "shortName": "Element_Short_Name_2",
+          "code": "Element_code_2",
+          "startDate": "2020-06-26T00:00:00",
+          "endDate": null,
+          "status": null,
+          "changeType": null,
+          "acceptedVersion": null,
+          "studyCompoundDosingCount": 0,
+          "elementSubType": {
+            "termUid": "term_root_final",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "ct_codelist_root1",
+            "sponsorPreferredName": "term_value_name1",
+            "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+            "libraryName": "Sponsor",
+              "startDate": "2020-06-26T00:00:00",
+              "order": null,
+              "endDate": null,
+              "status": "Final",
+              "version": "1.0",
+              "changeDescription": "Approved version",
+              "userInitials": "TODO initials",
+              "possibleActions": [
+                "inactivate",
+                "newVersion"
+              ]
+            },
+            "description": "desc...",
+            "plannedDuration": null,
+            "startRule": "startRule...",
+            "endRule": "endRule...",
+            "elementColour": "elementColour",
+            "userInitials": "TODO initials"
+          }
+        ],
+        "total": 0,
+        "page": 1,
+        "size": 0
+      }
+    }
+  },
+  {
+    "name": "Test get specific",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-elements/{elementUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 2,
+        "name": "Element_Name_2",
+        "shortName": "Element_Short_Name_2",
+        "code": "Element_code_2",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "studyCompoundDosingCount": 0,
+        "acceptedVersion": null,
+        "description": "desc...",
+        "plannedDuration": null,
+        "startRule": "startRule...",
+        "endRule": "endRule...",
+        "elementColour": "elementColour",
+        "userInitials": "TODO initials",
+        "elementUid": "StudyElement_000003",
+        "elementSubType": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "ct_codelist_root1",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "libraryName": "Sponsor",
+          "startDate": "2020-06-26T00:00:00",
+          "order": null,
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - set name",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "New_Element_Name_2",
+        "elementSubTypeUid": "term_root_final_non_edit",
+        "plannedDuration": {
+          "durationValue": 70,
+          "durationUnitCode": {
+            "uid": "UnitDefinition_000001"
+          }
+        }
+      },
+      "url": "/study/study_root/study-elements/{elementUid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 2,
+        "name": "New_Element_Name_2",
+        "shortName": "Element_Short_Name_2",
+        "code": "Element_code_2",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "studyCompoundDosingCount": 0,
+        "description": "desc...",
+        "plannedDuration": {
+          "durationValue": 70, 
+          "durationUnitCode": {
+            "uid": "UnitDefinition_000001",
+            "name": "hours"
+          }
+        },
+        "startRule": "startRule...",
+        "endRule": "endRule...",
+        "elementColour": "elementColour",
+        "userInitials": "TODO initials",
+        "elementUid": "StudyElement_000003",
+        "elementSubType": {
+          "termUid": "term_root_final_non_edit",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "non_editable_cr",
+          "sponsorPreferredName": "term_value_name3",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "libraryName": "CDISC",
+          "startDate": "2020-06-26T00:00:00",
+          "order": 3,
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "Test all history of specific selection",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-elements/{elementUid}/audit-trail/"
+    },
+    "response": {
+        "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": 
+      [
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "elementUid": "StudyElement_000003",
+          "name": "New_Element_Name_2",
+          "shortName": "Element_Short_Name_2",
+          "code": "Element_code_2",
+          "description": "desc...",
+          "plannedDuration": {
+          "durationValue": 70,
+          "durationUnitCode": {
+          "uid": "UnitDefinition_000001",
+          "name": "hours"}
+          },
+          "startRule": "startRule...",
+          "endRule": "endRule...",
+          "elementColour": "elementColour",
+          "elementSubType": {
+          "termUid": "term_root_final_non_edit",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "non_editable_cr",
+          "sponsorPreferredName": "term_value_name3",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 3,
+          "libraryName": "CDISC",
+          "startDate": "2022-08-05T05:28:26.592000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": ["inactivate",
+          "newVersion"]
+          },
+          "studyCompoundDosingCount": null,
+          "startDate": "2022-08-05T07:28:57.742069",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "changes": {
+          "studyUid": false,
+          "order": false,
+          "projectNumber": false,
+          "projectName": false,
+          "elementUid": false,
+          "name": true,
+          "shortName": false,
+          "code": false,
+          "description": false,
+          "plannedDuration": true,
+          "startRule": false,
+          "endRule": false,
+          "elementColour": false,
+          "elementSubType": true,
+          "studyCompoundDosingCount": false,
+          "startDate": true,
+          "userInitials": false,
+          "endDate": true,
+          "status": false,
+          "changeType": true,
+          "acceptedVersion": false}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "elementUid": "StudyElement_000003",
+          "name": "Element_Name_2",
+          "shortName": "Element_Short_Name_2",
+          "code": "Element_code_2",
+          "description": "desc...",
+          "plannedDuration": null,
+          "startRule": "startRule...",
+          "endRule": "endRule...",
+          "elementColour": "elementColour",
+          "elementSubType": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "ct_codelist_root_endpoint",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2022-08-05T05:28:26.592000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": ["inactivate",
+          "newVersion"]
+          },
+          "studyCompoundDosingCount": null,
+          "startDate": "2022-08-05T07:28:57.307886",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-05T07:28:57.742069",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test reorder specific",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "new_order": 1
+      },
+      "url": "/study/study_root/study-elements/{elementUid}/order"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 1,
+        "name": "New_Element_Name_2",
+        "shortName": "Element_Short_Name_2",
+        "code": "Element_code_2",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "studyCompoundDosingCount": 0,  
+        "description": "desc...",
+        "plannedDuration": {
+          "durationValue": 70, 
+          "durationUnitCode": {
+            "uid": "UnitDefinition_000001",
+            "name": "hours"
+          }
+        },
+        "startRule": "startRule...",
+        "endRule": "endRule...",
+        "elementColour": "elementColour",
+        "userInitials": "TODO initials",
+        "elementUid": "StudyElement_000003",
+        "elementSubType": {
+          "termUid": "term_root_final_non_edit",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "non_editable_cr",
+          "sponsorPreferredName": "term_value_name3",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "libraryName": "CDISC",
+          "startDate": "2020-06-26T00:00:00",
+          "order": 3,
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": [
+            "inactivate",
+            "newVersion"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "Test all history of all selection study elements",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/study/study_root/study-element/audit-trail"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": 
+      [
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "elementUid": "StudyElement_000001",
+          "name": "Element_Name_1",
+          "shortName": "Element_Short_Name_1",
+          "code": "Element_code_1",
+          "description": "desc...",
+          "plannedDuration": {
+          "durationValue": 50,
+          "durationUnitCode": {
+          "uid": "UnitDefinition_000001",
+          "name": "hours"}
+          },
+          "startRule": "startRule...",
+          "endRule": "endRule...",
+          "elementColour": "elementColour",
+          "elementSubType": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "ct_codelist_root_endpoint",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2022-08-05T05:47:08.082000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": ["inactivate",
+          "newVersion"]
+          },
+          "studyCompoundDosingCount": null,
+          "startDate": "2022-08-05T07:47:39.481823",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "changes": {
+          "studyUid": false,
+          "order": true,
+          "projectNumber": false,
+          "projectName": false,
+          "elementUid": false,
+          "name": false,
+          "shortName": false,
+          "code": false,
+          "description": false,
+          "plannedDuration": false,
+          "startRule": false,
+          "endRule": false,
+          "elementColour": false,
+          "elementSubType": false,
+          "studyCompoundDosingCount": false,
+          "startDate": true,
+          "userInitials": false,
+          "endDate": true,
+          "status": false,
+          "changeType": true,
+          "acceptedVersion": false}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "elementUid": "StudyElement_000001",
+          "name": "Element_Name_1",
+          "shortName": "Element_Short_Name_1",
+          "code": "Element_code_1",
+          "description": "desc...",
+          "plannedDuration": {
+          "durationValue": 50,
+          "durationUnitCode": {
+          "uid": "UnitDefinition_000001",
+          "name": "hours"}
+          },
+          "startRule": "startRule...",
+          "endRule": "endRule...",
+          "elementColour": "elementColour",
+          "elementSubType": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "ct_codelist_root_endpoint",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2022-08-05T05:47:08.082000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": ["inactivate",
+          "newVersion"]
+          },
+          "studyCompoundDosingCount": null,
+          "startDate": "2022-08-05T07:47:38.066809",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-05T07:47:39.481823",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "changes": {
+          }
+        },
+        {
+          "studyUid": "study_root",
+          "order": 1,
+          "projectNumber": null,
+          "projectName": null,
+          "elementUid": "StudyElement_000003",
+          "name": "New_Element_Name_2",
+          "shortName": "Element_Short_Name_2",
+          "code": "Element_code_2",
+          "description": "desc...",
+          "plannedDuration": {
+          "durationValue": 70,
+          "durationUnitCode": {
+          "uid": "UnitDefinition_000001",
+          "name": "hours"}
+          },
+          "startRule": "startRule...",
+          "endRule": "endRule...",
+          "elementColour": "elementColour",
+          "elementSubType": {
+          "termUid": "term_root_final_non_edit",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "non_editable_cr",
+          "sponsorPreferredName": "term_value_name3",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 3,
+          "libraryName": "CDISC",
+          "startDate": "2022-08-05T05:47:08.082000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": ["inactivate",
+          "newVersion"]
+          },
+          "studyCompoundDosingCount": null,
+          "startDate": "2022-08-05T07:47:39.506444",
+          "userInitials": "TEST_USER",
+          "endDate": null,
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "changes": {
+          "studyUid": false,
+          "order": true,
+          "projectNumber": false,
+          "projectName": false,
+          "elementUid": false,
+          "name": false,
+          "shortName": false,
+          "code": false,
+          "description": false,
+          "plannedDuration": false,
+          "startRule": false,
+          "endRule": false,
+          "elementColour": false,
+          "elementSubType": false,
+          "studyCompoundDosingCount": false,
+          "startDate": true,
+          "userInitials": false,
+          "endDate": true,
+          "status": false,
+          "changeType": false,
+          "acceptedVersion": false}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "elementUid": "StudyElement_000003",
+          "name": "New_Element_Name_2",
+          "shortName": "Element_Short_Name_2",
+          "code": "Element_code_2",
+          "description": "desc...",
+          "plannedDuration": {
+          "durationValue": 70,
+          "durationUnitCode": {
+          "uid": "UnitDefinition_000001",
+          "name": "hours"}
+          },
+          "startRule": "startRule...",
+          "endRule": "endRule...",
+          "elementColour": "elementColour",
+          "elementSubType": {
+          "termUid": "term_root_final_non_edit",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "non_editable_cr",
+          "sponsorPreferredName": "term_value_name3",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 3,
+          "libraryName": "CDISC",
+          "startDate": "2022-08-05T05:47:08.082000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": ["inactivate",
+          "newVersion"]
+          },
+          "studyCompoundDosingCount": null,
+          "startDate": "2022-08-05T07:47:39.092935",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-05T07:47:39.506444",
+          "status": null,
+          "changeType": "Edit",
+          "acceptedVersion": false,
+          "changes": {
+          "studyUid": false,
+          "order": false,
+          "projectNumber": false,
+          "projectName": false,
+          "elementUid": false,
+          "name": true,
+          "shortName": false,
+          "code": false,
+          "description": false,
+          "plannedDuration": true,
+          "startRule": false,
+          "endRule": false,
+          "elementColour": false,
+          "elementSubType": true,
+          "studyCompoundDosingCount": false,
+          "startDate": true,
+          "userInitials": false,
+          "endDate": true,
+          "status": false,
+          "changeType": true,
+          "acceptedVersion": false}
+        },
+        {
+          "studyUid": "study_root",
+          "order": 2,
+          "projectNumber": null,
+          "projectName": null,
+          "elementUid": "StudyElement_000003",
+          "name": "Element_Name_2",
+          "shortName": "Element_Short_Name_2",
+          "code": "Element_code_2",
+          "description": "desc...",
+          "plannedDuration": null,
+          "startRule": "startRule...",
+          "endRule": "endRule...",
+          "elementColour": "elementColour",
+          "elementSubType": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "ct_codelist_root_endpoint",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2022-08-05T05:47:08.082000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": ["inactivate",
+          "newVersion"]
+          },
+          "studyCompoundDosingCount": null,
+          "startDate": "2022-08-05T07:47:38.658851",
+          "userInitials": "TEST_USER",
+          "endDate": "2022-08-05T07:47:39.092935",
+          "status": null,
+          "changeType": "Create",
+          "acceptedVersion": false,
+          "changes": {}
+        }
+      ]
+        
+    }
+  },
+  {
+    "name": "Test get allowed element config",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "url": "/study/study-elements/allowed-element-configs"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "type": "ElementTypeTermUid_1",
+          "type_name": "No Treatment",
+          "subtype": "ElementSubTypeTermUid_1",
+          "subtype_name": "Screening"
+        },
+        {
+          "type": "ElementTypeTermUid_1",
+          "type_name": "No Treatment",
+          "subtype": "ElementSubTypeTermUid_2",
+          "subtype_name": "Wash-out"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test DELETE",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/study/study_root/study-elements/{elementUid}"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test patch specific - set name",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "New_Element_Name_1",
+        "plannedDuration": {
+          "durationValue": 50,
+          "durationUnitCode": {
+            "uid": "UnitDefinition_000002"
+          }
+        }
+      },
+      "url": "/study/study_root/study-elements/StudyElement_000001"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "studyUid": "study_root",
+        "order": 1,
+        "name": "New_Element_Name_1",
+        "shortName": "Element_Short_Name_1",
+        "code": "Element_code_1",
+        "startDate": "2020-06-26T00:00:00",
+        "endDate": null,
+        "status": null,
+        "changeType": null,
+        "acceptedVersion": null,
+        "studyCompoundDosingCount": 0,
+        "description": "desc...",
+        "plannedDuration": {
+          "durationValue": 50, 
+          "durationUnitCode": {
+            "uid": "UnitDefinition_000002",
+            "name": "weeks"
+          }
+        },
+        "startRule": "startRule...",
+        "endRule": "endRule...",
+        "elementColour": "elementColour",
+        "userInitials": "TODO initials",
+        "elementUid": "StudyElement_000001",
+        "elementSubType": {
+          "termUid": "term_root_final",
+          "catalogueName": "SDTM CT",
+          "codelistUid": "ct_codelist_root_endpoint",
+          "sponsorPreferredName": "term_value_name1",
+          "sponsorPreferredNameSentenceCase": "term_value_name_sentence_case",
+          "order": 1,
+          "libraryName": "Sponsor",
+          "startDate": "2022-08-05T05:47:08.082000",
+          "endDate": null,
+          "status": "Final",
+          "version": "1.0",
+          "changeDescription": "Approved version",
+          "userInitials": "TODO initials",
+          "possibleActions": ["inactivate",
+          "newVersion"]
+        }
+      }
+    }
+  }
+]

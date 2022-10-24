@@ -1,0 +1,65 @@
+[
+  {
+    "changeDescription": "Initial version",
+    "description": "description for ODM version 1.3.2 with DoB",
+    "effectiveDate": "2021-01-01",
+    "endDate": null,
+    "forms": [],
+    "libraryName": "Sponsor",
+    "name": "ODM version 1.3.2 with DoB",
+    "oid": "T.ODM-1-3-2-V1",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "retiredDate": "2022-12-31",
+    "startDate": "2022-10-18T13:18:41.809079",
+    "status": "Draft",
+    "uid": "OdmTemplate_000001",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  },
+  {
+    "changeDescription": "Initial version",
+    "description": "description for ODM version 1.3.2 with Age",
+    "effectiveDate": "2021-02-01",
+    "endDate": null,
+    "forms": [],
+    "libraryName": "Sponsor",
+    "name": "ODM version 1.3.2 with Age",
+    "oid": "T.ODM-1-3-2-V2",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "retiredDate": "2022-06-30",
+    "startDate": "2022-10-18T13:18:42.163245",
+    "status": "Draft",
+    "uid": "OdmTemplate_000002",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  },
+  {
+    "changeDescription": "Initial version",
+    "description": "description for Finding ECG Template",
+    "effectiveDate": "2022-06-17",
+    "endDate": null,
+    "forms": [],
+    "libraryName": "Sponsor",
+    "name": "Finding ECG Template",
+    "oid": "T.ODM.FINDING.ECG",
+    "possibleActions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "retiredDate": "2022-06-30",
+    "startDate": "2022-10-18T13:18:42.285160",
+    "status": "Draft",
+    "uid": "OdmTemplate_000003",
+    "userInitials": "TODO user initials",
+    "version": "0.1"
+  }
+]

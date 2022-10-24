@@ -1,0 +1,7 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","NAME_SENTENSE_CASE","DEFINITION","ORDER"
+"TPOFTRT","COMPARATIVE TREATMENT TYPE OF TREATMENT","Comparative Treatment","comparative treatment","Comparative Treatment","1"
+"TPOFTRT","CURRENT TREATMENT TYPE OF TREATMENT","Current Treatment","current treatment","Current Treatment","1"
+"TPOFTRT","INVESTIGATIONAL PRODUCT TYPE OF TREATMENT","Investigational Product","investigational product","Investigational Medical Product","1"
+"TPOFTRT","PLACEBO TYPE OF TREATMENT","Placebo Treatment","placebo treatment","Used when the planned compound is a placebo treatment
+This type of treatment will not drive a record in SDTM.TS
+A planned dosing should be made for the placebo compound, creating rows in SDTM.EX","1"

@@ -1,0 +1,901 @@
+[
+  {
+    "abbreviation": null,
+    "analyteNumber": "AN000028",
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [
+      {
+        "name": "DV3372",
+        "termUid": "CTTerm_000137"
+      },
+      {
+        "name": "DV3396",
+        "termUid": "CTTerm_000135"
+      },
+      {
+        "name": "PDS290",
+        "termUid": "CTTerm_000133"
+      }
+    ],
+    "dispensers": [
+      {
+        "name": "Cartridge",
+        "termUid": "CTTerm_000129"
+      }
+    ],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      },
+      {
+        "name": "Tablet",
+        "termUid": "C42998_TABLET"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [
+      {
+        "uid": "NumericValueWithUnit_000002",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 0.5
+      },
+      {
+        "uid": "NumericValueWithUnit_000003",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 1.0
+      }
+    ],
+    "endDate": null,
+    "halfLife": {
+      "uid": "NumericValueWithUnit_000001",
+      "unitDefinitionUid": "UnitDefinition_000357",
+      "unitLabel": "week",
+      "value": 1.0
+    },
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "Semaglutide",
+    "nameSentenceCase": "semaglutide",
+    "nncLongNumber": "NNC0113-0000-0217",
+    "nncShortNumber": "NNC0113-0217",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Oral",
+        "termUid": "C38288_ORAL"
+      },
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:07.149677",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000004",
+        "unitDefinitionUid": "UnitDefinition_000318",
+        "unitLabel": "mg/mL",
+        "value": 0.68
+      },
+      {
+        "uid": "NumericValueWithUnit_000005",
+        "unitDefinitionUid": "UnitDefinition_000318",
+        "unitLabel": "mg/mL",
+        "value": 1.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000006",
+        "unitDefinitionUid": "UnitDefinition_000318",
+        "unitLabel": "mg/mL",
+        "value": 1.34
+      },
+      {
+        "uid": "NumericValueWithUnit_000007",
+        "unitDefinitionUid": "UnitDefinition_000318",
+        "unitLabel": "mg/mL",
+        "value": 2.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000012",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 2.5
+      },
+      {
+        "uid": "NumericValueWithUnit_000008",
+        "unitDefinitionUid": "UnitDefinition_000318",
+        "unitLabel": "mg/mL",
+        "value": 2.67
+      },
+      {
+        "uid": "NumericValueWithUnit_000009",
+        "unitDefinitionUid": "UnitDefinition_000318",
+        "unitLabel": "mg/mL",
+        "value": 3.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000010",
+        "unitDefinitionUid": "UnitDefinition_000318",
+        "unitLabel": "mg/mL",
+        "value": 3.2
+      },
+      {
+        "uid": "NumericValueWithUnit_000013",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 5.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000014",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 10.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000011",
+        "unitDefinitionUid": "UnitDefinition_000318",
+        "unitLabel": "mg/mL",
+        "value": 10.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000015",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 14.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000016",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 20.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000017",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 40.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000018",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 50.0
+      }
+    ],
+    "substances": [
+      {
+        "pclassId": null,
+        "pclassName": null,
+        "pclassTermUid": null,
+        "substanceName": "SEMAGLUTIDE",
+        "substanceTermUid": "DictionaryTerm_001034",
+        "substanceUnii": "53AXN4NNHX"
+      }
+    ],
+    "uid": "Compound_000001",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": null,
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [],
+    "dispensers": [],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [],
+    "endDate": null,
+    "halfLife": null,
+    "isNameInn": true,
+    "isSponsorCompound": false,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "Insulin Glargine",
+    "nameSentenceCase": "insulin glargine",
+    "nncLongNumber": null,
+    "nncShortNumber": null,
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:12.151600",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000019",
+        "unitDefinitionUid": "UnitDefinition_000244",
+        "unitLabel": "IU/mL",
+        "value": 100.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000020",
+        "unitDefinitionUid": "UnitDefinition_000244",
+        "unitLabel": "IU/mL",
+        "value": 300.0
+      }
+    ],
+    "substances": [
+      {
+        "pclassId": "N0000175453",
+        "pclassName": "Insulin Analog",
+        "pclassTermUid": "DictionaryTerm_000055",
+        "substanceName": "INSULIN GLARGINE",
+        "substanceTermUid": "DictionaryTerm_001028",
+        "substanceUnii": "2ZM8CX04RZ"
+      }
+    ],
+    "uid": "Compound_000002",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": null,
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [],
+    "dispensers": [
+      {
+        "name": "Blister",
+        "termUid": "CTTerm_000132"
+      }
+    ],
+    "dosageForms": [
+      {
+        "name": "Tablet",
+        "termUid": "C42998_TABLET"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [
+      {
+        "uid": "NumericValueWithUnit_000022",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 500.0
+      }
+    ],
+    "endDate": null,
+    "halfLife": {
+      "uid": "NumericValueWithUnit_000021",
+      "unitDefinitionUid": "UnitDefinition_000343",
+      "unitLabel": "hour",
+      "value": 6.5
+    },
+    "isNameInn": true,
+    "isSponsorCompound": false,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "Metformin",
+    "nameSentenceCase": "metformin",
+    "nncLongNumber": null,
+    "nncShortNumber": null,
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Oral",
+        "termUid": "C38288_ORAL"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:15.950053",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000022",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 500.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000023",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 850.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000024",
+        "unitDefinitionUid": "UnitDefinition_000229",
+        "unitLabel": "mg",
+        "value": 1000.0
+      }
+    ],
+    "substances": [
+      {
+        "pclassId": "N0000175565",
+        "pclassName": "Biguanide",
+        "pclassTermUid": "DictionaryTerm_000043",
+        "substanceName": "METFORMIN",
+        "substanceTermUid": "DictionaryTerm_001048",
+        "substanceUnii": "9100L32L2N"
+      }
+    ],
+    "uid": "Compound_000003",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": "AN000022",
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [
+      {
+        "name": "PDS290",
+        "termUid": "CTTerm_000133"
+      }
+    ],
+    "dispensers": [
+      {
+        "name": "Cartridge",
+        "termUid": "CTTerm_000129"
+      },
+      {
+        "name": "Vial",
+        "termUid": "CTTerm_000130"
+      }
+    ],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [],
+    "endDate": null,
+    "halfLife": null,
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "Degludec",
+    "nameSentenceCase": "degludec",
+    "nncLongNumber": "NNC0100-0000-0454",
+    "nncShortNumber": "NNC0100-0454",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:24.252416",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000019",
+        "unitDefinitionUid": "UnitDefinition_000244",
+        "unitLabel": "IU/mL",
+        "value": 100.0
+      },
+      {
+        "uid": "NumericValueWithUnit_000025",
+        "unitDefinitionUid": "UnitDefinition_000244",
+        "unitLabel": "IU/mL",
+        "value": 200.0
+      }
+    ],
+    "substances": [
+      {
+        "pclassId": "N0000175453",
+        "pclassName": "Insulin Analog",
+        "pclassTermUid": "DictionaryTerm_000055",
+        "substanceName": "INSULIN DEGLUDEC",
+        "substanceTermUid": "DictionaryTerm_001035",
+        "substanceUnii": "54Q18076QB"
+      }
+    ],
+    "uid": "Compound_000004",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": "AN000058|AN000028",
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [
+      {
+        "name": "PDS290",
+        "termUid": "CTTerm_000133"
+      }
+    ],
+    "dispensers": [
+      {
+        "name": "Cartridge",
+        "termUid": "CTTerm_000129"
+      }
+    ],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [],
+    "endDate": null,
+    "halfLife": {
+      "uid": "NumericValueWithUnit_000001",
+      "unitDefinitionUid": "UnitDefinition_000357",
+      "unitLabel": "week",
+      "value": 1.0
+    },
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "IcoSema",
+    "nameSentenceCase": "icosema",
+    "nncLongNumber": "NNC0148-0000-0287|NNC0113-0000-0217",
+    "nncShortNumber": "NNC0148-0287|NNC0113-0217",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:27.036923",
+    "status": "Final",
+    "strengthValues": [],
+    "substances": [
+      {
+        "pclassId": null,
+        "pclassName": null,
+        "pclassTermUid": null,
+        "substanceName": "INSULIN ICODEC",
+        "substanceTermUid": "DictionaryTerm_001066",
+        "substanceUnii": "P7YU3ED05N"
+      },
+      {
+        "pclassId": null,
+        "pclassName": null,
+        "pclassTermUid": null,
+        "substanceName": "SEMAGLUTIDE",
+        "substanceTermUid": "DictionaryTerm_001034",
+        "substanceUnii": "53AXN4NNHX"
+      }
+    ],
+    "uid": "Compound_000005",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": "anTBD005",
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [],
+    "dispensers": [],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [],
+    "endDate": null,
+    "halfLife": {
+      "uid": "NumericValueWithUnit_000026",
+      "unitDefinitionUid": "UnitDefinition_000343",
+      "unitLabel": "hour",
+      "value": 6.6
+    },
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "NPH Insulin",
+    "nameSentenceCase": "nph insulin",
+    "nncLongNumber": null,
+    "nncShortNumber": null,
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:29.541666",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000019",
+        "unitDefinitionUid": "UnitDefinition_000244",
+        "unitLabel": "IU/mL",
+        "value": 100.0
+      }
+    ],
+    "substances": [
+      {
+        "pclassId": "N0000175944",
+        "pclassName": "Insulin",
+        "pclassTermUid": "DictionaryTerm_000054",
+        "substanceName": "INSULIN HUMAN",
+        "substanceTermUid": "DictionaryTerm_001026",
+        "substanceUnii": "1Y17CTI5SR"
+      }
+    ],
+    "uid": "Compound_000006",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": "AN000070",
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [],
+    "dispensers": [],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [],
+    "endDate": null,
+    "halfLife": null,
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "Cagrilintide",
+    "nameSentenceCase": "cagrilintide",
+    "nncLongNumber": "NNC0174-0000-0833",
+    "nncShortNumber": "NNC0174-0833",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:32.676421",
+    "status": "Final",
+    "strengthValues": [],
+    "substances": [
+      {
+        "pclassId": null,
+        "pclassName": null,
+        "pclassTermUid": null,
+        "substanceName": "CAGRILINTIDE",
+        "substanceTermUid": "DictionaryTerm_001055",
+        "substanceUnii": "AO43BIF1U8"
+      }
+    ],
+    "uid": "Compound_000007",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": "AN000070|AN000028",
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [],
+    "dispensers": [],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [],
+    "endDate": null,
+    "halfLife": null,
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "CagriSema",
+    "nameSentenceCase": "cagrisema",
+    "nncLongNumber": "NNC0174-0000-0833|NNC0113-0000-0217",
+    "nncShortNumber": "NNC0174-0833|NNC0113-0217",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:34.529217",
+    "status": "Final",
+    "strengthValues": [],
+    "substances": [
+      {
+        "pclassId": null,
+        "pclassName": null,
+        "pclassTermUid": null,
+        "substanceName": "CAGRILINTIDE",
+        "substanceTermUid": "DictionaryTerm_001055",
+        "substanceUnii": "AO43BIF1U8"
+      },
+      {
+        "pclassId": null,
+        "pclassName": null,
+        "pclassTermUid": null,
+        "substanceName": "SEMAGLUTIDE",
+        "substanceTermUid": "DictionaryTerm_001034",
+        "substanceUnii": "53AXN4NNHX"
+      }
+    ],
+    "uid": "Compound_000008",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": "AN000058",
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [
+      {
+        "name": "PDS290",
+        "termUid": "CTTerm_000133"
+      }
+    ],
+    "dispensers": [
+      {
+        "name": "Cartridge",
+        "termUid": "CTTerm_000129"
+      }
+    ],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [],
+    "endDate": null,
+    "halfLife": {
+      "uid": "NumericValueWithUnit_000027",
+      "unitDefinitionUid": "UnitDefinition_000343",
+      "unitLabel": "hour",
+      "value": 196.0
+    },
+    "isNameInn": true,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "Insulin Icodec",
+    "nameSentenceCase": "insulin icodec",
+    "nncLongNumber": "NNC0148-0000-0287",
+    "nncShortNumber": "NNC0148-0287",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:37.181750",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000028",
+        "unitDefinitionUid": "UnitDefinition_000244",
+        "unitLabel": "IU/mL",
+        "value": 700.0
+      }
+    ],
+    "substances": [
+      {
+        "pclassId": null,
+        "pclassName": null,
+        "pclassTermUid": null,
+        "substanceName": "INSULIN ICODEC",
+        "substanceTermUid": "DictionaryTerm_001066",
+        "substanceUnii": "P7YU3ED05N"
+      }
+    ],
+    "uid": "Compound_000009",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "analyteNumber": "AN000129",
+    "brands": [],
+    "changeDescription": "Approved version",
+    "definition": null,
+    "deliveryDevices": [],
+    "dispensers": [
+      {
+        "name": "Cartridge",
+        "termUid": "CTTerm_000129"
+      }
+    ],
+    "dosageForms": [
+      {
+        "name": "Injectable",
+        "termUid": "C42946_INJECTION"
+      }
+    ],
+    "doseFrequencies": [],
+    "doseValues": [],
+    "endDate": null,
+    "halfLife": null,
+    "isNameInn": false,
+    "isSponsorCompound": true,
+    "lagTimes": [
+      {
+        "sdtmDomainLabel": "Adverse Event Domain",
+        "sdtmDomainUid": "C49562_AE",
+        "unitDefinitionUid": "UnitDefinition_000354",
+        "unitLabel": "days",
+        "value": 7.0
+      }
+    ],
+    "libraryName": "Sponsor",
+    "name": "NNC0363-0845",
+    "nameSentenceCase": "nnc0363-0845",
+    "nncLongNumber": "NNC0363-0000-0845",
+    "nncShortNumber": "NNC0363-0845",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "projects": [],
+    "routesOfAdministration": [
+      {
+        "name": "Subcutaneous",
+        "termUid": "C38299_SUBCUTANEOUS"
+      }
+    ],
+    "startDate": "2022-10-18T13:18:39.740586",
+    "status": "Final",
+    "strengthValues": [
+      {
+        "uid": "NumericValueWithUnit_000029",
+        "unitDefinitionUid": "UnitDefinition_000175",
+        "unitLabel": "nmol/L",
+        "value": 600.0
+      }
+    ],
+    "substances": [],
+    "uid": "Compound_000010",
+    "userInitials": "MT",
+    "version": "1.0"
+  }
+]

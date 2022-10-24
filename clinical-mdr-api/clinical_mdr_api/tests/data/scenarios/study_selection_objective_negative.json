@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Test adding selection objective does not exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "objectiveUid": "Objective_000001_does_not_exists",
+                "objectiveLevel": "Primary"
+            },
+            "url": "/study/study_root/study-objectives/select"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no approved objective identified by provided uid (Objective_000001_does_not_exists)",
+                "method": "POST",
+                "path": "http://testserver/study/study_root/study-objectives/select",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test selection objective is retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "objectiveUid": "Objective_000005",
+                "objectiveLevel": "Primary"
+            },
+            "url": "/study/study_root/study-objectives/select"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no approved objective identified by provided uid (Objective_000005)",
+                "method": "POST",
+                "path": "http://testserver/study/study_root/study-objectives/select",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test get specific selection where no selection exists",
+        "request": {
+            "sleep": 2,
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/study/study_root/study-objectives/study_objective_uid"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The study objective uid does not exist (study_objective_uid)",
+                "method": "GET",
+                "path": "http://testserver/study/study_root/study-objectives/study_objective_uid",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "NotFoundException"
+            }
+        }
+    }
+]

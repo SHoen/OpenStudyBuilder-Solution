@@ -1,0 +1,622 @@
+[
+    {
+        "studyUid": "Study_000001",
+        "order": 1,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000001",
+        "activity": {
+            "uid": "Activity_000963",
+            "name": "Ethnicity",
+            "nameSentenceCase": "Ethnicity",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:58:21.635967",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000037",
+                    "name": "GeneralDemography"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000003",
+                    "name": "Demography"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000061",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "SAFETY",
+            "sponsorPreferredNameSentenceCase": "safety",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.706377",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:35:08.120823",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 2,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000002",
+        "activity": {
+            "uid": "Activity_000964",
+            "name": "Date of Birth",
+            "nameSentenceCase": "Date of Birth",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:58:21.707181",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000037",
+                    "name": "GeneralDemography"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000003",
+                    "name": "Demography"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000061",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "SAFETY",
+            "sponsorPreferredNameSentenceCase": "safety",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.706377",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:35:08.866828",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 3,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000003",
+        "activity": {
+            "uid": "Activity_000965",
+            "name": "Sex",
+            "nameSentenceCase": "Sex",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:58:21.784302",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000037",
+                    "name": "GeneralDemography"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000003",
+                    "name": "Demography"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000061",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "SAFETY",
+            "sponsorPreferredNameSentenceCase": "safety",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.706377",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:35:09.120267",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 4,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000004",
+        "activity": {
+            "uid": "Activity_000966",
+            "name": "Race",
+            "nameSentenceCase": "Race",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:58:21.859642",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000037",
+                    "name": "GeneralDemography"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000003",
+                    "name": "Demography"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000061",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "SAFETY",
+            "sponsorPreferredNameSentenceCase": "safety",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.706377",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:35:09.271360",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 5,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000005",
+        "activity": {
+            "uid": "Activity_000967",
+            "name": "Subject information",
+            "nameSentenceCase": "Subject information",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:58:21.948351",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000037",
+                    "name": "GeneralDemography"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000003",
+                    "name": "Demography"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000061",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "SAFETY",
+            "sponsorPreferredNameSentenceCase": "safety",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.706377",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:35:09.427398",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 6,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000006",
+        "activity": {
+            "uid": "Activity_000420",
+            "name": "Pre-Eclampsia Diastolic Blood Pressure",
+            "nameSentenceCase": "Pre-Eclampsia Diastolic Blood Pressure",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:57:36.798803",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000012",
+                    "name": "GeneralAE Requiring Additional Data"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000002",
+                    "name": "AE Requiring Additional Data"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000059",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "EFFICACY",
+            "sponsorPreferredNameSentenceCase": "efficacy",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.495523",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:39:08.483556",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 7,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000007",
+        "activity": {
+            "uid": "Activity_000421",
+            "name": "Pre-Eclampsia Systolic Blood Pressure",
+            "nameSentenceCase": "Pre-Eclampsia Systolic Blood Pressure",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:57:36.894977",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000012",
+                    "name": "GeneralAE Requiring Additional Data"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000002",
+                    "name": "AE Requiring Additional Data"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000059",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "EFFICACY",
+            "sponsorPreferredNameSentenceCase": "efficacy",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.495523",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:39:08.860929",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 8,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000008",
+        "activity": {
+            "uid": "Activity_000457",
+            "name": "White Blood Cells",
+            "nameSentenceCase": "White Blood Cells",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:57:40.225155",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000012",
+                    "name": "GeneralAE Requiring Additional Data"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000002",
+                    "name": "AE Requiring Additional Data"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000059",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "EFFICACY",
+            "sponsorPreferredNameSentenceCase": "efficacy",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.495523",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:39:08.971767",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 9,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000009",
+        "activity": {
+            "uid": "Activity_001088",
+            "name": "Diastolic Blood Pressure",
+            "nameSentenceCase": "Diastolic Blood Pressure",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:58:31.981853",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000041",
+                    "name": "Vital Signs"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000005",
+                    "name": "Examinations"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000059",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "EFFICACY",
+            "sponsorPreferredNameSentenceCase": "efficacy",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.495523",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:39:09.079059",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    },
+    {
+        "studyUid": "Study_000001",
+        "order": 10,
+        "showActivityGroupInProtocolFlowchart": true,
+        "showActivitySubGroupInProtocolFlowchart": true,
+        "showActivityInProtocolFlowchart": false,
+        "studyActivityUid": "StudyActivity_000010",
+        "activity": {
+            "uid": "Activity_001102",
+            "name": "Systolic Blood Pressure",
+            "nameSentenceCase": "Systolic Blood Pressure",
+            "definition": null,
+            "abbreviation": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:58:33.067690",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "activitySubGroups": [
+                {
+                    "uid": "ActivitySubGroup_000041",
+                    "name": "Vital Signs"
+                }
+            ],
+            "activityGroups": [
+                {
+                    "uid": "ActivityGroup_000005",
+                    "name": "Examinations"
+                }
+            ]
+        },
+        "flowchartGroup": {
+            "termUid": "CTTerm_000059",
+            "catalogueName": "SDTM CT",
+            "codelistUid": "CTCodelist_000022",
+            "sponsorPreferredName": "EFFICACY",
+            "sponsorPreferredNameSentenceCase": "efficacy",
+            "order": null,
+            "libraryName": "Sponsor",
+            "startDate": "2022-04-21T06:51:54.495523",
+            "endDate": null,
+            "status": "Final",
+            "version": "1.0",
+            "changeDescription": "Approved version",
+            "userInitials": "unknown-user",
+            "possibleActions": [
+                "inactivate",
+                "newVersion"
+            ]
+        },
+        "note": null,
+        "startDate": "2022-04-27T12:39:09.236512",
+        "userInitials": "unknown-user",
+        "latestActivity": null,
+        "acceptedVersion": false
+    }
+]

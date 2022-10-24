@@ -1,0 +1,205 @@
+[
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "confirmatoryTesting": false,
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": [
+      {
+        "abbreviation": "HF",
+        "changeDescription": "Approved version",
+        "definition": "Heart failure (disorder)",
+        "dictionaryId": "84114007",
+        "endDate": null,
+        "libraryName": "SNOMED",
+        "name": "Heart failure",
+        "nameSentenceCase": "heart failure",
+        "possibleActions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "startDate": "2022-05-23T11:41:23.366441",
+        "status": "Final",
+        "termUid": "DictionaryTerm_000015",
+        "userInitials": "unknown-user",
+        "version": "1.0"
+      }
+    ],
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+    "namePlain": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "Compound",
+        "values": null
+      },
+      {
+        "name": "Comparator",
+        "values": null
+      },
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:03.038862",
+    "status": "Final",
+    "studyCount": 1,
+    "uid": "ObjectiveTemplate_000004",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "confirmatoryTesting": null,
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "User Defined"
+    },
+    "name": "test user defined [ActivityInstance]",
+    "namePlain": "test user defined [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:02.455852",
+    "status": "Final",
+    "studyCount": 0,
+    "uid": "ObjectiveTemplate_000003",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "confirmatoryTesting": null,
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance] and [DiseaseDisorder]",
+    "namePlain": "test [ActivityInstance] and [DiseaseDisorder]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:02.252115",
+    "status": "Final",
+    "studyCount": 0,
+    "uid": "ObjectiveTemplate_000002",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "changeDescription": "Approved version",
+    "confirmatoryTesting": null,
+    "defaultParameterValues": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editableInstance": false,
+    "endDate": null,
+    "indications": null,
+    "library": {
+      "isEditable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance]",
+    "namePlain": "test [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-05-23T12:12:01.873848",
+    "status": "Final",
+    "studyCount": 0,
+    "uid": "ObjectiveTemplate_000001",
+    "userInitials": "unknown-user",
+    "version": "1.0"
+  }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "non existent library",
+                "name": "Test objective",
+                "objectiveTemplateUid": "{otuid}",
+                "parameterValues": []
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "173",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The library with the name='non existent library' could not be found.",
+                "time": "2020-11-10T01:51:17.884429",
+                "path": "http://testserver/objectives",
+                "method": "POST",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Test library",
+                "name": "Test objective",
+                "objectiveTemplateUid": "wrong-uid",
+                "parameterValues": []
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The template was not found. Make sure that there is a latest 'Final' version.",
+                "time": "2020-11-10T01:52:30.985556",
+                "path": "http://testserver/objectives",
+                "method": "POST",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Test library",
+                "name": "Test objective",
+                "objectiveTemplateUid": "{otuidna}",
+                "parameterValues": []
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The template was not found. Make sure that there is a latest 'Final' version.",
+                "time": "2020-11-10T01:52:30.985556",
+                "path": "http://testserver/objectives",
+                "method": "POST",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test overriding the template name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Test library",
+                "name": "Test objective",
+                "objectiveTemplateUid": "{otuid}",
+                "nameOverride": "Name not approved - edited instance name",
+                "parameterValues": []
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "172",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Editing the name of an instance of this template is not allowed",
+                "time": "2022-04-12T10:34:00.680202",
+                "path": "http://testserver/objectives",
+                "method": "POST",
+                "type": "ValidationException"
+            }
+        }
+    }
+]

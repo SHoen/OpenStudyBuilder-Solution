@@ -1,0 +1,260 @@
+[
+  {
+    "acceptedVersion": false,
+    "criteria": {
+      "changeDescription": "Approved version",
+      "criteriaTemplate": {
+        "guidanceText": null,
+        "name": "<p>Any disorder, except for conditions associated with [DiseaseDisorder], which in the investigator's opinion might jeopardise participant's safety or compliance with the protocol.</p>",
+        "namePlain": "Any disorder, except for conditions associated with type 2 diabetes mellitus, which in the investigator's opinion might jeopardise participant's safety or compliance with the protocol.",
+        "uid": "CriteriaTemplate_000004"
+      },
+      "endDate": null,
+      "library": {
+        "isEditable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Any disorder, except for conditions associated with [type 2 diabetes mellitus], which in the investigator's opinion might jeopardise participant's safety or compliance with the protocol.</p>",
+      "namePlain": "Any disorder, except for conditions associated with type 2 diabetes mellitus, which in the investigator's opinion might jeopardise participant's safety or compliance with the protocol.",
+      "parameterValues": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": [
+            {
+              "index": 1,
+              "name": "type 2 diabetes mellitus",
+              "type": "DiseaseDisorder",
+              "uid": "DictionaryTerm_000007"
+            }
+          ]
+        }
+      ],
+      "possibleActions": [
+        "inactivate"
+      ],
+      "startDate": "2022-10-20T06:28:14.016781",
+      "status": "Final",
+      "studyCount": null,
+      "uid": "Criteria_000005",
+      "userInitials": "MT",
+      "version": "1.0"
+    },
+    "criteriaType": {
+      "catalogueName": "SDTM CT",
+      "changeDescription": "Initial import from CDISC",
+      "codelistUid": "CTCodelist_000012",
+      "endDate": null,
+      "libraryName": "CDISC",
+      "order": 2,
+      "possibleActions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsorPreferredName": "Exclusion Criteria",
+      "sponsorPreferredNameSentenceCase": "exclusion criteria",
+      "startDate": "2022-10-18T10:16:18.825000",
+      "status": "Final",
+      "termUid": "C25370_EXCLUSION",
+      "userInitials": "TESTUSER",
+      "version": "1.0"
+    },
+    "keyCriteria": false,
+    "latestCriteria": null,
+    "order": 1,
+    "projectName": "CDISC Dev",
+    "projectNumber": "CDISC DEV",
+    "startDate": "2022-10-20T06:28:01.781445",
+    "studyCriteriaUid": "StudyCriteria_000004",
+    "studyUid": "Study_000002",
+    "userInitials": "MT"
+  },
+  {
+    "acceptedVersion": false,
+    "criteria": {
+      "changeDescription": "Approved version",
+      "criteriaTemplate": {
+        "guidanceText": null,
+        "name": "<p>Diagnosed with [DiseaseDisorder] [Operator] [NumericValue] [Age Unit] before screening.</p>",
+        "namePlain": "Diagnosed with type 2 diabetes mellitus \u2265 1 years before screening.",
+        "uid": "CriteriaTemplate_000002"
+      },
+      "endDate": null,
+      "library": {
+        "isEditable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Diagnosed with [type 2 diabetes mellitus] [\u2265] [1] [years] before screening.</p>",
+      "namePlain": "Diagnosed with type 2 diabetes mellitus \u2265 1 years before screening.",
+      "parameterValues": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": [
+            {
+              "index": 1,
+              "name": "type 2 diabetes mellitus",
+              "type": "DiseaseDisorder",
+              "uid": "DictionaryTerm_000007"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": [
+            {
+              "index": 1,
+              "name": "\u2265",
+              "type": "Operator",
+              "uid": "TemplateParameterValue_000420"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "values": [
+            {
+              "index": 1,
+              "name": "1",
+              "type": "NumericValue",
+              "uid": "NumericValue_000044"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 4,
+          "values": [
+            {
+              "index": 1,
+              "name": "years",
+              "type": "Unit",
+              "uid": "UnitDefinition_000358"
+            }
+          ]
+        }
+      ],
+      "possibleActions": [
+        "inactivate"
+      ],
+      "startDate": "2022-10-20T06:19:34.087419",
+      "status": "Final",
+      "studyCount": null,
+      "uid": "Criteria_000003",
+      "userInitials": "MT",
+      "version": "1.0"
+    },
+    "criteriaType": {
+      "catalogueName": "SDTM CT",
+      "changeDescription": "Initial import from CDISC",
+      "codelistUid": "CTCodelist_000012",
+      "endDate": null,
+      "libraryName": "CDISC",
+      "order": 1,
+      "possibleActions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsorPreferredName": "Inclusion Criteria",
+      "sponsorPreferredNameSentenceCase": "inclusion criteria",
+      "startDate": "2022-10-18T10:16:18.810000",
+      "status": "Final",
+      "termUid": "C25532_INCLUSION",
+      "userInitials": "TESTUSER",
+      "version": "1.0"
+    },
+    "keyCriteria": false,
+    "latestCriteria": null,
+    "order": 1,
+    "projectName": "CDISC Dev",
+    "projectNumber": "CDISC DEV",
+    "startDate": "2022-10-20T06:18:30.849797",
+    "studyCriteriaUid": "StudyCriteria_000002",
+    "studyUid": "Study_000002",
+    "userInitials": "MT"
+  },
+  {
+    "acceptedVersion": false,
+    "criteria": {
+      "changeDescription": "Approved version",
+      "criteriaTemplate": {
+        "guidanceText": null,
+        "name": "<p>Age [NumericValue] [Age Unit] or above at the time of signing the informed consent.</p>",
+        "namePlain": "Age 18 years or above at the time of signing the informed consent.",
+        "uid": "CriteriaTemplate_000003"
+      },
+      "endDate": null,
+      "library": {
+        "isEditable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Age [18] [years] or above at the time of signing the informed consent.</p>",
+      "namePlain": "Age 18 years or above at the time of signing the informed consent.",
+      "parameterValues": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": [
+            {
+              "index": 1,
+              "name": "18",
+              "type": "NumericValue",
+              "uid": "NumericValue_000043"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": [
+            {
+              "index": 1,
+              "name": "years",
+              "type": "Unit",
+              "uid": "UnitDefinition_000358"
+            }
+          ]
+        }
+      ],
+      "possibleActions": [
+        "inactivate"
+      ],
+      "startDate": "2022-10-20T06:21:00.524487",
+      "status": "Final",
+      "studyCount": null,
+      "uid": "Criteria_000004",
+      "userInitials": "MT",
+      "version": "1.0"
+    },
+    "criteriaType": {
+      "catalogueName": "SDTM CT",
+      "changeDescription": "Initial import from CDISC",
+      "codelistUid": "CTCodelist_000012",
+      "endDate": null,
+      "libraryName": "CDISC",
+      "order": 1,
+      "possibleActions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsorPreferredName": "Inclusion Criteria",
+      "sponsorPreferredNameSentenceCase": "inclusion criteria",
+      "startDate": "2022-10-18T10:16:18.810000",
+      "status": "Final",
+      "termUid": "C25532_INCLUSION",
+      "userInitials": "TESTUSER",
+      "version": "1.0"
+    },
+    "keyCriteria": false,
+    "latestCriteria": null,
+    "order": 2,
+    "projectName": "CDISC Dev",
+    "projectNumber": "CDISC DEV",
+    "startDate": "2022-10-20T06:20:45.742125",
+    "studyCriteriaUid": "StudyCriteria_000003",
+    "studyUid": "Study_000002",
+    "userInitials": "MT"
+  }
+]

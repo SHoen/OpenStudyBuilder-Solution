@@ -1,0 +1,235 @@
+[
+   {
+      "name": "Test POST create event",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "event_name1",
+            "nameSentenceCase": "event_name_sentence_case1",
+            "definition": "event_definition1",
+            "abbreviation": "abbv",
+            "topicCode": "event_topic_code1",
+            "adamParamCode": "event_adam_param_code1",
+            "legacyDescription": "event_legacy_description",
+            "sdtmVariable": "sdtm_variable_uid1",
+            "sdtmSubcat": "sdtm_subcat_uid1",
+            "sdtmCat": "sdtm_cat_uid1",
+            "sdtmDomain": "sdtm_domain_uid1",
+            "activities": [
+               "activity_root1"
+            ],
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/activities/events"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Event_000001",
+            "name": "event_name1",
+            "nameSentenceCase": "event_name_sentence_case1",
+            "definition": "event_definition1",
+            "abbreviation": "abbv",
+            "topicCode": "event_topic_code1",
+            "adamParamCode": "event_adam_param_code1",
+            "legacyDescription": "event_legacy_description",
+            "sdtmVariable": {
+               "termUid": "sdtm_variable_uid1",
+               "name": null
+            },
+            "sdtmSubcat": {
+               "termUid": "sdtm_subcat_uid1",
+               "name": null
+            },
+            "sdtmCat": {
+               "termUid": "sdtm_cat_uid1",
+               "name": null
+            },
+            "sdtmDomain": {
+               "termUid": "sdtm_domain_uid1",
+               "name": null
+            },
+            "activities": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1"
+               }
+            ],
+            "activitySubgroups": [
+               {
+                  "uid": "activity_sub_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "activityGroups": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1"
+               }
+            ],
+            "specimen": null,
+            "libraryName": "Sponsor",
+            "type": "events",
+            "startDate": "2021-03-18T11:54:20.898Z",
+            "endDate": null,
+            "status": "Draft",
+            "version": "0.1",
+            "changeDescription": "Initial version",
+            "userInitials": "TODO user initials",
+            "possibleActions": [
+               "approve",
+               "delete",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non existing sdtm variable",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "sdtmVariable": "sdtm_variables_non_existing",
+            "changeDescription": "Changing event"
+         },
+         "url": "/concepts/activities/events/Event_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "EventVO tried to connect to non existing sdtm variable identified by uid (sdtm_variables_non_existing)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/activities/events/Event_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non existing sdtm subcat",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "sdtmSubcat": "sdtm_subcat_non_existing",
+            "changeDescription": "Changing event"
+         },
+         "url": "/concepts/activities/events/Event_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "EventVO tried to connect to non existing sdtm subcat identified by uid (sdtm_subcat_non_existing)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/activities/events/Event_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non existing sdtm cat",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "sdtmCat": "sdtm_cat_non_existing",
+            "changeDescription": "Changing event"
+         },
+         "url": "/concepts/activities/events/Event_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "EventVO tried to connect to non existing sdtm cat identified by uid (sdtm_cat_non_existing)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/activities/events/Event_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non existing sdtm domain",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "sdtmDomain": "sdtm_domain_non_existing",
+            "changeDescription": "Changing event"
+         },
+         "url": "/concepts/activities/events/Event_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "EventVO tried to connect to non existing sdtm domain identified by uid (sdtm_domain_non_existing)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/activities/events/Event_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non existing activity",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "activities": [
+               "activity_non_existing_uid"
+            ],
+            "changeDescription": "Changing event"
+         },
+         "url": "/concepts/activities/events/Event_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "EventVO tried to connect to non existing Activity identified by uid (activity_non_existing_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/activities/events/Event_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST event name already exists",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "event_name1",
+            "nameSentenceCase": "event_name_sentence_case1",
+            "definition": "event_definition1",
+            "topicCode": "event_topic_code1",
+            "adamParamCode": "event_adam_param_code1",
+            "legacyDescription": "event_legacy_description",
+            "sdtmVariable": "sdtm_variable_uid1",
+            "sdtmSubcat": "sdtm_subcat_uid1",
+            "sdtmCat": "sdtm_cat_uid1",
+            "sdtmDomain": "sdtm_domain_uid1",
+            "activities": [
+               "activity_root1"
+            ],
+            "libraryName": "Sponsor"
+         },
+         "url": "/concepts/activities/events"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "EventVO with name (event_name1) already exists",
+            "method": "POST",
+            "path": "http://testserver/concepts/activities/events",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   }
+]

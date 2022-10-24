@@ -1,0 +1,39 @@
+[
+  {
+    "currentMetadata": {
+      "identificationMetadata": {
+        "clinicalProgrammeName": "CDISC Development programme",
+        "projectName": "CDISC Dev",
+        "projectNumber": "CDISC DEV",
+        "registryIdentifiers": {
+          "ctGovId": null,
+          "ctGovIdNullValueCode": null,
+          "eudractId": null,
+          "eudractIdNullValueCode": null,
+          "investigationalNewDrugApplicationNumberIND": null,
+          "investigationalNewDrugApplicationNumberINDNullValueCode": null,
+          "japaneseTrialRegistryIdJAPIC": null,
+          "japaneseTrialRegistryIdJAPICNullValueCode": null,
+          "universalTrialNumberUTN": null,
+          "universalTrialNumberUTNNullValueCode": null
+        },
+        "studyAcronym": "CDISC360-2",
+        "studyId": "CDISC DEV-0",
+        "studyNumber": "0"
+      },
+      "versionMetadata": {
+        "lockedVersionAuthor": null,
+        "lockedVersionInfo": null,
+        "lockedVersionNumber": null,
+        "studyStatus": "DRAFT",
+        "versionTimestamp": "2022-10-20T06:13:45.627992"
+      }
+    },
+    "projectNumber": "CDISC DEV",
+    "studyAcronym": "CDISC360-2",
+    "studyId": "CDISC DEV-0",
+    "studyNumber": "0",
+    "studyStatus": "DRAFT",
+    "uid": "Study_000002"
+  }
+]

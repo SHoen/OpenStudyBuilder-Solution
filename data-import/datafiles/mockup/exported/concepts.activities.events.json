@@ -1,0 +1,1372 @@
+[
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Accidental Misadministration",
+        "uid": "Activity_000128"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Medication Error, Misuse and Abuse",
+        "uid": "ActivitySubGroup_000008"
+      }
+    ],
+    "adamParamCode": "MISADMAC",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Accidental misadministration of medicine as an error.",
+    "libraryName": "Sponsor",
+    "name": "Accidental Misadministration",
+    "nameSentenceCase": "accidental misadministration",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:05:53.164483",
+    "status": "Final",
+    "topicCode": "ACCIDENTAL MISADMINISTRATION",
+    "type": "events",
+    "uid": "Event_000001",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Acute Kidney Injury",
+        "uid": "Activity_000130"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Acute Kidney Injury",
+        "uid": "ActivitySubGroup_000007"
+      }
+    ],
+    "adamParamCode": "AKI",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Acute Kidney Injury_x000D_",
+    "libraryName": "Sponsor",
+    "name": "Acute Kidney Injury",
+    "nameSentenceCase": "acute kidney injury",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:05:53.297830",
+    "status": "Final",
+    "topicCode": "ACUTE KIDNEY INJURY",
+    "type": "events",
+    "uid": "Event_000002",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Adverse Event",
+        "uid": "Activity_000261"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Adverse Event",
+        "uid": "ActivitySubGroup_000012"
+      }
+    ],
+    "adamParamCode": "AE",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Any untoward medical occurrence in a patient or clinical investigation subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with this treatment._x000D_\nAn AE can therefore be any unfavourable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a medicinal product, whether or not considered related to the medicinal product._x000D_\nNote: This includes events from the first trial related activity after the subject has signed the informed consent and_x000D_\nuntil post treatment follow-up period as defined in the protocol. (SOP 110072 List of Roles/Groups and Definitions within Clinical Research and Observational Studies)",
+    "libraryName": "Sponsor",
+    "name": "Adverse Event",
+    "nameSentenceCase": "adverse event",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Adverse Event Domain",
+      "termUid": "C49562_AE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:06:33.140788",
+    "status": "Final",
+    "topicCode": "ADVERSE EVENT",
+    "type": "events",
+    "uid": "Event_000003",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Date of Birth",
+        "uid": "Activity_000470"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Informed Consent and Demography",
+        "uid": "ActivitySubGroup_000041"
+      }
+    ],
+    "adamParamCode": "BRTHDTC",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Date of birth of the subject._x000D_\nvariable name: BRTHDTC in subj. demographics domain",
+    "libraryName": "Sponsor",
+    "name": "Date of Birth",
+    "nameSentenceCase": "date of birth",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:07:42.329959",
+    "status": "Final",
+    "topicCode": "DATE_OF_BIRTH",
+    "type": "events",
+    "uid": "Event_000004",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Diabetic Retinopathy",
+        "uid": "Activity_000472"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Diabetic Retinopathy",
+        "uid": "ActivitySubGroup_000042"
+      }
+    ],
+    "adamParamCode": "DMR",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Diabetic Retinopathy",
+    "libraryName": "Sponsor",
+    "name": "Diabetic Retinopathy",
+    "nameSentenceCase": "diabetic retinopathy",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:07:42.927428",
+    "status": "Final",
+    "topicCode": "DIABET RETINOPATHY",
+    "type": "events",
+    "uid": "Event_000005",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "DISCONDT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Date of discontinuation",
+    "libraryName": "Sponsor",
+    "name": "Date of Discontinuation",
+    "nameSentenceCase": "date of discontinuation",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:07:43.725696",
+    "status": "Final",
+    "topicCode": "DISCONTINUATION_DATE",
+    "type": "events",
+    "uid": "Event_000006",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Eligibility Criteria Met",
+        "uid": "Activity_000571"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Eligibility Criteria",
+        "uid": "ActivitySubGroup_000054"
+      }
+    ],
+    "adamParamCode": "ELICRIMT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Having evaluated all the criteria, the subject is eligible to continue the trial",
+    "libraryName": "Sponsor",
+    "name": "Subject Eligible to Continue the Trial",
+    "nameSentenceCase": "subject eligible to continue the trial",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:08:17.400377",
+    "status": "Final",
+    "topicCode": "ELIGIBILITY CRITERIA MET",
+    "type": "events",
+    "uid": "Event_000007",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "EOTREAT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "End of Treatment",
+    "libraryName": "Sponsor",
+    "name": "End of Treatment",
+    "nameSentenceCase": "end of treatment",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:08:18.244299",
+    "status": "Final",
+    "topicCode": "END_OF_TREATMENT",
+    "type": "events",
+    "uid": "Event_000008",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "End of Study",
+        "uid": "Activity_000574"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "End of Study",
+        "uid": "ActivitySubGroup_000056"
+      }
+    ],
+    "adamParamCode": "EOT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "End of Study",
+    "libraryName": "Sponsor",
+    "name": "End of Study",
+    "nameSentenceCase": "end of study",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:08:18.573988",
+    "status": "Final",
+    "topicCode": "END_OF_TRIAL",
+    "type": "events",
+    "uid": "Event_000009",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "First Date on Trial Product",
+        "uid": "Activity_000600"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "End of Study",
+        "uid": "ActivitySubGroup_000056"
+      }
+    ],
+    "adamParamCode": "FSTTRPDT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "First date on trial product",
+    "libraryName": "Sponsor",
+    "name": "First Date on Trial Product",
+    "nameSentenceCase": "first date on trial product",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:08:27.246180",
+    "status": "Final",
+    "topicCode": "FIRST_TRIAL_PROD_DATE",
+    "type": "events",
+    "uid": "Event_000010",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Hospitalisation",
+        "uid": "Activity_000857"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Adverse Event",
+        "uid": "ActivitySubGroup_000012"
+      }
+    ],
+    "adamParamCode": "HOSPDT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Date of admission to hospital.",
+    "libraryName": "Sponsor",
+    "name": "Hospitalisation",
+    "nameSentenceCase": "hospitalisation",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Healthcare Encounters Domain",
+      "termUid": "C117757_HO"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:09:53.290701",
+    "status": "Final",
+    "topicCode": "HOSPITALIZATION DATE",
+    "type": "events",
+    "uid": "Event_000011",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Hyperglycaemic Episode",
+        "uid": "Activity_000975"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Hyperglycaemic Episodes",
+        "uid": "ActivitySubGroup_000077"
+      }
+    ],
+    "adamParamCode": "HYPEREP",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Hyperglycaemic episode_x000D_",
+    "libraryName": "Sponsor",
+    "name": "Hyperglycaemic Episode",
+    "nameSentenceCase": "hyperglycaemic episode",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:10:34.573135",
+    "status": "Final",
+    "topicCode": "HYPERGLYCAEMIC EPISODE",
+    "type": "events",
+    "uid": "Event_000012",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Hypersensitivity",
+        "uid": "Activity_000976"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Hypersensitivity Reaction",
+        "uid": "ActivitySubGroup_000078"
+      }
+    ],
+    "adamParamCode": "HSR",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Hypersensitivity",
+    "libraryName": "Sponsor",
+    "name": "Hypersensitivity",
+    "nameSentenceCase": "hypersensitivity",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:10:35.221352",
+    "status": "Final",
+    "topicCode": "HYPERSENSITIVITY",
+    "type": "events",
+    "uid": "Event_000013",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Hypoglycaemic Episode",
+        "uid": "Activity_001006"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Hypoglycaemic Episodes",
+        "uid": "ActivitySubGroup_000079"
+      }
+    ],
+    "adamParamCode": "HYPOEVNT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Hypoglycaemic Episode_x000D_",
+    "libraryName": "Sponsor",
+    "name": "Hypoglycaemic Episode",
+    "nameSentenceCase": "hypoglycaemic episode",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": null,
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:10:45.150370",
+    "status": "Final",
+    "topicCode": "HYPOGLYCAEMIC EPISODE",
+    "type": "events",
+    "uid": "Event_000014",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Informed Consent Obtained",
+        "uid": "Activity_001092"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Informed Consent and Demography",
+        "uid": "ActivitySubGroup_000041"
+      }
+    ],
+    "adamParamCode": "INFCONDT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Date of informed consent obtained",
+    "libraryName": "Sponsor",
+    "name": "Informed Consent Obtained Date",
+    "nameSentenceCase": "informed consent obtained date",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:11:13.453656",
+    "status": "Final",
+    "topicCode": "INFORMED_CONSENT_DATE",
+    "type": "events",
+    "uid": "Event_000015",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Infusion Site Reaction",
+        "uid": "Activity_001093"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Infusion Site Reaction",
+        "uid": "ActivitySubGroup_000084"
+      }
+    ],
+    "adamParamCode": "INFSITER",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Infusion site reaction",
+    "libraryName": "Sponsor",
+    "name": "Infusion Site Reaction",
+    "nameSentenceCase": "infusion site reaction",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:11:13.774901",
+    "status": "Final",
+    "topicCode": "INFUSION SITE REACTION",
+    "type": "events",
+    "uid": "Event_000016",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Injection Site Reaction",
+        "uid": "Activity_001116"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Injection Site Reaction (Early, Mature)",
+        "uid": "ActivitySubGroup_000085"
+      }
+    ],
+    "adamParamCode": "ISR",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Injection Site Reaction",
+    "libraryName": "Sponsor",
+    "name": "Injection Site Reaction",
+    "nameSentenceCase": "injection site reaction",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:11:20.806781",
+    "status": "Final",
+    "topicCode": "INJECTION SITE REACTION",
+    "type": "events",
+    "uid": "Event_000017",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Intentional Misadministration",
+        "uid": "Activity_001118"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Medication Error, Misuse and Abuse",
+        "uid": "ActivitySubGroup_000008"
+      }
+    ],
+    "adamParamCode": "MISADMIN",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Intentional Misadminstration as misuse or abuse",
+    "libraryName": "Sponsor",
+    "name": "Intentional Misadministration",
+    "nameSentenceCase": "intentional misadministration",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:11:22.165294",
+    "status": "Final",
+    "topicCode": "INTENTIONAL MISADMINISTRATION",
+    "type": "events",
+    "uid": "Event_000018",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Last Date on Trial Product",
+        "uid": "Activity_001212"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "End of Study",
+        "uid": "ActivitySubGroup_000056"
+      }
+    ],
+    "adamParamCode": "LDRGDT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Last date on trial product",
+    "libraryName": "Sponsor",
+    "name": "Last Date on Trial Product",
+    "nameSentenceCase": "last date on trial product",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:11:49.803136",
+    "status": "Final",
+    "topicCode": "LAST_TRIAL_PROD_DATE",
+    "type": "events",
+    "uid": "Event_000019",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Informed Consent Obtained",
+        "uid": "Activity_001092"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Informed Consent and Demography",
+        "uid": "ActivitySubGroup_000041"
+      }
+    ],
+    "adamParamCode": "LEGALCON",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Informed Consent obtained by legal or authorised representative_x000D_",
+    "libraryName": "Sponsor",
+    "name": "Legal or Authorised Representative",
+    "nameSentenceCase": "legal or authorised representative",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:11:50.334176",
+    "status": "Final",
+    "topicCode": "LEGAL OR AUTHORISED REPRESENTATIVE",
+    "type": "events",
+    "uid": "Event_000020",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Malignant Neoplasm",
+        "uid": "Activity_001234"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Malignant Neoplasm",
+        "uid": "ActivitySubGroup_000096"
+      }
+    ],
+    "adamParamCode": "NEOPLMAL",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Malignant Neoplasm or Neoplasm, Malignant",
+    "libraryName": "Sponsor",
+    "name": "Malignant Neoplasm",
+    "nameSentenceCase": "malignant neoplasm",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:11:56.641687",
+    "status": "Final",
+    "topicCode": "MALIGNANT NEOPLASM",
+    "type": "events",
+    "uid": "Event_000021",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Medical History/Concomitant Illness",
+        "uid": "Activity_001239"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Medical History/Concomitant Illness",
+        "uid": "ActivitySubGroup_000097"
+      }
+    ],
+    "adamParamCode": "MEDHIST",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Medical history/Concomitant illness",
+    "libraryName": "Sponsor",
+    "name": "Medical History/Concomitant Illness",
+    "nameSentenceCase": "medical history/concomitant illness",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Medical History Domain",
+      "termUid": "C49603_MH"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:11:58.051056",
+    "status": "Final",
+    "topicCode": "MEDICAL_HISTORY",
+    "type": "events",
+    "uid": "Event_000022",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Neoplasm",
+        "uid": "Activity_001291"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Neoplasm",
+        "uid": "ActivitySubGroup_000101"
+      }
+    ],
+    "adamParamCode": "NEO",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Neoplasm event",
+    "libraryName": "Sponsor",
+    "name": "Neoplasm",
+    "nameSentenceCase": "neoplasm",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:12:15.668698",
+    "status": "Final",
+    "topicCode": "NEOPLASM",
+    "type": "events",
+    "uid": "Event_000023",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Pancreatitis",
+        "uid": "Activity_001476"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "AE Requiring Additional Data",
+        "uid": "ActivityGroup_000001"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Pancreatitis",
+        "uid": "ActivitySubGroup_000110"
+      }
+    ],
+    "adamParamCode": "PAN",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "AE Requiring Additional Data for Pancreatitis",
+    "libraryName": "Sponsor",
+    "name": "Pancreatitis",
+    "nameSentenceCase": "pancreatitis",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:13:15.358991",
+    "status": "Final",
+    "topicCode": "PANCREATITIS",
+    "type": "events",
+    "uid": "Event_000024",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Pen Injector Use Error",
+        "uid": "Activity_001585"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Pen-Injector Use Error",
+        "uid": "ActivitySubGroup_000114"
+      }
+    ],
+    "adamParamCode": "PUEINJEC",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Pen injector use error",
+    "libraryName": "Sponsor",
+    "name": "Pen Injector Use Error",
+    "nameSentenceCase": "pen injector use error",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:13:49.489649",
+    "status": "Final",
+    "topicCode": "PEN INJECTOR USE ERROR",
+    "type": "events",
+    "uid": "Event_000025",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Randomized",
+        "uid": "Activity_001909"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Randomisation",
+        "uid": "ActivitySubGroup_000157"
+      }
+    ],
+    "adamParamCode": "RANDDT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Date of randomisation_x000D_",
+    "libraryName": "Sponsor",
+    "name": "Randomisation Date",
+    "nameSentenceCase": "randomisation date",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:15:36.746918",
+    "status": "Final",
+    "topicCode": "RANDOMISATION_DATE",
+    "type": "events",
+    "uid": "Event_000026",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "SUBJCOMP",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Subject completion of trial",
+    "libraryName": "Sponsor",
+    "name": "Subject Completion",
+    "nameSentenceCase": "subject completion",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:16:23.822590",
+    "status": "Final",
+    "topicCode": "SUBJECT_COMPLETION",
+    "type": "events",
+    "uid": "Event_000027",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "SUBJDIS",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Subject Discontinued",
+    "libraryName": "Sponsor",
+    "name": "Subject Discontinued",
+    "nameSentenceCase": "subject discontinued",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:16:24.689400",
+    "status": "Final",
+    "topicCode": "SUBJECT_DISCONTINUATION",
+    "type": "events",
+    "uid": "Event_000028",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [],
+    "activityGroups": [],
+    "activitySubgroups": [],
+    "adamParamCode": "SUBCONDT",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Date of Informed Consent obtained by subject",
+    "libraryName": "Sponsor",
+    "name": "Subject Informed Consent Date",
+    "nameSentenceCase": "subject informed consent date",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:16:24.997144",
+    "status": "Final",
+    "topicCode": "SUBJECT_INFORMED_CONSENT_DATE",
+    "type": "events",
+    "uid": "Event_000029",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Technical Complaint",
+        "uid": "Activity_002082"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Technical Complaints",
+        "uid": "ActivitySubGroup_000165"
+      }
+    ],
+    "adamParamCode": "TECCOMPL",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Technical complaint",
+    "libraryName": "Sponsor",
+    "name": "Technical Complaint",
+    "nameSentenceCase": "technical complaint",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Clinical Events Domain",
+      "termUid": "C85441_CE"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:16:33.191761",
+    "status": "Final",
+    "topicCode": "TECHNICAL COMPLAINT",
+    "type": "events",
+    "uid": "Event_000030",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "Subject Completed Treatment",
+        "uid": "Activity_002119"
+      }
+    ],
+    "activityGroups": [
+      {
+        "name": "General",
+        "uid": "ActivityGroup_000003"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "End of IMP Treatment",
+        "uid": "ActivitySubGroup_000170"
+      }
+    ],
+    "adamParamCode": "TRTCOMPL",
+    "changeDescription": "Approved version",
+    "definition": null,
+    "endDate": null,
+    "legacyDescription": "Sponsor defined: Has the subject completed the treatment period?",
+    "libraryName": "Sponsor",
+    "name": "Subject Completed Treatment",
+    "nameSentenceCase": "subject completed treatment",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtmDomain": {
+      "name": "Disposition Domain",
+      "termUid": "C49576_DS"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "startDate": "2022-10-18T13:16:44.599879",
+    "status": "Final",
+    "topicCode": "TREATMENT_COMPLETED",
+    "type": "events",
+    "uid": "Event_000031",
+    "userInitials": "MT",
+    "version": "1.0"
+  }
+]

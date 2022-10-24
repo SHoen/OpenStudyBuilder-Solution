@@ -1,0 +1,32 @@
+[
+    {
+        "order": 1,
+        "name": "Screening",
+        "shortName": "SCR",
+        "elementSubTypeName": "Screening",
+        "code": "No Treatment",
+        "description": "This is the Pre Treatment element",
+        "modified": "2022-04-05T13:42:11.899007",
+        "modified-by": "unknown-user"
+    },
+    {
+        "order": 2,
+        "name": "Observation",
+        "shortName": "OBS",
+        "elementSubTypeName": "Treatment",
+        "code": "Treatment",
+        "description": "This is the Treatment element",
+        "modified": "2022-04-05T13:41:54.444851",
+        "modified-by": "unknown-user"
+    },
+    {
+        "order": 3,
+        "name": "Follow-up",
+        "shortName": "Follow-up",
+        "elementSubTypeName": "Follow-up",
+        "code": "No Treatment",
+        "description": "This is the Follow-up element",
+        "modified": "2022-04-05T13:43:32.151896",
+        "modified-by": "unknown-user"
+    }
+]

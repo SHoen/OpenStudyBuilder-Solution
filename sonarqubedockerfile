@@ -1,0 +1,15 @@
+## Argument sonarversion will default to "community"
+ARG sonarversion=community
+FROM sonarqube:${sonarversion}
+
+## Copy Sonarqube plugins
+COPY ./sonarqubefiles /opt/sonarqube/extensions/plugins
+
+## run as non root user
+USER sonarqube
+
+## Sonarqube port
+EXPOSE 9000
+
+## run healthcheck on the sonarqube http endpoint
+HEALTHCHECK  CMD wget --no-verbose --tries=1 --spider http://localhost:9000/api/system/status || exit 1

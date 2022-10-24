@@ -1,0 +1,6 @@
+CT_CD_LIST_SUBMVAL,CT_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,DEFINITION,ORDER
+Operator,=,=,=,Equal to,,
+Operator,>=,>=,≥,Greather than or equal to,,
+Operator,<=,<=,≤,Less than or equal to,,
+Operator,>,>,>,Greather than,,
+Operator,<,<,<,Less than,,

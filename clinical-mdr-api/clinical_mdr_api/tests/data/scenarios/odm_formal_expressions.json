@@ -1,0 +1,493 @@
+[
+    {
+        "name": "Test getting empty list of odm formal expressions",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/formal-expressions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 0
+            }
+        }
+    },
+    {
+        "name": "Test creating a new odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1"
+            },
+            "url": "concepts/odms/formal-expressions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmFormalExpression_000001",
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1",
+                "startDate": "2022-03-03T11:17:56.799074",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.1",
+                "changeDescription": "Initial version",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting non empty list of odm formal expressions",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/formal-expressions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "uid": "OdmFormalExpression_000001",
+                        "libraryName": "Sponsor",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "startDate": "2022-03-03T11:17:56.799074",
+                        "endDate": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "changeDescription": "Initial version",
+                        "userInitials": "TODO user initials",
+                        "possibleActions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                ],
+                "total": 0,
+                "page": 1,
+                "size": 0
+            }
+        }
+    },
+    {
+        "name": "Test getting possible header values of odm formal expressions",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/headers?fieldName=context"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                "context1"
+            ]
+        }
+    },
+    {
+        "name": "Test getting a specific odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmFormalExpression_000001",
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1",
+                "startDate": "2022-03-03T13:18:03.230000",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.1",
+                "changeDescription": "Initial version",
+                "userInitials": "TODO initials",
+                "possibleActions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting versions of a specific odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000001/versions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "uid": "OdmFormalExpression_000001",
+                    "libraryName": "Sponsor",
+                    "context": "context1",
+                    "expression": "expression1",
+                    "startDate": "2022-03-03T13:18:03.230000",
+                    "endDate": null,
+                    "status": "Draft",
+                    "version": "0.1",
+                    "changeDescription": "Initial version",
+                    "userInitials": "TODO initials",
+                    "possibleActions": [
+                        "approve",
+                        "delete",
+                        "edit"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test updating an existing odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1 updated",
+                "changeDescription": "updated expression"
+            },
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmFormalExpression_000001",
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1 updated",
+                "startDate": "2022-03-03T13:18:03.230000",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.2",
+                "changeDescription": "updated expression",
+                "userInitials": "TODO initials",
+                "possibleActions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test approving an odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000001/approve"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmFormalExpression_000001",
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1 updated",
+                "startDate": "2022-03-03T13:18:03.230000",
+                "endDate": null,
+                "status": "Final",
+                "version": "1.0",
+                "changeDescription": "Approved version",
+                "userInitials": "TODO initials",
+                "possibleActions": [
+                    "inactivate",
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test inactivating a specific odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000001/inactivate"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmFormalExpression_000001",
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1 updated",
+                "startDate": "2022-03-03T13:18:03.230000",
+                "endDate": null,
+                "status": "Retired",
+                "version": "1.0",
+                "changeDescription": "Deactivated version",
+                "userInitials": "TODO initials",
+                "possibleActions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test reactivating a specific odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000001/reactivate"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmFormalExpression_000001",
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1 updated",
+                "startDate": "2022-03-03T13:18:03.230000",
+                "endDate": null,
+                "status": "Final",
+                "version": "1.0",
+                "changeDescription": "Reactivated version",
+                "userInitials": "TODO initials",
+                "possibleActions": [
+                    "inactivate",
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test creating a new odm formal expression version",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000001/new-version"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmFormalExpression_000001",
+                "libraryName": "Sponsor",
+                "context": "context1",
+                "expression": "expression1 updated",
+                "startDate": "2022-03-03T11:17:56.799074",
+                "endDate": null,
+                "status": "Draft",
+                "version": "1.1",
+                "changeDescription": "New draft created",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create a new odm formal expression for deleting it",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Sponsor",
+                "context": "context - delete",
+                "expression": "expression2"
+            },
+            "url": "concepts/odms/formal-expressions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmFormalExpression_000002",
+                "libraryName": "Sponsor",
+                "context": "context - delete",
+                "expression": "expression2",
+                "startDate": "2022-03-03T11:17:56.799074",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.1",
+                "changeDescription": "Initial version",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test deleting a specific odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000002"
+        },
+        "response": {
+            "code": 204,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": null
+        }
+    },
+    {
+        "name": "Create a new odm condition with relation to odm formal expression",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "libraryName": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "formalExpressionUids": [
+                    "OdmFormalExpression_000001"
+                ],
+                "descriptionUids": [
+                    "odm_description1"
+                ],
+                "aliasUids": []
+            },
+            "url": "concepts/odms/conditions/select"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name1",
+                "libraryName": "Sponsor",
+                "oid": "oid1",
+                "startDate": "2022-03-03T11:17:56.799074",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.1",
+                "changeDescription": "Initial version",
+                "userInitials": "TODO user initials",
+                "formalExpressions": [
+                    {
+                        "uid": "OdmFormalExpression_000001",
+                        "context": "context1",
+                        "expression": "expression1 updated",
+                        "version": "1.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description1",
+                        "name": "name1",
+                        "language": "ENG",
+                        "description": "description1",
+                        "instruction": "instruction1",
+                        "sponsorInstruction": "sponsorInstruction1",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [],
+                "possibleActions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting UIDs of a specific odm formal expression's active relationships",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/formal-expressions/OdmFormalExpression_000001/relationships"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "OdmCondition": [
+                    "OdmCondition_000001"
+                ]
+            }
+        }
+    }
+]

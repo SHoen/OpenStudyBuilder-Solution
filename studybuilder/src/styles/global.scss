@@ -1,0 +1,228 @@
+// main
+body {
+    background-color: $breadcrumbs-disabled-color;
+}
+
+// Colors
+.nn-grey {
+    background-color: var(--v-dfltBackground-base) !important;
+}
+
+// Tabs
+.v-tab {
+    text-transform: none !important;
+}
+
+// Cards
+.v-dialog {
+    .v-card {
+        .v-card__title {
+            padding: 20px 24px 0px;
+        }
+        .v-card__text {
+            padding: 20px 24px;
+        }
+    }
+}
+
+// Data tables
+.v-data-table-header th {
+    white-space: nowrap;
+}
+
+.v-data-table {
+    &__wrapper {
+        td {
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            vertical-align: top;
+        }
+    }
+    border-radius: 0px;
+}
+
+thead.v-data-table-header {
+    background-color: rgba(0,0,0,0.1);
+}
+
+// Fixed table header
+.theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr:last-child > th {
+    background: #E5E5E5;
+}
+
+.theme--light.v-sheet.v-stepper {
+    box-shadow: none !important;
+}
+.v-sheet.v-card {
+    border-radius: 0px;
+}
+
+.v-dialog {
+    border-radius: 0px;
+}
+
+// Breadcrumbs
+.v-breadcrumbs a.v-breadcrumbs__item {
+    color: rgba(0, 0, 0, 0.38)
+}
+
+.v-breadcrumbs div.v-breadcrumbs__item {
+    color: rgba(0, 0, 0, 0.38)
+}
+
+.v-toolbar__items a.v-btn:not(.v-btn--round).v-size--default {
+    padding: 0 30px;
+}
+
+.v-toolbar__items .v-btn__content .v-icon {
+    padding-right: 10px;
+}
+
+// Selects & inputs
+.v-select-list {
+    .v-list-item {
+        &--active {
+            background-color: var(--v-nnLightBlue3-base);
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.v-select__selections {
+    line-height: 30px;
+}
+
+.unit-select {
+    margin-top: -4px;
+}
+
+.v-text-field {
+    &__slot {
+        min-height: 40px;
+    }
+
+    &__details {
+        padding-top: 5px !important;
+    }
+}
+.v-input {
+    &--selection-controls {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    &--radio-group {
+        legend.v-label {
+            font-size: 16px;
+        }
+    }
+}
+
+// Dialogs
+.top-dialog {
+    position: absolute;
+    top: 50px
+}
+
+.fullscreen-dialog {
+    height: 100%;
+    border-radius: 0 !important;
+}
+
+// Buttons
+.secondary-btn {
+    color: var(--v-secondary-base) !important;
+}
+
+.v-btn {
+    padding: 0 16px !important;
+}
+
+// Typography
+.page-title {
+    color: var(--v-primary-base) !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    line-height: 2.5rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dialog-about-title {
+    color: var(--v-primary-base);
+    font-size: 1.5rem !important;
+    padding: 10px 10px !important;
+}
+
+.dialog-title {
+    color: var(--v-primary-base);
+    font-size: 1.5rem !important;
+}
+
+.dialog-sub-title {
+    margin-top: 20px;
+    padding-bottom: 4px;
+    font-weight: 600 !important;
+}
+
+.theme {
+    &--light {
+        .v-label {
+            // color: var(--v-secondary-base);
+        }
+    }
+}
+
+.filterAutocompleteLabel {
+    .v-label {
+        font-size: 14px;
+    }
+}
+
+.v-radio .v-label {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+// Forms
+.registry-form {
+    padding-top: 100px;
+}
+
+// Landing pages
+.fullscreen-bg {
+    padding: 2rem;
+    margin: 0;
+    color: #fff;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.box-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+// Confirmation dialog studies objectives
+.confirmation-text-header {
+    text-align: left;
+}
+
+.confirmation-text-field {
+    background-color: #fff;
+    height: 60px;
+    text-align: left;
+    padding: 5px
+}
+
+// Quill editor
+.ql-editor{
+    min-height: 100px !important;
+}

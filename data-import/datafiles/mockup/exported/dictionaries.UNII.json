@@ -1,0 +1,933 @@
+[
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "WTT295HSY5",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "DULAGLUTIDE",
+    "nameSentenceCase": "dulaglutide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:02.793914",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001071",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "X7WDT95N5C",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "GLIPIZIDE",
+    "nameSentenceCase": "glipizide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:03.657286",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001073",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "X4OV71U42S",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "PIOGLITAZONE",
+    "nameSentenceCase": "pioglitazone",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:03.285596",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001072",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "05V02F2KDG",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "ROSIGLITAZONE",
+    "nameSentenceCase": "rosiglitazone",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:46.475623",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001025",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "1Y17CTI5SR",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN HUMAN",
+    "nameSentenceCase": "insulin human",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:46.848239",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001026",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "27Y83O992Q",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "NONACOG BETA PEGOL",
+    "nameSentenceCase": "nonacog beta pegol",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:47.185013",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001027",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "2ZM8CX04RZ",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN GLARGINE",
+    "nameSentenceCase": "insulin glargine",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:47.510468",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001028",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "32HRV3E3D5",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "GRISEOFULVIN",
+    "nameSentenceCase": "griseofulvin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:47.832046",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001029",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "362O9ITL9D",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "PARACETAMOL",
+    "nameSentenceCase": "paracetamol",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:48.132025",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001030",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "413KH5ZJ73",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "ROSUVASTATIN",
+    "nameSentenceCase": "rosuvastatin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:48.435039",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001031",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "423D2T571U",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "ETHINYL ESTRADIOL",
+    "nameSentenceCase": "ethinyl estradiol",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:48.705996",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001032",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "4FT78T86XV",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN DETEMIR",
+    "nameSentenceCase": "insulin detemir",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:49.082278",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001033",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "53AXN4NNHX",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "SEMAGLUTIDE",
+    "nameSentenceCase": "semaglutide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:49.361882",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001034",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "54Q18076QB",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN DEGLUDEC",
+    "nameSentenceCase": "insulin degludec",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:50.146911",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001035",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "5Q7ZVV76EI",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "WARFARIN",
+    "nameSentenceCase": "warfarin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:50.467646",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001036",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "5W7SIA7YZW",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "LEVONORGESTREL",
+    "nameSentenceCase": "levonorgestrel",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:50.773614",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001037",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "68603V9EAF",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "CONCIZUMAB",
+    "nameSentenceCase": "concizumab",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:51.094197",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001038",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "6KY687524K",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "GLIMEPIRIDE",
+    "nameSentenceCase": "glimepiride",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:51.469804",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001039",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "73K4184T59",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "DIGOXIN",
+    "nameSentenceCase": "digoxin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:51.785466",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001040",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "76LA80IG2G",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "GLUCAGON",
+    "nameSentenceCase": "glucagon",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:52.344731",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001041",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "7LXU5N7ZO5",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "FUROSEMIDE",
+    "nameSentenceCase": "furosemide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:52.659589",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001042",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "7XIY785AZD",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN GLULISINE",
+    "nameSentenceCase": "insulin glulisine",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:52.962762",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001043",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "82WG3POL9W",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "ANTI-IL-20",
+    "nameSentenceCase": "anti-il-20",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:53.259036",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001044",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "839I73S42A",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "LIRAGLUTIDE",
+    "nameSentenceCase": "liraglutide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:53.570543",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001045",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "887K2391VH",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "DAPAGLIFLOZIN PROPANEDIOL MONOHYDRATE",
+    "nameSentenceCase": "dapagliflozin propanediol monohydrate",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:53.963347",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001046",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "8FOJ430U94",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "SOMAPACITAN",
+    "nameSentenceCase": "somapacitan",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:54.293034",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001047",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "9100L32L2N",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "METFORMIN",
+    "nameSentenceCase": "metformin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:54.701452",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001048",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "95M8R751W",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "ORLISTAT",
+    "nameSentenceCase": "orlistat",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:55.010032",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001049",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "969NZA3X9T",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "TUROCTOCOG ALFA",
+    "nameSentenceCase": "turoctocog alfa",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:55.317086",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001050",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "9P1872D4OL",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "EXENATIDE",
+    "nameSentenceCase": "exenatide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:55.637989",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001051",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "9Y9727LS4D",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "TUROCTOCOG ALFA PEGOL",
+    "nameSentenceCase": "turoctocog alfa pegol",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:55.959180",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001052",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "A0JWA85V8F",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "ATORVASTATIN",
+    "nameSentenceCase": "atorvastatin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:56.284766",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001053",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "AN3Y2B4SX4",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "ZILTIVEKIMAB",
+    "nameSentenceCase": "ziltivekimab",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:56.599624",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001054",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "AO43BIF1U8",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "CAGRILINTIDE",
+    "nameSentenceCase": "cagrilintide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:56.891043",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001055",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "AVT680JB39",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN PORCINE",
+    "nameSentenceCase": "insulin porcine",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:57.291030",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001056",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "D933668QVX",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN ASPART",
+    "nameSentenceCase": "insulin aspart",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:57.622945",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001057",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "E7199S1YWR",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "LISINOPRIL",
+    "nameSentenceCase": "lisinopril",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:58.006856",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001058",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "FB4Q52I9K2",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "BIGUANIDE",
+    "nameSentenceCase": "biguanide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:58.314340",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001059",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "G4PX8C4HKV",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "GLICLAZIDE",
+    "nameSentenceCase": "gliclazide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:58.694005",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001060",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "GFX7QIS1II",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN LISPRO",
+    "nameSentenceCase": "insulin lispro",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:59.096647",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001061",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "HDC1R2M35U",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "EMPAGLIFLOZIN",
+    "nameSentenceCase": "empagliflozin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:59.435214",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001062",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "KG60484QX9",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "OMEPRAZOLE",
+    "nameSentenceCase": "omeprazole",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:49:59.756287",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001063",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "LKC0U3A8NJ",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "EVOLOCUMAB",
+    "nameSentenceCase": "evolocumab",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:00.070440",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001064",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "NQX9KB6PCL",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "SOMATROPIN",
+    "nameSentenceCase": "somatropin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:00.507246",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001065",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "P7YU3ED05N",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "INSULIN ICODEC",
+    "nameSentenceCase": "insulin icodec",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:00.773350",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001066",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "Q51BO43MG4",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "LEVOTHYROXINE",
+    "nameSentenceCase": "levothyroxine",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:01.290984",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001067",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "QFP0P1DV7Z",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "SITAGLIPTIN",
+    "nameSentenceCase": "sitagliptin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:01.635704",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001068",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "SX6K58TVWC",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "GLYBURIDE",
+    "nameSentenceCase": "glyburide",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:02.075990",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001069",
+    "userInitials": "MT",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "changeDescription": "Approved version",
+    "definition": null,
+    "dictionaryId": "U188XYD42P",
+    "endDate": null,
+    "libraryName": "UNII",
+    "name": "MOXIFLOXACIN",
+    "nameSentenceCase": "moxifloxacin",
+    "possibleActions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "startDate": "2022-10-18T12:50:02.455260",
+    "status": "Final",
+    "termUid": "DictionaryTerm_001070",
+    "userInitials": "MT",
+    "version": "1.0"
+  }
+]

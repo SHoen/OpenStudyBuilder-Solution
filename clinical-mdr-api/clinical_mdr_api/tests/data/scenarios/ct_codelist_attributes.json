@@ -1,0 +1,445 @@
+[
+    {
+        "name": "Test POST Create codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "catalogueName": "SDTM CT",
+                "name": "name",
+                "parentCodelistUid": null,
+                "submissionValue": "Submission value",
+                "nciPreferredName": "Nci preferred name",
+                "definition": "definition",
+                "extensible": true,
+                "sponsorPreferredName": "Sponsor preferred name",
+                "templateParameter": true,
+                "libraryName": "Sponsor",
+                "terms": [
+                    {
+                        "termUid": "term1",
+                        "order": 999999
+                    }
+                ]
+            },
+            "url": "/ct/codelists"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root3",
+                "parentCodelistUid": null,
+                "childCodelistUids": [],
+                "name": "name",
+                "submissionValue": "Submission value",
+                "nciPreferredName": "Nci preferred name",
+                "definition": "definition",
+                "extensible": true,
+                "sponsorPreferredName": "Sponsor preferred name",
+                "templateParameter": true,
+                "libraryName": "Sponsor",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST Create codelist with parent codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "catalogueName": "SDTM CT",
+                "name": "name with parent",
+                "parentCodelistUid": "ct_codelist_root3",
+                "submissionValue": "Submission value with parent",
+                "nciPreferredName": "Nci preferred name with parent",
+                "definition": "definition",
+                "extensible": true,
+                "sponsorPreferredName": "Sponsor preferred name with parent",
+                "templateParameter": true,
+                "libraryName": "Sponsor",
+                "terms": []
+            },
+            "url": "/ct/codelists"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "CTCodelist_000002",
+                "parentCodelistUid": "ct_codelist_root3",
+                "childCodelistUids": [],
+                "name": "name with parent",
+                "submissionValue": "Submission value with parent",
+                "nciPreferredName": "Nci preferred name with parent",
+                "definition": "definition",
+                "extensible": true,
+                "sponsorPreferredName": "Sponsor preferred name with parent",
+                "templateParameter": true,
+                "libraryName": "Sponsor",
+                "possibleActions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH DRAFT codelist",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist new name",
+                "submissionValue": "new codelist submission value",
+                "nciPreferredName": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "changeDescription": "changing codelist name"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/attributes"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root3",
+                "parentCodelistUid": null,
+                "childCodelistUids": [
+                    "CTCodelist_000002"
+                ],
+                "name": "codelist new name",
+                "submissionValue": "new codelist submission value",
+                "nciPreferredName": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "libraryName": "Sponsor",
+                "startDate": "2021-03-18T11:54:20.898Z",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.2",
+                "changeDescription": "changing codelist name",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH DRAFT codelist that is not TP",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist another new name",
+                "submissionValue": "new codelist submission value",
+                "nciPreferredName": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "changeDescription": "changing codelist name"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/attributes"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root3",
+                "parentCodelistUid": null,
+                "childCodelistUids": [
+                    "CTCodelist_000002"
+                ],
+                "name": "codelist another new name",
+                "submissionValue": "new codelist submission value",
+                "nciPreferredName": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "libraryName": "Sponsor",
+                "startDate": "2021-03-18T11:54:20.898Z",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.3",
+                "changeDescription": "changing codelist name",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST new-version codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root1/attributes/new-version"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root1",
+                "parentCodelistUid": null,
+                "childCodelistUids": [],
+                "name": "codelist attributes value1",
+                "submissionValue": "codelist submission value1",
+                "nciPreferredName": "codelist preferred term",
+                "definition": "codelist definition",
+                "extensible": false,
+                "libraryName": "Sponsor",
+                "startDate": "2021-03-18T11:54:20.898Z",
+                "endDate": null,
+                "status": "Draft",
+                "version": "1.1",
+                "changeDescription": "New draft created",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST approve codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root3/attributes/approve"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root3",
+                "parentCodelistUid": null,
+                "childCodelistUids": [
+                    "CTCodelist_000002"
+                ],
+                "name": "codelist another new name",
+                "submissionValue": "new codelist submission value",
+                "nciPreferredName": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "libraryName": "Sponsor",
+                "startDate": "2021-03-18T11:54:20.898Z",
+                "endDate": null,
+                "status": "Final",
+                "version": "1.0",
+                "changeDescription": "Approved version",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test GET codelist with parent codelist uid",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/ct/codelists/CTCodelist_000002/attributes"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "CTCodelist_000002",
+                "parentCodelistUid": "ct_codelist_root3",
+                "childCodelistUids": [],
+                "name": "name with parent",
+                "submissionValue": "Submission value with parent",
+                "nciPreferredName": "Nci preferred name with parent",
+                "definition": "definition",
+                "extensible": true,
+                "libraryName": "Sponsor",
+                "startDate": "2021-03-18T11:54:20.898Z",
+                "endDate": null,
+                "status": "Draft",
+                "version": "0.1",
+                "changeDescription": "Initial version",
+                "userInitials": "TODO user initials",
+                "possibleActions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST add term to codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "termUid": "term1"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/add-term"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "ct_codelist_root3",
+                "parentCodelistUid": null,
+                "childCodelistUids": [
+                    "CTCodelist_000002"
+                ],
+                "name": "codelist another new name",
+                "submissionValue": "new codelist submission value",
+                "nciPreferredName": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "sponsorPreferredName": "codelist_name_value",
+                "templateParameter": false,
+                "libraryName": "Sponsor",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST approve child codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/CTCodelist_000002/attributes/approve"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "CTCodelist_000002",
+                "parentCodelistUid": "ct_codelist_root3",
+                "childCodelistUids": [],
+                "name": "name with parent",
+                "submissionValue": "Submission value with parent",
+                "nciPreferredName": "Nci preferred name with parent",
+                "definition": "definition",
+                "extensible": true,
+                "libraryName": "Sponsor",
+                "startDate": "2022-06-10T11:04:04.968704",
+                "endDate": null,
+                "status": "Final",
+                "version": "1.0",
+                "changeDescription": "Approved version",
+                "userInitials": "TEST_USER",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST add term to child codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "termUid": "term1"
+            },
+            "url": "/ct/codelists/CTCodelist_000002/add-term"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogueName": "SDTM CT",
+                "codelistUid": "CTCodelist_000002",
+                "parentCodelistUid": "ct_codelist_root3",
+                "childCodelistUids": [],
+                "name": "name with parent",
+                "submissionValue": "Submission value with parent",
+                "nciPreferredName": "Nci preferred name with parent",
+                "definition": "definition",
+                "extensible": true,
+                "sponsorPreferredName": "Sponsor preferred name with parent",
+                "templateParameter": true,
+                "libraryName": "Sponsor",
+                "possibleActions": [
+                    "newVersion"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test GET all sub codelists that have the provided terms.",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {
+                "termUid": "term1"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/sub-codelists?termUids=term1"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "items": [
+                    {
+                        "catalogueName": "SDTM CT",
+                        "codelistUid": "CTCodelist_000002",
+                        "parentCodelistUid": "ct_codelist_root3",
+                        "childCodelistUids": [],
+                        "libraryName": "Sponsor",
+                        "name": {
+                            "name": "Sponsor preferred name with parent",
+                            "templateParameter": true,
+                            "startDate": "2022-07-15T12: 18: 34.271013",
+                            "endDate": null,
+                            "status": "Draft",
+                            "version": "0.1",
+                            "changeDescription": "Initial version",
+                            "userInitials": "TEST_USER",
+                            "possibleActions": [
+                                "approve",
+                                "edit"
+                            ]
+                        },
+                        "attributes": {
+                            "name": "name with parent",
+                            "submissionValue": "Submission value with parent",
+                            "nciPreferredName": "Nci preferred name with parent",
+                            "definition": "definition",
+                            "extensible": true,
+                            "startDate": "2022-07-15T12: 18: 36.222175",
+                            "endDate": null,
+                            "status": "Final",
+                            "version": "1.0",
+                            "changeDescription": "Approved version",
+                            "userInitials": "TEST_USER",
+                            "possibleActions": [
+                                "newVersion"
+                            ]
+                        }
+                    }
+                ],
+                "total": 0,
+                "page": 1,
+                "size": 0
+            }
+        }
+    }
+]
